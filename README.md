@@ -1,2 +1,2 @@
 # blog
-My
+My research blog
