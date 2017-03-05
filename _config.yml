@@ -19,4 +19,5 @@ github_username:  bvillasen
 theme: jekyll-theme-dinky
 
 # Build settings
-#markdown: redcarpet
+# markdown: redcarpet
+markdown: kramdown
