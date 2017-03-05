@@ -21,3 +21,23 @@ theme: jekyll-theme-dinky
 # Build settings
 # markdown: redcarpet
 markdown: kramdown
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
