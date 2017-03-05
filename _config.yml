@@ -16,7 +16,7 @@ twitter_username:
 github_username:  bvillasen
 
 
-#theme: jekyll-theme-dinky
+theme: jekyll-theme-dinky
 
 # Build settings
 #markdown: redcarpet
