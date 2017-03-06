@@ -13,8 +13,4 @@ categories: self-gravity
   allowfullscreen>
 </iframe>
 
-
-
-<div style="text-align: center">
-<video src="https://www.youtube.com/watch?v=qDC9Lor98vc" width="500" height="250" controls preload></video>
-</div>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/WRaaqN2Atxw" frameborder="0" allowfullscreen></iframe>
