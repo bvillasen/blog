@@ -8,6 +8,5 @@ categories: self-gravity
 
 
 <div style="text-align: center">
-<video src="{{ site.url }}assets/animation.mp4" width="500" height="250" controls preload> </video>
-
+<video src="{{ site.url }}assets/sigma_image_128.mov" width="500" height="250" controls preload> </video>
 </div>
