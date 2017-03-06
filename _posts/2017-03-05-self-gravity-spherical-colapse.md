@@ -8,9 +8,13 @@ categories: self-gravity
 <iframe
   width="420"
   height="315"
-  src="https://dl.dropboxusercontent.com/u/4488212/animation.mp4"
+  src="https://www.youtube.com/watch?v=qDC9Lor98vc"
   frameborder="0"
   allowfullscreen>
 </iframe>
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/WRaaqN2Atxw" frameborder="0" allowfullscreen></iframe>
+
+
+<div style="text-align: center">
+<video src="https://dl.dropboxusercontent.com/u/4488212/animation.mp4" width="500" height="250" controls preload></video>
+</div>
