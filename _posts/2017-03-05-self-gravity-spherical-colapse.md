@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Self gravity test: spherical colapse"
+title:  "Self gravity test: spherical collapse"
 date:   2017-03-05 17:10:24 -0800
 categories: self-gravity
 ---
