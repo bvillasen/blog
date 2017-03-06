@@ -12,3 +12,9 @@ categories: self-gravity
   frameborder="0"
   allowfullscreen>
 </iframe>
+
+
+
+<div style="text-align: center">
+<video src="https://www.youtube.com/watch?v=qDC9Lor98vc" width="500" height="250" controls preload></video>
+</div>
