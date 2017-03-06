@@ -8,7 +8,7 @@ categories: self-gravity
 <iframe
   width="420"
   height="315"
-  src="https://dl.dropboxusercontent.com/u/4488212/animation.mov"
+  src="https://dl.dropboxusercontent.com/u/4488212/animation.mp4"
   frameborder="0"
   allowfullscreen>
 </iframe>
