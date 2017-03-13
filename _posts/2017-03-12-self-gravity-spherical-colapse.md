@@ -12,5 +12,5 @@ categories: self-gravity
 </div>
 
 <div style="text-align: center">
-<video src="{{ site.url }}assets/potential.mp4"  controls preload> </video>
+<video src="{{ site.url }}assets/potential.mp4" width="500" height="360" controls preload> </video>
 </div>
