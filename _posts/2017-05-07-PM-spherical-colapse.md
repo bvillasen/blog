@@ -12,5 +12,5 @@ categories: PM
 </div>
 
 <div style="text-align: center">
-<video src="{{ site.url }}assets/PM_SC_NPG_potential.mp4" width="500" height="360" controls preload> </video>
+<video src="{{ site.url }}assets/videos/PM_SC_NPG_potential.mp4" width="500" height="360" controls preload> </video>
 </div>
