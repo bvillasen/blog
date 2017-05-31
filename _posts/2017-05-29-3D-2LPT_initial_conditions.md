@@ -10,9 +10,11 @@ Parameter file for creating ics: [Here](https://www.dropbox.com/s/907ynarg9olwjz
 Data file ( Gadget Format ) : [Here](https://www.dropbox.com/s/gs57g3h8iq4qivf/test_snapshot?dl=0)
 
 **z = 0 **
+
 <img src="{{ site.url }}assets/images/ics_z_0.png">
 
 
 
 **z = 8 **
+
 <img src="{{ site.url }}assets/images/ics_z_8.png">
