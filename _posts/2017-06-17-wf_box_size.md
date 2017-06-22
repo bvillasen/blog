@@ -17,4 +17,6 @@ Size scale as function of redshift:
 
 For WFIRST:  $\theta=0.78 deg$ the proper size as function of redshift and the simulation box size are:
 
+<img src="{{ site.url }}assets/images/WF_scale_2.png">
+
 <img src="{{ site.url }}assets/images/WF_scale.png">
