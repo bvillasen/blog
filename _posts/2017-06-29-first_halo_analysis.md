@@ -9,7 +9,9 @@ Halo mass function (cumulative) at z=0:
 
 <img src="{{ site.url }}assets/images/massFunc_z_0.png">
 
-Animation of structure formation showing halos with $m_{vir} > 5 \times 10^{11} M_{sun} $
+Animation of structure formation showing halos with
+
+$m_{vir} > 5 \times 10^{11} M_{sun} $
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/cosmo_anim_halos.mp4" width="500" height="360" controls preload> </video>
