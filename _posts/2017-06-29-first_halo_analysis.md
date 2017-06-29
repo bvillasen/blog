@@ -5,7 +5,7 @@ date:   2017-06-28 17:10:24 -0800
 categories: cosmology
 ---
 
-Halo mass function (cumulative) at z=0:
+Halo mass function (cumulative) at $$z=0$$:
 
 <img src="{{ site.url }}assets/images/massFunc_z_0.png">
 
