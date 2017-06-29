@@ -3,6 +3,9 @@ layout: post
 title:  "Halos: First simulation"
 date:   2017-06-28 17:10:24 -0800
 categories: cosmology
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 ---
 
 Halo mass function (cumulative) at z=0:
