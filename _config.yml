@@ -21,7 +21,7 @@ github_username:  bvillasen
 # Build settings
 # markdown: redcarpet
 markdown: kramdown
-
+mathjax: true
 defaults:
     -
         scope:
