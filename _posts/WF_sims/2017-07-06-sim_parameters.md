@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "WFIRST Simulation parameters"
-date:   2017-07-01 17:10:24 -0800
+date:   2017-06-27 17:10:24 -0800
 categories: cosmology wfirst
 ---
 
