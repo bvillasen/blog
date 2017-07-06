@@ -10,4 +10,4 @@ Parameters used for Millenium simulations [Here](http://gavo.mpa-garching.mpg.de
 **Softening**
 From *Power et al 2003 numerical convergence criteria*, in order to get a well resolved halo:
 
-$$ \epsilon_{opt} \, = \, 4 \frac{r_{200}}{\sqrt{N_{200}}} $$
+$$ \epsilon_{opt} \, = \,  \frac{4r_{200}}{\sqrt{N_{200}}} $$
