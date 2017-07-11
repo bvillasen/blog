@@ -15,7 +15,7 @@ $$ \epsilon_{opt} \, = \,  \frac{4r_{200}}{\sqrt{N_{200}}} $$
 
 The size of the box is **115 Mpc/h**
 
-| N_part |  Soft [kpc/h]  |
+| $$N_{part}$$ |  Soft [kpc/h]  |
 |:------:|:--------------:|
 | 128    |   19.41  |
 | 256    |   9.70   |
