@@ -30,9 +30,14 @@ Results for $$256^3$$ simulation using $$\epsilon=9.7$$:
 Gadget parameter file [HERE](https://github.com/bvillasen/blog/blob/master/assets/files/test_256.param)
 
 
+<img src="{{ site.url }}assets/images/massFunc_53_soft10.png">
+
 <img src="{{ site.url }}assets/images/dens_53_soft10.png">
 
-<img src="{{ site.url }}assets/images/massFunc_53_soft10.png">
+
+Density projection for $$\epsilon=600$$:
+
+<img src="{{ site.url }}assets/images/dens_53_soft600.png">
 
 From Gadget_guide:
 
