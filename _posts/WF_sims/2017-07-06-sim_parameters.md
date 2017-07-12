@@ -47,7 +47,7 @@ From Gadget_guide:
 >In cosmological simulations, one sometimes wants to start a simulation with a softening $$\epsilon_{com}$$
 >that is fixed in comoving coordinates (where the physical softening, $$\epsilon_{phys} = a \epsilon_{com}$$  , then grows
 >proportional to the scale factor, but at a certain redshift one wants to freeze the resulting
->growth of the physical softening $$\epsilon$$ max
->phys at a maximum value. These maximum softening lengths
->are specified by the **SofteningMaxPhys$$ parameters. In the actual implementation, the
+>growth of the physical softening $$\epsilon_{maxPhys}$$
+> at a maximum value. These maximum softening lengths
+>are specified by the **SofteningMaxPhys** parameters. In the actual implementation, the
 >code uses $$\epsilon'_{com} = min(\epsilon_{com} , \epsilon_{maxPhys} /a)$$ as comoving softening.
