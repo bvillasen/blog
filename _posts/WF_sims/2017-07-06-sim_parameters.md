@@ -37,18 +37,17 @@ Gadget parameter file [HERE](https://github.com/bvillasen/blog/blob/master/asset
 From Gadget_guide:
 
 >Gravity is softened with a spline, as outlined in the code paper. The softenings quoted here
->all refer to 2, the roughly equivalent Plummer softening length. Note that for the spline that is
->actually used, the force will be exactly Newtonian beyond h = 2.82. **The softening lengths are
+>all refer to $$\epsilon$$, the roughly equivalent Plummer softening length. Note that for the spline that is
+>actually used, the force will be exactly Newtonian beyond h = 2.8$$\epsilon$$. **The softening lengths are
 >in internal length units**. For comoving integration, the softening refers to the one employed in
 >comoving coordinates, which usually stays fixed during the simulation. However, employing
 >the **MaxPhys** parameters described below the code can also be asked to switch to a fixed
 >softening in physical scale below a certain redshift.
 
->In cosmological simulations, one sometimes wants to start a simulation with a softening 2 com
->that is fixed in comoving coordinates (where the physical softening, 2 phys = a2 com , then grows
->proportional to the scale factor a), but at a certain redshift one wants to freeze the resulting
->growth of the physical softening 2 max
+>In cosmological simulations, one sometimes wants to start a simulation with a softening $$\epsilon_{com}$$
+>that is fixed in comoving coordinates (where the physical softening, $$\epsilon_{phys} = a \epsilon_{com}$$  , then grows
+>proportional to the scale factor, but at a certain redshift one wants to freeze the resulting
+>growth of the physical softening $$\epsilon$$ max
 >phys at a maximum value. These maximum softening lengths
->are specified by the Softening*MaxPhys parameters. In the actual implementation, the
->code uses 2 0 com = min(2 com , 2 max
->phys /a) as comoving softening.
+>are specified by the **SofteningMaxPhys$$ parameters. In the actual implementation, the
+>code uses $$\epsilon'_{com} = min(\epsilon_{com} , \epsilon_{maxPhys} /a)$$ as comoving softening.
