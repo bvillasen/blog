@@ -17,9 +17,17 @@ The size of the box is **115 Mpc/h**
 
 | $$N_{part}$$ |  $$\epsilon$$ [kpc/h]  |
 | :------: | --------------: |
-| 128    |   19.41  |
-| 256    |   9.70   |
-| 512    |    4.85  |
-| 1024   |    2.42  |
-| 2048   |    1.21 |
-| 4096   |    0.61 |
+| $$128^3$$    |   19.41  |
+| $$256^3$$    |   9.70   |
+| $$512^3$$    |    4.85  |
+| $$1024^3$$   |    2.42  |
+| $$2048^3$$   |    1.21 |
+| $$4096^3$$   |    0.61 |
+
+
+Results for $$256^3$$ simulation using $$\epsilon=9.7$$:
+
+
+<img src="{{ site.url }}assets/images/dens_53_soft10.png">
+
+<img src="{{ site.url }}assets/images/massFunc_53_soft10.png">
