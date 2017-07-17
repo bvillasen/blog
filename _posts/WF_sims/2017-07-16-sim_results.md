@@ -38,3 +38,7 @@ Mass function from ROCKSTAR halo catalogs:
 Density projection for $$512^3$$ simulation using Brant's code (image-snapshot):
 
 <img src="{{ site.url }}assets/images/image.053.dat_.png">
+
+
+
+Error running $$1024^3$$ simulation [HERE](https://wwwmpa.mpa-garching.mpg.de/gadget/gadget-list/0358.html)
