@@ -21,6 +21,14 @@ The size of the box is **115 Mpc/h**
 
 
 
+CPU_TIME as function of N_PARTICLES:
+
+
+<img src="{{ site.url }}assets/images/timming.png">
+
+
+
+
 
 Mass function from ROCKSTAR halo catalogs:
 
