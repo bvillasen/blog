@@ -32,6 +32,8 @@ CPU_TIME as function of N_PARTICLES:
 
 Mass function from ROCKSTAR halo catalogs:
 
+<img src="{{ site.url }}assets/images/massFunc.png">
+
 <img src="{{ site.url }}assets/images/massFunc_all_new.png">
 
 
