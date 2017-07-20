@@ -5,7 +5,7 @@ date:   2017-07-19 17:10:24 -0800
 categories: cosmology wfirst
 ---
 
-```
+```c++
 double vir_density(double a) {
   double x = (Om/pow(a,3))/pow(hubble_scaling(1.0/a-1.0),2.0) - 1.0;
   return ((18*M_PI*M_PI + 82.0*x - 39*x*x)/(1.0+x));
@@ -13,7 +13,7 @@ double vir_density(double a) {
 ```
 
 
-```
+```c++
 float _calc_mass_definition(char **md) {
   int64_t length = strlen(*md);
   char last_char = (length) ? md[0][length-1] : 0;
