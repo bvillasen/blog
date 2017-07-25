@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ROCKSTAR summary"
-date:   2017-07-19 17:10:24 -0800
+date:   2017-07-25 17:10:24 -0800
 categories: cosmology wfirst
 ---
 
