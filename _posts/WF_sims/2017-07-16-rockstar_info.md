@@ -61,7 +61,16 @@ Break the self-circularity by assigning satellite membership based on phase-spac
 same metric as Eq.2 and calculate the distance to all other halos with larger numbers of assigned particles. The satellite halo in question is then assigned to be a subhalo of the closest larger halo within the same 3D friends-of-friends group, ifone exists. If the halo catalog at an earlier timestep is available, this assignment is modified to include temporal information. Halo cores at the current timestep are associated with halos at the previous timestep by finding the halo at the previous timestep with the largest contribution to the current halo core’s particle membership. Then, host-subhalo relationships are checked against the previous timestep; if necessary, the
 choice of which halo is the host may be switched so as to preserve the host-subhalo relationship of the previous timestep. As explained above, these host-subhalo relationships are only used internally for calculating masses: particles assigned to the host are not counted within the mass of the subhalo, but
 particles within the subhalo are counted as part of the mass of the host halo. This choice assures that the mass of a halo won’t suddenly change as it crosses the virial radius of a larger
-halo, and it provides more stable mass definitions in major mergers. Once halo masses have been calculated, the subhalo membership is recalulated according to the standard definition (subhalos are within $$r_\Delta$$ of more massive host halos) when the merger trees are constructed.
+halo, and it provides more stable mass definitions in major mergers. Once halo masses have been calculated, the subhalo membership is recalulated according to the standard definition (subhalos are within $$r_\Delta$$ of more massive host halos) when the merger trees are constructed. Every density peak within the original FOF analysis group will correspond to either a host halo or a subhalo in the final catalog.
+
+5. Calculating properties.
+
+**Positions: **  For positions, Knebe et al. (2011) demonstrated that halo finders which calculated halo locations based on the maximum density peak were more accurate than FOF-based halo
+finders which use the averaged location of all halo particles (see also Gao & White 2006). The reason for this may be simply understood: as particle density rapidly drops in the outer reaches of a halo, the corresponding dispersion of particle positions climbs precipitously. Consequently, rather than
+increasing the statistical accuracy of the halo center calculation, including the particles at the halo boundary actually reduces it. The highest accuracy is instead achieved when the expected Poisson error ($$\sigma_x / \sqrt{N}$$) is minimized. As our halo finder has access (via the hierarchy of FOF subgroups) to the inner regions of the halo density distribution, an accurate calculation of the center is possible by averaging the particle locations for the inner subgroup which best minimizes the Pois-
+son error. Typically, for a 10 6 particle halo, this estimator ends up averaging the positions of the innermost 10 3 particles.
+
+
 
 
 
