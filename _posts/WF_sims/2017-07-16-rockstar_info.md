@@ -16,7 +16,8 @@ these steps is shown in Fig. 1.
 
 1. Performs a rapid variant of the 3D friends-of-friends (FOF) method to find overdense regions which are then distributed among processors for analysis.
 
-2. For each 3D FOF group which is created in the previous step, the algorithm proceeds by building a hierarchy of FOF subgroups in phase space. Deeper levels of subgroups have a tighter linking-length criterion in phase space, which means
+2. Finding Halo seeds ( FOF subgroups ).
+For each 3D FOF group which is created in the previous step, the algorithm proceeds by building a hierarchy of FOF subgroups in phase space. Deeper levels of subgroups have a tighter linking-length criterion in phase space, which means
 that deeper levels correspond to increasingly tighter isodensity contours around peaks in the phase-space density distribution. This enables an easy way to distinguish separate substructures — above some threshold phase-space density, their particle distributions must be distinct in phase space; otherwise, it would be difficult to justify the separation into different structures.
 Beginning with a base FOF group, ROCKSTAR adaptively chooses a phase-space linking length based on the standard deviations of the particle distribution in position and velocity space. That is, for two particles p 1 and p 2 in the base group, the phase-space distance metric is defined as:
 
@@ -27,11 +28,31 @@ Gottlöber (1998). For each particle, the distance to the nearest neighbor is co
 calculated for a random 10,000-particle subset of the group, as this is sufficient to determine the linking length to reasonable precision.
 Once subgroups have been found in the base FOF group, this process is repeated. For each subgroup, the phase-space metric is recalculated, and a new linking-length is selected such that a fraction f of the subgroup’s particles are linked together into sub-subgroups. Group finding proceeds hierarchically in phase space until a predetermined minimum number of particles remain at the deepest level of the hierarchy. Here we set this minimum number to 10 particles, although halo properties are not robust approaching this minimum.
 
+3. Assigning particles to halos.
+For each of the subgroups at the deepest level of the FOF hierarchy (corresponding to the local phase-space density maxima), a seed halo is generated. The algorithm then recursively
+analyzes higher levels of the hierarchy to assign particles to these seed halos until all particles in the original FOF group have been assigned.
 
+For a parent group which contains only a single seed halo, all the particles in the group are assigned to the single seed. For a parent group which contains multiple seed halos, however, particles in the group are assigned to the closest seed halo in phase space. In this case, the phase-space metric is
+set by the seed halo properties, so that the distance between a halo h and a particle p is defined as:
 
 $$ d( h, p ) = \bigg( \frac{ |\vec{x_{h}} - \vec{x_{p}}|^{2} }{r_{dyn}^2 }+ \frac{ |\vec{v_{h}} - \vec{v_{p}}|^{2} }{\sigma_{v}^2} \bigg)^{1/2} $$
 
 $$ r_{dyn} = \frac{v_{max}}{\sqrt{ \frac{4}{3} \pi G \rho_{vir}}} $$
+
+where $$\sigma_v$$ is the seed halo’s current velocity dispersion, $$v_{max}$$ is its current maximum circular velocity, and “vir” specifies the virial overdensity, using the definition of $$\rho_{vir}$$
+from Bryan & Norman (1998), which corresponds to 360 times the background density at z = 0, however, other choices of this density can easily be applied.
+Using the radius $$r_{dyn}$$ as the position-space distance normalization may seem unusual at first, but the natural alternative (using $$\sigma_x$$ ) gives unstable and nonintuitive results. At
+fixed phase-space density, subhalos and tidal streams (which have lower velocity dispersions than the host halo) will have larger position-space dispersions than the host halo. Thus, if
+$$\sigma_x$$  were used, particles in the outskirts of a halo could be easily mis-assigned to a subhalo instead of the host halo. Using $$r_{dyn}$$ , on the other hand, prevents this problem by ensuring
+that particles assigned to subhalos cannot be too far from the main density peak even if they are close in velocity space. Intuitively, the largest effect of using $$r_{vir}$$ is that velocity-space
+information becomes the dominant method of distinguishing particle membership when two halos are within each other’s virial radii.
+
+This process of particle assignment assures that substructure masses are calculated correctly independently of the choice of f , the fraction of particles present in each subgroup
+relative to its parent group. In addition, for a subhalo close to the center of its host halo, it assures that host particles are not mis-assigned to the subhalo — the central particles of the host
+will naturally be closer in phase space to the true host center than they are to the subhalo’s center.
+
+4. Getting substructure
+
 
 
 * Halo masses at several radii: Mvir, M200b, M200c, M500c, M2500c. These masses always include any contributions from substructure. Also, masses with higher density thresholds (e.g., 2500c) can sometimes be zero if the density of the halo never rises above the threshold. [Footnote: Particles are assumed to have an effective radius of FORCE_RES for the purposes of density calculations near the halo center.} By default, only bound particles are included; see Section \ref{s:common_options] if this is not what you want.
