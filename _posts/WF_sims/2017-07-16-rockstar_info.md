@@ -73,6 +73,11 @@ son error. Typically, for a $$10^6$$ particle halo, this estimator ends up avera
 **Velocities: ** The halo core can have a substantial velocity offset from the halo bulk. Since the galaxy hosted by the halo will presumably best track the halo core, we calculate the
 main velocity for the halo using the average particle velocity within the innermost 10% of the halo radius. For calculating the bound/unbound mass of the halo, however, we use the more appropriate averaged halo bulk velocity including substructure.
 
+**Masses: ** For halo masses, ROCKSTAR calculates spherical overdensities according to multiple user-specified density thresholds: e.g., the virial threshold, from Bryan & Norman (1998), or a
+density threshold relative to the background or to the critical density. As is usual, these overdensities are calculated using all the particles for all the substructure contained in a halo. On
+the other hand, subhalo masses have traditionally been a major point of ambiguity (for density-space halo finders). With a phase-space halo finder, such as ROCKSTAR , the particles belonging to the subhalo can be more reliably isolated from the host, and thus less ambiguity exists: the same method of
+calculating spherical overdensities may be applied to just the particles belonging to the subhalo. In terms of the definition of where the subhalo “ends,” Eq.2 implies that the subhalo edge is effectively where the distribution of its particles in phase space becomes equidistant from the subhalo and its host halo.
+
 
 
 
