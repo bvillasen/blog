@@ -54,7 +54,9 @@ This process of particle assignment assures that substructure masses are calcula
 relative to its parent group. In addition, for a subhalo close to the center of its host halo, it assures that host particles are not mis-assigned to the subhalo — the central particles of the host
 will naturally be closer in phase space to the true host center than they are to the subhalo’s center.
 
-4. Getting substructure
+4. Getting substructure.
+
+The most common definition of substructure is a bound halo contained within another, larger halo. Yet, as halo masses are commonly defined to include substructure, the question of which of two halos is the largest (and thus, which should be called a satellite of the other) can change depending on which substructures have been assigned to them. This is one of the largest sources of ambiguity between spherical overdensity halo finders, even those which limit themselves to distinct halos.
 
 
 
