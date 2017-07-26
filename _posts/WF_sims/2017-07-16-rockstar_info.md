@@ -57,6 +57,11 @@ will naturally be closer in phase space to the true host center than they are to
 4. Getting substructure.
 
 The most common definition of substructure is a bound halo contained within another, larger halo. Yet, as halo masses are commonly defined to include substructure, the question of which of two halos is the largest (and thus, which should be called a satellite of the other) can change depending on which substructures have been assigned to them. This is one of the largest sources of ambiguity between spherical overdensity halo finders, even those which limit themselves to distinct halos.
+Break the self-circularity by assigning satellite membership based on phase-space distances before calculating halo masses. Treating each halo center like a particle, we use the
+same metric as Eq.2 and calculate the distance to all other halos with larger numbers of assigned particles. The satellite halo in question is then assigned to be a subhalo of the closest larger halo within the same 3D friends-of-friends group, ifone exists. If the halo catalog at an earlier timestep is available, this assignment is modified to include temporal information. Halo cores at the current timestep are associated with halos at the previous timestep by finding the halo at the previous timestep with the largest contribution to the current halo core’s particle membership. Then, host-subhalo relationships are checked against the previous timestep; if necessary, the
+choice of which halo is the host may be switched so as to preserve the host-subhalo relationship of the previous timestep. As explained above, these host-subhalo relationships are only used internally for calculating masses: particles assigned to the host are not counted within the mass of the subhalo, but
+particles within the subhalo are counted as part of the mass of the host halo. This choice assures that the mass of a halo won’t suddenly change as it crosses the virial radius of a larger
+halo, and it provides more stable mass definitions in major mergers. Once halo masses have been calculated, the subhalo membership is recalulated according to the standard definition (subhalos are within $$r_\Delta$$ of more massive host halos) when the merger trees are constructed.
 
 
 
