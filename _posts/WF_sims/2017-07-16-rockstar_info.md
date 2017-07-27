@@ -155,6 +155,29 @@ float _calc_mass_definition(char **md) {
 ```
 
 ```c++
+void calc_mass_definition(void) {
+  char *vir = "vir";
+  int64_t i;
+  particle_thresh_dens[0] = _calc_mass_definition(&MASS_DEFINITION);
+  particle_thresh_dens[1] = _calc_mass_definition(&MASS_DEFINITION2);
+  particle_thresh_dens[2] = _calc_mass_definition(&MASS_DEFINITION3);
+  particle_thresh_dens[3] = _calc_mass_definition(&MASS_DEFINITION4);
+  particle_thresh_dens[4] = _calc_mass_definition(&MASS_DEFINITION5);
+  particle_rvir_dens = _calc_mass_definition(&vir);
+  dynamical_time = 1.0/sqrt((4.0*M_PI*Gc/3.0)*particle_rvir_dens*PARTICLE_MASS);
+  min_dens_index = 0;
+  for (i=1; i<5; i++)
+    if (particle_thresh_dens[i] < particle_thresh_dens[min_dens_index])
+      min_dens_index = i;
+}
+```
+
+
+
+
+
+
+```c++
 void _calc_additional_halo_props(struct halo *h, int64_t total_p, int64_t bound)
 {
   int64_t j, k, part_mdelta=0, num_part=0, np_alt[4] = {0},
@@ -251,3 +274,86 @@ void _calc_additional_halo_props(struct halo *h, int64_t total_p, int64_t bound)
   }
 }
 ```
+```c++
+//Assumes center + velocity already calculated.
+void calc_additional_halo_props(struct halo *h) {
+  int64_t j, total_p;
+  double dens_thresh;
+
+  if (LIGHTCONE) lightcone_set_scale(h->pos);
+  dens_thresh = particle_thresh_dens[0]*(4.0*M_PI/3.0);
+  if (h->num_p < 1) return;
+  total_p = calc_particle_radii(h, h, h->pos, 0, 0, 0);
+  if (BOUND_OUT_TO_HALO_EDGE) {
+    qsort(po, total_p, sizeof(struct potential), dist_compare);
+    for (j=total_p-1; j>=0; j--)
+      if (j*j / (po[j].r2*po[j].r2*po[j].r2) > dens_thresh*dens_thresh) break;
+    if (total_p) total_p = j+1;
+  }
+
+  if (total_p>1) compute_potential(po, total_p);
+  for (j=0; j<total_p; j++)
+    if (po[j].ke < 0) {
+      total_p--;
+      po[j] = po[total_p];
+      j--;
+    }
+  qsort(po, total_p, sizeof(struct potential), dist_compare);
+  calculate_corevel(h, po, total_p);
+  if (extra_info[h-halos].sub_of > -1)
+    compute_kinetic_energy(po, total_p, h->corevel, h->pos);
+  else
+    compute_kinetic_energy(po, total_p, h->bulkvel, h->pos);
+
+  _calc_additional_halo_props(h, total_p, 0);
+  _calc_additional_halo_props(h, total_p, 1);
+  if (analyze_halo_generic != NULL) analyze_halo_generic(h, po, total_p);
+}
+```
+
+From previous code blocks $$M_vir$$ is calculated  using bound particles in the next steps:
+```c++
+
+
+//From file: config.template.h
+'string(MASS_DEFINITION, "vir");  //vir is the default MASS_DEFINITION
+particle_thresh_dens[0] = _calc_mass_definition(&MASS_DEFINITION);
+dens_thresh = particle_thresh_dens[0]*(4.0*M_PI/3.0);
+
+\\ Get M_vir using bound paricles
+_calc_additional_halo_props(h, total_p, 1)
+\\\\\\\\\\\\\\\\\\\\\\\\\
+particle_rvir_dens = _calc_mass_definition(&vir);
+cons = Om * CRITICAL_DENSITY / PARTICLE_MASS; // background density
+particle_rvir_dens = vir_density(SCALE_NOW) * cons;
+rvir_thresh = particle_rvir_dens*(4.0*M_PI/3.0);
+
+for (j=0; j<total_p; j++) {
+  if (bound && (po[j].pe < po[j].ke)) continue;
+  num_part++;
+  r = sqrt(po[j].r2);
+  if (r < FORCE_RES) r = FORCE_RES;
+  cur_dens = ((double)num_part/(r*r*r));
+
+  if (cur_dens > dens_thresh) {
+    part_mdelta = num_part;
+    dens_tot = j;
+  }
+
+
+  if (cur_dens > rvir_thresh) {
+    circ_v = (double)num_part/r;
+    np_vir = num_part;
+    if (part_mdelta && circ_v > vmax) {
+vmax = circ_v;
+rvmax = r;
+    }
+  }
+
+  m = part_mdelta*PARTICLE_MASS;
+  if (!bound) h->m = m;
+  else h->mgrav = m;
+  h->r = cbrt((3.0/(4.0*M_PI))*part_mdelta/particle_thresh_dens[0])*1e3;
+\\ In the catalogs mbound_vir is outputed using h->mgrav
+\\ and rvir is is outputed using h->r
+}
