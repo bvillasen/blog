@@ -5,6 +5,13 @@ date:   2017-07-25 17:10:24 -0800
 categories: cosmology wfirst
 ---
 
+ROCKSTAR repository [Here](https://bitbucket.org/gfcstanford/rockstar)
+
+
+ROCKSTAR paper [Here](http://arxiv.org/abs/1110.4372)
+
+
+
 ### From ROCKSTAR paper:
 
 >As a first step, our algorithm performs a rapid variant of the 3D friends-of-friends (FOF) method to find overdense regions which are then distributed among processors for analysis. Then, it builds a hierarchy of FOF subgroups in phase space by progressively and adaptively reducing the 6D linking length, so that a tunable fraction of particles are captured at each subgroup as compared to the immediate parent group. Next, it converts this hierarchy of FOF
@@ -67,7 +74,6 @@ halo, and it provides more stable mass definitions in major mergers. Once halo m
 
 By default, ROCKSTAR performs an unbinding procedure before calculating halo mass and $$v_{max}$$ , although this may be switched off for studies of e.g., tidal remnants. Because the algorithm operates in phase space, the vast majority of halo particles assigned to central halos are actually bound. We find typical boundedness values of 98% at z = 0. Even for substructure, unbound particles typically correspond to tidal streams at the outskirts of the subhalo, making a complicated unbinding algorithm unnecessary. For this reason, as well as to improve consistency of halo masses across timesteps, we perform only a single-pass unbinding procedure using a modified Barnes-Hut method to accurately calculate particle potentials, the code by default does not output halos where fewer than 50% of the particles are bound; this threshold is user-adjustable, but changing it does not produce statistically significant effects on the clustering or mass function until halos with a bound fraction of less than 15% are included.
 
-
 7. Calculating properties.
 
 **Positions: **  For positions, Knebe et al. (2011) demonstrated that halo finders which calculated halo locations based on the maximum density peak were more accurate than FOF-based halo
@@ -87,7 +93,7 @@ calculating spherical overdensities may be applied to just the particles belongi
 
 
 
-
+Catalog Output:
 
 * Halo masses at several radii: Mvir, M200b, M200c, M500c, M2500c. These masses always include any contributions from substructure. Also, masses with higher density thresholds (e.g., 2500c) can sometimes be zero if the density of the halo never rises above the threshold. [Footnote: Particles are assumed to have an effective radius of FORCE_RES for the purposes of density calculations near the halo center.} By default, only bound particles are included; see Section \ref{s:common_options] if this is not what you want.
 * Halo maximum circular velocity and velocity dispersion.
@@ -96,6 +102,26 @@ calculating spherical overdensities may be applied to just the particles belongi
 * Halo spin (both Bullock and Peebles) and angular momentum.
 * Halo shapes and principal axes, using the Allgood method (iterative, weighted by 1/r^2), at both Rvir and R500c. See Section 2.11.1 for how to change the shape calculation method.
 * The ratio of halo kinetic to potential energy, and the center position and velocity offsets from the halo's bulk average position and velocity.
+
+```c++
+/* See http://arxiv.org/pdf/astro-ph/0208512v1.pdf */
+double _weff(double a)
+{
+  if(a != 1.0)
+    return W0 + WA - WA*(a - 1.0)/log(a);
+  else
+    return W0;
+}
+
+double hubble_scaling(double z)
+{
+  double z1 = 1.0+z;
+  double a = 1.0/z1;
+  return sqrt(Om * (z1*z1*z1) + Ol*pow(a, -3.0*(1.0 + _weff(a))));
+}
+```
+
+
 
 ```c++
 double vir_density(double a) {
@@ -125,5 +151,103 @@ float _calc_mass_definition(char **md) {
   }
   particle_rvir_dens_z0 = vir_density(1.0) * cons;
   return thresh_dens;
+}
+```
+
+```c++
+void _calc_additional_halo_props(struct halo *h, int64_t total_p, int64_t bound)
+{
+  int64_t j, k, part_mdelta=0, num_part=0, np_alt[4] = {0},
+    np_vir=0, dens_tot=0, parts_avgd = 0, num_part_half = 0;
+  double dens_thresh = particle_thresh_dens[0]*(4.0*M_PI/3.0);
+  double d1 = particle_thresh_dens[1]*(4.0*M_PI/3.0);
+  double d2 = particle_thresh_dens[2]*(4.0*M_PI/3.0);
+  double d3 = particle_thresh_dens[3]*(4.0*M_PI/3.0);
+  double d4 = particle_thresh_dens[4]*(4.0*M_PI/3.0);
+  double rvir_thresh = particle_rvir_dens*(4.0*M_PI/3.0);
+  double vmax_conv = PARTICLE_MASS/SCALE_NOW;
+  double r, circ_v, vmax=0, rvmax=0, L[3] = {0}, Jh, m=0, ds;
+  double vrms[3]={0}, xavg[3]={0}, vavg[3]={0}, mdiff;
+  double cur_dens, rvir, mvir;
+
+  for (j=0; j<total_p; j++) {
+    if (bound && (po[j].pe < po[j].ke)) continue;
+    num_part++;
+    r = sqrt(po[j].r2);
+    if (r < FORCE_RES) r = FORCE_RES;
+    cur_dens = ((double)num_part/(r*r*r));
+
+    if (cur_dens > dens_thresh) {
+      part_mdelta = num_part;
+      dens_tot = j;
+    }
+
+    if (cur_dens > d1) np_alt[0] = num_part;
+    if (cur_dens > d2) np_alt[1] = num_part;
+    if (cur_dens > d3) np_alt[2] = num_part;
+    if (cur_dens > d4) np_alt[3] = num_part;
+
+    if (cur_dens > rvir_thresh) {
+      circ_v = (double)num_part/r;
+      np_vir = num_part;
+      if (part_mdelta && circ_v > vmax) {
+	vmax = circ_v;
+	rvmax = r;
+      }
+    }
+  }
+
+  for (j=0; j<dens_tot; j++) {
+    if (bound && (po[j].pe < po[j].ke)) continue;
+    add_ang_mom(L, h->pos, po[j].pos);
+    parts_avgd++;
+    if (parts_avgd*2 >= part_mdelta && !num_part_half)
+      num_part_half = j;
+    for (k=0; k<3; k++) { //Calculate velocity and position averages
+      xavg[k] += (po[j].pos[k]-xavg[k])/((double)parts_avgd);
+      mdiff = po[j].pos[k+3]-vavg[k];
+      vavg[k] += mdiff/(double)parts_avgd;
+      vrms[k] += mdiff*(po[j].pos[k+3]-vavg[k]);
+    }
+  }
+
+  m = part_mdelta*PARTICLE_MASS;
+  if (!bound) h->m = m;
+  else h->mgrav = m;
+  for (k=0; k<3; k++) vrms[k] = (parts_avgd>0) ? (vrms[k]/parts_avgd) : 0;
+  if ((!bound) == (!BOUND_PROPS)) { //Works even if BOUND_PROPS > 1
+    h->Xoff = h->Voff = 0;
+    for (k=0; k<3; k++) {
+      ds = xavg[k]-h->pos[k]; h->Xoff += ds*ds;
+      ds = vavg[k]-h->pos[k+3]; h->Voff += ds*ds;
+    }
+    h->alt_m[0] = np_alt[0]*PARTICLE_MASS;
+    h->alt_m[1] = np_alt[1]*PARTICLE_MASS;
+    h->alt_m[2] = np_alt[2]*PARTICLE_MASS;
+    h->alt_m[3] = np_alt[3]*PARTICLE_MASS;
+    h->Xoff = sqrt(h->Xoff)*1e3;
+    h->Voff = sqrt(h->Voff);
+    h->vrms = sqrt(vrms[0] + vrms[1] + vrms[2]);
+    h->vmax = VMAX_CONST*sqrt(vmax*vmax_conv);
+    h->rvmax = rvmax*1e3;
+    h->halfmass_radius = sqrt(po[num_part_half].r2)*1e3;
+    h->r = cbrt((3.0/(4.0*M_PI))*np_alt[2]/particle_thresh_dens[3])*1e3;
+    calc_shape(h,np_alt[2],bound);
+    h->b_to_a2 = h->b_to_a;
+    h->c_to_a2 = h->c_to_a;
+    memcpy(h->A2, h->A, sizeof(float)*3);
+    h->r = cbrt((3.0/(4.0*M_PI))*part_mdelta/particle_thresh_dens[0])*1e3;
+    calc_shape(h,dens_tot,bound);
+
+    rvir = cbrt((3.0/(4.0*M_PI))*np_vir/particle_rvir_dens)*1e3;
+    mvir = np_vir*PARTICLE_MASS;
+    calc_scale_radius(h, m, h->r, h->vmax, h->rvmax, SCALE_NOW, po, dens_tot, bound);
+    for (j=0; j<3; j++) h->J[j] = PARTICLE_MASS*SCALE_NOW*L[j];
+    h->energy = estimate_total_energy(dens_tot, &(h->kin_to_pot));
+    Jh = PARTICLE_MASS*SCALE_NOW*sqrt(L[0]*L[0] + L[1]*L[1] + L[2]*L[2]);
+    h->spin = (m>0) ? (Jh * sqrt(fabs(h->energy)) / (Gc*pow(m, 2.5))) : 0;
+    h->bullock_spin = (m>0) ? (Jh / (mvir*sqrt(2.0*Gc*mvir*rvir*SCALE_NOW/1e3))) : 0;
+    _calc_pseudo_evolution_masses(h,total_p,bound);
+  }
 }
 ```
