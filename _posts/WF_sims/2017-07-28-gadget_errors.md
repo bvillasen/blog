@@ -34,3 +34,18 @@ Setting next time for snapshot file to Time_next= 0.01
 Error File [Here](https://github.com/bvillasen/blog/blob/master/assets/files/cosmo_1024_fft512_has.e2244885)
 
 Output File [Here](https://github.com/bvillasen/blog/blob/master/assets/files/cosmo_1024_fft512_has.o2244885)
+
+
+
+
+
+
+
+
+**Update**
+
+Got same error when running on 64 nodes * 16 cores
+
+Now running in 32 nodes * 16 cores: max_wall_time 120hrs,   
+
+The $512^3$ simulation took 10hrs to run in 32 nodes*16cores
