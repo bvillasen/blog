@@ -311,7 +311,7 @@ void calc_additional_halo_props(struct halo *h) {
 }
 ```
 
-From previous code blocks $$M_vir$$ is calculated  using bound particles in the next steps:
+From previous code blocks $$M_{vir}$$ is calculated  using bound particles in the next steps:
 ```c++
 
 
