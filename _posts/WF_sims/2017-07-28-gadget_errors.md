@@ -12,15 +12,19 @@ Gadget output failed run [Here](https://github.com/bvillasen/blog/blob/master/as
 For succesful run the next output from gadget is:
 
 ----------------------------------------------------------------------------------------------------------------
-reading file `/nobackup/bvillase/galaxies/test_512/ICs/ics_2LPT' on task=0 (contains 134217728 particles.)
-distributing this file to tasks 0-511
-Type 0 (gas):          0  (tot=     0000000000) masstab=0
-Type 1 (halo):  134217728  (tot=     0134217728) masstab=0.09715
-Type 2 (disk):         0  (tot=     0000000000) masstab=0
-Type 3 (bulge):        0  (tot=     0000000000) masstab=0
-Type 4 (stars):        0  (tot=     0000000000) masstab=0
-Type 5 (bndry):        0  (tot=     0000000000) masstab=0
-reading done.
+
+domain decomposition...
+NTopleaves= 32768
+work-load balance=1.01394   memory-balance=1.01394
+exchange of 0133952850 particles
+exchange of 0002343460 particles
+domain decomposition done.
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Begin Ngb-tree construction.
+Ngb-Tree contruction finished
+
+Setting next time for snapshot file to Time_next= 0.01
 
 ----------------------------------------------------------------------------------------------------------------
 
