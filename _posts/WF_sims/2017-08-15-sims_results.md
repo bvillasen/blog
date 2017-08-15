@@ -9,6 +9,12 @@ categories: cosmology wfirst
 
 Box size:  115 Mpc/h
 
+Cosmology from Plank (2016)[Here](https://arxiv.org/abs/1502.01589)
+
+Initial Conditions:
+Z = 100
+Power spectrum from Eisenstein & Hu transfer function
+
 
 Force Resolution:
 512:  4.9 kpc/h
