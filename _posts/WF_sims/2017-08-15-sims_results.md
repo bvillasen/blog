@@ -15,18 +15,18 @@ Cosmology from Plank (2016)[Here](https://arxiv.org/abs/1502.01589)
 
 Initial Conditions:
 
-Z = 100
+  * Z = 100
 
-Power spectrum from Eisenstein & Hu transfer function
+  * Power spectrum from Eisenstein & Hu transfer function
 
 
 Force Resolution:
 
-512:  4.9 kpc/h
+  * 512:  4.9 kpc/h
 
-1024:  2.4 kpc/h
+  * 1024:  2.4 kpc/h
 
-2048:  1.2 kpc/h
+  * 2048:  1.2 kpc/h
 
 
 
