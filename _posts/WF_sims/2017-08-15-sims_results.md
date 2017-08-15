@@ -30,7 +30,7 @@ Force Resolution:
 
 
 
-Mass function using ROCKSTAR halo catalogs:
+Mass function at z=0 using ROCKSTAR halo catalogs for halo masses:
 
 
 <img src="{{ site.url }}assets/images/massFunc_all_Warren.png">
