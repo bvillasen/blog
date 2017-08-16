@@ -40,3 +40,15 @@ Density projection using Brant's code (image-snapshot):
 
 
 <img src="{{ site.url }}assets/images/density_512.png">
+
+
+**UPDATE**
+
+File with data for plotting mass functions from above [Here](https://github.com/bvillasen/blog/blob/master/assets/files/mass_funtion.dat)
+
+Script for plotting mass functions from data file [Here](https://github.com/bvillasen/blog/blob/master/assets/files/plot_mass_function_1.py)
+
+
+Data file: density projection [Here](https://github.com/bvillasen/blog/blob/master/assets/files/image.056.dat)
+
+Data file: potential [Here](https://github.com/bvillasen/blog/blob/master/assets/files/image.pot.056.dat)
