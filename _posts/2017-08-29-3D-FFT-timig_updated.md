@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Timing: 3D FFT in TITAN"
-date:   2017-03-29 17:10:24 -0800
+date:   2017-08-29 17:10:24 -0800
 categories: self-gravity
 ---
 
