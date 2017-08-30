@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Timing: 3D FFT in TITAN"
+title:  "Timing: 3D FFT in TITAN updated"
 date:   2017-08-29 17:10:24 -0800
 categories: self-gravity
 ---
@@ -10,6 +10,6 @@ categories: self-gravity
 <img src="{{ site.url }}assets/times_cholla.png">
 
 
-**Timing for a 3D poison selver using PFFT** ( averaged over 10 FFTs)
+**Timing for a 3D poison solver using PFFT** ( averaged over 10 FFTs)
 
 <img src="{{ site.url }}assets/images/times_pfft_new.png">
