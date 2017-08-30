@@ -10,6 +10,6 @@ categories: self-gravity
 <img src="{{ site.url }}assets/times_cholla.png">
 
 
-**NOW: Timing for a 3D poison solver using PFFT** ( averaged over 10 potential integrations)
+**NOW: Timing for a 3D poison solver using PFFT** ( averaged over 10 potential integrations $$128^3$$ per node )
 
 <img src="{{ site.url }}assets/images/times_pfft_new.png">
