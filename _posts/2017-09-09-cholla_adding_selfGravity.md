@@ -31,3 +31,9 @@ categories: cholla
 - In line 401 of file **mpi_rutines.cpp**  transposed the nested loop, now the the x-axis is filed in the first index
 - This was done to match the way PFFT assigns coordinates to processes.
 - So far I haven't seen a change in the hydro calculations.   
+
+* Potential boundaries:
+- In line 887 of file mpi_rutines.cpp  (Allocate_MPI_Buffers_BLOCK ) I increazed the size of mpi_bufers
+- Added functions to Grid3D in mpi_boundaries.cpp to load and read the potential to mpi_buffers
+- Loaded buffers from for each side and each direction in Load_and_Send_MPI_Comm_Buffers_BLOCK, file: mpi_bounderies.cpp
+- Read potential boundaries in Unload_MPI_Comm_Buffers_BLOCK, file: mpi_bounderies.cpp
