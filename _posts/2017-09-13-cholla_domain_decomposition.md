@@ -418,3 +418,28 @@ Local domain: x[ 0.500 0.750 ] y[ 0.500 1.000 ] z[ 0.500 1.000 ]
 procID 15 nxl 128 nxls 384
 Local domain: x[ 0.750 1.000 ] y[ 0.500 1.000 ] z[ 0.500 1.000 ]
 *********
+
+```c
+    d  =  dev_conserved[            id];
+    d_inv = 1.0 / d;
+    vx =  dev_conserved[1*n_cells + id] * d_inv;
+    vy =  dev_conserved[2*n_cells + id] * d_inv;
+    vz =  dev_conserved[3*n_cells + id] * d_inv;
+    P  = (dev_conserved[4*n_cells + id] - 0.5*d*(vx*vx + vy*vy + vz*vz)) * (gamma - 1.0);
+    //if (P < 0.0) printf("%3d %3d %3d Negative pressure after final update. %f %f %f %f %f\n", xid, yid, zid, dev_conserved[4*n_cells + id], 0.5*d*vx*vx, 0.5*d*vy*vy, 0.5*d*vz*vz, P);
+    #ifdef STATIC_GRAV
+    calc_g_3D_CUDA(xid, yid, zid, x_off, y_off, z_off, n_ghost, dx, dy, dz, xbound, ybound, zbound, &gx, &gy, &gz);
+    d_n  =  dev_conserved[            id];
+    d_inv_n = 1.0 / d_n;
+    vx_n =  dev_conserved[1*n_cells + id] * d_inv_n;
+    vy_n =  dev_conserved[2*n_cells + id] * d_inv_n;
+    vz_n =  dev_conserved[3*n_cells + id] * d_inv_n;
+    dev_conserved[  n_cells + id] += 0.5*dt*gx*(d + d_n);
+    dev_conserved[2*n_cells + id] += 0.5*dt*gy*(d + d_n);
+    dev_conserved[3*n_cells + id] += 0.5*dt*gz*(d + d_n);
+    //gcorr =  0.5*dt*gz*(d + d_n);
+    dev_conserved[4*n_cells + id] += 0.25*dt*gx*(d + d_n)*(vx + vx_n)
+                                  +  0.25*dt*gy*(d + d_n)*(vy + vy_n)
+                                  +  0.25*dt*gz*(d + d_n)*(vz + vz_n);
+    #endif  
+``` 
