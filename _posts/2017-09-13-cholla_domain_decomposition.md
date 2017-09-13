@@ -421,36 +421,73 @@ Local domain: x[ 0.750 1.000 ] y[ 0.500 1.000 ] z[ 0.500 1.000 ]
 
 ```c
 
- // update the conserved variable array
-  dev_conserved[            id] += dtodx * (dev_F[            id-1] - dev_F[            id]);
-  dev_conserved[  n_cells + id] += dtodx * (dev_F[  n_cells + id-1] - dev_F[  n_cells + id]);
-  dev_conserved[2*n_cells + id] += dtodx * (dev_F[2*n_cells + id-1] - dev_F[2*n_cells + id]);
-  dev_conserved[3*n_cells + id] += dtodx * (dev_F[3*n_cells + id-1] - dev_F[3*n_cells + id]);
-  dev_conserved[4*n_cells + id] += dtodx * (dev_F[4*n_cells + id-1] - dev_F[4*n_cells + id]);
-  #ifdef DE
-  dev_conserved[5*n_cells + id] += dtodx * (dev_F[5*n_cells + id-1] - dev_F[5*n_cells + id])
-                                +  dtodx * P * 0.5 * (vx_imo - vx_ipo);
-  #endif
-  d  =  dev_conserved[            id];
-  d_inv = 1.0 / d;
-  vx =  dev_conserved[1*n_cells + id] * d_inv;
-  vy =  dev_conserved[2*n_cells + id] * d_inv;
-  vz =  dev_conserved[3*n_cells + id] * d_inv;
-  P  = (dev_conserved[4*n_cells + id] - 0.5*d*(vx*vx + vy*vy + vz*vz)) * (gamma - 1.0);
-  //if (P < 0.0) printf("%3d %3d %3d Negative pressure after final update. %f %f %f %f %f\n", xid, yid, zid, dev_conserved[4*n_cells + id], 0.5*d*vx*vx, 0.5*d*vy*vy, 0.5*d*vz*vz, P);
-  #ifdef STATIC_GRAV
-  calc_g_3D_CUDA(xid, yid, zid, x_off, y_off, z_off, n_ghost, dx, dy, dz, xbound, ybound, zbound, &gx, &gy, &gz);
-  d_n  =  dev_conserved[            id];
-  d_inv_n = 1.0 / d_n;
-  vx_n =  dev_conserved[1*n_cells + id] * d_inv_n;
-  vy_n =  dev_conserved[2*n_cells + id] * d_inv_n;
-  vz_n =  dev_conserved[3*n_cells + id] * d_inv_n;
-  dev_conserved[  n_cells + id] += 0.5*dt*gx*(d + d_n);
-  dev_conserved[2*n_cells + id] += 0.5*dt*gy*(d + d_n);
-  dev_conserved[3*n_cells + id] += 0.5*dt*gz*(d + d_n);
-  //gcorr =  0.5*dt*gz*(d + d_n);
-  dev_conserved[4*n_cells + id] += 0.25*dt*gx*(d + d_n)*(vx + vx_n)
-                                +  0.25*dt*gy*(d + d_n)*(vy + vy_n)
-                                +  0.25*dt*gz*(d + d_n)*(vz + vz_n);
-  #endif  
+ #if defined (DE) || defined(STATIC_GRAV)
+d  =  dev_conserved[            id];
+d_inv = 1.0 / d;
+vx =  dev_conserved[1*n_cells + id] * d_inv;
+vy =  dev_conserved[2*n_cells + id] * d_inv;
+vz =  dev_conserved[3*n_cells + id] * d_inv;
+#endif
+#ifdef DE
+P  = (dev_conserved[4*n_cells + id] - 0.5*d*(vx*vx + vy*vy + vz*vz)) * (gamma - 1.0);
+//if (d < 0.0 || d != d) printf("Negative density before final update.\n");
+//if (P < 0.0) printf("%d Negative pressure before final update.\n", id);
+ipo = xid+1 + yid*nx + zid*nx*ny;
+jpo = xid + (yid+1)*nx + zid*nx*ny;
+kpo = xid + yid*nx + (zid+1)*nx*ny;
+vx_imo = dev_conserved[1*n_cells + imo] / dev_conserved[imo];
+vx_ipo = dev_conserved[1*n_cells + ipo] / dev_conserved[ipo];
+vy_jmo = dev_conserved[2*n_cells + jmo] / dev_conserved[jmo];
+vy_jpo = dev_conserved[2*n_cells + jpo] / dev_conserved[jpo];
+vz_kmo = dev_conserved[3*n_cells + kmo] / dev_conserved[kmo];
+vz_kpo = dev_conserved[3*n_cells + kpo] / dev_conserved[kpo];
+#endif
+
+// update the conserved variable array
+dev_conserved[            id] += dtodx * (dev_F_x[            imo] - dev_F_x[            id])
+                              +  dtody * (dev_F_y[            jmo] - dev_F_y[            id])
+                              +  dtodz * (dev_F_z[            kmo] - dev_F_z[            id]);
+dev_conserved[  n_cells + id] += dtodx * (dev_F_x[  n_cells + imo] - dev_F_x[  n_cells + id])
+                              +  dtody * (dev_F_y[  n_cells + jmo] - dev_F_y[  n_cells + id])
+                              +  dtodz * (dev_F_z[  n_cells + kmo] - dev_F_z[  n_cells + id]);
+dev_conserved[2*n_cells + id] += dtodx * (dev_F_x[2*n_cells + imo] - dev_F_x[2*n_cells + id])
+                              +  dtody * (dev_F_y[2*n_cells + jmo] - dev_F_y[2*n_cells + id])
+                              +  dtodz * (dev_F_z[2*n_cells + kmo] - dev_F_z[2*n_cells + id]);
+dev_conserved[3*n_cells + id] += dtodx * (dev_F_x[3*n_cells + imo] - dev_F_x[3*n_cells + id])
+                              +  dtody * (dev_F_y[3*n_cells + jmo] - dev_F_y[3*n_cells + id])
+                              +  dtodz * (dev_F_z[3*n_cells + kmo] - dev_F_z[3*n_cells + id]);
+//fz = dtodx * (dev_F_x[3*n_cells + imo] - dev_F_x[3*n_cells + id])
+//                              +  dtody * (dev_F_y[3*n_cells + jmo] - dev_F_y[3*n_cells + id])
+//                              +  dtodz * (dev_F_z[3*n_cells + kmo] - dev_F_z[3*n_cells + id]);
+dev_conserved[4*n_cells + id] += dtodx * (dev_F_x[4*n_cells + imo] - dev_F_x[4*n_cells + id])
+                              +  dtody * (dev_F_y[4*n_cells + jmo] - dev_F_y[4*n_cells + id])
+                              +  dtodz * (dev_F_z[4*n_cells + kmo] - dev_F_z[4*n_cells + id]);
+#ifdef DE
+dev_conserved[5*n_cells + id] += dtodx * (dev_F_x[5*n_cells + imo] - dev_F_x[5*n_cells + id])
+                              +  dtody * (dev_F_y[5*n_cells + jmo] - dev_F_y[5*n_cells + id])
+                              +  dtodz * (dev_F_z[5*n_cells + kmo] - dev_F_z[5*n_cells + id])
+                              +  0.5*P*(dtodx*(vx_imo-vx_ipo) + dtody*(vy_jmo-vy_jpo) + dtodz*(vz_kmo-vz_kpo));
+#endif
+d  =  dev_conserved[            id];
+d_inv = 1.0 / d;
+vx =  dev_conserved[1*n_cells + id] * d_inv;
+vy =  dev_conserved[2*n_cells + id] * d_inv;
+vz =  dev_conserved[3*n_cells + id] * d_inv;
+P  = (dev_conserved[4*n_cells + id] - 0.5*d*(vx*vx + vy*vy + vz*vz)) * (gamma - 1.0);
+//if (P < 0.0) printf("%3d %3d %3d Negative pressure after final update. %f %f %f %f %f\n", xid, yid, zid, dev_conserved[4*n_cells + id], 0.5*d*vx*vx, 0.5*d*vy*vy, 0.5*d*vz*vz, P);
+#ifdef STATIC_GRAV
+calc_g_3D_CUDA(xid, yid, zid, x_off, y_off, z_off, n_ghost, dx, dy, dz, xbound, ybound, zbound, &gx, &gy, &gz);
+d_n  =  dev_conserved[            id];
+d_inv_n = 1.0 / d_n;
+vx_n =  dev_conserved[1*n_cells + id] * d_inv_n;
+vy_n =  dev_conserved[2*n_cells + id] * d_inv_n;
+vz_n =  dev_conserved[3*n_cells + id] * d_inv_n;
+dev_conserved[  n_cells + id] += 0.5*dt*gx*(d + d_n);
+dev_conserved[2*n_cells + id] += 0.5*dt*gy*(d + d_n);
+dev_conserved[3*n_cells + id] += 0.5*dt*gz*(d + d_n);
+//gcorr =  0.5*dt*gz*(d + d_n);
+dev_conserved[4*n_cells + id] += 0.25*dt*gx*(d + d_n)*(vx + vx_n)
+                              +  0.25*dt*gy*(d + d_n)*(vy + vy_n)
+                              +  0.25*dt*gz*(d + d_n)*(vz + vz_n);
+#endif
 ```
