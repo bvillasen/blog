@@ -430,7 +430,7 @@ Local domain: x[ 0.750 1.000 ] y[ 0.500 1.000 ] z[ 0.500 1.000 ]
   #ifdef DE
   dev_conserved[5*n_cells + id] += dtodx * (dev_F[5*n_cells + id-1] - dev_F[5*n_cells + id])
                                 +  dtodx * P * 0.5 * (vx_imo - vx_ipo);
-
+  #endif
   d  =  dev_conserved[            id];
   d_inv = 1.0 / d;
   vx =  dev_conserved[1*n_cells + id] * d_inv;
