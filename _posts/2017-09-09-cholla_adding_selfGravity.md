@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CHOLLA: self-gravity implementation"
-date:   2017-09-09 17:10:24 -0800
+date:   2017-09-19 17:10:24 -0800
 categories: cholla
 ---
 
@@ -33,7 +33,18 @@ categories: cholla
 - So far I haven't seen a change in the hydro calculations.   
 
 * Potential boundaries:
-- In line 887 of file mpi_rutines.cpp  (Allocate_MPI_Buffers_BLOCK ) I increazed the size of mpi_bufers
+- In line 887 of file mpi_rutines.cpp  (Allocate_MPI_Buffers_BLOCK ) I increased the size of mpi_bufers
 - Added functions to Grid3D in mpi_boundaries.cpp to load and read the potential to mpi_buffers
 - Loaded buffers from for each side and each direction in Load_and_Send_MPI_Comm_Buffers_BLOCK, file: mpi_bounderies.cpp
 - Read potential boundaries in Unload_MPI_Comm_Buffers_BLOCK, file: mpi_bounderies.cpp
+
+* Loading potential to GPU:
+- Added function to Grav3D to copy potential from CPU to GPU
+- Changed function CTU_Algorithm_3D to receive pointer to potential array (NULL pointer will be passed when SELF_GRAVITY in inactive )
+- Changed function Update_Conserved_Variables_3D to receive pointer to potential array (NULL pointer will be passed when SELF_GRAVITY in inactive )
+- Changed function CTU_Algorithm_3D to use new Update_Conserved_Variables_3D function
+- Changed function VL_Algorith_3D to receive pointer to potential array (NULL pointer will be passed when SELF_GRAVITY in inactive )
+- Changed function VL_Algorithm_3D to use new Update_Conserved_Variables_3D function
+
+
+** Overlapping hydro and potential calculation ** 
