@@ -47,4 +47,15 @@ categories: cholla
 - Changed function VL_Algorithm_3D to use new Update_Conserved_Variables_3D function
 
 
-** Overlapping hydro and potential calculation ** 
+** Overlapping hydro and potential calculation **
+- breaking set_boundaries function to send hydro boundaries and potential boundaries separately
+- Added parameter **which_bound** to function: Set_Boundary_Conditions
+- Added parameter **which_bound** to function: Set_Boundaries_MPI
+- Added parameter **which_bound** to function: Set_Boundaries_MPI_BLOCK
+- Added parameter **which_bound** to function: Load_and_Send_MPI_Comm_Buffers
+- Should I modify **  Step 2 - Set non-MPI x-boundaries ** ?
+- Added parameter **which_bound** to function: Wait_and_Unload_MPI_Comm_Buffers_BLOCK
+- Added parameter **which_bound** to function: Unload_MPI_Comm_Buffers
+- Added parameter **which_bound** to function: Unload_MPI_Comm_Buffers_BLOCK
+- Using **which_bound** I separated the boundery transfers for conserved variables and potential
+- In main I made an OMP parallel that separates the hydro update and the potential calculation.
