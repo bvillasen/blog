@@ -9,7 +9,7 @@ categories: cholla
 
 Black ring shows the size of the spherical overdensity size for a pressure-less collapse.  
 
-The initial conditions are $$\rho=1$$ for the overdensity, $$\rho=1e{-4}$$ for the background, uniform pressure $$p=5e^{-3}$$.
+The initial conditions are $$\rho=1$$ for the overdensity, $$\rho=1e^{-4}$$ for the background, uniform pressure $$p=5e^{-3}$$.
 
 Simulation is adiabatic and uses VL integrator.
 
