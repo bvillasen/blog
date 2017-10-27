@@ -10,4 +10,8 @@ categories: cholla
 
 In proper coordinates, gravitational potential and equations of motion for particles:
 
-$$\nabla \Phi \, = 4 \pi G \rho_{tot} - Lambda $$
+$$\nabla^2 \Phi \, = 4 \pi G \rho_{tot} - Lambda $$
+
+$$\fracc{d\textbr{r}}{dt} \, = \,\textbr{u}$$
+
+$$\fracc{d\textbr{u}}{dt} \, = \, - \nabla \Phi$$
