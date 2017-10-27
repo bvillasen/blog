@@ -14,4 +14,6 @@ $$\nabla^2 \Phi \, = 4 \pi G \rho_{tot} - Lambda $$
 
 $$\fracc{d\textbr{r}}{dt} \, = \,\textbr{u}$$
 
-$$\fracc{d\textbr{u}}{dt} \, = \, - \nabla \Phi$$
+$$\fracc{d\textbr{u}}{dt} \, = \, - \nabla \Phi$$,
+
+time and spatial derivatives are also with respect to proper coordinates.
