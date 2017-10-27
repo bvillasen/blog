@@ -30,3 +30,15 @@ categories: cholla
 
 
 Boundaries are not the problem!
+
+
+
+**Third test**
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/density_parts_2.mp4" width="500" height="360" controls preload> </video>
+</div>
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/potential_parts_2.mp4" width="500" height="360" controls preload> </video>
+</div>
