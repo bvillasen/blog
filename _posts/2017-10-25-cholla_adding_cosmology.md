@@ -12,8 +12,8 @@ In proper coordinates, gravitational potential and equations of motion for parti
 
 $$\nabla^2 \Phi \, = 4 \pi G \rho_{tot} - \Lambda $$
 
-$$\fracc{d\textbr{r}}{dt} \, = \,\textbr{u}$$
+$$\frac{d\textbr{r}}{dt} \, = \,\textbr{u}$$
 
-$$\fracc{d\textbr{u}}{dt} \, = \, - \nabla \Phi$$,
+$$\frac{d\textbr{u}}{dt} \, = \, - \nabla \Phi$$,
 
 time and spatial derivatives are also with respect to proper coordinates.
