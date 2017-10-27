@@ -22,4 +22,4 @@ time and spatial derivatives are also with respect to proper coordinates.
 Now we change to comoving variables and make them dimensionless:
 
 
-$$ /tilde{\textbf{x}} \, \equiv  \, a^{-1} \frac{\textbf{r}}{r_0}, \,\,\, /tilde{\textbf{p}} \, \equiv  \, a \frac{\textbf{v}}{v_0}, \,\,\, /tilde{\phi} \, \equiv  \, \frac{\textbf{\phi}}{\phi_0},$$
+$$ \tilde{\textbf{x}} \, \equiv  \, a^{-1} \frac{\textbf{r}}{r_0}, \,\,\, \tilde{\textbf{p}} \, \equiv  \, a \frac{\textbf{v}}{v_0}, \,\,\, \tilde{\phi} \, \equiv  \, \frac{\phi}{\phi_0},$$
