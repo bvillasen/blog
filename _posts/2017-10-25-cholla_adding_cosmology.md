@@ -12,8 +12,11 @@ In proper coordinates, gravitational potential and equations of motion for parti
 
 $$\nabla^2 \Phi \, = 4 \pi G \rho_{tot} - \Lambda $$
 
-$$\frac{d\textbr{r}}{dt} \, = \,\textbr{u}$$
+$$\frac{d\textbf{r}}{dt} \, = \,\textbf{u}$$
 
-$$\frac{d\textbr{u}}{dt} \, = \, - \nabla \Phi$$,
+$$\frac{d\textbf{u}}{dt} \, = \, - \nabla \Phi$$,
 
 time and spatial derivatives are also with respect to proper coordinates.
+
+
+Now we change to comoving variables and make them dimensionless
