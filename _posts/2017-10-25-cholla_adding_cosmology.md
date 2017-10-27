@@ -6,4 +6,8 @@ categories: cholla
 ---
 
 
-**Mostly taken from Kravstov's PM notes**
+**Mostly taken from Andrey's PM notes**
+
+In proper coordinates, gravitational potential and equations of motion for particles:
+
+$$\nabla \Phi \, = 4 \pi G \rho_{tot} - Lambda $$
