@@ -25,6 +25,6 @@ Now we change to comoving variables and make them dimensionless:
 $$ \tilde{\textbf{x}} \, \equiv  \, a^{-1} \frac{\textbf{r}}{r_0}, \,\,\, \tilde{\textbf{p}} \, \equiv  \, a \frac{\textbf{v}}{v_0}, \,\,\, \tilde{\phi} \, \equiv  \, \frac{\phi}{\phi_0},
  \,\,\,  \tilde{\rho} \, \equiv  \, a^3 \frac{\rho}{\rho_0},$$
 
-where $$\tilde{\textbf{x}}$$, $$\textbf{v}  \, = \, \textbf{u} - H\textbf{r} \, = \, a\textbf{\dot{x}}$$  is the peculiar velocity and $$\phi$$ is the peculiar potential defined as (Peebles 1980)
+where $$\tilde{\textbf{x}}$$, $$\textbf{v}  \, = \, \textbf{u} - H\textbf{r} \, = \, a\mathbf{ \dot{x} }$$  is the peculiar velocity and $$\phi$$ is the peculiar potential defined as (Peebles 1980)
 
 $$ \phi \, = \, \Phi +  \frac{H_0^2}{2} \big( \Omega_\Lambda - \frac{1}{2}a^{-3} \Omega_m \big) r^2 ,$$
