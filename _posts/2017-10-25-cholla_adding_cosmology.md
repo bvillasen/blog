@@ -27,4 +27,20 @@ $$ \tilde{\textbf{x}} \, \equiv  \, a^{-1} \frac{\textbf{r}}{r_0}, \,\,\, \tilde
 
 where $$\tilde{\textbf{x}}$$, $$\textbf{v}  \, = \, \textbf{u} - H\textbf{r} \, = \, a\mathbf{ \dot{x} }$$  is the peculiar velocity and $$\phi$$ is the peculiar potential defined as (Peebles 1980)
 
-$$ \phi \, = \, \Phi +  \frac{H_0^2}{2} \big( \Omega_\Lambda - \frac{1}{2}a^{-3} \Omega_m \big) r^2 ,$$
+$$ \phi \, = \, \Phi +  \frac{H_0^2}{2} \bigg( \Omega_\Lambda - \frac{1}{2}a^{-3} \Omega_m \bigg) r^2 ,$$
+
+where
+
+$$ \Omega_m \, = \, \frac{8 \pi G \rho_0}{3H_0^2} ;  \Omega_\Lambda \, = \, \frac{\Lambda}{3H_0^2}  .$$
+
+To make the variables dimensionless we define:
+
+$$ r_0 \, \eqiv \, \frac{L_{box}}{N_g}; \, \, N_g^3 \, = \, \text{total number of grid cells}, $$
+
+$$ t_0 \, \equiv \, H_0^{-1} ,$$
+
+$$ v_0 \, \equiv \, \frac{r_0}{t_0} ,$$
+
+$$ \rho_0 \, \equiv \, \frac{3 H_0^2}{8 \pi G} \Omega_m ,$$
+
+$$ \phi_0 \, \equiv \, \frac{r_0^2}{t_0^2} \, = \, v_0^2 ,$$
