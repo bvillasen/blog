@@ -14,7 +14,7 @@ Simulations Details:
 
 |  Num Particles |  Particle Mass [M_sun/h]  |   Softening Length [kpc/h]  |
 | :-----------: | :---------------------: | :-----------------------: |
-|        1      |              1e4        |               36          |
+|    $$512^3$$   |              1e4        |               36          |
 {:.mbtablestyle}
 
   * 512:  4.9 kpc/h
