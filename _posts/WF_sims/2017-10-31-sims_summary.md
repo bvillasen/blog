@@ -11,11 +11,11 @@ Box size:  115 Mpc/h
 
 Simulations Details:
 
-<div class="datatable-begin"></div>
+
 | Num Particles | Particle Mass [M_sun/h] |  Softening Length [kpc/h] |
 | ------------- | ----------------------- | ------------------------- |
 |        1      |              1e4        |               36          |
-<div class="datatable-end"></div>
+{:.mbtablestyle}
 
   * 512:  4.9 kpc/h
 
