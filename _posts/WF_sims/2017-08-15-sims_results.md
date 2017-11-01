@@ -11,28 +11,27 @@ Box size:  115 Mpc/h
 
 
 Cosmology from Plank (2016)[Here](https://arxiv.org/abs/1502.01589)
+
+
 ---------------------------------------------------
-[cosmology]
 
-Omega_m                 = 0.3089
+Cosmology:
 
-Omega_L                 = 0.6911
+  * Omega_m   = 0.3089
 
-w0                      = -1.0
+  * Omega_L   = 0.6911
 
-wa                      = 0.0
+  * Omega_b   = 0.0486
 
-Omega_b                 = 0.0486
+  * H0        = 67.74
 
-H0                      = 67.74
+  * sigma_8   = 0.8159
 
-sigma_8                 = 0.8159
+  * nspec     = 0.967
 
-nspec                   = 0.967
+  * transfer  = eisenstein
 
-transfer                = eisenstein
 --------------------------------------------------
-
 
 Initial Conditions:
 
