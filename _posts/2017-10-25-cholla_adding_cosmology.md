@@ -31,7 +31,7 @@ $$ \phi \, = \, \Phi +  \frac{H_0^2}{2} \bigg( \Omega_\Lambda - \frac{1}{2}a^{-3
 
 where
 
-$$ \Omega_m \, = \, \frac{8 \pi G \rho_0}{3H_0^2} ; \, \, \Omega_\Lambda \, = \, \frac{\Lambda}{3H_0^2}  .$$
+$$ \Omega_m  =  \frac{8 \pi G \rho_0}{3H_0^2} ; \, \, \Omega_\Lambda  =  \frac{\Lambda}{3H_0^2}  .$$
 
 To make the variables dimensionless we define:
 
@@ -52,4 +52,6 @@ $$\nabla^2 \Phi  = 4 \pi G \Omega_m \rho_{crit} \frac{\delta}{a}, \;\;\; \delta 
 
 $$\frac{d\textbf{p}}{da}  = - \frac{\nabla \phi}{\dot{a}}, \;\;\; \frac{d\textbf{x}}{da}  =  \frac{d\textbf{p}}{\dot{a}a^2},$$
 
-here $$\delta$$ is the overdensity in comoving coordinates and $$\dot{a}$$ is:
+here $$\delta$$ is the overdensity in comoving coordinates and $$\dot{a}$$ is given by:
+
+$$\dot{a} = H_0 a^{-1/2} \sqrt{ \Omega_m + a\Omega_k + a^3\Omega_\Lambda  } ; \;\;\; \Omega_m + \Omega_k + \Omega_\Lambda = 1 $$  
