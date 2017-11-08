@@ -50,6 +50,6 @@ Now using the scale factor as the time variable, the Poisson equation and the eq
 $$\nabla^2 \Phi  = 4 \pi G \Omega_m \rho_{crit} \frac{\delta}{a}, \; \delta  =  \frac{\rho - \bar{\rho}}{\bar{\rho}}  $$
 
 
-$$\frac{d\textbf{p}}{da}  = - \fracc{\nabla \phi}{\dot{a}}, \; \frac{d\textbf{x}}{da}  =  \frac{d\textbf{p}}{\dot{a}a^2},$$
+$$\frac{d\textbf{p}}{da}  = - \frac{\nabla \phi}{\dot{a}}, \; \frac{d\textbf{x}}{da}  =  \frac{d\textbf{p}}{\dot{a}a^2},$$
 
 here $$\delta$$ is the overdensity in comoving coordinates and $$\dot{a}$$ is:
