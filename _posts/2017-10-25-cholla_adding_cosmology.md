@@ -31,11 +31,11 @@ $$ \phi \, = \, \Phi +  \frac{H_0^2}{2} \bigg( \Omega_\Lambda - \frac{1}{2}a^{-3
 
 where
 
-$$ \Omega_m \, = \, \frac{8 \pi G \rho_0}{3H_0^2} ;  \Omega_\Lambda \, = \, \frac{\Lambda}{3H_0^2}  .$$
+$$ \Omega_m \, = \, \frac{8 \pi G \rho_0}{3H_0^2} ; \, \, \Omega_\Lambda \, = \, \frac{\Lambda}{3H_0^2}  .$$
 
 To make the variables dimensionless we define:
 
-$$ r_0 \, \eqiv \, \frac{L_{box}}{N_g}; \, \, N_g^3 \, = \, \text{total number of grid cells}, $$
+$$ r_0 \, \equiv \, \frac{L_{box}}{N_g}; \, \, N_g^3 \, = \, \text{total number of grid cells}, $$
 
 $$ t_0 \, \equiv \, H_0^{-1} ,$$
 
@@ -47,4 +47,4 @@ $$ \phi_0 \, \equiv \, \frac{r_0^2}{t_0^2} \, = \, v_0^2 ,$$
 
 Now using the scale factor as the time variable, the Poisson equation and the equations of motion are:
 
-$$\nabla^2 \Phi \, = 4 \pi G \Omega_m \rho_{crit} \frac{\delta}{a}, \,\,\, \delta \, = \, \frac{\rho - \bar{\rho}}{\bar{\bar}}  $$
+$$\nabla^2 \Phi \, = 4 \pi G \Omega_m \rho_{crit} \frac{\delta}{a}, \,\,\, \delta \, = \, \frac{\rho - \bar{\rho}}{\bar{\rho}}  $$
