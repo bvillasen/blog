@@ -61,4 +61,4 @@ In dimensionless variables these equations become:
 $$\tilde{\nabla}^2 \tilde{\phi}  = \frac{3}{2}  \frac{\Omega_m}{a} \tilde{\delta},  $$
 
 
-$$\frac{d\mathbf{\tilde{p}}}{da}  = - f(a)\frac{\tilde{\nabla} \tilde{\phi}}, \;\;\; \frac{d\mathbf{\tilde{x}}}{da}  = f(a) \frac{d\mathbf{\tilde{p}}}{a^2},$$
+$$\frac{d\mathbf{\tilde{p}}}{da}  = - f(a)\tilde{\nabla} \tilde{\phi}, \;\;\; \frac{d\mathbf{\tilde{x}}}{da}  = f(a) \frac{d\mathbf{\tilde{p}}}{a^2},$$
