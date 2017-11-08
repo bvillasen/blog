@@ -55,3 +55,10 @@ $$\frac{d\textbf{p}}{da}  = - \frac{\nabla \phi}{\dot{a}}, \;\;\; \frac{d\textbf
 here $$\delta$$ is the overdensity in comoving coordinates and $$\dot{a}$$ is given by:
 
 $$\dot{a} = H_0 a^{-1/2} \sqrt{ \Omega_m + a\Omega_k + a^3\Omega_\Lambda  } ; \;\;\; \Omega_m + \Omega_k + \Omega_\Lambda = 1 $$  
+
+In dimensionless variables these equations become:
+
+$$\tilde{\nabla}^2 \tilde{\phi}  = \frac{3}{2}  \frac{\Omega_m}{a} \tilde{\delta},  $$
+
+
+$$\frac{d\textbf{\tilde{p}}}{da}  = - f(a)\frac{\tilde{\nabla} \tilde{\phi}}, \;\;\; \frac{d\textbf{\tilde{x}}}{da}  = f(a) \frac{d\textbf{\tilde{p}}}{a^2},$$
