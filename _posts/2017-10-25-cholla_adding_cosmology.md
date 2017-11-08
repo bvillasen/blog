@@ -44,3 +44,7 @@ $$ v_0 \, \equiv \, \frac{r_0}{t_0} ,$$
 $$ \rho_0 \, \equiv \, \frac{3 H_0^2}{8 \pi G} \Omega_m ,$$
 
 $$ \phi_0 \, \equiv \, \frac{r_0^2}{t_0^2} \, = \, v_0^2 ,$$
+
+Now using the scale factor as the time variable, the Poisson equation and the equations of motion are:
+
+$$\nabla^2 \Phi \, = 4 \pi G \Omega_m \rho_{crit} \frac{\delta}{a}, \,\,\, \delta \, = \, \frac{\rho - \bar{\rho}}{\bar{\bar}}  $$
