@@ -63,9 +63,9 @@ $$\tilde{\nabla}^2 \tilde{\phi}  = \frac{3}{2}  \frac{\Omega_m}{a} \tilde{\delta
 
 $$\frac{d\mathbf{\tilde{p}}}{da}  = - f(a)\tilde{\nabla} \tilde{\phi}, \;\;\; \frac{d\mathbf{\tilde{x}}}{da}  = f(a) \frac{d\mathbf{\tilde{p}}}{a^2},$$
 
-where $$\tilde{\delta} = \tilde{\rho} - 1 and
+where $$\tilde{\delta} = \tilde{\rho} - 1$$ and
 
-$$ f(a) \equiv H_0/\dot{a} = [ a^{-1} ( \Omega_m + a\Omega_k + a^3\Omega_\Lambda ) ]^{-1/2}
+$$ f(a) \equiv H_0/\dot{a} = [ a^{-1} ( \Omega_m + a\Omega_k + a^3\Omega_\Lambda ) ]^{-1/2} $$
 
 
 
@@ -75,4 +75,4 @@ To do the time evolution of the DM particles, these last equations are used in t
 
   * Advance the momentum of the particles using the new potential.
 
-  * Update particle positions using the new momenta  ( Leap-Frog scheme ). 
+  * Update particle positions using the new momenta  ( Leap-Frog scheme ).
