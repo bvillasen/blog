@@ -47,7 +47,7 @@ $$ \phi_0 \, \equiv \, \frac{r_0^2}{t_0^2} \, = \, v_0^2 ,$$
 
 Now using the scale factor as the time variable, the Poisson equation and the equations of motion are:
 
-$$\nabla^2 \Phi  = 4 \pi G \Omega_m \rho_{crit} \frac{\delta}{a}, \;\;\; \delta  =  \frac{\rho - \bar{\rho}}{\bar{\rho}}  $$
+$$\nabla^2 \phi  = 4 \pi G \Omega_m \rho_{crit} \frac{\delta}{a}, \;\;\; \delta  =  \frac{\rho - \bar{\rho}}{\bar{\rho}}  $$
 
 
 $$\frac{d\textbf{p}}{da}  = - \frac{\nabla \phi}{\dot{a}}, \;\;\; \frac{d\textbf{x}}{da}  =  \frac{d\textbf{p}}{\dot{a}a^2},$$
