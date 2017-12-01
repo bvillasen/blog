@@ -8,3 +8,7 @@ categories: cholla
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/density_parts_cosmo.mp4" width="500" height="360" controls preload> </video>
 </div>
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/density_parts_cosmo_256.mp4" width="500" height="360" controls preload> </video>
+</div>
