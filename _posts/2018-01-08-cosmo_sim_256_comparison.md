@@ -7,6 +7,8 @@ categories:
 Cosmological Simulation $$256^3$$ particles, 115 Mpc/h box.
 
 **Left: Gadget**
+
+
 **Right: Cholla_PM**
 
 
