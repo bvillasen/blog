@@ -13,11 +13,11 @@ Cosmological Simulations $$256^3$$ particles, 115 Mpc/h box.
 
 **Updated:** Now every pair of images has the same dynamical range for the colormap and all the images are density projections of the CIC mass interporlation into a 256^3 grid
 
-**Case 1:**
+## Case 1:
 
-Gadget $\epsilon \, = \,9.7 \,kpc/h$
+Gadget $$\epsilon \, = \,9.7 \,kpc/h$$
 
-Cholla $cellSize \, = \,  449.2 \,kpc/h$
+Cholla $$cellSize \, = \,  449.2 \,kpc/h$$
 
 
 <div style="text-align: center">
