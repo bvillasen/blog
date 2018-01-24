@@ -4,9 +4,9 @@ title:  "CHOLLA_PM: Gadget Comparison Mass Function "
 date:   2018-01-20 17:10:24 -0800
 categories:
 ---
-#Cosmological Simulations $$256^3$$ particles, 115 Mpc/h box.
+# Cosmological Simulations $$256^3$$ particles, 115 Mpc/h box.
 
-##Cumulative Halo Mass Function
+## Cumulative Halo Mass Function
 
 Solid lines correspond to the CHOLLA_PM simulation, red dashed lines correspond to the Gadget simulation and black dashed lines correspond to the model by Warren.
 
@@ -29,4 +29,4 @@ Gadget:  $$\epsilon \, = \,224.6 \,kpc/h$$
 Cholla:  $$cellSize \, = \,  224.6 \,kpc/h$$
 
 
-<img src="{{ site.url }}assets/images/massFunction_256_midRes_error.png">
+<img src="{{ site.url }}assets/images/massFunction_256_midRes_Error.png">
