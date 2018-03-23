@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "CHOLLA_PM Test: Gas Power Spectrum "
-date:   2018-03-07 17:10:24 -0800
+title:  "CHOLLA_PM Test: Gas Phase Diagram "
+date:   2018-03-20 17:10:24 -0800
 categories: cholla
 ---
 
