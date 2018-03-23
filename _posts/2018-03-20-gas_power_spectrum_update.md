@@ -11,3 +11,8 @@ Power Spectrum for a $$256^3$$ simulation, full lines correspond to CHOLLA_PM an
 
 
 <img src="{{ site.url }}assets/images/power_dm_gas_update.png">
+
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/images/phase_diagram.mp4" width="500" height="500" controls preload> </video>
+</div>
