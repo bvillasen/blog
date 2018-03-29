@@ -7,7 +7,7 @@ categories: cholla
 
 
 Phase Diagram: Physical Internal Energy vs. COMOVING Gas Density
-Uniform gas adiabatic expansion on the right side (Cholla), regular $\Lambda CDM$ simulation on the left (Gadget)
+Uniform gas adiabatic expansion on the right side (Cholla), regular $$\Lambda CDM$$ simulation on the left (Gadget)
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_expansion.mp4" width="500" height="500" controls preload> </video>
