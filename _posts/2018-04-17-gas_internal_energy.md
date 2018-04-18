@@ -26,3 +26,14 @@ categories: cholla
 ## Physical mean Internal Energy for the entire simulation
 
 <img src="{{ site.url }}assets/images/internal_energy_v1_g1.png">
+
+
+## Density Power Spectrum (update)
+
+**PREVIOUS:** For this case the gravitational force acting on the Kinetic Energy of the gas was computed from the Virtual Work done by the gravitational force $$\Delta E = -\rho \Del \phi \dot \v $$
+
+<img src="{{ site.url }}assets/images/power_dm_gas_update.png">
+
+
+**NOW:** Instead of using the virtual work, I compute the change in momentum and use it to compute the change in Kinetic Energy
+$$\Delta E= \Delta (P^2) / ( 2\rho ) $$ 
