@@ -17,3 +17,7 @@ categories: cholla
 **CASE 2:** Initial velocities, NO gravity acting on the gas
 
 <img src="{{ site.url }}assets/images/internal_energy_z_v1_g0.png">
+
+**CASE 3:** Initial velocities,  Now gravity is acting on the gas, and the gas cools very fast.
+
+<img src="{{ site.url }}assets/images/internal_energy_z_v0_g1.png">
