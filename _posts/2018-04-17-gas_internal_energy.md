@@ -30,7 +30,7 @@ categories: cholla
 
 ## Density Power Spectrum (update)
 
-**PREVIOUS:** For this case the gravitational force acting on the Kinetic Energy of the gas was computed from the Virtual Work done by the gravitational force $$\Delta E = dt (-\rho \nabla \phi \cdot \overrightarrow{\v}) $$
+**PREVIOUS:** For this case the gravitational force acting on the Kinetic Energy of the gas was computed from the Virtual Work done by the gravitational force $$\Delta E = dt (-\rho \nabla \phi \cdot \overrightarrow{v}) $$
 
 <img src="{{ site.url }}assets/images/power_dm_gas_update.png">
 
