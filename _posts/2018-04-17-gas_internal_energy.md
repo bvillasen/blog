@@ -23,13 +23,15 @@ categories: cholla
 <img src="{{ site.url }}assets/images/internal_energy_z_v0_g1.png">
 
 **From Initial Conditions**
-Dens mean: 13.4874
 
 
-U mean: 0.00017072
+Dens mean: 13.4874  
 
 
-Ek mean: 0.15950561
+U mean: 0.00017072  $$km^2/s^2$$
+
+
+Ek mean: 0.15950561  $$km^2/s^2$$
 
 
 
