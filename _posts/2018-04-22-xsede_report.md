@@ -18,3 +18,14 @@ The next figures show density and potential center slices. The black circle corr
 
 **Potential**
 <img src="{{ site.url }}assets/images/timelapse_collapse_pot.png">
+
+
+## Timing for several grid configurations
+
+
+All times are in seconds and correspond to the average of the first 20 time-steps ( not counting the first two time-steps )
+
+| nGPUs |  nx |  ny  |   nz  |  time_hydro |  time_potential | time_boundaries |
+| :-----: | :-----: | :-----: | :-----: | :-------------: | :-------------: | :-------------: |
+| 8  | 256 | 256 | 256 |  0.613   |    0.689   |   0.275   |
+{:.mbtablestyle}
