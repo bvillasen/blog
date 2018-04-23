@@ -28,4 +28,10 @@ All times are in seconds and correspond to the average of the first 20 time-step
 | nGPUs |  nx |  ny  |   nz  |  time_hydro |  time_potential | time_boundaries |
 | :-----: | :-----: | :-----: | :-----: | :-------------: | :-------------: | :-------------: |
 | 8  | 256 | 256 | 256 |  0.613   |    0.689   |   0.275   |
+| 16  | 512 | 256 | 256 |  0.691   |    0.762  |   0.339   |
+| 32  | 512 | 512 | 256 |  0.818   |    1.513   |   0.939   |
+| 64  | 512 | 512 | 512 |  0.869   |    1.972   |   1.361   |
+| 128  | 1024 | 512 | 512 |  0.932   |    2.121   |   1.592   |
 {:.mbtablestyle}
+
+For the XSTREAM system there was no debug queue, and I wasn't able to run more than 128 GPUs.
