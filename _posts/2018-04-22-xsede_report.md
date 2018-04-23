@@ -35,7 +35,7 @@ All times are in seconds and correspond to the average of the first 20 time-step
 {:.mbtablestyle}
 
 
-For the XSTREAM system there was no debug queue, and I wasn't able to run more than 128 GPUs.
+For the XSTREAM system there was no debug queue, this makes any development to be very tedious, and I wasn't able to run more than 128 GPUs.
 
 
 NOTE: This was the implementation of the poisson solver that wasn't optimized for solving real-complex-real FFTs, also there was another optimization that avoided the last transposition for the forward FFT saving communication time.
