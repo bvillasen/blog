@@ -11,7 +11,7 @@ categories: cholla
 <img src="{{ site.url }}assets/images/internal_energy_DE_pot2.png">
 
 **Before DE**
-<img src="{{ site.url }}assets/images/internal_energy_z_v1_g1.png">
+<img src="{{ site.url }}assets/images/internal_energy_v1_g1.png">
 
 ## Density Power Spectrum
 **Using DUAL ENERGY**
