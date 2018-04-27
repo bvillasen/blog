@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CHOLLA_PM Test: Results for Dual Energy simulations"
-date:   2018-24-17 17:10:24 -0800
+date:   2018-04-24 17:10:24 -0800
 categories: cholla
 ---
 
