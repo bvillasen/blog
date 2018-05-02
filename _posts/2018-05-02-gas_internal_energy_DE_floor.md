@@ -5,8 +5,12 @@ date:   2018-05-02 17:10:24 -0800
 categories: cholla
 ---
 
+##Effect of applying a lower limit in the internal energy
 
-## Physical mean Internal Energy vs. redshift
+
+### Physical mean Internal Energy vs. redshift
+
+
 **Using DUAL ENERGY**
 
 Also applying a lower limit to the internal Energy ( floor ) at $$u=2.0 km^2/s^2$$
