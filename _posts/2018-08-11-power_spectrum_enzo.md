@@ -5,17 +5,19 @@ date:   2018-08-11 17:10:24 -0800
 categories: cholla
 ---
 
-##Effect of applying a lower limit in the internal energy
+## Enzo corresponds to dashed blue lines
 
-
-### Physical mean Internal Energy vs. redshift
-
-
-**Using DUAL ENERGY**
-
-Also applying a lower limit to the internal Energy ( floor ) at $$u=2.0 km^2/s^2$$
-<img src="{{ site.url }}assets/images/internal_energy_DE_pot2_floor.png">
+### Dual Energy is OFF on Cholla
+<img src="{{ site.url }}assets/images/power_hydro_noDE_noFloor.png">
 
 
 
-A link for the code file were the lower limit is applied [HERE](https://github.com/bvillasen/cholla/blob/particles/src/hydro_cuda.cu).  Look for the kernel: **Apply_Internal_Energy_Floor**
+
+### Dual Energy is ON on Cholla
+<img src="{{ site.url }}assets/images/power_hydro_DE_noFloor.png">
+
+
+
+
+## Mean Temperature comparison
+<img src="{{ site.url }}assets/images/internal_energy_Ek.png">
