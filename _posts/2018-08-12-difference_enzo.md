@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CHOLLA_PM Test: Power Spectrum Enzo Comparison"
+title:  "CHOLLA_PM Test: Difference to Enzo Results"
 date:   2018-08-12 17:10:24 -0800
 categories: cholla
 ---
