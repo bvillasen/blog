@@ -20,6 +20,15 @@ categories: cholla
 
 
 ## Mean Temperature comparison
+
+*Cholla_DE:* Cholla with Dual Energy ON
+
+
+*Cholla_DE_E:* Cholla with Dual Energy ON, interbal energy meassured from Total Energy
+
+
+*Cholla_noDE:* Cholla with Dual Energy OFF
+
 <img src="{{ site.url }}assets/images/internal_energy_enzo.png">
 
 
