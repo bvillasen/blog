@@ -11,6 +11,8 @@ Dashed lines correspond to Leap-Frog integration
 
 Full lines correspond to Kick-Drift-Kick integration
 
+PPMC is used for the Hydro Reconstruction method.
+
 
 
 <img src="{{ site.url }}assets/images/power_enzo_error_PPMC_KDK.png">
