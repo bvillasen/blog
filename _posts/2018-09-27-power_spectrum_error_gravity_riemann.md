@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CHOLLA_PM Test: Power Spectrum Error compared to Enzo. Gravity in Riemann solver"
-date:   2018-09-26 17:10:24 -0800
+date:   2018-09-25 17:10:24 -0800
 categories: cholla
 ---
 
