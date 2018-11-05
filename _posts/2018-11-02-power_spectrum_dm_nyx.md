@@ -16,4 +16,4 @@ categories: cholla
 Differences are less than 0.7%
 
 
-Now working comparing hydro simulations.
+Now working on comparing hydro simulations.
