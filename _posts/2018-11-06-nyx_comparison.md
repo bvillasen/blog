@@ -37,3 +37,8 @@ Finally, the differences on the gas power spectrum are huge, I believe it's beca
 
 
 <img src="{{ site.url }}assets/images/power_hydro_nyx.png">
+
+
+As a reference here are the latest results from comparing to Enzo:
+
+<img src="{{ site.url }}assets/images/power_hydro_enzo.png">
