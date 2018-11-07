@@ -29,3 +29,11 @@ Here is a plot of the thermal history for both codes, on the top of the figure y
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/thermal_history.mp4" width="500" height="500" controls preload> </video>
 </div>
+
+
+### Hydro power spectrum:
+
+Finally, the differences on the gas power spectrum are huge, I believe it's because of the large differences on the temperatures.
+
+
+<img src="{{ site.url }}assets/images/power_hydro_nyx.png">
