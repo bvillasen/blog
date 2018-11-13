@@ -23,6 +23,4 @@ The gravitational constant was different from the one in Nyx at the 5th digit, t
 <video src="{{ site.url }}assets/videos/density_temp.mp4" width="500" height="500" controls preload> </video>
 </div>
 
-
-
 ### Phase diagram:
