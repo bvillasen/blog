@@ -24,3 +24,8 @@ The gravitational constant was different from the one in Nyx at the 5th digit, t
 </div>
 
 ### Phase diagram:
+
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/thermal_history_1.mp4" width="500" height="500" controls preload> </video>
+</div>
