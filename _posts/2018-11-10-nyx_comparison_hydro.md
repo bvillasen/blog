@@ -17,6 +17,11 @@ The gravitational constant was different from the one in Nyx at the 5th digit, t
 
 ### Gas Temperature:
 
+
+<img src="{{ site.url }}assets/images/temp_nyx_vol.png">
+
+<img src="{{ site.url }}assets/images/temp_nyx_mass.png">
+
 ### Density - Temperature Slices:
 
 <div style="text-align: center">
