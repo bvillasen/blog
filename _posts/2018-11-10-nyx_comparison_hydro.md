@@ -10,6 +10,6 @@ categories: cholla
 
 ### Updated DM-ONLY power spectrum:
 
-The gravitational constant was different from the one on in Nyx at the 5th digit, this are the new results, max error are 0.25%
+The gravitational constant was different from the one in Nyx at the 5th digit, this are the new results, max differences are 0.25%
 
 <img src="{{ site.url }}assets/images/power_dm_nyx_256_1.png">
