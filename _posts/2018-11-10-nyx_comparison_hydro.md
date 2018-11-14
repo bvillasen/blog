@@ -30,6 +30,17 @@ The gravitational constant was different from the one in Nyx at the 5th digit, h
 
 ### Density - Temperature Slices:
 
+**Panel 1:** Evolution with Nyx.
+
+**Panel 2:** Evolution with Cholla using same initial conditions as Nyx using the change in kinetic energy for the energy update.
+
+**Panel 3:** Evolution with Cholla using same initial conditions as Nyx using $$\Delta E = dt \rho(  v \cdot  g) $$for the energy update.
+
+**Panel 4:** Evolution with Enzo.
+
+**Panel 5:** Evolution with Cholla using same initial conditions as Enzo using $$\Delta E = dt \rho(  v \cdot  g) $$for the energy update.
+
+
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/density_temp.mp4" width="500" height="500" controls preload> </video>
 </div>
