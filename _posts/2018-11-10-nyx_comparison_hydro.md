@@ -18,9 +18,9 @@ The gravitational constant was different from the one in Nyx at the 5th digit, h
 ### Gas Temperature:
 
 
-**Cholla gravWork :** The energy update is $$\Delta E = dt \rho  v \cdot  g $$
+**Cholla gravWork :** The energy update is $$\Delta E = dt \rho(  v \cdot  g) $$
 
-**Cholla deltaEk :** The energy update id the change in kinetic energy after the gravity update on the momentum.
+**Cholla deltaEk :** The energy update is equal to the change in kinetic energy after the gravity update on the momentum.
 
 **Cholla uniform :** Evolution of a uniform gas under adiabatic cosmological expansion, it follows the $$(1+z)^2 $$ scaling expected for a $$\gamma = 5/3 $$ gas.
 
