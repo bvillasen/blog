@@ -10,7 +10,7 @@ categories: cholla
 
 ### Updated DM-ONLY power spectrum:
 
-The gravitational constant was different from the one in Nyx at the 5th digit, this are the new results, max differences are 0.25%
+The gravitational constant was different from the one in Nyx at the 5th digit, here are the new results, max differences are 0.25%
 
 <img src="{{ site.url }}assets/images/power_dm_nyx_256_1.png">
 
@@ -18,11 +18,11 @@ The gravitational constant was different from the one in Nyx at the 5th digit, t
 ### Gas Temperature:
 
 
-**Cholla gravWork :** The energy update is $$\Delta E = dt \rho  v \dot  g $$
+**Cholla gravWork :** The energy update is $$\Delta E = dt \rho  v \cdot  g $$
 
-**Cholla deltaEk :** The energy update id the change in kinetic energy after the gravity update on the momemtum.
+**Cholla deltaEk :** The energy update id the change in kinetic energy after the gravity update on the momentum.
 
-**Cholla uniform :** Evolution of a unifrom gas under adiabatic cosmological expansion, it follows the $$(1+z)^2 $$ scaleling expected for a $$\gamma = 5/3 $$ gas.
+**Cholla uniform :** Evolution of a uniform gas under adiabatic cosmological expansion, it follows the $$(1+z)^2 $$ scaling expected for a $$\gamma = 5/3 $$ gas.
 
 <img src="{{ site.url }}assets/images/temp_nyx_vol.png">
 
