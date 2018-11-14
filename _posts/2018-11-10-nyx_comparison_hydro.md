@@ -34,11 +34,11 @@ The gravitational constant was different from the one in Nyx at the 5th digit, h
 
 **Panel 2:** Evolution with Cholla using same initial conditions as Nyx using the change in kinetic energy for the energy update.
 
-**Panel 3:** Evolution with Cholla using same initial conditions as Nyx using $$\Delta E = dt \rho(  v \cdot  g) $$for the energy update.
+**Panel 3:** Evolution with Cholla using same initial conditions as Nyx using $$\Delta E = dt \rho(  v \cdot  g) $$ for the energy update.
 
 **Panel 4:** Evolution with Enzo.
 
-**Panel 5:** Evolution with Cholla using same initial conditions as Enzo using $$\Delta E = dt \rho(  v \cdot  g) $$for the energy update.
+**Panel 5:** Evolution with Cholla using same initial conditions as Enzo using $$\Delta E = dt \rho(  v \cdot  g) $$ for the energy update.
 
 
 <div style="text-align: center">
