@@ -18,7 +18,7 @@ The gravitational constant was different from the one in Nyx at the 5th digit, t
 ### Gas Temperature:
 
 
-**Cholla gravWork :** The energy update is $$ \Delta E = dt \rho \mathbf{ v} \dot \mathbf{ g} $$
+**Cholla gravWork :** The energy update is $$\Delta E = dt \rho  v \dot  g $$
 
 **Cholla deltaEk :** The energy update id the change in kinetic energy after the gravity update on the momemtum.
 
