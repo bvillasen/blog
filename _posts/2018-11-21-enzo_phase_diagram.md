@@ -11,6 +11,13 @@ categories: cholla
 
 Changing the threshold in the Dual Energy implementation and the integration time step:
 
+
+
+<img src="{{ site.url }}assets/images/temperature_DE_v.png">
+
+<img src="{{ site.url }}assets/images/temperature_DE_m.png">
+
+
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/thermal_history_DE.mp4" width="500" height="500" controls preload> </video>
 </div>
