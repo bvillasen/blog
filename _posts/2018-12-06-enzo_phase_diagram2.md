@@ -9,9 +9,7 @@ categories: cholla
 
 ### Phase diagram:
 
-Changing the threshold in the Dual Energy implementation and the integration time step:
-
-
+Adding the condition for the gas to have $$Ek > 0.4 Ek_{mean} $$ in order to use the internal energy computed from the total energy, the effects can be seen in the lower panels:    
 
 
 <div style="text-align: center">
