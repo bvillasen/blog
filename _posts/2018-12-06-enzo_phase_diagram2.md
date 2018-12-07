@@ -9,7 +9,7 @@ categories: cholla
 
 ### Phase diagram:
 
-Adding the condition for the gas to have $$E_k > 0.4 E_k_{mean} $$ ( E_k = Kinetic energy ) in order to use the internal energy computed from the total energy, the effects can be seen in the lower panels:    
+Adding the condition for the gas to have $$E_{k} > 0.4 \overlin{E_{k}} $$ ( E_k = Kinetic energy ) in order to use the internal energy computed from the total energy, the effects can be seen in the lower panels:    
 
 
 <div style="text-align: center">
