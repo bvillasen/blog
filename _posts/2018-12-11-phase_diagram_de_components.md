@@ -1,13 +1,11 @@
 ---
 layout: post
-title:  "CHOLLA_PM Test: Phase Diagram Adding Ek_min to Dual Energy Sync"
-date:   2018-12-07 17:10:24 -0800
+title:  "CHOLLA_PM Test: Phase Diagram Separate Internal Energy"
+date:   2018-12-12 17:10:24 -0800
 categories: cholla
 ---
 
 
-
-### Phase diagram:
 
 <img src="{{ site.url }}assets/images/fraction_Dual_Energy.png">
 
