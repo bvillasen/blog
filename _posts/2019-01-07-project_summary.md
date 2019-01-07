@@ -7,6 +7,8 @@ categories: dark-matter project
 
 ## Dark Matter
 
+Dark matter is a kind of matter that scientists believe to exists and account for about 85% of all the mass in the universe.
+
 ## Dark Matter Simulations
 
 <div style="text-align: center">
