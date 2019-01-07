@@ -14,3 +14,12 @@ Dark matter is a kind of matter that scientists believe to exists and account fo
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/cosmo_10.mp4" width="500" height="500" controls preload> </video>
 </div>
+
+## Dark Matter Halos
+
+## The Project
+
+<ul>
+
+
+</ul>
