@@ -36,7 +36,7 @@ So now we know that regions where the dark matter density is high ( higher to a 
 
 ## The Project
 
-The goal of this project will be to identify the dark matter halos in a cosmological simulation and then do some analysis on the evolution and formation history  as well statistical analysis of all the halos in the simulation.
+The goal of this project will be to identify the dark matter halos in a cosmological simulation and then do some analysis on their evolution and formation history  as well statistical analysis of all the halos in the simulation.
 
 
 For the project:
@@ -56,7 +56,7 @@ For the project:
 <li> Depending on the progress and the time available we will perform some halo analysis, beginning with the halo mass function and then analyzing the halo merger trees to study the halos formation histories. </li>
 
 </ul>
-**NO PROGRAMMING EXPERIENCE IS REQIRED**
+**NO PROGRAMMING EXPERIENCE IS REQUIRED**
 
 
 ## Contact
