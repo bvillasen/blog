@@ -55,8 +55,8 @@ For the project:
 
 <li> Depending on the progress and the time available we will perform some halo analysis, beginning with the halo mass function and then analyzing the halo merger trees to study the halos formation histories. </li>
 
-
 </ul>
+**NO PROGRAMMING EXPERIENCE IS REQIRED**
 
 
 ## Contact
