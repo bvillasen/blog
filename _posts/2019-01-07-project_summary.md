@@ -17,6 +17,8 @@ Dark matter is a kind of matter that scientists believe to exists and account fo
 
 ## Dark Matter Halos
 
+<img src="{{ site.url }}assets/images/density_halos.png">
+
 ## The Project
 
 <ul>
