@@ -21,5 +21,9 @@ Dark matter is a kind of matter that scientists believe to exists and account fo
 
 <ul>
 
+<li> We will understand fundamental concepts of cosmology and galaxy formation </li>
+
+<li> We will learn the basics of Phyton programming and it's application to scientific proggraming </li>
+
 
 </ul>
