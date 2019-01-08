@@ -57,3 +57,8 @@ For the project:
 
 
 </ul>
+
+
+## Contact
+
+If you are interested or have any questions, please send me a message at **brvillas@ucsc.edu**
