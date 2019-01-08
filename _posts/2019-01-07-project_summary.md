@@ -21,9 +21,17 @@ Dark matter is a kind of matter that scientists believe to exists and account fo
 
 <ul>
 
-<li> We will understand fundamental concepts of cosmology and galaxy formation </li>
+<li> We will understand fundamental concepts of cosmology and galaxy formation. </li>
 
-<li> We will learn the basics of Phyton programming and it's application to scientific proggraming </li>
+<li> We will learn the basics of Phyton programming and its application to scientific programming. </li>
+
+<li> We will learn how to read and write data files, including formats for efficient storage for large data files (HDF5). </li>
+
+<li> Using the mass and positions of the Dark Matter particles we will compute the density field of the Dark Matter and plot the evolution of the density field as a function of time. This will result in a nice animation. </li>
+
+<li> We will use ROCKSTAR to locate the dark matter halos resulting on halo catalogs for the simulation. </li>
+
+<li> Depending on the progress and the time available we will perform some halo analysis, beginning with the halo mass function and then analyzing the halo merger trees to study the halos formation histories. </li>
 
 
 </ul>
