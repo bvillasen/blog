@@ -7,7 +7,9 @@ categories: dark-matter project
 
 ## Dark Matter
 
-Dark matter is a kind of matter that scientists believe to exists and account for about 85% of all the mass in the universe.
+Dark matter is a kind of matter that scientists believe to exists and account for about 85% of all the mass in the universe. Dark matter differs from the ordinary matter ( matter that forms stars, planets, humans, etc.) in that dark matter doesn't interact with light, this means that dark matter doesn't emit any light and it is completely transparent, for this reason we can't "see" it in the regular sense.
+
+The way we observe dark matter and infer its existence is by its gravitational influence on stars, galaxies and light it self. In this sense, dark matter is a source of gravity that we aren't able to see and so far we still can't detect.
 
 ## Dark Matter Simulations
 
