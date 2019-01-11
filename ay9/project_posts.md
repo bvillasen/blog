@@ -11,7 +11,7 @@ permalink: /ay9project/posts/
   <h1 class="main-title">  Analysis of Dark Matter Simulations </h1>
 
   <font size="6" color="#147BA8">
-  Posts for the Project:
+  Announcements for the Project:
   </font>
 
   <br>
