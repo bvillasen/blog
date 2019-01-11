@@ -2,7 +2,7 @@
 layout: post
 title:  "Introduction: Analysis of Dark Matter Simulations"
 date:   2019-01-07 17:10:24 -0800
-categories:
+categories: "ay9"
 ---
 
 ## Dark Matter
