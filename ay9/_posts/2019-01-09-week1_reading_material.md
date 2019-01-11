@@ -7,12 +7,16 @@ categories: "ay9"
 
 ## Some Fun Youtube Videos:
 
-Dark Matter Cartoon:
+**Dark Matter Cartoon:**
 {% include youtubePlayer.html id="QAa2O_8wBUQ" %}
 
 
-Dark Matter & Dark Energy explained:
+**Dark Matter & Dark Energy explained:**
 {% include youtubePlayer.html id="ULoc-QUwH74" %}
 
-Dark Matter Simulation:
+**Dark Matter Simulation:**
 {% include youtubePlayer.html id="2qeT4DkEX-w" %}
+
+**Introduction to Dark Matter:**
+
+https://ttt.astro.su.se/~ez/kurs/gradU/DM.pdf
