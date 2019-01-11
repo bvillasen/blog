@@ -9,13 +9,13 @@ permalink: /cv/
 ### Software and Computer Scince:
 
 <ul>
-<li>Machine Learning, Coursera. (Stanford). </li>
-<li>Heterogeneous Parallel Programming, Coursera. (University of Illinois). </li>
-<li>Machine Learning Foundations: A Case Study Approach, (U Washington). </li>
 <li>Algorithms: Design and Analysis, Part 1, Coursera. (Stanford). </li>
 <li>Algorithms: Design and Analysis, Part 2, Coursera. (Stanford). </li>
-<li>Coding the Matrix: Linear Algebra through CS Applications, Coursera. </li>
+<li>Heterogeneous Parallel Programming, Coursera. (University of Illinois). </li>
 <li>Intro to Parallel programming, Udacity. (NVIDIA). </li>
+<li>Machine Learning, Coursera. (Stanford). </li>
+<li>Machine Learning Foundations: A Case Study Approach, (U Washington). </li>
+<li>Coding the Matrix: Linear Algebra through CS Applications, Coursera. </li>
 
 
 
