@@ -5,7 +5,7 @@ permalink: /ay9project/
 ---
 
 <style>
-  h1 {color:blue;}
+  h1 { font-size: large;}
 </style>
 
 <div class="home">
