@@ -9,7 +9,7 @@ permalink: /ay9project/
 
   <h1 class="page-heading"></h1>
 
-  <font size="7" color="#4286f4">
+  <font size="7", color="#4286f4">
   Analysis of Dark Matter Simulations
   </font>
 
