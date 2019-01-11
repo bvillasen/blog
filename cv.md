@@ -6,7 +6,7 @@ permalink: /cv/
 
 ## Online Courses Taken:
 
-### Software and Computer Scince:
+### Software and Computer Science:
 
 <ul>
 <li>Learn to Program in Java, Microsoft. (EdX).</li>
