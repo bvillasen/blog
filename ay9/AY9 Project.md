@@ -9,7 +9,7 @@ permalink: /ay9project/
 
   <h1 class="page-heading"></h1>
 
-  <font size="6.5" color="#147BA8">
+  <font size="6" color="#147BA8">
   Analysis of Dark Matter Simulations
   </font>
 
@@ -22,7 +22,15 @@ permalink: /ay9project/
 
   <br>
   <br>
-  <ul class="post-list">
+
+  <div>
+
+  <font size="5" color="#A82914">
+  <a href="{{ site.url }}/ay9project/posts/"  > Project Posts </a>
+  </font>
+
+  </div>
+  <!-- <ul class="post-list">
     {% for post in site.categories.ay9 %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -32,8 +40,8 @@ permalink: /ay9project/
         </h2>
       </li>
     {% endfor %}
-  </ul>
+  </ul> -->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
