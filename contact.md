@@ -5,9 +5,9 @@ permalink: /contact/
 ---
 **My email:**
 
-brvillas@ucsc.edu
-
 bvillasen@gmail.com
+
+brvillas@ucsc.edu
 
 **My GitHub page:**
 
