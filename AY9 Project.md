@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Contact
-permalink: /contact/
+title: AY9-Project
+permalink: /AY9Project/
 ---
 
 
