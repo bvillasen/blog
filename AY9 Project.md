@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AY9-Project
+title: AY9 Project
 permalink: /ay9project/
 ---
 
