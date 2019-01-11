@@ -1,0 +1,29 @@
+Job 2244885.pbspl1.nas.nasa.gov started on Thu Jul 27 19:19:44 PDT 2017
+The job requested the following resources:
+    ncpus=2048
+    place=scatter:excl
+    walltime=35:00:00
+
+PBS set the following environment variables:
+        FORT_BUFFERED = 1
+                   TZ = PST8PDT
+
+On r579i7n1:
+Current directory is /u/bvillase/galaxies
+
+____________________________________________________________________
+Job Resource Usage Summary for 2244885.pbspl1.nas.nasa.gov
+
+    CPU Time Used            : 00:14:53
+    Real Memory Used         : 2350932kb
+    Walltime Used            : 00:01:30
+    Exit Status              : 1
+
+    Number of CPUs Requested : 2048
+    Walltime Requested       : 35:00:00
+
+    Execution Queue          : long
+    Charged To               : s1694
+
+    Job Stopped              : Thu Jul 27 19:21:47 2017
+____________________________________________________________________

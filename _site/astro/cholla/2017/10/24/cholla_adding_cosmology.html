@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PM: Adding cosmology</title>
+  <meta name="description" content="Mostly taken from Andrey’s PM notes">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/astro/cholla/2017/10/24/cholla_adding_cosmology.html">
+  <link rel="alternate" type="application/rss+xml" title="My Research" href="http://localhost:4000/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">My Research</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/ay9project/">AY9 Project</a>
+          
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+          <a class="page-link" href="/contact/">Contact</a>
+          
+        
+          
+          <a class="page-link" href="/cv/">CV</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">PM: Adding cosmology</h1>
+    <p class="post-meta"><time datetime="2017-10-24T20:10:24-05:00" itemprop="datePublished">Oct 24, 2017</time></p>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p><strong>Mostly taken from Andrey’s PM notes</strong></p>
+
+<p>In proper coordinates, gravitational potential and equations of motion for particles:</p>
+
+<script type="math/tex; mode=display">\nabla^2 \Phi \, = 4 \pi G \rho_{tot} - \Lambda</script>
+
+<script type="math/tex; mode=display">\frac{d\textbf{r}}{dt} \, = \,\textbf{u}</script>
+
+<script type="math/tex; mode=display">\frac{d\textbf{u}}{dt} \, = \, - \nabla \Phi</script>
+
+<p>time and spatial derivatives are also with respect to proper coordinates.</p>
+
+<p>Now we change to comoving variables and make them dimensionless:</p>
+
+<script type="math/tex; mode=display">\tilde{\textbf{x}} \, \equiv  \, a^{-1} \frac{\textbf{r}}{r_0}, \,\,\, \tilde{\textbf{p}} \, \equiv  \, a \frac{\textbf{v}}{v_0}, \,\,\, \tilde{\phi} \, \equiv  \, \frac{\phi}{\phi_0},
+ \,\,\,  \tilde{\rho} \, \equiv  \, a^3 \frac{\rho}{\rho_0},</script>
+
+<p>where <script type="math/tex">\tilde{\textbf{x}}</script>, <script type="math/tex">\textbf{v}  \, = \, \textbf{u} - H\textbf{r} \, = \, a\mathbf{ \dot{x} }</script>  is the peculiar velocity and <script type="math/tex">\phi</script> is the peculiar potential defined as (Peebles 1980)</p>
+
+<script type="math/tex; mode=display">\phi \, = \, \Phi +  \frac{H_0^2}{2} \bigg( \Omega_\Lambda - \frac{1}{2}a^{-3} \Omega_m \bigg) r^2 ,</script>
+
+<p>where</p>
+
+<script type="math/tex; mode=display">\Omega_m  =  \frac{8 \pi G \rho_0}{3H_0^2} ; \, \, \Omega_\Lambda  =  \frac{\Lambda}{3H_0^2}  .</script>
+
+<p>To make the variables dimensionless we define:</p>
+
+<script type="math/tex; mode=display">r_0 \, \equiv \, \frac{L_{box}}{N_g}; \, \, N_g^3 \, = \, \text{total number of grid cells},</script>
+
+<script type="math/tex; mode=display">t_0 \, \equiv \, H_0^{-1} ,</script>
+
+<script type="math/tex; mode=display">v_0 \, \equiv \, \frac{r_0}{t_0} ,</script>
+
+<script type="math/tex; mode=display">\rho_0 \, \equiv \, \frac{3 H_0^2}{8 \pi G} \Omega_m ,</script>
+
+<script type="math/tex; mode=display">\phi_0 \, \equiv \, \frac{r_0^2}{t_0^2} \, = \, v_0^2 ,</script>
+
+<p>Now using the scale factor as the time variable, the Poisson equation and the equations of motion are:</p>
+
+<script type="math/tex; mode=display">\nabla^2 \phi  = 4 \pi G \Omega_m \rho_{crit} \frac{\delta}{a}, \;\;\; \delta  =  \frac{\rho - \bar{\rho}}{\bar{\rho}}</script>
+
+<script type="math/tex; mode=display">\frac{d\textbf{p}}{da}  = - \frac{\nabla \phi}{\dot{a}}, \;\;\; \frac{d\textbf{x}}{da}  =  \frac{d\textbf{p}}{\dot{a}a^2},</script>
+
+<p>here <script type="math/tex">\delta</script> is the overdensity in comoving coordinates and <script type="math/tex">\dot{a}</script> is given by:</p>
+
+<script type="math/tex; mode=display">\dot{a} = H_0 a^{-1/2} \sqrt{ \Omega_m + a\Omega_k + a^3\Omega_\Lambda  } ; \;\;\; \Omega_m + \Omega_k + \Omega_\Lambda = 1</script>
+
+<p>In dimensionless variables these equations become:</p>
+
+<script type="math/tex; mode=display">\tilde{\nabla}^2 \tilde{\phi}  = \frac{3}{2}  \frac{\Omega_m}{a} \tilde{\delta},</script>
+
+<script type="math/tex; mode=display">\frac{d\mathbf{\tilde{p}}}{da}  = - f(a)\tilde{\nabla} \tilde{\phi}, \;\;\; \frac{d\mathbf{\tilde{x}}}{da}  = f(a) \frac{d\mathbf{\tilde{p}}}{a^2},</script>
+
+<p>where <script type="math/tex">\tilde{\delta} = \tilde{\rho} - 1</script> and</p>
+
+<script type="math/tex; mode=display">f(a) \equiv H_0/\dot{a} = [ a^{-1} ( \Omega_m + a\Omega_k + a^3\Omega_\Lambda ) ]^{-1/2}</script>
+
+<p>To do the time evolution of the DM particles, these last equations are used in the three main steps of the PM code:</p>
+
+<ul>
+  <li>
+    <p>Solve the Poisson equation using the density field estimated with the current particle positions.</p>
+  </li>
+  <li>
+    <p>Advance the momentum of the particles using the new potential.</p>
+  </li>
+  <li>
+    <p>Update particle positions using the new momenta  ( Leap-Frog scheme ).</p>
+  </li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My Research</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>My Research</li>
+          <li><a href="mailto:brvillas@ucsc.edu">brvillas@ucsc.edu</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/bvillasen"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">bvillasen</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>A simple blog to document my research
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

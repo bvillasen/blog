@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ROCKSTAR summary</title>
+  <meta name="description" content="ROCKSTAR repository Here">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/astro/cosmology/wfirst/2017/07/25/rockstar_info.html">
+  <link rel="alternate" type="application/rss+xml" title="My Research" href="http://localhost:4000/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">My Research</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/ay9project/">AY9 Project</a>
+          
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+          <a class="page-link" href="/contact/">Contact</a>
+          
+        
+          
+          <a class="page-link" href="/cv/">CV</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">ROCKSTAR summary</h1>
+    <p class="post-meta"><time datetime="2017-07-25T20:10:24-05:00" itemprop="datePublished">Jul 25, 2017</time></p>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>ROCKSTAR repository <a href="https://bitbucket.org/gfcstanford/rockstar">Here</a></p>
+
+<p>ROCKSTAR paper <a href="http://arxiv.org/abs/1110.4372">Here</a></p>
+
+<h3 id="from-rockstar-paper">From ROCKSTAR paper:</h3>
+
+<blockquote>
+  <p>As a first step, our algorithm performs a rapid variant of the 3D friends-of-friends (FOF) method to find overdense regions which are then distributed among processors for analysis. Then, it builds a hierarchy of FOF subgroups in phase space by progressively and adaptively reducing the 6D linking length, so that a tunable fraction of particles are captured at each subgroup as compared to the immediate parent group. Next, it converts this hierarchy of FOF
+groups into a list of particle memberships for halos.It then computes the host halo/subhalo relationships among halos, using information from the previous timestep if available. Finally, it removes unbound particles from halos
+and calculates halo properties, before automatically generating particle-based merger trees (§3.5). A visual summary of
+these steps is shown in Fig. 1.</p>
+</blockquote>
+
+<p><img src="http://localhost:4000assets/images/rks_1.png" /></p>
+
+<ol>
+  <li>Work-Domain decomposition.</li>
+</ol>
+
+<p>Performs a rapid variant of the 3D friends-of-friends (FOF) method to find overdense regions which are then distributed among processors for analysis.</p>
+
+<ol>
+  <li>Finding Halo seeds ( FOF subgroups ).</li>
+</ol>
+
+<p>For each 3D FOF group which is created in the previous step, the algorithm proceeds by building a hierarchy of FOF subgroups in phase space. Deeper levels of subgroups have a tighter linking-length criterion in phase space, which means that deeper levels correspond to increasingly tighter isodensity contours around peaks in the phase-space density distribution. This enables an easy way to distinguish separate substructures — above some threshold phase-space density, their particle distributions must be distinct in phase space; otherwise, it would be difficult to justify the separation into different structures.
+Beginning with a base FOF group, ROCKSTAR adaptively chooses a phase-space linking length based on the standard deviations of the particle distribution in position and velocity space. That is, for two particles <script type="math/tex">p_1</script> and <script type="math/tex">p_2</script> in the base group, the phase-space distance metric is defined as:</p>
+
+<script type="math/tex; mode=display">d( p_{1}, p_{2} ) = \bigg( \frac{ |\vec{x_{1}} - \vec{x_{2}}|^{2} }{\sigma_{x}^2} + \frac{ |v_{1} - v_{2}|^{2} }{\sigma_{v}^2} \bigg)^{1/2}</script>
+
+<p>where <script type="math/tex">\sigma_x</script> and <script type="math/tex">\sigma_y</script> are the particle position and velocity dispersions for the given FOF group; this is identical to the metric of
+Gottlöber (1998). For each particle, the distance to the nearest neighbor is computed; the phase-space linking length is then chosen such that a constant fraction f (f=0.7) of the particles are linked together with at least one other particle. In large groups (&gt;10,000 particles), where computing the nearest neighbor for all particles can be very costly, the nearest neighbors are only
+calculated for a random 10,000-particle subset of the group, as this is sufficient to determine the linking length to reasonable precision.
+Once subgroups have been found in the base FOF group, this process is repeated. For each subgroup, the phase-space metric is recalculated, and a new linking-length is selected such that a fraction f of the subgroup’s particles are linked together into sub-subgroups. Group finding proceeds hierarchically in phase space until a predetermined minimum number of particles remain at the deepest level of the hierarchy. Here we set this minimum number to 10 particles, although halo properties are not robust approaching this minimum.</p>
+
+<ol>
+  <li>Assigning particles to halos.</li>
+</ol>
+
+<p>For each of the subgroups at the deepest level of the FOF hierarchy (corresponding to the local phase-space density maxima), a seed halo is generated. The algorithm then recursively
+analyzes higher levels of the hierarchy to assign particles to these seed halos until all particles in the original FOF group have been assigned.</p>
+
+<p>For a parent group which contains only a single seed halo, all the particles in the group are assigned to the single seed. For a parent group which contains multiple seed halos, however, particles in the group are assigned to the closest seed halo in phase space. In this case, the phase-space metric is
+set by the seed halo properties, so that the distance between a halo h and a particle p is defined as:</p>
+
+<script type="math/tex; mode=display">d( h, p ) = \bigg( \frac{ |\vec{x_{h}} - \vec{x_{p}}|^{2} }{r_{dyn}^2 }+ \frac{ |\vec{v_{h}} - \vec{v_{p}}|^{2} }{\sigma_{v}^2} \bigg)^{1/2}</script>
+
+<script type="math/tex; mode=display">r_{dyn} = \frac{v_{max}}{\sqrt{ \frac{4}{3} \pi G \rho_{vir}}}</script>
+
+<p>where <script type="math/tex">\sigma_v</script> is the seed halo’s current velocity dispersion, <script type="math/tex">v_{max}</script> is its current maximum circular velocity, and “vir” specifies the virial overdensity, using the definition of <script type="math/tex">\rho_{vir}</script>
+from Bryan &amp; Norman (1998), which corresponds to 360 times the background density at z = 0, however, other choices of this density can easily be applied.
+Using the radius <script type="math/tex">r_{dyn}</script> as the position-space distance normalization may seem unusual at first, but the natural alternative (using <script type="math/tex">\sigma_x</script> ) gives unstable and nonintuitive results. At
+fixed phase-space density, subhalos and tidal streams (which have lower velocity dispersions than the host halo) will have larger position-space dispersions than the host halo. Thus, if
+<script type="math/tex">\sigma_x</script>  were used, particles in the outskirts of a halo could be easily mis-assigned to a subhalo instead of the host halo. Using <script type="math/tex">r_{dyn}</script> , on the other hand, prevents this problem by ensuring
+that particles assigned to subhalos cannot be too far from the main density peak even if they are close in velocity space. Intuitively, the largest effect of using <script type="math/tex">r_{vir}</script> is that velocity-space
+information becomes the dominant method of distinguishing particle membership when two halos are within each other’s virial radii.</p>
+
+<p>This process of particle assignment assures that substructure masses are calculated correctly independently of the choice of f , the fraction of particles present in each subgroup
+relative to its parent group. In addition, for a subhalo close to the center of its host halo, it assures that host particles are not mis-assigned to the subhalo — the central particles of the host
+will naturally be closer in phase space to the true host center than they are to the subhalo’s center.</p>
+
+<ol>
+  <li>Getting substructure.</li>
+</ol>
+
+<p>The most common definition of substructure is a bound halo contained within another, larger halo. Yet, as halo masses are commonly defined to include substructure, the question of which of two halos is the largest (and thus, which should be called a satellite of the other) can change depending on which substructures have been assigned to them. This is one of the largest sources of ambiguity between spherical overdensity halo finders, even those which limit themselves to distinct halos.
+Break the self-circularity by assigning satellite membership based on phase-space distances before calculating halo masses. Treating each halo center like a particle, we use the
+same metric as Eq.2 and calculate the distance to all other halos with larger numbers of assigned particles. The satellite halo in question is then assigned to be a subhalo of the closest larger halo within the same 3D friends-of-friends group, ifone exists. If the halo catalog at an earlier timestep is available, this assignment is modified to include temporal information. Halo cores at the current timestep are associated with halos at the previous timestep by finding the halo at the previous timestep with the largest contribution to the current halo core’s particle membership. Then, host-subhalo relationships are checked against the previous timestep; if necessary, the
+choice of which halo is the host may be switched so as to preserve the host-subhalo relationship of the previous timestep. As explained above, these host-subhalo relationships are only used internally for calculating masses: particles assigned to the host are not counted within the mass of the subhalo, but
+particles within the subhalo are counted as part of the mass of the host halo. This choice assures that the mass of a halo won’t suddenly change as it crosses the virial radius of a larger
+halo, and it provides more stable mass definitions in major mergers. Once halo masses have been calculated, the subhalo membership is recalulated according to the standard definition (subhalos are within <script type="math/tex">r_\Delta</script> of more massive host halos) when the merger trees are constructed. Every density peak within the original FOF analysis group will correspond to either a host halo or a subhalo in the final catalog.</p>
+
+<ol>
+  <li>Unbinding Particles.</li>
+</ol>
+
+<p>By default, ROCKSTAR performs an unbinding procedure before calculating halo mass and <script type="math/tex">v_{max}</script> , although this may be switched off for studies of e.g., tidal remnants. Because the algorithm operates in phase space, the vast majority of halo particles assigned to central halos are actually bound. We find typical boundedness values of 98% at z = 0. Even for substructure, unbound particles typically correspond to tidal streams at the outskirts of the subhalo, making a complicated unbinding algorithm unnecessary. For this reason, as well as to improve consistency of halo masses across timesteps, we perform only a single-pass unbinding procedure using a modified Barnes-Hut method to accurately calculate particle potentials, the code by default does not output halos where fewer than 50% of the particles are bound; this threshold is user-adjustable, but changing it does not produce statistically significant effects on the clustering or mass function until halos with a bound fraction of less than 15% are included.</p>
+
+<ol>
+  <li>Calculating properties.</li>
+</ol>
+
+<p>**Positions: **  For positions, Knebe et al. (2011) demonstrated that halo finders which calculated halo locations based on the maximum density peak were more accurate than FOF-based halo
+finders which use the averaged location of all halo particles (see also Gao &amp; White 2006). The reason for this may be simply understood: as particle density rapidly drops in the outer reaches of a halo, the corresponding dispersion of particle positions climbs precipitously. Consequently, rather than
+increasing the statistical accuracy of the halo center calculation, including the particles at the halo boundary actually reduces it. The highest accuracy is instead achieved when the expected Poisson error (<script type="math/tex">\sigma_x / \sqrt{N}</script>) is minimized. As our halo finder has access (via the hierarchy of FOF subgroups) to the inner regions of the halo density distribution, an accurate calculation of the center is possible by averaging the particle locations for the inner subgroup which best minimizes the Pois-
+son error. Typically, for a <script type="math/tex">10^6</script> particle halo, this estimator ends up averaging the positions of the innermost <script type="math/tex">10^3</script> particles.</p>
+
+<p>**Velocities: ** The halo core can have a substantial velocity offset from the halo bulk. Since the galaxy hosted by the halo will presumably best track the halo core, we calculate the
+main velocity for the halo using the average particle velocity within the innermost 10% of the halo radius. For calculating the bound/unbound mass of the halo, however, we use the more appropriate averaged halo bulk velocity including substructure.</p>
+
+<p>**Masses: ** For halo masses, ROCKSTAR calculates spherical overdensities according to multiple user-specified density thresholds: e.g., the virial threshold, from Bryan &amp; Norman (1998), or a
+density threshold relative to the background or to the critical density. As is usual, these overdensities are calculated using all the particles for all the substructure contained in a halo. On
+the other hand, subhalo masses have traditionally been a major point of ambiguity (for density-space halo finders). With a phase-space halo finder, such as ROCKSTAR , the particles belonging to the subhalo can be more reliably isolated from the host, and thus less ambiguity exists: the same method of
+calculating spherical overdensities may be applied to just the particles belonging to the subhalo. In terms of the definition of where the subhalo “ends,” Eq.2 implies that the subhalo edge is effectively where the distribution of its particles in phase space becomes equidistant from the subhalo and its host halo.</p>
+
+<p>Catalog Output:</p>
+
+<ul>
+  <li>Halo masses at several radii: Mvir, M200b, M200c, M500c, M2500c. These masses always include any contributions from substructure. Also, masses with higher density thresholds (e.g., 2500c) can sometimes be zero if the density of the halo never rises above the threshold. [Footnote: Particles are assumed to have an effective radius of FORCE_RES for the purposes of density calculations near the halo center.} By default, only bound particles are included; see Section \ref{s:common_options] if this is not what you want.</li>
+  <li>Halo maximum circular velocity and velocity dispersion.</li>
+  <li>Halo radii: Rvir and the scale radius r_s, calculated both using profile fitting and using the Klypin v_max method.</li>
+  <li>Halo center positions and velocities.</li>
+  <li>Halo spin (both Bullock and Peebles) and angular momentum.</li>
+  <li>Halo shapes and principal axes, using the Allgood method (iterative, weighted by 1/r^2), at both Rvir and R500c. See Section 2.11.1 for how to change the shape calculation method.</li>
+  <li>The ratio of halo kinetic to potential energy, and the center position and velocity offsets from the halo’s bulk average position and velocity.</li>
+</ul>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* See http://arxiv.org/pdf/astro-ph/0208512v1.pdf */</span>
+<span class="kt">double</span> <span class="nf">_weff</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">a</span> <span class="o">!=</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">W0</span> <span class="o">+</span> <span class="n">WA</span> <span class="o">-</span> <span class="n">WA</span><span class="o">*</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">)</span><span class="o">/</span><span class="n">log</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+  <span class="k">else</span>
+    <span class="k">return</span> <span class="n">W0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">double</span> <span class="nf">hubble_scaling</span><span class="p">(</span><span class="kt">double</span> <span class="n">z</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">double</span> <span class="n">z1</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">+</span><span class="n">z</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">a</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="n">z1</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">Om</span> <span class="o">*</span> <span class="p">(</span><span class="n">z1</span><span class="o">*</span><span class="n">z1</span><span class="o">*</span><span class="n">z1</span><span class="p">)</span> <span class="o">+</span> <span class="n">Ol</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.0</span><span class="o">*</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">_weff</span><span class="p">(</span><span class="n">a</span><span class="p">))));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">double</span> <span class="nf">vir_density</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">double</span> <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">Om</span><span class="o">/</span><span class="n">pow</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span><span class="o">/</span><span class="n">pow</span><span class="p">(</span><span class="n">hubble_scaling</span><span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="n">a</span><span class="o">-</span><span class="mf">1.0</span><span class="p">),</span><span class="mf">2.0</span><span class="p">)</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="p">((</span><span class="mi">18</span><span class="o">*</span><span class="n">M_PI</span><span class="o">*</span><span class="n">M_PI</span> <span class="o">+</span> <span class="mf">82.0</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mi">39</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mf">1.0</span><span class="o">+</span><span class="n">x</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">float</span> <span class="nf">_calc_mass_definition</span><span class="p">(</span><span class="kt">char</span> <span class="o">**</span><span class="n">md</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int64_t</span> <span class="n">length</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="o">*</span><span class="n">md</span><span class="p">);</span>
+  <span class="kt">char</span> <span class="n">last_char</span> <span class="o">=</span> <span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="o">?</span> <span class="n">md</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">length</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">matter_fraction</span> <span class="o">=</span> <span class="p">(</span><span class="n">Om</span><span class="o">/</span><span class="n">pow</span><span class="p">(</span><span class="n">SCALE_NOW</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span><span class="o">/</span><span class="n">pow</span><span class="p">(</span><span class="n">hubble_scaling</span><span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="n">SCALE_NOW</span><span class="o">-</span><span class="mf">1.0</span><span class="p">),</span><span class="mf">2.0</span><span class="p">);</span>
+  <span class="kt">float</span> <span class="n">cons</span> <span class="o">=</span> <span class="n">Om</span> <span class="o">*</span> <span class="n">CRITICAL_DENSITY</span> <span class="o">/</span> <span class="n">PARTICLE_MASS</span><span class="p">;</span> <span class="c1">// background density</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">mass</span> <span class="o">=</span> <span class="o">*</span><span class="n">md</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">thresh_dens</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">mass</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="sc">'m'</span> <span class="o">||</span> <span class="n">mass</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="sc">'M'</span><span class="p">)</span> <span class="n">mass</span><span class="o">++</span><span class="p">;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">last_char</span> <span class="o">==</span> <span class="sc">'b'</span> <span class="o">||</span> <span class="n">last_char</span> <span class="o">==</span> <span class="sc">'B'</span><span class="p">)</span>
+    <span class="n">thresh_dens</span> <span class="o">=</span> <span class="n">atof</span><span class="p">(</span><span class="n">mass</span><span class="p">)</span> <span class="o">*</span> <span class="n">cons</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">last_char</span> <span class="o">==</span> <span class="sc">'c'</span> <span class="o">||</span> <span class="n">last_char</span> <span class="o">==</span> <span class="sc">'C'</span><span class="p">)</span>
+    <span class="n">thresh_dens</span> <span class="o">=</span> <span class="n">atof</span><span class="p">(</span><span class="n">mass</span><span class="p">)</span> <span class="o">*</span> <span class="n">cons</span> <span class="o">/</span> <span class="n">matter_fraction</span><span class="p">;</span>
+  <span class="k">else</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">strcasecmp</span><span class="p">(</span><span class="o">*</span><span class="n">md</span><span class="p">,</span> <span class="s">"vir"</span><span class="p">))</span> <span class="o">*</span><span class="n">md</span> <span class="o">=</span> <span class="s">"vir"</span><span class="p">;</span>
+    <span class="n">thresh_dens</span> <span class="o">=</span> <span class="n">vir_density</span><span class="p">(</span><span class="n">SCALE_NOW</span><span class="p">)</span> <span class="o">*</span> <span class="n">cons</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">particle_rvir_dens_z0</span> <span class="o">=</span> <span class="n">vir_density</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="o">*</span> <span class="n">cons</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">thresh_dens</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">calc_mass_definition</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">vir</span> <span class="o">=</span> <span class="s">"vir"</span><span class="p">;</span>
+  <span class="kt">int64_t</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">_calc_mass_definition</span><span class="p">(</span><span class="o">&amp;</span><span class="n">MASS_DEFINITION</span><span class="p">);</span>
+  <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">_calc_mass_definition</span><span class="p">(</span><span class="o">&amp;</span><span class="n">MASS_DEFINITION2</span><span class="p">);</span>
+  <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">_calc_mass_definition</span><span class="p">(</span><span class="o">&amp;</span><span class="n">MASS_DEFINITION3</span><span class="p">);</span>
+  <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">_calc_mass_definition</span><span class="p">(</span><span class="o">&amp;</span><span class="n">MASS_DEFINITION4</span><span class="p">);</span>
+  <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">_calc_mass_definition</span><span class="p">(</span><span class="o">&amp;</span><span class="n">MASS_DEFINITION5</span><span class="p">);</span>
+  <span class="n">particle_rvir_dens</span> <span class="o">=</span> <span class="n">_calc_mass_definition</span><span class="p">(</span><span class="o">&amp;</span><span class="n">vir</span><span class="p">);</span>
+  <span class="n">dynamical_time</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="n">sqrt</span><span class="p">((</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="o">*</span><span class="n">Gc</span><span class="o">/</span><span class="mf">3.0</span><span class="p">)</span><span class="o">*</span><span class="n">particle_rvir_dens</span><span class="o">*</span><span class="n">PARTICLE_MASS</span><span class="p">);</span>
+  <span class="n">min_dens_index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">particle_thresh_dens</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="n">min_dens_index</span><span class="p">])</span>
+      <span class="n">min_dens_index</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">_calc_additional_halo_props</span><span class="p">(</span><span class="k">struct</span> <span class="n">halo</span> <span class="o">*</span><span class="n">h</span><span class="p">,</span> <span class="kt">int64_t</span> <span class="n">total_p</span><span class="p">,</span> <span class="kt">int64_t</span> <span class="n">bound</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">int64_t</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">part_mdelta</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_part</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">np_alt</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">},</span>
+    <span class="n">np_vir</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">dens_tot</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">parts_avgd</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">num_part_half</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">dens_thresh</span> <span class="o">=</span> <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mf">3.0</span><span class="p">);</span>
+  <span class="kt">double</span> <span class="n">d1</span> <span class="o">=</span> <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mf">3.0</span><span class="p">);</span>
+  <span class="kt">double</span> <span class="n">d2</span> <span class="o">=</span> <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mf">3.0</span><span class="p">);</span>
+  <span class="kt">double</span> <span class="n">d3</span> <span class="o">=</span> <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mf">3.0</span><span class="p">);</span>
+  <span class="kt">double</span> <span class="n">d4</span> <span class="o">=</span> <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mf">3.0</span><span class="p">);</span>
+  <span class="kt">double</span> <span class="n">rvir_thresh</span> <span class="o">=</span> <span class="n">particle_rvir_dens</span><span class="o">*</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mf">3.0</span><span class="p">);</span>
+  <span class="kt">double</span> <span class="n">vmax_conv</span> <span class="o">=</span> <span class="n">PARTICLE_MASS</span><span class="o">/</span><span class="n">SCALE_NOW</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">r</span><span class="p">,</span> <span class="n">circ_v</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">rvmax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">L</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">},</span> <span class="n">Jh</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ds</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">vrms</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">},</span> <span class="n">xavg</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">},</span> <span class="n">vavg</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">},</span> <span class="n">mdiff</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">cur_dens</span><span class="p">,</span> <span class="n">rvir</span><span class="p">,</span> <span class="n">mvir</span><span class="p">;</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">total_p</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">bound</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">pe</span> <span class="o">&lt;</span> <span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">ke</span><span class="p">))</span> <span class="k">continue</span><span class="p">;</span>
+    <span class="n">num_part</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">r2</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;</span> <span class="n">FORCE_RES</span><span class="p">)</span> <span class="n">r</span> <span class="o">=</span> <span class="n">FORCE_RES</span><span class="p">;</span>
+    <span class="n">cur_dens</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">num_part</span><span class="o">/</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="n">r</span><span class="p">));</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">cur_dens</span> <span class="o">&gt;</span> <span class="n">dens_thresh</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">part_mdelta</span> <span class="o">=</span> <span class="n">num_part</span><span class="p">;</span>
+      <span class="n">dens_tot</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">cur_dens</span> <span class="o">&gt;</span> <span class="n">d1</span><span class="p">)</span> <span class="n">np_alt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">num_part</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">cur_dens</span> <span class="o">&gt;</span> <span class="n">d2</span><span class="p">)</span> <span class="n">np_alt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">num_part</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">cur_dens</span> <span class="o">&gt;</span> <span class="n">d3</span><span class="p">)</span> <span class="n">np_alt</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">num_part</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">cur_dens</span> <span class="o">&gt;</span> <span class="n">d4</span><span class="p">)</span> <span class="n">np_alt</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">num_part</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">cur_dens</span> <span class="o">&gt;</span> <span class="n">rvir_thresh</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">circ_v</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">num_part</span><span class="o">/</span><span class="n">r</span><span class="p">;</span>
+      <span class="n">np_vir</span> <span class="o">=</span> <span class="n">num_part</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">part_mdelta</span> <span class="o">&amp;&amp;</span> <span class="n">circ_v</span> <span class="o">&gt;</span> <span class="n">vmax</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">vmax</span> <span class="o">=</span> <span class="n">circ_v</span><span class="p">;</span>
+	<span class="n">rvmax</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">dens_tot</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">bound</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">pe</span> <span class="o">&lt;</span> <span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">ke</span><span class="p">))</span> <span class="k">continue</span><span class="p">;</span>
+    <span class="n">add_ang_mom</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">pos</span><span class="p">,</span> <span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">pos</span><span class="p">);</span>
+    <span class="n">parts_avgd</span><span class="o">++</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">parts_avgd</span><span class="o">*</span><span class="mi">2</span> <span class="o">&gt;=</span> <span class="n">part_mdelta</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">num_part_half</span><span class="p">)</span>
+      <span class="n">num_part_half</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">k</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//Calculate velocity and position averages</span>
+      <span class="n">xavg</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+=</span> <span class="p">(</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">pos</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">-</span><span class="n">xavg</span><span class="p">[</span><span class="n">k</span><span class="p">])</span><span class="o">/</span><span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">parts_avgd</span><span class="p">);</span>
+      <span class="n">mdiff</span> <span class="o">=</span> <span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">pos</span><span class="p">[</span><span class="n">k</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span><span class="o">-</span><span class="n">vavg</span><span class="p">[</span><span class="n">k</span><span class="p">];</span>
+      <span class="n">vavg</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+=</span> <span class="n">mdiff</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">parts_avgd</span><span class="p">;</span>
+      <span class="n">vrms</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+=</span> <span class="n">mdiff</span><span class="o">*</span><span class="p">(</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">pos</span><span class="p">[</span><span class="n">k</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span><span class="o">-</span><span class="n">vavg</span><span class="p">[</span><span class="n">k</span><span class="p">]);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="n">m</span> <span class="o">=</span> <span class="n">part_mdelta</span><span class="o">*</span><span class="n">PARTICLE_MASS</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">bound</span><span class="p">)</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span><span class="p">;</span>
+  <span class="k">else</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">mgrav</span> <span class="o">=</span> <span class="n">m</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">k</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span> <span class="n">vrms</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">parts_avgd</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="n">vrms</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">/</span><span class="n">parts_avgd</span><span class="p">)</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">((</span><span class="o">!</span><span class="n">bound</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="o">!</span><span class="n">BOUND_PROPS</span><span class="p">))</span> <span class="p">{</span> <span class="c1">//Works even if BOUND_PROPS &gt; 1</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">Xoff</span> <span class="o">=</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">Voff</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">k</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">ds</span> <span class="o">=</span> <span class="n">xavg</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">-</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">pos</span><span class="p">[</span><span class="n">k</span><span class="p">];</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">Xoff</span> <span class="o">+=</span> <span class="n">ds</span><span class="o">*</span><span class="n">ds</span><span class="p">;</span>
+      <span class="n">ds</span> <span class="o">=</span> <span class="n">vavg</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">-</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">pos</span><span class="p">[</span><span class="n">k</span><span class="o">+</span><span class="mi">3</span><span class="p">];</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">Voff</span> <span class="o">+=</span> <span class="n">ds</span><span class="o">*</span><span class="n">ds</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">alt_m</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np_alt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">PARTICLE_MASS</span><span class="p">;</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">alt_m</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">np_alt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">PARTICLE_MASS</span><span class="p">;</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">alt_m</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">np_alt</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">PARTICLE_MASS</span><span class="p">;</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">alt_m</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">np_alt</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="n">PARTICLE_MASS</span><span class="p">;</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">Xoff</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">Xoff</span><span class="p">)</span><span class="o">*</span><span class="mf">1e3</span><span class="p">;</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">Voff</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">Voff</span><span class="p">);</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">vrms</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">vrms</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">vrms</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">vrms</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">vmax</span> <span class="o">=</span> <span class="n">VMAX_CONST</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="n">vmax</span><span class="o">*</span><span class="n">vmax_conv</span><span class="p">);</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">rvmax</span> <span class="o">=</span> <span class="n">rvmax</span><span class="o">*</span><span class="mf">1e3</span><span class="p">;</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">halfmass_radius</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">po</span><span class="p">[</span><span class="n">num_part_half</span><span class="p">].</span><span class="n">r2</span><span class="p">)</span><span class="o">*</span><span class="mf">1e3</span><span class="p">;</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">r</span> <span class="o">=</span> <span class="n">cbrt</span><span class="p">((</span><span class="mf">3.0</span><span class="o">/</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="p">))</span><span class="o">*</span><span class="n">np_alt</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">*</span><span class="mf">1e3</span><span class="p">;</span>
+    <span class="n">calc_shape</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">np_alt</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">bound</span><span class="p">);</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">b_to_a2</span> <span class="o">=</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">b_to_a</span><span class="p">;</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">c_to_a2</span> <span class="o">=</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">c_to_a</span><span class="p">;</span>
+    <span class="n">memcpy</span><span class="p">(</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">A2</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">A</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="o">*</span><span class="mi">3</span><span class="p">);</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">r</span> <span class="o">=</span> <span class="n">cbrt</span><span class="p">((</span><span class="mf">3.0</span><span class="o">/</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="p">))</span><span class="o">*</span><span class="n">part_mdelta</span><span class="o">/</span><span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="mf">1e3</span><span class="p">;</span>
+    <span class="n">calc_shape</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">dens_tot</span><span class="p">,</span><span class="n">bound</span><span class="p">);</span>
+
+    <span class="n">rvir</span> <span class="o">=</span> <span class="n">cbrt</span><span class="p">((</span><span class="mf">3.0</span><span class="o">/</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="p">))</span><span class="o">*</span><span class="n">np_vir</span><span class="o">/</span><span class="n">particle_rvir_dens</span><span class="p">)</span><span class="o">*</span><span class="mf">1e3</span><span class="p">;</span>
+    <span class="n">mvir</span> <span class="o">=</span> <span class="n">np_vir</span><span class="o">*</span><span class="n">PARTICLE_MASS</span><span class="p">;</span>
+    <span class="n">calc_scale_radius</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">r</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">vmax</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">rvmax</span><span class="p">,</span> <span class="n">SCALE_NOW</span><span class="p">,</span> <span class="n">po</span><span class="p">,</span> <span class="n">dens_tot</span><span class="p">,</span> <span class="n">bound</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">J</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">PARTICLE_MASS</span><span class="o">*</span><span class="n">SCALE_NOW</span><span class="o">*</span><span class="n">L</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">energy</span> <span class="o">=</span> <span class="n">estimate_total_energy</span><span class="p">(</span><span class="n">dens_tot</span><span class="p">,</span> <span class="o">&amp;</span><span class="p">(</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">kin_to_pot</span><span class="p">));</span>
+    <span class="n">Jh</span> <span class="o">=</span> <span class="n">PARTICLE_MASS</span><span class="o">*</span><span class="n">SCALE_NOW</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">L</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">L</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">spin</span> <span class="o">=</span> <span class="p">(</span><span class="n">m</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="n">Jh</span> <span class="o">*</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">energy</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">Gc</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)))</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">bullock_spin</span> <span class="o">=</span> <span class="p">(</span><span class="n">m</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="n">Jh</span> <span class="o">/</span> <span class="p">(</span><span class="n">mvir</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">Gc</span><span class="o">*</span><span class="n">mvir</span><span class="o">*</span><span class="n">rvir</span><span class="o">*</span><span class="n">SCALE_NOW</span><span class="o">/</span><span class="mf">1e3</span><span class="p">)))</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">_calc_pseudo_evolution_masses</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">total_p</span><span class="p">,</span><span class="n">bound</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//Assumes center + velocity already calculated.</span>
+<span class="kt">void</span> <span class="nf">calc_additional_halo_props</span><span class="p">(</span><span class="k">struct</span> <span class="n">halo</span> <span class="o">*</span><span class="n">h</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int64_t</span> <span class="n">j</span><span class="p">,</span> <span class="n">total_p</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">dens_thresh</span><span class="p">;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">LIGHTCONE</span><span class="p">)</span> <span class="n">lightcone_set_scale</span><span class="p">(</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">pos</span><span class="p">);</span>
+  <span class="n">dens_thresh</span> <span class="o">=</span> <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mf">3.0</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">num_p</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+  <span class="n">total_p</span> <span class="o">=</span> <span class="n">calc_particle_radii</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">pos</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">BOUND_OUT_TO_HALO_EDGE</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">qsort</span><span class="p">(</span><span class="n">po</span><span class="p">,</span> <span class="n">total_p</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">potential</span><span class="p">),</span> <span class="n">dist_compare</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="n">total_p</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">--</span><span class="p">)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">j</span><span class="o">*</span><span class="n">j</span> <span class="o">/</span> <span class="p">(</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">r2</span><span class="o">*</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">r2</span><span class="o">*</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">r2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">dens_thresh</span><span class="o">*</span><span class="n">dens_thresh</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">total_p</span><span class="p">)</span> <span class="n">total_p</span> <span class="o">=</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">total_p</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">)</span> <span class="n">compute_potential</span><span class="p">(</span><span class="n">po</span><span class="p">,</span> <span class="n">total_p</span><span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">total_p</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">ke</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">total_p</span><span class="o">--</span><span class="p">;</span>
+      <span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">po</span><span class="p">[</span><span class="n">total_p</span><span class="p">];</span>
+      <span class="n">j</span><span class="o">--</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="n">qsort</span><span class="p">(</span><span class="n">po</span><span class="p">,</span> <span class="n">total_p</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">potential</span><span class="p">),</span> <span class="n">dist_compare</span><span class="p">);</span>
+  <span class="n">calculate_corevel</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">po</span><span class="p">,</span> <span class="n">total_p</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">extra_info</span><span class="p">[</span><span class="n">h</span><span class="o">-</span><span class="n">halos</span><span class="p">].</span><span class="n">sub_of</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">compute_kinetic_energy</span><span class="p">(</span><span class="n">po</span><span class="p">,</span> <span class="n">total_p</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">corevel</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">pos</span><span class="p">);</span>
+  <span class="k">else</span>
+    <span class="n">compute_kinetic_energy</span><span class="p">(</span><span class="n">po</span><span class="p">,</span> <span class="n">total_p</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">bulkvel</span><span class="p">,</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">pos</span><span class="p">);</span>
+
+  <span class="n">_calc_additional_halo_props</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">total_p</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">_calc_additional_halo_props</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">total_p</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">analyze_halo_generic</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="n">analyze_halo_generic</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">po</span><span class="p">,</span> <span class="n">total_p</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>From previous code blocks <script type="math/tex">M_{vir}</script> is calculated  using bound particles in the next steps:</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+<span class="c1">//From file: config.template.h</span>
+<span class="err">'</span><span class="n">string</span><span class="p">(</span><span class="n">MASS_DEFINITION</span><span class="p">,</span> <span class="s">"vir"</span><span class="p">);</span>  <span class="c1">//vir is the default MASS_DEFINITION</span>
+<span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">_calc_mass_definition</span><span class="p">(</span><span class="o">&amp;</span><span class="n">MASS_DEFINITION</span><span class="p">);</span>
+<span class="n">dens_thresh</span> <span class="o">=</span> <span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mf">3.0</span><span class="p">);</span>
+
+<span class="err">\\</span> <span class="n">Get</span> <span class="n">M_vir</span> <span class="k">using</span> <span class="n">bound</span> <span class="n">paricles</span>
+<span class="n">_calc_additional_halo_props</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">total_p</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="err">\\\\\\\\\\\\\\\\\\\\\\\\</span>\
+<span class="n">particle_rvir_dens</span> <span class="o">=</span> <span class="n">_calc_mass_definition</span><span class="p">(</span><span class="o">&amp;</span><span class="n">vir</span><span class="p">);</span>
+<span class="n">cons</span> <span class="o">=</span> <span class="n">Om</span> <span class="o">*</span> <span class="n">CRITICAL_DENSITY</span> <span class="o">/</span> <span class="n">PARTICLE_MASS</span><span class="p">;</span> <span class="c1">// background density</span>
+<span class="n">particle_rvir_dens</span> <span class="o">=</span> <span class="n">vir_density</span><span class="p">(</span><span class="n">SCALE_NOW</span><span class="p">)</span> <span class="o">*</span> <span class="n">cons</span><span class="p">;</span>
+<span class="n">rvir_thresh</span> <span class="o">=</span> <span class="n">particle_rvir_dens</span><span class="o">*</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mf">3.0</span><span class="p">);</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">total_p</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">bound</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">pe</span> <span class="o">&lt;</span> <span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">ke</span><span class="p">))</span> <span class="k">continue</span><span class="p">;</span>
+  <span class="n">num_part</span><span class="o">++</span><span class="p">;</span>
+  <span class="n">r</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">po</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">r2</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;</span> <span class="n">FORCE_RES</span><span class="p">)</span> <span class="n">r</span> <span class="o">=</span> <span class="n">FORCE_RES</span><span class="p">;</span>
+  <span class="n">cur_dens</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">num_part</span><span class="o">/</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="n">r</span><span class="p">));</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">cur_dens</span> <span class="o">&gt;</span> <span class="n">dens_thresh</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">part_mdelta</span> <span class="o">=</span> <span class="n">num_part</span><span class="p">;</span>
+    <span class="n">dens_tot</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span>
+  <span class="p">}</span>
+
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">cur_dens</span> <span class="o">&gt;</span> <span class="n">rvir_thresh</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">circ_v</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">num_part</span><span class="o">/</span><span class="n">r</span><span class="p">;</span>
+    <span class="n">np_vir</span> <span class="o">=</span> <span class="n">num_part</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">part_mdelta</span> <span class="o">&amp;&amp;</span> <span class="n">circ_v</span> <span class="o">&gt;</span> <span class="n">vmax</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">vmax</span> <span class="o">=</span> <span class="n">circ_v</span><span class="p">;</span>
+<span class="n">rvmax</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="n">m</span> <span class="o">=</span> <span class="n">part_mdelta</span><span class="o">*</span><span class="n">PARTICLE_MASS</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">bound</span><span class="p">)</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span><span class="p">;</span>
+  <span class="k">else</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">mgrav</span> <span class="o">=</span> <span class="n">m</span><span class="p">;</span>
+  <span class="n">h</span><span class="o">-&gt;</span><span class="n">r</span> <span class="o">=</span> <span class="n">cbrt</span><span class="p">((</span><span class="mf">3.0</span><span class="o">/</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">M_PI</span><span class="p">))</span><span class="o">*</span><span class="n">part_mdelta</span><span class="o">/</span><span class="n">particle_thresh_dens</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="mf">1e3</span><span class="p">;</span>
+<span class="err">\\</span> <span class="n">In</span> <span class="n">the</span> <span class="n">catalogs</span> <span class="n">mbound_vir</span> <span class="n">is</span> <span class="n">outputed</span> <span class="k">using</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">mgrav</span>
+<span class="err">\\</span> <span class="n">and</span> <span class="n">rvir</span> <span class="n">is</span> <span class="n">is</span> <span class="n">outputed</span> <span class="k">using</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">r</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My Research</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>My Research</li>
+          <li><a href="mailto:brvillas@ucsc.edu">brvillas@ucsc.edu</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/bvillasen"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">bvillasen</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>A simple blog to document my research
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

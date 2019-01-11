@@ -1,0 +1,716 @@
+MPT ERROR: Rank 1392(g:1392) received signal SIGSEGV(11).
+	Process ID: 80819, Host: r593i7n0, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 800(g:800) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 77094, Host: r585i0n1, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1376(g:1376) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 32775, Host: r593i6n17, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 784(g:784) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 77132, Host: r585i0n0, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1408(g:1408) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 63342, Host: r593i7n2, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 592(g:592) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 82604, Host: r583i6n2, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1680(g:1680) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 3086, Host: r595i1n12, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 464(g:464) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 33257, Host: r583i5n10, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+
+MPT: --------stack traceback-------
+MPT ERROR: Rank 544(g:544) received signal SIGSEGV(11).
+
+	Process ID: 1569, Host: r583i5n16, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT: --------stack traceback-------
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT ERROR: Rank 1600(g:1600) received signal SIGSEGV(11).
+
+	Process ID: 15291, Host: r595i1n6, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT: --------stack traceback-------
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT ERROR: Rank 480(g:480) received signal SIGSEGV(11).
+
+	Process ID: 99349, Host: r583i5n11, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT: --------stack traceback-------
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT ERROR: Rank 1648(g:1648) received signal SIGSEGV(11).
+
+	Process ID: 18870, Host: r595i1n10, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT: --------stack traceback-------
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT ERROR: Rank 656(g:656) received signal SIGSEGV(11).
+
+	Process ID: 55032, Host: r583i6n8, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT: --------stack traceback-------
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT ERROR: Rank 1504(g:1504) received signal SIGSEGV(11).
+
+	Process ID: 77914, Host: r595i0n5, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT: --------stack traceback-------
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT ERROR: Rank 768(g:768) received signal SIGSEGV(11).
+
+	Process ID: 99333, Host: r583i7n17, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT: --------stack traceback-------
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT ERROR: Rank 1664(g:1664) received signal SIGSEGV(11).
+
+	Process ID: 19118, Host: r595i1n11, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT: --------stack traceback-------
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT ERROR: Rank 688(g:688) received signal SIGSEGV(11).
+	Process ID: 77186, Host: r583i6n10, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+
+
+MPT: --------stack traceback-------
+MPT: --------stack traceback-------
+MPT ERROR: Rank 1424(g:1424) received signal SIGSEGV(11).
+MPT ERROR: Rank 640(g:640) received signal SIGSEGV(11).
+	Process ID: 42217, Host: r593i7n16, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+	Process ID: 76671, Host: r583i6n7, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+
+
+MPT: --------stack traceback-------
+MPT: --------stack traceback-------
+MPT ERROR: Rank 1488(g:1488) received signal SIGSEGV(11).
+	Process ID: 24092, Host: r595i0n4, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 512(g:512) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 77065, Host: r583i5n14, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1616(g:1616) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 99338, Host: r595i1n8, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 624(g:624) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 77099, Host: r583i6n6, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1456(g:1456) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 20310, Host: r595i0n2, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 720(g:720) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 77118, Host: r583i7n13, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1536(g:1536) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 76674, Host: r595i0n7, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 672(g:672) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 77140, Host: r583i6n9, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1712(g:1712) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 64087, Host: r595i1n17, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 736(g:736) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 76992, Host: r583i7n15, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1696(g:1696) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 64225, Host: r595i1n16, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 704(g:704) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 77193, Host: r583i6n11, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1368(g:1368) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 51172, Host: r593i6n16, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 560(g:560) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 1488, Host: r583i6n0, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1568(g:1568) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 50795, Host: r595i0n9, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 576(g:576) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 1442, Host: r583i6n1, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1520(g:1520) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 77519, Host: r595i0n6, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 752(g:752) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 77093, Host: r583i7n16, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1472(g:1472) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 65066, Host: r595i0n3, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 528(g:528) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 1566, Host: r583i5n15, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1440(g:1440) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 85764, Host: r595i0n0, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 458(g:458) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 99322, Host: r583i5n9, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1584(g:1584) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 95286, Host: r595i0n11, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+MPT ERROR: Rank 496(g:496) received signal SIGSEGV(11).
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	Process ID: 77172, Host: r583i5n13, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+MPT: --------stack traceback-------
+
+MPT ERROR: Rank 1552(g:1552) received signal SIGSEGV(11).
+MPT: --------stack traceback-------
+	Process ID: 68508, Host: r595i0n8, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+*** Error in `./Gadget2/Gadget2_fft512_maxNodes4': corrupted double-linked list: 0x000000000de79640 ***
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+======= Backtrace: =========
+
+/lib64/libc.so.6(+0x721af)[0x2aaaac2d31af]
+MPT: --------stack traceback-------
+MPT ERROR: Rank 608(g:608) received signal SIGSEGV(11).
+MPT ERROR: Rank 1632(g:1632) received signal SIGSEGV(11).
+	Process ID: 54791, Host: r583i6n5, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+	Process ID: 72949, Host: r595i1n9, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+
+
+MPT: --------stack traceback-------
+MPT: --------stack traceback-------
+/lib64/libc.so.6(+0x77706)[0x2aaaac2d8706]
+MPT ERROR: Rank 2789310(g:1731) received signal SIGSEGV(11).
+/lib64/libc.so.6(+0x79c5e)[0x2aaaac2dac5e]
+	Process ID: 46325, Host: r595i2n0, Program: /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+/lib64/libc.so.6(__libc_malloc+0x50)[0x2aaaac2dc420]
+	MPT Version: SGI MPT 2.14  06/18/16 03:32:07
+/lib64/libc.so.6(+0x11b307)[0x2aaaac37c307]
+
+/lib64/libc.so.6(+0x11b42c)[0x2aaaac37c42c]
+MPT: --------stack traceback-------
+Gadget2_fft512_maxNodes4: buddy.c:193: MPI_SGI_buddy_alloc: Assertion `buddy' failed.
+/lib64/libc.so.6(+0x117e08)[0x2aaaac378e08]
+/lib64/libc.so.6(+0x118246)[0x2aaaac379246]
+/lib64/libc.so.6(getpwuid_r+0x180)[0x2aaaac31a500]
+/lib64/libc.so.6(getpwuid+0x8e)[0x2aaaac319d6e]
+/nasa/sgi/mpt/2.14r19/lib/libmpi.so(+0x62fbe)[0x2aaaabf12fbe]
+======= Memory map: ========
+00400000-00499000 r-xp 00000000 00:2a 5764313148                         /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+00698000-00699000 r--p 00098000 00:2a 5764313148                         /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+00699000-0069c000 rw-p 00099000 00:2a 5764313148                         /home1/bvillase/galaxies/Gadget2/Gadget2_fft512_maxNodes4
+0069c000-00ff4000 rw-p 00000000 00:00 0                                  [heap]
+00ff4000-01011000 rw-p 00000000 00:00 0                                  [heap]
+01011000-010f4000 rw-p 00000000 00:00 0                                  [heap]
+010f4000-010f8000 rw-p 00000000 00:00 0                                  [heap]
+010f8000-012fc000 rw-p 00000000 00:00 0                                  [heap]
+012fc000-01300000 rw-p 00000000 00:00 0                                  [heap]
+01300000-01500000 rw-p 00000000 00:00 0                                  [heap]
+01500000-01504000 rw-p 00000000 00:00 0                                  [heap]
+01504000-01d14000 rw-p 00000000 00:00 0                                  [heap]
+01d14000-01d44000 rw-p 00000000 00:00 0                                  [heap]
+01d44000-01f44000 rw-p 00000000 00:00 0                                  [heap]
+01f44000-01f48000 rw-p 00000000 00:00 0                                  [heap]
+01f48000-02758000 rw-p 00000000 00:00 0                                  [heap]
+02758000-02a23000 rw-p 00000000 00:00 0                                  [heap]
+02a23000-02aeb000 rw-p 00000000 00:00 0                                  [heap]
+02aeb000-02b2c000 rw-p 00000000 00:00 0                                  [heap]
+02b2c000-02f2d000 rw-p 00000000 00:00 0                                  [heap]
+02f2d000-02f2e000 rw-p 00000000 00:00 0                                  [heap]
+02f2e000-0332f000 rw-p 00000000 00:00 0                                  [heap]
+0332f000-25d01a000 rw-p 00000000 00:00 0                                 [heap]
+2aaaaaaab000-2aaaaaacc000 r-xp 00000000 00:15 408542768                  /lib64/ld-2.22.so
+2aaaaaacc000-2aaaaaacf000 r--p 00000000 00:00 0                          [vvar]
+2aaaaaacf000-2aaaaaad1000 r-xp 00000000 00:00 0                          [vdso]
+2aaaaaad1000-2aaaaaad3000 rw-p 00000000 00:00 0 
+2aaaaaad3000-2aaaaaad4000 -w-s 00000000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaaad4000-2aaaaaad5000 ---p 00000000 00:04 4026533183                 /proc/numatools
+2aaaaaad5000-2aaaaaad6000 -w-s 00001000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaaad6000-2aaaaaad7000 r--s 00003000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaaad7000-2aaaaaadb000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaaadb000-2aaaaaae5000 rw-p 00000000 00:00 0 
+2aaaaaae5000-2aaaaaae6000 -w-s 00000000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaaae6000-2aaaaaae7000 -w-s 00001000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaaae7000-2aaaaaae8000 r--s 00003000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaaae8000-2aaaaaaec000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaaaec000-2aaaaaaee000 rw-p 00000000 00:00 0 
+2aaaaaaee000-2aaaaab6e000 rw-p 00000000 00:00 0 
+2aaaaab6e000-2aaaaab6f000 -w-s 00000000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaab6f000-2aaaaab70000 -w-s 00001000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaab70000-2aaaaab71000 r--s 00003000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaab71000-2aaaaabf1000 rw-s 01302000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaabf1000-2aaaaabf2000 rw-p 00000000 00:00 0 
+2aaaaabf2000-2aaaaabf6000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaabf6000-2aaaaac16000 rw-s 01102000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac16000-2aaaaac17000 rw-p 00000000 00:00 0 
+2aaaaac17000-2aaaaac18000 -w-s 00000000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac18000-2aaaaac19000 -w-s 00001000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac19000-2aaaaac1a000 r--s 00003000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac1a000-2aaaaac1b000 rw-p 00000000 00:00 0 
+2aaaaac1b000-2aaaaac1f000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac1f000-2aaaaac3f000 rw-s 01102000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac3f000-2aaaaac40000 rw-p 00000000 00:00 0 
+2aaaaac40000-2aaaaac41000 rw-p 00000000 00:06 2055                       /dev/zero
+2aaaaac41000-2aaaaac42000 rw-p 00000000 00:06 2055                       /dev/zero
+2aaaaac42000-2aaaaac46000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac46000-2aaaaac4a000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac4a000-2aaaaac4e000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac4e000-2aaaaac52000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac52000-2aaaaac56000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac56000-2aaaaac5a000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac5a000-2aaaaac5e000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac5e000-2aaaaac62000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac62000-2aaaaac66000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac66000-2aaaaac6a000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac6a000-2aaaaac6e000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac6e000-2aaaaac76000 rw-p 00000000 00:00 0 
+2aaaaac76000-2aaaaac7a000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac7a000-2aaaaac7e000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac7e000-2aaaaac82000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac82000-2aaaaac86000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac86000-2aaaaac8a000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac8a000-2aaaaac8e000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac8e000-2aaaaac92000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac92000-2aaaaac96000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac96000-2aaaaac9a000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaac9a000-2aaaaac9e000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaac9e000-2aaaaaca2000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaaca2000-2aaaaaca6000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaaca6000-2aaaaacaa000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaacaa000-2aaaaacae000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaacae000-2aaaaacb2000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaacb2000-2aaaaacb6000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaacb6000-2aaaaacba000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaacba000-2aaaaacbe000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaacbe000-2aaaaacc2000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaacc2000-2aaaaacc6000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaaaacc6000-2aaaaacca000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaaaacca000-2aaaaaccb000 rw-p 00000000 00:00 0 
+2aaaaaccb000-2aaaaaccc000 r--p 00020000 00:15 408542768                  /lib64/ld-2.22.so
+2aaaaaccc000-2aaaaaccd000 rw-p 00021000 00:15 408542768                  /lib64/ld-2.22.so
+2aaaaaccd000-2aaaaacce000 rw-p 00000000 00:00 0 
+2aaaaacce000-2aaaaacd3000 r-xp 00000000 00:15 11976895                   /usr/lib64/libdplace.so.0.0.0
+2aaaaacd3000-2aaaaaed2000 ---p 00005000 00:15 11976895                   /usr/lib64/libdplace.so.0.0.0
+2aaaaaed2000-2aaaaaed3000 r--p 00004000 00:15 11976895                   /usr/lib64/libdplace.so.0.0.0
+2aaaaaed3000-2aaaaaed4000 rw-p 00005000 00:15 11976895                   /usr/lib64/libdplace.so.0.0.0
+2aaaaaed4000-2aaaab130000 r-xp 00000000 00:2b 635355981                  /nasa/pkgsrc/sles12/2016Q4/lib/libgsl.so.19.3.0
+2aaaab130000-2aaaab32f000 ---p 0025c000 00:2b 635355981                  /nasa/pkgsrc/sles12/2016Q4/lib/libgsl.so.19.3.0
+2aaaab32f000-2aaaab333000 r--p 0025b000 00:2b 635355981                  /nasa/pkgsrc/sles12/2016Q4/lib/libgsl.so.19.3.0
+2aaaab333000-2aaaab344000 rw-p 0025f000 00:2b 635355981                  /nasa/pkgsrc/sles12/2016Q4/lib/libgsl.so.19.3.0
+2aaaab344000-2aaaab345000 rw-p 00000000 00:00 0 
+2aaaab345000-2aaaab382000 r-xp 00000000 00:2b 635355986                  /nasa/pkgsrc/sles12/2016Q4/lib/libgslcblas.so.0.0.0
+2aaaab382000-2aaaab581000 ---p 0003d000 00:2b 635355986                  /nasa/pkgsrc/sles12/2016Q4/lib/libgslcblas.so.0.0.0
+2aaaab581000-2aaaab582000 r--p 0003c000 00:2b 635355986                  /nasa/pkgsrc/sles12/2016Q4/lib/libgslcblas.so.0.0.0
+2aaaab582000-2aaaab583000 rw-p 0003d000 00:2b 635355986                  /nasa/pkgsrc/sles12/2016Q4/lib/libgslcblas.so.0.0.0
+2aaaab583000-2aaaab67f000 r-xp 00000000 00:15 406040787                  /lib64/libm-2.22.so
+2aaaab67f000-2aaaab87e000 ---p 000fc000 00:15 406040787                  /lib64/libm-2.22.so
+2aaaab87e000-2aaaab87f000 r--p 000fb000 00:15 406040787                  /lib64/libm-2.22.so
+2aaaab87f000-2aaaab880000 rw-p 000fc000 00:15 406040787                  /lib64/libm-2.22.so
+2aaaab880000-2aaaab898000 r-xp 00000000 00:15 408211577                  /lib64/libpthread-2.22.so
+2aaaab898000-2aaaaba97000 ---p 00018000 00:15 408211577                  /lib64/libpthread-2.22.so
+2aaaaba97000-2aaaaba98000 r--p 00017000 00:15 408211577                  /lib64/libpthread-2.22.so
+2aaaaba98000-2aaaaba99000 rw-p 00018000 00:15 408211577                  /lib64/libpthread-2.22.so
+2aaaaba99000-2aaaaba9d000 rw-p 00000000 00:00 0 
+2aaaaba9d000-2aaaabaa9000 r-xp 00000000 00:15 11976041                   /usr/lib64/libcpuset.so.1.1.0
+2aaaabaa9000-2aaaabca9000 ---p 0000c000 00:15 11976041                   /usr/lib64/libcpuset.so.1.1.0
+2aaaabca9000-2aaaabcaa000 r--p 0000c000 00:15 11976041                   /usr/lib64/libcpuset.so.1.1.0
+2aaaabcaa000-2aaaabcab000 rw-p 0000d000 00:15 11976041                   /usr/lib64/libcpuset.so.1.1.0
+2aaaabcab000-2aaaabcae000 r-xp 00000000 00:15 11975127                   /usr/lib64/libbitmask.so.1.0.1
+2aaaabcae000-2aaaabeae000 ---p 00003000 00:15 11975127                   /usr/lib64/libbitmask.so.1.0.1
+2aaaabeae000-2aaaabeaf000 r--p 00003000 00:15 11975127                   /usr/lib64/libbitmask.so.1.0.1
+2aaaabeaf000-2aaaabeb0000 rw-p 00004000 00:15 11975127                   /usr/lib64/libbitmask.so.1.0.1
+2aaaabeb0000-2aaaac045000 r-xp 00000000 00:2b 2305686821                 /nasa/sgi/mpt/2.14r19/lib/libmpi.so
+2aaaac045000-2aaaac245000 ---p 00195000 00:2b 2305686821                 /nasa/sgi/mpt/2.14r19/lib/libmpi.so
+2aaaac245000-2aaaac247000 r--p 00195000 00:2b 2305686821                 /nasa/sgi/mpt/2.14r19/lib/libmpi.so
+2aaaac247000-2aaaac24c000 rw-p 00197000 00:2b 2305686821                 /nasa/sgi/mpt/2.14r19/lib/libmpi.so
+2aaaac24c000-2aaaac261000 rw-p 00000000 00:00 0 
+2aaaac261000-2aaaac3fa000 r-xp 00000000 00:15 408542315                  /lib64/libc-2.22.so
+2aaaac3fa000-2aaaac5fa000 ---p 00199000 00:15 408542315                  /lib64/libc-2.22.so
+2aaaac5fa000-2aaaac5fe000 r--p 00199000 00:15 408542315                  /lib64/libc-2.22.so
+2aaaac5fe000-2aaaac600000 rw-p 0019d000 00:15 408542315                  /lib64/libc-2.22.so
+2aaaac600000-2aaaac604000 rw-p 00000000 00:00 0 
+2aaaac604000-2aaaac606000 r-xp 00000000 00:15 408542310                  /lib64/libdl-2.22.so
+2aaaac606000-2aaaac806000 ---p 00002000 00:15 408542310                  /lib64/libdl-2.22.so
+2aaaac806000-2aaaac807000 r--p 00002000 00:15 408542310                  /lib64/libdl-2.22.so
+2aaaac807000-2aaaac808000 rw-p 00003000 00:15 408542310                  /lib64/libdl-2.22.so
+2aaaac808000-2aaaac812000 r-xp 00000000 00:15 12063151                   /usr/lib64/libnuma.so.1
+2aaaac812000-2aaaaca12000 ---p 0000a000 00:15 12063151                   /usr/lib64/libnuma.so.1
+2aaaaca12000-2aaaaca13000 r--p 0000a000 00:15 12063151                   /usr/lib64/libnuma.so.1
+2aaaaca13000-2aaaaca14000 rw-p 0000b000 00:15 12063151                   /usr/lib64/libnuma.so.1
+2aaaaca14000-2aaaaca1b000 r-xp 00000000 00:15 408258129                  /lib64/librt-2.22.so
+2aaaaca1b000-2aaaacc1a000 ---p 00007000 00:15 408258129                  /lib64/librt-2.22.so
+2aaaacc1a000-2aaaacc1b000 r--p 00006000 00:15 408258129                  /lib64/librt-2.22.so
+2aaaacc1b000-2aaaacc1c000 rw-p 00007000 00:15 408258129                  /lib64/librt-2.22.so
+2aaaacc1c000-2aaaacc32000 r-xp 00000000 00:15 408542283                  /lib64/libgcc_s.so.1
+2aaaacc32000-2aaaace31000 ---p 00016000 00:15 408542283                  /lib64/libgcc_s.so.1
+2aaaace31000-2aaaace32000 r--p 00015000 00:15 408542283                  /lib64/libgcc_s.so.1
+2aaaace32000-2aaaace33000 rw-p 00016000 00:15 408542283                  /lib64/libgcc_s.so.1
+2aaaace33000-2aaaace4a000 r-xp 00000000 00:15 11987657                   /usr/lib64/libibverbs.so.1.0.0
+2aaaace4a000-2aaaad04a000 ---p 00017000 00:15 11987657                   /usr/lib64/libibverbs.so.1.0.0
+2aaaad04a000-2aaaad04b000 r--p 00017000 00:15 11987657                   /usr/lib64/libibverbs.so.1.0.0
+2aaaad04b000-2aaaad04c000 rw-p 00018000 00:15 11987657                   /usr/lib64/libibverbs.so.1.0.0
+2aaaad04c000-2aaaad099000 r-xp 00000000 00:15 11974324                   /usr/lib64/libnl-route-3.so.200.18.0
+2aaaad099000-2aaaad298000 ---p 0004d000 00:15 11974324                   /usr/lib64/libnl-route-3.so.200.18.0
+2aaaad298000-2aaaad29b000 r--p 0004c000 00:15 11974324                   /usr/lib64/libnl-route-3.so.200.18.0
+2aaaad29b000-2aaaad29f000 rw-p 0004f000 00:15 11974324                   /usr/lib64/libnl-route-3.so.200.18.0
+2aaaad29f000-2aaaad2a1000 rw-p 00000000 00:00 0 
+2aaaad2a1000-2aaaad2bd000 r-xp 00000000 00:15 11974658                   /usr/lib64/libnl-3.so.200.18.0
+2aaaad2bd000-2aaaad4bc000 ---p 0001c000 00:15 11974658                   /usr/lib64/libnl-3.so.200.18.0
+2aaaad4bc000-2aaaad4be000 r--p 0001b000 00:15 11974658                   /usr/lib64/libnl-3.so.200.18.0
+2aaaad4be000-2aaaad4bf000 rw-p 0001d000 00:15 11974658                   /usr/lib64/libnl-3.so.200.18.0
+2aaaad4bf000-2aaaad501000 r-xp 00000000 00:15 11975223                   /usr/lib64/libmlx5-rdmav2.so
+2aaaad501000-2aaaad700000 ---p 00042000 00:15 11975223                   /usr/lib64/libmlx5-rdmav2.so
+2aaaad700000-2aaaad701000 r--p 00041000 00:15 11975223                   /usr/lib64/libmlx5-rdmav2.so
+2aaaad701000-2aaaad702000 rw-p 00042000 00:15 11975223                   /usr/lib64/libmlx5-rdmav2.so
+2aaaad702000-2aaaad725000 r-xp 00000000 00:15 11975802                   /usr/lib64/libmlx4-rdmav2.so
+2aaaad725000-2aaaad924000 ---p 00023000 00:15 11975802                   /usr/lib64/libmlx4-rdmav2.so
+2aaaad924000-2aaaad925000 r--p 00022000 00:15 11975802                   /usr/lib64/libmlx4-rdmav2.so
+2aaaad925000-2aaaad927000 rw-p 00023000 00:15 11975802                   /usr/lib64/libmlx4-rdmav2.so
+2aaaad927000-2aaaae340000 rw-s 00000000 00:05 604226                     /dev/zero (deleted)
+2aaaae340000-2aaaae540000 rw-s 00a19000 00:05 604226                     /dev/zero (deleted)
+2aaaae540000-2aaab0340000 rw-s 00c19000 00:05 604226                     /dev/zero (deleted)
+2aaab0340000-2aaab0540000 rw-s 02a19000 00:05 604226                     /dev/zero (deleted)
+2aaab0540000-2aaab1a37000 rw-s 02c19000 00:05 604226                     /dev/zero (deleted)
+2aaab1a37000-2aaab1e38000 rw-p 00000000 00:00 0 
+2aaab1e38000-2aaab2038000 rw-s 00000000 00:05 582578                     /dev/zero (deleted)
+2aaab2038000-2aaab203a000 r-xp 00000000 00:15 11974463                   /usr/lib64/libxpmem.so.0.0.0
+2aaab203a000-2aaab2239000 ---p 00002000 00:15 11974463                   /usr/lib64/libxpmem.so.0.0.0
+2aaab2239000-2aaab223a000 r--p 00001000 00:15 11974463                   /usr/lib64/libxpmem.so.0.0.0
+2aaab223a000-2aaab223b000 rw-p 00002000 00:15 11974463                   /usr/lib64/libxpmem.so.0.0.0
+2aaab223b000-2aaab243b000 rw-s 01502000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab243b000-2aaab24bb000 rw-p 00000000 00:00 0 
+2aaab24bb000-2aaab24bf000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab24bf000-2aaab24c3000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaab24c3000-2aaab24c7000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab24c7000-2aaab24cb000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaab24cb000-2aaab24cf000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab24cf000-2aaab24d3000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaab24d3000-2aaab24d7000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab24d7000-2aaab24db000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaab24db000-2aaab24df000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab24df000-2aaab24e3000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaab24e3000-2aaab24e7000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab24e7000-2aaab24eb000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaab24eb000-2aaab24ef000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab24ef000-2aaab24f3000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaab24f3000-2aaab24f7000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab24f7000-2aaab24fb000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaab24fb000-2aaab24ff000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab24ff000-2aaab2503000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaab2503000-2aaab2507000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aaab2507000-2aaab250b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aaab250d000-2aaab2e7a000 rw-s 00000000 00:00 0 
+2aaab2e7a000-2aac0130d000 rw-s 00000000 00:00 0 
+2aac0130d000-2aac0138d000 rw-p 00000000 00:00 0 
+2aac0138d000-2aac01391000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac01391000-2aac01395000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac01395000-2aac01399000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac01399000-2aac0139d000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac0139d000-2aac013a1000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013a1000-2aac013a5000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013a5000-2aac013a9000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013a9000-2aac013ad000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013ad000-2aac013b1000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013b1000-2aac013b5000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013b5000-2aac013b9000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013b9000-2aac013bd000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013bd000-2aac013c1000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013c1000-2aac013c5000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013c5000-2aac013c9000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013c9000-2aac013cd000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013cd000-2aac013d1000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013d1000-2aac013d5000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013d5000-2aac013d9000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013d9000-2aac013dd000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013dd000-2aac013e1000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013e1000-2aac013e5000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013e5000-2aac013e9000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013e9000-2aac013ed000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013ed000-2aac013f1000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013f1000-2aac013f5000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013f5000-2aac013f9000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac013f9000-2aac013fd000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac013ff000-2aac053ff000 rw-s 00000000 00:00 0 
+2aac053ff000-2aac055ff000 rw-s 01502000 00:06 55134                      /dev/infiniband/uverbs1
+2aac055ff000-2aac0567f000 rw-s 01302000 00:06 55134                      /dev/infiniband/uverbs1
+2aac0567f000-2aac05683000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac05683000-2aac05687000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac05687000-2aac0568b000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac0568b000-2aac0568f000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac0568f000-2aac05693000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac05693000-2aac05697000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac05697000-2aac0569b000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac0569b000-2aac0569f000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac0569f000-2aac056a3000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056a3000-2aac056a7000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056a7000-2aac056ab000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056ab000-2aac056af000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056af000-2aac056b3000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056b3000-2aac056b7000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056b7000-2aac056bb000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056bb000-2aac056bf000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056bf000-2aac056c3000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056c3000-2aac056c7000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056c7000-2aac056cb000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056cb000-2aac056cf000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056cf000-2aac056d3000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056d3000-2aac056d7000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056d7000-2aac056db000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056db000-2aac056df000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056df000-2aac056e3000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056e3000-2aac056e7000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056e7000-2aac056eb000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056eb000-2aac056ef000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056ef000-2aac056f3000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056f3000-2aac056f7000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056f7000-2aac056fb000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac056fb000-2aac056ff000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac056ff000-2aac05703000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac05703000-2aac05707000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aac05707000-2aac0570b000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aac0570d000-2aac0607a000 rw-s 00000000 00:00 0 
+2aac0607a000-2aad5450d000 rw-s 00000000 00:00 0 
+2aad5450d000-2aad54511000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54511000-2aad54515000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad54515000-2aad54519000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54519000-2aad5451d000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5451d000-2aad54521000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54521000-2aad54525000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad54525000-2aad54529000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54529000-2aad5452d000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5452d000-2aad54531000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54531000-2aad54535000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad54535000-2aad54539000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54539000-2aad5453d000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5453d000-2aad54541000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54541000-2aad54545000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad54545000-2aad54549000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54549000-2aad5454d000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5454d000-2aad54551000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54551000-2aad54555000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad54555000-2aad54559000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54559000-2aad5455d000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5455d000-2aad54561000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54561000-2aad54565000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad54565000-2aad54569000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54569000-2aad5456d000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5456d000-2aad54571000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54571000-2aad54575000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad54575000-2aad54579000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54579000-2aad5457d000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5457d000-2aad54581000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54581000-2aad54585000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad54585000-2aad54589000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54589000-2aad5458d000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5458d000-2aad54591000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54591000-2aad54595000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad54595000-2aad54599000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad54599000-2aad5459d000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5459d000-2aad545a1000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545a1000-2aad545a5000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545a5000-2aad545a9000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545a9000-2aad545ad000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545ad000-2aad545b1000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545b1000-2aad545b5000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545b5000-2aad545b9000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545b9000-2aad545bd000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545bd000-2aad545c1000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545c1000-2aad545c5000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545c5000-2aad545c9000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545c9000-2aad545cd000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545cd000-2aad545d1000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545d1000-2aad545d5000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545d5000-2aad545d9000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545d9000-2aad545dd000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545dd000-2aad545e1000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545e1000-2aad545e5000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545e5000-2aad545e9000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545e9000-2aad545ed000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545ed000-2aad545f1000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545f1000-2aad545f5000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545f5000-2aad545f9000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad545f9000-2aad545fd000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad545ff000-2aad585ff000 rw-s 00000000 00:00 0 
+2aad585ff000-2aad58603000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58603000-2aad58607000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58607000-2aad5860b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5860b000-2aad5860f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5860f000-2aad58613000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58613000-2aad58617000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58617000-2aad5861b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5861b000-2aad5861f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5861f000-2aad58623000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58623000-2aad58627000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58627000-2aad5862b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5862b000-2aad5862f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5862f000-2aad58633000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58633000-2aad58637000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58637000-2aad5863b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5863b000-2aad5863f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5863f000-2aad58643000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58643000-2aad58647000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58647000-2aad5864b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5864b000-2aad5864f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5864f000-2aad58653000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58653000-2aad58657000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58657000-2aad5865b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5865b000-2aad5865f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5865f000-2aad58663000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58663000-2aad58667000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58667000-2aad5866b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5866b000-2aad5866f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5866f000-2aad58673000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58673000-2aad58677000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58677000-2aad5867b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5867b000-2aad5867f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5867f000-2aad58683000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58683000-2aad58687000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58687000-2aad5868b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5868b000-2aad5868f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5868f000-2aad58693000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58693000-2aad58697000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58697000-2aad5869b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5869b000-2aad5869f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5869f000-2aad586a3000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586a3000-2aad586a7000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586a7000-2aad586ab000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586ab000-2aad586af000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586af000-2aad586b3000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586b3000-2aad586b7000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586b7000-2aad586bb000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586bb000-2aad586bf000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586bf000-2aad586c3000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586c3000-2aad586c7000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586c7000-2aad586cb000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586cb000-2aad586cf000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586cf000-2aad586d3000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586d3000-2aad586d7000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586d7000-2aad586db000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586db000-2aad586df000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586df000-2aad586e3000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586e3000-2aad586e7000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586e7000-2aad586eb000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586eb000-2aad586ef000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586ef000-2aad586f3000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586f3000-2aad586f7000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586f7000-2aad586fb000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad586fb000-2aad586ff000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad586ff000-2aad58703000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58703000-2aad58707000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58707000-2aad5870b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5870b000-2aad5870f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5870f000-2aad58713000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58713000-2aad58717000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58717000-2aad5871b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5871b000-2aad5871f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5871f000-2aad58723000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58723000-2aad58727000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58727000-2aad5872b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5872b000-2aad5872f000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad5872f000-2aad58733000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad58733000-2aad58737000 rw-s 00e02000 00:06 55133                      /dev/infiniband/uverbs0
+2aad58737000-2aad5873b000 rw-s 00e02000 00:06 55134                      /dev/infiniband/uverbs1
+2aad5873b000-2aad58777000 r--s 00000000 00:14 49297                      /run/nscd/passwd
+2aad5890d000-2aad5927a000 rw-s 00000000 00:00 0 
+2aad5927a000-2aaea770d000 rw-s 00000000 00:00 0 
+2aaea77ff000-2aaeab7ff000 rw-s 00000000 00:00 0 
+2aaeabb0d000-2aaeac47a000 rw-s 00000000 00:00 0 
+2aaeac47a000-2aaffa90d000 rw-s 00000000 00:00 0 
+2aaffa9ff000-2aaffe9ff000 rw-s 00000000 00:00 0 
+2aaffed0d000-2aafff67a000 rw-s 00000000 00:00 0 
+2aafff67a000-2ab14db0d000 rw-s 00000000 00:00 0 
+2ab14dbff000-2ab151bff000 rw-s 00000000 00:00 0 
+2ab151f0d000-2ab15287a000 rw-s 00000000 00:00 0 
+2ab15287a000-2ab2a0d0d000 rw-s 00000000 00:00 0 
+2ab2a0dff000-2ab2a4dff000 rw-s 00000000 00:00 0 
+2ab2a510d000-2ab2a5a7a000 rw-s 00000000 00:00 0 
+2ab2a5a7a000-2ab3f3f0d000 rw-s 00000000 00:00 0 
+2ab3f3fff000-2ab3f7fff000 rw-s 00000000 00:00 0 
+2ab3f830d000-2ab3f8c7a000 rw-s 00000000 00:00 0 
+2ab3f8c7a000-2ab54710d000 rw-s 00000000 00:00 0 
+2ab5471ff000-2ab54b1ff000 rw-s 00000000 00:00 0 
+2ab54b50d000-2ab54be7a000 rw-s 00000000 00:00 0 
+2ab54be7a000-2ab69a30d000 rw-s 00000000 00:00 0 
+2ab69a3ff000-2ab69e3ff000 rw-s 00000000 00:00 0 
+2ab69e70d000-2ab69f07a000 rw-s 00000000 00:00 0 
+2ab69f07a000-2ab7ed50d000 rw-s 00000000 00:00 0 
+2ab7ed5ff000-2ab7f15ff000 rw-s 00000000 00:00 0 
+2ab7f190d000-2ab7f227a000 rw-s 00000000 00:00 0 
+2ab7f227a000-2ab94070d000 rw-s 00000000 00:00 0 
+2ab9407ff000-2ab9447ff000 rw-s 00000000 00:00 0 
+2ab944b0d000-2ab94547a000 rw-s 00000000 00:00 0 
+2ab94547a000-2aba9390d000 rw-s 00000000 00:00 0 
+2aba939ff000-2aba979ff000 rw-s 00000000 00:00 0 
+2aba97d0d000-2aba9867a000 rw-s 00000000 00:00 0 
+2aba9867a000-2abbe6b0d000 rw-s 00000000 00:00 0 
+2abbe6bff000-2abbeabff000 rw-s 00000000 00:00 0 
+2abbeaf0d000-2abbeb87a000 rw-s 00000000 00:00 0 
+2abbeb87a000-2abd39d0d000 rw-s 00000000 00:00 0 
+2abd39dff000-2abd3ddff000 rw-s 00000000 00:00 0 
+2abd3e10d000-2abd3ea7a000 rw-s 00000000 00:00 0 
+2abd3ea7a000-2abe8cf0d000 rw-s 00000000 00:00 0 
+2abe8cfff000-2abe90fff000 rw-s 00000000 00:00 0 
+2abe9130d000-2abe91c7a000 rw-s 00000000 00:00 0 
+2abe91c7a000-2abfe010d000 rw-s 00000000 00:00 0 
+2abfe01ff000-2abfe41ff000 rw-s 00000000 00:00 0 
+2abfe8000000-2abfe8021000 rw-p 00000000 00:00 0 
+2abfe8021000-2abfec000000 ---p 00000000 00:00 0 
+7fffffede000-7ffffffff000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+MPT ERROR: shared memory misdirected packet received by 816 intended for 4018945 
+MPT ERROR: MPI_COMM_WORLD rank 809 has terminated without calling MPI_Finalize()
+	aborting job
+MPT: Received signal 11
+
