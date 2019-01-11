@@ -25,4 +25,7 @@ categories: "ay9"
 
 [ LINK TO PDF DOCUMENT ]( https://ttt.astro.su.se/~ez/kurs/gradU/DM.pdf )
 
-The link above points to a
+The link above points to a good Introduction to Dark Matter. Feel free to not pay to much attention to equations for now. Also **ignore section 1.7 and 1.8**.
+
+
+Any questions, just send me a message:  <brvillas@ucsc.edu>
