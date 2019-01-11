@@ -213,6 +213,7 @@
     }
 }
 
+
 .post-content {
     margin-bottom: $spacing-unit;
 
@@ -239,4 +240,26 @@
             font-size: 18px;
         }
     }
+}
+
+.main-title {
+  font-size: 40px;
+  letter-spacing: -0px;
+  line-height: 1;
+  color:#147BA8;
+
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
+}
+
+.main-option {
+  font-size: 35px;
+  letter-spacing: -0px;
+  line-height: 1;
+  color:#147BA8;
+
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
 }

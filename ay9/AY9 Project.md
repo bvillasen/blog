@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_main
 title: AY9 Project
 permalink: /ay9project/
 ---
@@ -9,24 +9,17 @@ permalink: /ay9project/
 
   <h1 class="page-heading"></h1>
 
-  <font size="6" color="#147BA8">
-  Analysis of Dark Matter Simulations
-  </font>
-
-  <br>
-  <br>
-
+  <h1 class="main-title">  Analysis of Dark Matter Simulations </h1>
 
 
   <a href="https://github.com/bvillasen/AY9_dark_matter_analysis" target="_blank"  ><img  src="{{ site.url }}assets/images/GitHub_Logo.png" width="60px"> Project Repository </a>  
 
   <br>
   <br>
+  <br>
 
-  <div>
-    <font size="5" color="#A82914">
+  <div class="main-option">
     <a href="{{ site.url }}/ay9project/posts/"  > Project Posts </a>
-    </font>
   </div>
 
 
