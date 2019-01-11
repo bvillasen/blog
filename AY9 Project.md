@@ -1,16 +1,16 @@
 ---
 layout: page
 title: AY9-Project
-permalink: /AY9Project/
+permalink: /ay9project/
 ---
 
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">AY9 Project: Analysis of Dark Matter Simulations A</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.ay9posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
