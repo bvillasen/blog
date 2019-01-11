@@ -4,15 +4,14 @@ title: AY9 Project
 permalink: /ay9project/
 ---
 
-<style>
-  h1 { font-size: large;}
-</style>
 
 <div class="home">
 
   <h1 class="page-heading"></h1>
 
-  # Analysis of Dark Matter Simulations 
+  <font size="6">
+  Analysis of Dark Matter Simulations
+  </font>
 
   <ul class="post-list">
     {% for post in site.categories.ay9 %}
