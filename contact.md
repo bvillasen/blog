@@ -3,12 +3,12 @@ layout: page
 title: Contact
 permalink: /contact/
 ---
-My email:
+**My email:**
 
 brvillas@ucsc.edu
 
 bvillasen@gmail.com
 
-My GitHub page:
+**My GitHub page:**
 
 [https://github.com/bvillasen](https://github.com/bvillasen)
