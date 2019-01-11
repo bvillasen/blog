@@ -7,7 +7,7 @@ permalink: /ay9project/
 
 <div class="home">
 
-  <h1 class="page-heading">Analysis of Dark Matter Simulations 3</h1>
+  <h1 class="page-heading">Analysis of Dark Matter Simulations </h1>
 
   <ul class="post-list">
     {% for post in site.categories.ay9 %}
