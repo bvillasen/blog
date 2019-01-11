@@ -13,6 +13,8 @@ permalink: /ay9project/
   Analysis of Dark Matter Simulations
   </font>
 
+  <a href="https://github.com/bvillasen/AY9_dark_matter_analysis" > Project GitHub Repository </a>
+
   <ul class="post-list">
     {% for post in site.categories.ay9 %}
       <li>
