@@ -4,6 +4,9 @@ title: AY9 Project
 permalink: /ay9project/
 ---
 
+<style>
+  h1 {color:blue;}
+</style>
 
 <div class="home">
 
