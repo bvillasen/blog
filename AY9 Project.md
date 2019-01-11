@@ -18,7 +18,7 @@ permalink: /ay9project/
 
 
 
-  <a href="https://github.com/bvillasen/AY9_dark_matter_analysis" ><img  src="{{ site.url }}assets/images/GitHub_Logo.png" width="60px"> Project GitHub Repository </a>
+  <a href="https://github.com/bvillasen/AY9_dark_matter_analysis" target="_blank"  ><img  src="{{ site.url }}assets/images/GitHub_Logo.png" width="60px"> Project GitHub Repository </a>
 
   <br>
   <br>
