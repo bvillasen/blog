@@ -7,10 +7,10 @@ permalink: /ay9project/
 
 <div class="home">
 
-  <h1 class="page-heading">AY9 Project: Analysis of Dark Matter Simulations A</h1>
+  <h1 class="page-heading">Analysis of Dark Matter Simulations </h1>
 
   <ul class="post-list">
-    {% for post in site.ay9posts %}
+    {% for post in site.categories.ay9 %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
