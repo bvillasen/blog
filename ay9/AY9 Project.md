@@ -18,16 +18,42 @@ permalink: /ay9project/
   <br>
   <br>
 
-  <div class="main-option">
+  <div class="main-option" >
     <a href="{{ site.url }}/ay9project/posts/"  > Project Posts </a>
   </div>
 
   <br>
 
 
-  <div class="main-option">
+  <div class="main-option" >
     <a href="{{ site.url }}/ay9project/results/"  > Project Results </a>
+  </div>
+
+  <br>
+  <br>
+<!--
+  <div class="main-category" >
+    Leave a Message
+  </div >
+
+  <div class="message_form">
+  <form class="" action="index.html" method="post">
+    Subject
+    <br>
+    <input type="text" placeholder="" name="subject" value="" size="40%" maxlength="50" class="simple_box">
+    <br>
+    Your email (optional)
+    <br>
+    <input type="text" placeholder="" name="email" value="" size="40%" maxlength="50" class="simple_box">
+    <br>
+    Message:
+
+     <textarea class="simple_box" id="textarea" name="subject" placeholder="Write message..." style="height:200px"></textarea>
+
+    <button type="button" name="button" class="submit_button">Submit Message</button>
+  </form>
   </div>
 
 
 </div>
+-->
