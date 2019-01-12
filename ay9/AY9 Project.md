@@ -22,5 +22,12 @@ permalink: /ay9project/
     <a href="{{ site.url }}/ay9project/posts/"  > Project Posts </a>
   </div>
 
+  <br>
+
+
+  <div class="main-option">
+    <a href="{{ site.url }}/ay9project/results/"  > Project Results </a>
+  </div>
+
 
 </div>
