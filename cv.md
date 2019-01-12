@@ -11,6 +11,7 @@ permalink: /cv/
 <ul>
 <li>Learn to Program in Java, Microsoft. (EdX).</li>
 <li>Object Oriented Programming in Java, Microsoft. (EdX).</li>
+<li>Designing a Technical Solution, Microsoft. (EdX).</li>
 <li>Algorithms: Design and Analysis, Part 1, Coursera. (Stanford). </li>
 <li>Algorithms: Design and Analysis, Part 2, Coursera. (Stanford). </li>
 <li>Heterogeneous Parallel Programming, Coursera. (University of Illinois). </li>
