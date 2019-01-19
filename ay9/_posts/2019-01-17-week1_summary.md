@@ -7,4 +7,4 @@ categories: "ay9"
 
 We talked about the code we will use for running the Dark Matter  simulations **Gadget2**, the link is here:
 
-https://wwwmpa.mpa-garching.mpg.de/gadget/
+[GADGET2] ( https://wwwmpa.mpa-garching.mpg.de/gadget/ )
