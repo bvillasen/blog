@@ -14,3 +14,5 @@ We will use ROCKSTAR as our halo finder, rockstar will receive the outputs from 
 You can find ROCKSTAR here:   [ ROCKSTAR ]( https://bitbucket.org/gfcstanford/rockstar )
 
 I added a folder for the project in **hyperion** and also individual folders for each one of you, feel free to create new Jupyter notebooks there.  
+
+Next class the class will be more formal, please bring your laptop and a notebook if you need to take notes.
