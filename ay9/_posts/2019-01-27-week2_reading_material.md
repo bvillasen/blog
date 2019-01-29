@@ -7,7 +7,10 @@ categories: "ay9"
 
 ## More Youtube Videos:
 
-Picture if the Big Bang
+The Beginig of Everything
+{% include youtubePlayer.html id="wNDGgL73ihY&t=70s" %}
+
+Picture of the Big Bang
 {% include youtubePlayer.html id="_mZQ-5-KYHw" %}
 
 <br>
