@@ -15,7 +15,14 @@ Picture of the Big Bang
 
 <br>
 
-## Gadget2 paper:
+## Gadget2:
 
+** The paper about Gadget2 code **
 
 [ LINK TO PDF DOCUMENT ]( https://wwwmpa.mpa-garching.mpg.de/gadget/gadget2-paper.pdf )
+
+## Dark Matter Halos
+
+** The structure and evolution of cold dark matter halos **
+
+[ LINK TO PDF DOCUMENT ]( https://www.ucolick.org/~diemand/vl/publ/dm_dm_minirev.pdf )
