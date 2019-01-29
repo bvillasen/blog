@@ -16,8 +16,3 @@ Picture if the Big Bang
 
 
 [ LINK TO PDF DOCUMENT ]( https://wwwmpa.mpa-garching.mpg.de/gadget/gadget2-paper.pdf )
-
-The link above points to a good Introduction to Dark Matter. Feel free to not pay to much attention to equations for now. Also **ignore section 1.7 and 1.8**.
-
-
-Any questions, just send me a message:  <brvillas@ucsc.edu>
