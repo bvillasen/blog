@@ -8,7 +8,7 @@ categories: "ay9"
 ## More Youtube Videos:
 
 The Beginig of Everything
-{% include youtubePlayer.html id="wNDGgL73ihY&t=70s" %}
+{% include youtubePlayer.html id="wNDGgL73ihY" %}
 
 Picture of the Big Bang
 {% include youtubePlayer.html id="_mZQ-5-KYHw" %}
