@@ -34,7 +34,7 @@ categories: "ay9"
 <ul>
 <li> Locate the particles corresponding to each halo and measure the density profile of each halo. Density profile = density as a function of radius. </li>
 
-<li> Compare the density profiles of the halos in the simulation to the corresponding Navarro-Frenk-White ( [ NFW ]( https://en.wikipedia.org/wiki/Navarro%E2%80%93Frenk%E2%80%93White_profile )) model. </li>
+<li> Compare the density profiles of the halos in the simulation to the corresponding Navarro-Frenk-White ( [ NFW ]( https://en.wikipedia.org/wiki/Navarro%E2%80%93Frenk%E2%80%93White_profile ) ) model. </li>
 
 </ul>
 
