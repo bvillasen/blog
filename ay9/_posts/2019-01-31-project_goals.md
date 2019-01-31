@@ -33,15 +33,14 @@ categories: "ay9"
 
 <li> Locate the particles corresponding to each halo and measure the density profile of each halo. Density profile = density as a function of radius. </li>
 
-<li> Compare the density profiles of the halos in the simulation to the corresponding Navarro-Frenk-White (NFW) model. </li>
-
+<li> Compare the density profiles of the halos in the simulation to the corresponding Navarro-Frenk-White ( [ NFW ]( https://en.wikipedia.org/wiki/Navarro%E2%80%93Frenk%E2%80%93White_profile )) model. </li>
 ## Group 2
 
 <li> Measure the number of halos as a function of mass ( halo mass function ) on the simulation. </li>
 
 <li> Use ROCKSTAR to compute the halo merger trees and study the formation history of the most massive halos on the simulation. The merger trees tell us how as time progresses in the simulation the halos merge to form bigger halos. </li>
 
- 
+
 
 
 
