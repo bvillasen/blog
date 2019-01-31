@@ -8,13 +8,13 @@ categories: "ay9"
 
 <ul>
 
-  <li> Learn basic concepts about cosmology and structure formation.
+  <li> Learn basic concepts about cosmology and structure formation. </li>
 
-  <li> Load data from Dark Matter simulations performed with the code GADGET2.
+  <li> Load data from Dark Matter simulations performed with the code GADGET2. </li>
 
   <ul>
 
-    <li> Plot the positions of the particles as a function of time and make an animation </li>
+    <li> Plot the positions of the particles as a function of time and make an animation. </li>
   </ul>
 
 <li> Interpolate the mass of the particles into a uniform grid to get the Dark Matter density field </li>   
@@ -29,27 +29,40 @@ categories: "ay9"
 
 </ul>
 
-<!-- ## Group 1
+### Group 1
 
 <ul>
-<li> Locate the particles corresponding to each halo and measure the density profile of each halo. Density profile = density as a function of radius. </li>
+<li> Locate the particles corresponding to each halo and measure the density profile of each halo. Density profile = density of the halo as a function of radius. </li>
 
-<li> Compare the density profiles of the halos in the simulation to the corresponding Navarro-Frenk-White ( [ NFW ]( https://en.wikipedia.org/wiki/Navarro%E2%80%93Frenk%E2%80%93White_profile ) ) model. </li>
+<li> Compare the density profiles of the halos in the simulation to the corresponding Navarro-Frenk-White (NFW) model. </li>
 
 </ul>
 
-## Group 2
+#### NFW Resources
+
+[ NFW wikipedia ]( https://en.wikipedia.org/wiki/Navarro%E2%80%93Frenk%E2%80%93White_profile )
+
+[ NFW PAPER ]( https://arxiv.org/pdf/astro-ph/9508025.pdf )
+
+### Group 2
 
 <ul>
 <li> Measure the number of halos as a function of mass ( halo mass function ) on the simulation. </li>
 
 <li> Use ROCKSTAR to compute the halo merger trees and study the formation history of the most massive halos on the simulation. The merger trees tell us how as time progresses in the simulation the halos merge to form bigger halos. </li>
-</ul> -->
-
-
-
-
-
-
-
 </ul>
+
+#### Halo Mass Function Resources
+
+[What is the Halo Mass Function ]( https://www.quora.com/What-is-the-dark-matter-halo-mass-function-Is-there-an-equation-for-it )
+
+#### Halo Merger Trees Resources
+[ Halo Merger Tree Introduction ]( https://www.cosmosim.org/cms/documentation/database-structure/merger-trees/ )
+
+
+
+
+
+
+
+<!-- </ul> -->
