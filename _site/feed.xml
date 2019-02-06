@@ -6,9 +6,129 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Jan 2019 22:03:08 -0600</pubDate>
-    <lastBuildDate>Fri, 11 Jan 2019 22:03:08 -0600</lastBuildDate>
+    <pubDate>Thu, 31 Jan 2019 12:28:01 -0800</pubDate>
+    <lastBuildDate>Thu, 31 Jan 2019 12:28:01 -0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Project Goals</title>
+        <description>&lt;h2 id=&quot;goals-for-the-project&quot;&gt;Goals for the project:&lt;/h2&gt;
+
+&lt;ul&gt;
+
+  &lt;li&gt; Learn basic concepts about cosmology and structure formation. &lt;/li&gt;
+
+  &lt;li&gt; Load data from Dark Matter simulations performed with the code GADGET2. &lt;/li&gt;
+
+  &lt;ul&gt;
+
+    &lt;li&gt; Plot the positions of the particles as a function of time and make an animation. &lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;li&gt; Interpolate the mass of the particles into a uniform grid to get the Dark Matter density field &lt;/li&gt;   
+
+&lt;ul&gt;
+
+  &lt;li&gt; Plot the Dark Matter density as a function of time and make an animation &lt;/li&gt;
+
+  &lt;/ul&gt;
+
+&lt;li&gt; Use the halo finder ROCKSTAR to locate the halos in the simulation &lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;group-1&quot;&gt;Group 1&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt; Locate the particles corresponding to each halo and measure the density profile of each halo. Density profile = density of the halo as a function of radius. &lt;/li&gt;
+
+&lt;li&gt; Compare the density profiles of the halos in the simulation to the corresponding Navarro-Frenk-White (NFW) model. &lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;nfw-resources&quot;&gt;NFW Resources&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Navarro%E2%80%93Frenk%E2%80%93White_profile&quot;&gt; NFW wikipedia &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/astro-ph/9508025.pdf&quot;&gt; NFW PAPER &lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;group-2&quot;&gt;Group 2&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt; Measure the number of halos as a function of mass ( halo mass function ) on the simulation. &lt;/li&gt;
+
+&lt;li&gt; Use ROCKSTAR to compute the halo merger trees and study the formation history of the most massive halos on the simulation. The merger trees tell us how as time progresses in the simulation the halos merge to form bigger halos. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;halo-mass-function-resources&quot;&gt;Halo Mass Function Resources&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.quora.com/What-is-the-dark-matter-halo-mass-function-Is-there-an-equation-for-it&quot;&gt;What is the Halo Mass Function &lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;halo-merger-trees-resources&quot;&gt;Halo Merger Trees Resources&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cosmosim.org/cms/documentation/database-structure/merger-trees/&quot;&gt; Halo Merger Tree Introduction &lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- &lt;/ul&gt; --&gt;
+</description>
+        <pubDate>Wed, 30 Jan 2019 17:10:24 -0800</pubDate>
+        <link>http://localhost:4000/ay9/2019/01/30/project_goals.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ay9/2019/01/30/project_goals.html</guid>
+        
+        
+        <category>ay9</category>
+        
+      </item>
+    
+      <item>
+        <title>Week 3: Reading Material</title>
+        <description>&lt;h2 id=&quot;more-youtube-videos&quot;&gt;More Youtube Videos:&lt;/h2&gt;
+
+&lt;p&gt;The Beginig of Everything&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wNDGgL73ihY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Picture of the Big Bang&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/_mZQ-5-KYHw&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;gadget2&quot;&gt;Gadget2:&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;The paper about Gadget2 code&lt;/strong&gt; &lt;a href=&quot;https://wwwmpa.mpa-garching.mpg.de/gadget/gadget2-paper.pdf&quot;&gt; LINK TO PDF DOCUMENT &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;dark-matter-halos&quot;&gt;Dark Matter Halos&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;The structure and evolution of cold dark matter halos&lt;/strong&gt; &lt;a href=&quot;https://www.ucolick.org/~diemand/vl/publ/dm_dm_minirev.pdf&quot;&gt; LINK TO PDF DOCUMENT &lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 27 Jan 2019 17:10:24 -0800</pubDate>
+        <link>http://localhost:4000/ay9/2019/01/27/week3_reading_material.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ay9/2019/01/27/week3_reading_material.html</guid>
+        
+        
+        <category>ay9</category>
+        
+      </item>
+    
+      <item>
+        <title>Week 1: Summary</title>
+        <description>&lt;p&gt;We talked about the code we will use for running the Dark Matter  simulations &lt;strong&gt;Gadget2&lt;/strong&gt;, the link is here: &lt;a href=&quot;https://wwwmpa.mpa-garching.mpg.de/gadget/&quot;&gt;GADGET2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We mentioned that the simulations have millions of particles and we need to find the regions were particles density is high ( regions were the particles are clustered due to gravity ) these regions are the dark matter halos.&lt;/p&gt;
+
+&lt;p&gt;We will use ROCKSTAR as our halo finder, rockstar will receive the outputs from the simulation and will return the halo catalogs, which is a list of all the halos and the properties of of each halo: position, velocities, mass, spin, shape, etc.&lt;/p&gt;
+
+&lt;p&gt;You can find ROCKSTAR here:   &lt;a href=&quot;https://bitbucket.org/gfcstanford/rockstar&quot;&gt; ROCKSTAR &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I added a folder for the project in &lt;strong&gt;hyperion&lt;/strong&gt; and also individual folders for each one of you, feel free to create new Jupyter notebooks there.&lt;/p&gt;
+
+&lt;p&gt;Next class the class will be more formal, please bring your laptop and a notebook if you need to take notes.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Jan 2019 17:10:24 -0800</pubDate>
+        <link>http://localhost:4000/ay9/2019/01/17/week1_summary.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ay9/2019/01/17/week1_summary.html</guid>
+        
+        
+        <category>ay9</category>
+        
+      </item>
     
       <item>
         <title>Week 1: Reading Material</title>
@@ -36,7 +156,7 @@
 
 &lt;p&gt;Any questions, just send me a message:  &lt;a href=&quot;mailto:brvillas@ucsc.edu&quot;&gt;brvillas@ucsc.edu&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 09 Jan 2019 19:10:24 -0600</pubDate>
+        <pubDate>Wed, 09 Jan 2019 17:10:24 -0800</pubDate>
         <link>http://localhost:4000/ay9/2019/01/09/week1_reading_material.html</link>
         <guid isPermaLink="true">http://localhost:4000/ay9/2019/01/09/week1_reading_material.html</guid>
         
@@ -100,7 +220,7 @@
 
 &lt;p&gt;If you are interested or have any questions, please send me a message at &lt;strong&gt;brvillas@ucsc.edu&lt;/strong&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 07 Jan 2019 19:10:24 -0600</pubDate>
+        <pubDate>Mon, 07 Jan 2019 17:10:24 -0800</pubDate>
         <link>http://localhost:4000/ay9/2019/01/07/project_summary.html</link>
         <guid isPermaLink="true">http://localhost:4000/ay9/2019/01/07/project_summary.html</guid>
         
@@ -117,7 +237,7 @@
 &lt;video src=&quot;http://localhost:4000assets/videos/thermal_history_DEcomponents.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Wed, 12 Dec 2018 19:10:24 -0600</pubDate>
+        <pubDate>Wed, 12 Dec 2018 17:10:24 -0800</pubDate>
         <link>http://localhost:4000/astro/cholla/2018/12/12/phase_diagram_de_components.html</link>
         <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/12/12/phase_diagram_de_components.html</guid>
         
@@ -138,7 +258,7 @@
 &lt;video src=&quot;http://localhost:4000assets/videos/thermal_history_limEk.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Fri, 07 Dec 2018 19:10:24 -0600</pubDate>
+        <pubDate>Fri, 07 Dec 2018 17:10:24 -0800</pubDate>
         <link>http://localhost:4000/astro/cholla/2018/12/07/enzo_phase_diagram2.html</link>
         <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/12/07/enzo_phase_diagram2.html</guid>
         
@@ -169,7 +289,7 @@
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/nyx_gravity.png&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 23 Nov 2018 19:10:24 -0600</pubDate>
+        <pubDate>Fri, 23 Nov 2018 17:10:24 -0800</pubDate>
         <link>http://localhost:4000/astro/cholla/2018/11/23/enzo_phase_diagram1.html</link>
         <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/11/23/enzo_phase_diagram1.html</guid>
         
@@ -200,7 +320,7 @@
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/nyx_gravity.png&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 21 Nov 2018 19:10:24 -0600</pubDate>
+        <pubDate>Wed, 21 Nov 2018 17:10:24 -0800</pubDate>
         <link>http://localhost:4000/astro/cholla/2018/11/21/enzo_phase_diagram.html</link>
         <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/11/21/enzo_phase_diagram.html</guid>
         
@@ -253,92 +373,9 @@
 &lt;video src=&quot;http://localhost:4000assets/videos/thermal_history_1.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Sat, 10 Nov 2018 19:10:24 -0600</pubDate>
+        <pubDate>Sat, 10 Nov 2018 17:10:24 -0800</pubDate>
         <link>http://localhost:4000/astro/cholla/2018/11/10/nyx_comparison_hydro.html</link>
         <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/11/10/nyx_comparison_hydro.html</guid>
-        
-        
-        <category>astro</category>
-        
-        <category>cholla</category>
-        
-      </item>
-    
-      <item>
-        <title>CHOLLA_PM Test: Nyx Comparison</title>
-        <description>&lt;h3 id=&quot;updated-dm-only-power-spectrum&quot;&gt;Updated DM-ONLY power spectrum:&lt;/h3&gt;
-
-&lt;p&gt;Accidentally I was using Lepfrog for the particles update, now using Kick-Drift-Kick ( same as Nyx ) the max differences are 0.3%&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/power_dm_nyx_251.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;gas-temperature&quot;&gt;Gas Temperature:&lt;/h3&gt;
-
-&lt;p&gt;The initial temperature of the gas set by Nyx is &lt;script type=&quot;math/tex&quot;&gt;1000 K&lt;/script&gt; at &lt;script type=&quot;math/tex&quot;&gt;z=100&lt;/script&gt;,  I believe this is too high, previously I always used &lt;script type=&quot;math/tex&quot;&gt;170 K&lt;/script&gt; for the initial temperature. Here is the mean temperature evolution for both codes, the green line is the &lt;script type=&quot;math/tex&quot;&gt;a^{-2}&lt;/script&gt; dependence expected for a &lt;script type=&quot;math/tex&quot;&gt;\gamma = 5/3&lt;/script&gt; gas under cosmological adiabatic expansion.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/temp_nyx.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;thermal-history&quot;&gt;Thermal history:&lt;/h3&gt;
-
-&lt;p&gt;Here is a plot of the thermal history for both codes, on the top of the figure you can see the redshift and the corresponding average Temperature&lt;/p&gt;
-
-&lt;div style=&quot;text-align: center&quot;&gt;
-&lt;video src=&quot;http://localhost:4000assets/videos/thermal_history.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;hydro-power-spectrum&quot;&gt;Hydro power spectrum:&lt;/h3&gt;
-
-&lt;p&gt;Finally, the differences on the gas power spectrum are huge, I believe it’s because of the large differences on the temperatures.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/power_hydro_nyx.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As a reference here are the latest results from comparing to Enzo:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/power_hydro_enzo.png&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 06 Nov 2018 19:10:24 -0600</pubDate>
-        <link>http://localhost:4000/astro/cholla/2018/11/06/nyx_comparison.html</link>
-        <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/11/06/nyx_comparison.html</guid>
-        
-        
-        <category>astro</category>
-        
-        <category>cholla</category>
-        
-      </item>
-    
-      <item>
-        <title>CHOLLA_PM Test: Dark Matter Power Spectrum compared to Nyx</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/power_dm_nyx_256.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Differences are less than 0.7%&lt;/p&gt;
-
-&lt;p&gt;Now working on comparing hydro simulations.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 03 Nov 2018 19:10:24 -0600</pubDate>
-        <link>http://localhost:4000/astro/cholla/2018/11/03/power_spectrum_dm_nyx.html</link>
-        <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/11/03/power_spectrum_dm_nyx.html</guid>
-        
-        
-        <category>astro</category>
-        
-        <category>cholla</category>
-        
-      </item>
-    
-      <item>
-        <title>CHOLLA_PM Test: Dark Matter Power Spectrum Error compared to Enzo and Gadget</title>
-        <description>&lt;h3 id=&quot;difference-in-dm-power-spectrum-compared-to-enzo-and-gadget&quot;&gt;Difference in DM power spectrum compared to Enzo and Gadget&lt;/h3&gt;
-
-&lt;p&gt;Enzo: blue line&lt;/p&gt;
-
-&lt;p&gt;Gadget: green line&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/power_error_dm_cholla_kdk_variabledt.png&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 02 Oct 2018 20:10:24 -0500</pubDate>
-        <link>http://localhost:4000/astro/cholla/2018/10/02/power_spectrum_error_dm.html</link>
-        <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/10/02/power_spectrum_error_dm.html</guid>
         
         
         <category>astro</category>
