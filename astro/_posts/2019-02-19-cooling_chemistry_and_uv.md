@@ -21,3 +21,15 @@ Now only the ones with HM2012 UV background
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/chemistry_uv.mp4" width="500" height="500" controls preload> </video>
 </div>
+
+
+## Power Spectrum Comparison
+
+### No cooling
+<img src="{{ site.url }}assets/images/ps_256_hydro.png">
+
+### No UV Background
+<img src="{{ site.url }}assets/images/ps_256_cool_metals.png">
+
+### HM2012 UV Background
+<img src="{{ site.url }}assets/images/ps_256_cool_uv.png">
