@@ -22,6 +22,12 @@ Now only the ones with HM2012 UV background
 <video src="{{ site.url }}assets/videos/chemistry_uv.mp4" width="500" height="500" controls preload> </video>
 </div>
 
+## Phase Diagram Comparison
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/phase_diagram_cool.mp4" width="500" height="500" controls preload> </video>
+</div>
+
 
 ## Power Spectrum Comparison
 
