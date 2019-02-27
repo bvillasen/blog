@@ -28,11 +28,3 @@ cd pfft
 make -j 10
 make install
 ```
-
-## Insall HDF5
-
-```
-wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8/hdf5-1.8.21/src/hdf5-1.8.21.tar.gz
-tar -xzvf hdf5-1.8.21.tar.gz
-cd hdf5-1.8.21
-CC=/usr/mpi/gcc/openmpi-3.1.3a1/bin/mpiCC ./configure --enable-parallel --prefix=/ccs/home/bvilasen/code/hdf5
