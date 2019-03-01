@@ -28,6 +28,11 @@ make -j 10
 make install
 ```
 
+## Add Grackle library to PATH
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/ccs/home/bvilasen/code/grackle/lib
+```
+
 ## Submit an Interactive Job
 ```
 bsub -W 10 -nnodes 2 -P AST149 -Is /bin/bash
