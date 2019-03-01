@@ -6,8 +6,7 @@ categories: cholla
 ---
 
 
-## Install FFTW ( Not Necessary Already installed on Summit )
-
+## Install FFTW 
 ```
 wget http://www.fftw.org/fftw-3.3.8.tar.gz
 tar -xzvf fftw-3.3.8.tar.gz
@@ -24,7 +23,7 @@ make install
 git clone https://github.com/mpip/pfft.git
 cd pfft
 ./bootstrap.sh
-./configure --disable-fortran --disable-shared --enable-openmp --with-fftw3=/autofs/nccs-svm1_sw/summit/.swci/1-compute/opt/spack/20180914/linux-rhel7-ppc64le/xl-16.1.1-1/fftw-3.3.8-vuwn274gfobnmpcr6d3bbualaqbj6nnc/ --prefix=/ccs/home/bvilasen/code/pfft
+./configure --disable-fortran --disable-shared --with-fftw3=/ccs/home/bvilasen/code/fftw --prefix=/ccs/home/bvilasen/code/pfft
 make -j 10
 make install
 ```
