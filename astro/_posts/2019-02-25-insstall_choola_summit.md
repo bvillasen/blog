@@ -32,3 +32,8 @@ make install
 ```
 bsub -W 10 -nnodes 2 -P AST149 -Is /bin/bash
 ```
+
+## Run Cholla
+```
+jsrun -n 8 -a 1 -c 4 -g 1 -b packed:4 -d packed ./cholla tests/3D/Cosmological_hydro_256_summit.txt > out.log
+```
