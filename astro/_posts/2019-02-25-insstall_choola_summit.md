@@ -6,7 +6,7 @@ categories: cholla
 ---
 
 
-## Install FFTW 
+## Install FFTW
 ```
 wget http://www.fftw.org/fftw-3.3.8.tar.gz
 tar -xzvf fftw-3.3.8.tar.gz
@@ -26,4 +26,9 @@ cd pfft
 ./configure --disable-fortran --disable-shared --with-fftw3=/ccs/home/bvilasen/code/fftw --prefix=/ccs/home/bvilasen/code/pfft
 make -j 10
 make install
+```
+
+## Submit an Interactive Job
+```
+bsub -W 10 -nnodes 2 -P AST149 -Is /bin/bash
 ```
