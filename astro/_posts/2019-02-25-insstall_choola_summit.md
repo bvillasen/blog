@@ -27,6 +27,30 @@ cd pfft
 make -j 10
 make install
 ```
+
+## Install Grackle
+Get the repository from Bitbucket.
+Dowload MAKEFILE_SUMMIT from here.
+```
+cd grackle/src/clib
+cp MAKEFILE_SUMMIT Make.mach.summit
+make machine-summit
+make opt-high
+make omp-on
+make
+make install
+```
+
+## Download and Compile Cholla
+```
+git clone https://github.com/bvillasen/cholla.git
+cd cholla
+cp extras/makefile_summit.sh Makefile
+module load hdf5
+module load cuda
+make
+```
+
 ## Submit an Interactive Job
 ```
 bsub -W 10 -nnodes 2 -P AST149 -Is /bin/bash
@@ -36,8 +60,6 @@ bsub -W 10 -nnodes 2 -P AST149 -Is /bin/bash
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/ccs/home/bvilasen/code/grackle/lib
 ```
-
-
 
 ## Run Cholla
 ```
