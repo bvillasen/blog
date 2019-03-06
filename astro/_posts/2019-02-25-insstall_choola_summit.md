@@ -69,3 +69,29 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/ccs/home/bvilasen/code/grackle/lib
 ```
 jsrun -n 8 -a 1 -c 7 -g 1 -r 4 -l CPU-CPU -d packed -b packed:7 ./cholla tests/3D/Cosmological_hydro_256_summit.txt > results.log
 ```
+
+## Submit job to the queue
+This example runs 8 MPI taks on 2 nodes
+```
+#!/bin/bash
+# Begin LSF Directives
+#BSUB -P AST149
+#BSUB -W 0:03
+#BSUB -nnodes 2
+#BSUB -alloc_flags gpumps
+#BSUB -J cosmo_256
+#BSUB -o cosmo_256.o%J
+#BSUB -e cosmo_256.e%J
+#BSUB -alloc_flags "smt4"
+
+module load hdf5
+module load cuda
+
+export WORK_DIR=$MEMBERWORK/ast149/cosmo_256
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/ccs/home/bvilasen/code/grackle/lib
+
+cd $MEMBERWORK/ast149/cholla
+date
+export OMP_NUM_THREADS=16
+jsrun -n 8 -a 1 -c 7 -g 1 -l CPU-CPU -d packed -b packed:7 ./cholla tests/3D/Cosmological_hydro_256_summit.txt > $WORK_DIR/run_output.log |sort
+```
