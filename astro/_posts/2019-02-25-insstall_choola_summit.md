@@ -30,7 +30,10 @@ make install
 
 ## Install Grackle
 Get the repository from Bitbucket.
+
 Dowload MAKEFILE_SUMMIT from here.
+
+Change paths on the Makefile to match your local directories.
 ```
 cd grackle/src/clib
 cp MAKEFILE_SUMMIT Make.mach.summit
@@ -42,6 +45,7 @@ make install
 ```
 
 ## Download and Compile Cholla
+Change paths on the Makefile to match your local directories.
 ```
 git clone https://github.com/bvillasen/cholla.git
 cd cholla
