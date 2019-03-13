@@ -9,17 +9,17 @@ When I run a small simulation on Summit, sometimes it will run the first timeste
 
 I found that the gpus are not been assigned correctly to the MPI processes.
 
-<img src="{{ site.url }}assets/images/device_ids">
+<img src="{{ site.url }}assets/images/device_ids.png">
 
 
 
 
 Here is an output file of a successful run:
 
-https://www.dropbox.com/s/9111368dlx15xg1/run_output_good.log?dl=0
+[ CORRECT OUTPUT ]( https://www.dropbox.com/s/9111368dlx15xg1/run_output_good.log?dl=0 )
 
 Here is an output file of a failed run:
 
-https://www.dropbox.com/s/4br0dw5vuaie0qs/run_output_bad.log?dl=0
+[ INCORRECT OUTPUT ]( https://www.dropbox.com/s/4br0dw5vuaie0qs/run_output_bad.log?dl=0 )
 
 
