@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CHOLLA_PM: Incorrect device Ids on summit"
+title:  "CHOLLA_PM: Incorrect device IDs on summit"
 date:   2019-03-10 17:10:24 -0800
 categories: cholla
 ---
