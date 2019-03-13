@@ -1,97 +1,13 @@
 ---
 layout: post
-title:  "CHOLLA_PM: Install Cholla on Summit"
-date:   2019-02-35 17:10:24 -0800
+title:  "CHOLLA_PM: Incorrect device Ids on summit"
+date:   2019-03-10 17:10:24 -0800
 categories: cholla
 ---
 
+When I run a small simulation on Summit, sometimes it will run the first timesteps correctly but some other times the data on the GPU arrays would be completely corrupted even before before cuda functions are called. This behavior seems unpredictable since it works sometimes and other times it doesn't without changing the code.
 
-## Install FFTW
-```
-wget http://www.fftw.org/fftw-3.3.8.tar.gz
-tar -xzvf fftw-3.3.8.tar.gz
-cd fftw-3.3.8
-./bootstrap.sh
-./configure --enable-mpi --enable-openmp --enable-threads --disable-shared --prefix=/ccs/home/bvilasen/code/fftw
-make -j 10
-make install
-```
 
-## Install PFFT
+I found that the gpus are not been assigned correctly to the MPI processes.
 
-```
-git clone https://github.com/mpip/pfft.git
-cd pfft
-./bootstrap.sh
-./configure --disable-fortran --disable-shared --with-fftw3=/ccs/home/bvilasen/code/fftw --prefix=/ccs/home/bvilasen/code/pfft
-make -j 10
-make install
-```
-
-## Install Grackle
-Get the repository from Bitbucket.
-
-Dowload MAKEFILE_SUMMIT from here.
-
-Change paths on the Makefile to match your local directories.
-```
-cd grackle/src/clib
-cp MAKEFILE_SUMMIT Make.mach.summit
-make machine-summit
-make opt-high
-make omp-on
-make
-make install
-```
-
-## Download and Compile Cholla
-Change paths on the Makefile to match your local directories.
-```
-git clone https://github.com/bvillasen/cholla.git
-cd cholla
-cp extras/makefile_summit.sh Makefile
-module load hdf5
-module load cuda
-make
-```
-
-## Submit an Interactive Job
-```
-bsub -W 10 -nnodes 2 -P AST149 -Is /bin/bash
-```
-
-## Add Grackle library to PATH
-```
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/ccs/home/bvilasen/code/grackle/lib
-```
-
-## Run Cholla
-```
-jsrun -n 8 -a 1 -c 7 -g 1 -r 4 -l CPU-CPU -d packed -b packed:7 ./cholla tests/3D/Cosmological_hydro_256_summit.txt > results.log
-```
-
-## Submit job to the queue
-This example runs 8 MPI taks on 2 nodes
-```
-#!/bin/bash
-# Begin LSF Directives
-#BSUB -P AST149
-#BSUB -W 0:03
-#BSUB -nnodes 2
-#BSUB -alloc_flags gpumps
-#BSUB -J cosmo_256
-#BSUB -o cosmo_256.o%J
-#BSUB -e cosmo_256.e%J
-#BSUB -alloc_flags "smt4"
-
-module load hdf5
-module load cuda
-
-export WORK_DIR=$MEMBERWORK/ast149/cosmo_256
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/ccs/home/bvilasen/code/grackle/lib
-
-cd $MEMBERWORK/ast149/cholla
-date
-export OMP_NUM_THREADS=16
-jsrun -n 8 -a 1 -c 7 -g 1 -l CPU-CPU -d packed -b packed:7 ./cholla tests/3D/Cosmological_hydro_256_summit.txt > $WORK_DIR/run_output.log |sort
-```
+ <img src="{{ site.url }}assets/images/device_ids">
