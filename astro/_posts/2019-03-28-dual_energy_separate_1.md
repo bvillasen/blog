@@ -5,7 +5,7 @@ date:   2019-03-28 17:10:24 -0800
 categories: cholla
 ---
 
-Now the Advected Internal Energy $$ge_{advected}$$ is set equal to the internal energy computed from the total energy $$ge_{total}$$ when $${ge_total}$$ is used to compute the pressure. 
+Now the Advected Internal Energy $$ge_{advected}$$ is set equal to the internal energy computed from the total energy $$ge_{total}$$ when $$ge_{total}$$ is used to compute the pressure. 
 
 **Column 1:**  ENZO
 
