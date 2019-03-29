@@ -28,6 +28,12 @@ Now the Advected Internal Energy $$ge_{advected}$$ is set equal to the internal 
 <video src="{{ site.url }}assets/videos/phase_diagram_separateDE_new.mp4" width="500" height="500" controls preload> </video>
 </div>
 
+Here is the phase diagram for $$\eta_1=0.001$$ without syncing the advacted internal energy with the total internal energy, only the cooling step updates the advected internal energy
+
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/phase_diagram_separateDE_new_noSyncDE.mp4" width="500" height="500" controls preload> </video>
+</div>
 
 **Same as the previous diagrams but using the change in Kinetic Energy as the gravitational term on the Total Energy**
 
