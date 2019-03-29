@@ -29,3 +29,13 @@ Now the Advected Internal Energy $$ge_{advected}$$ is set equal to the internal 
 </div>
 
 
+**Same as the previous diagrams but using the change in Kinetic Energy as the gravitational term on the Total Energy**
+
+
+
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/phase_diagram_separateDE_new_delta_Ek.mp4" width="500" height="500" controls preload> </video>
+</div>
+
+
