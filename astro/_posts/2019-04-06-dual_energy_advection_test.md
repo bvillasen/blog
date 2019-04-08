@@ -30,7 +30,7 @@ This is the first test to compare the evolution of an advected extra scalar fiel
 
 The advected extra scalar field follows the same evolution as the density. To test if the advection on the internal energy $$ge_{advected}$$ is correct I set the Internal Energy to be allways equal to the advected internal energy in all the box and removed the $$p \nabla \cdot \mathbf{v} $$ term from the advected internal energy integration. 
 
-To account for the reionization heating, after $$z_{reionization} \approx 15$$, I measure the average temperature and compute the heat energy needed to bring the average temperature up to $$3\times 10^3 K$$ and I apply this heating to all the cells on the box at each time step, this keeps the average temperature at  $$3\times 10^3K$$, if the advection part is correct the temperature should remain uniform, and it does!
+Since I want to follow evolution of the advected internal energy only due to advection,  I don't have a cooling step, instead, to account for the reionization heating after $$z_{reionization} \approx 15$$, I measure the average temperature and compute the heat energy needed to bring the average temperature up to $$3\times 10^3 K$$ and I apply this heating to all the cells on the box at each time step, this keeps the average temperature at  $$3\times 10^3K$$, if the advection part is correct the temperature should remain uniform, and it does!
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_temperature_unifrom.mp4" width="500" height="500" controls preload> </video>
