@@ -47,7 +47,7 @@ The result was that the pressure term is cooling some of the cells and bringing 
 
 
 
-Now I set a temperature floor at $$300K$$ after the hydro step and before the cooling. The absence of flase adiabats on lower temperatures indicates that the cooling step is unlikely to cause those false adiabats.
+Now I set a temperature floor at $$300K$$ after the hydro step and before the cooling. The absence of false adiabats on lower temperatures indicates that the cooling step is unlikely to cause those false adiabats.
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_tempFloor.mp4" width="500" height="500" controls preload> </video>
@@ -58,6 +58,6 @@ My conclusion is that the pressure term $$p \nabla \cdot \mathbf{v} $$ in the hy
 
 $$\rho_{j}^{n+1} e_{j}^{n+1}=\rho_{j}^{n} e_{j}^{n}+\Delta t\left(\frac{\overline{\rho}_{j+1 / 2} \overline{v}_{j+1 / 2} \overline{e}_{j+1 / 2}-\overline{\rho}_{j-1 / 2} \overline{v}_{j-1 / 2} \overline{e}_{j-1 / 2}}{\Delta x_{j}}\right)-\Delta t p_{j}^{n}\left(\frac{\overline{v}_{j+1 / 2}-\overline{v}_{j-1 / 2}}{\Delta x_{j}}\right)$$
 
-Following the equation above it seem like they use the values of the reconsructed velocities on the edges of the cell to compute $$ \nabla \cdot \mathbf{v} $$ while cholla is using the centered values on the neighboring cell
+Following the equation above it seem like they use the values of the reconstructed velocities on the edges of the cell to compute $$ \nabla \cdot \mathbf{v} $$ while Cholla is using the centered values on the neighboring cell
 
 $$ p_{j}^{n}\left(\frac{v_{j+1}-v_{j-1}}{2\Delta x_{j}}\right)$$
