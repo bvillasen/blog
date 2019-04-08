@@ -57,3 +57,7 @@ Now I set a temperature floor at $$300K$$ after the hydro step and before the co
 My conclusion is that the pressure term $$p \nabla \cdot \mathbf{v} $$ in the hydro step could be a source of error, in the ENZO paper they have:
 
 $$\rho_{j}^{n+1} e_{j}^{n+1}=\rho_{j}^{n} e_{j}^{n}+\Delta t\left(\frac{\overline{\rho}_{j+1 / 2} \overline{v}_{j+1 / 2} \overline{e}_{j+1 / 2}-\overline{\rho}_{j-1 / 2} \overline{v}_{j-1 / 2} \overline{e}_{j-1 / 2}}{\Delta x_{j}}\right)-\Delta t p_{j}^{n}\left(\frac{\overline{v}_{j+1 / 2}-\overline{v}_{j-1 / 2}}{\Delta x_{j}}\right)$$
+
+Following the equation above it seem like they use the values of the reconsructed velocities on the edges of the cell to compute $$ \nabla \cdot \mathbf{v} $$ while cholla is using the centered values on the neighboring cell
+
+$$ p_{j}^{n}\left(\frac{\overline{v}_{j+1}-\overline{v}_{j-1}}{2*\Delta x_{j}}\right)$$
