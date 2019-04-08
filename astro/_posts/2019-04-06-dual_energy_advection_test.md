@@ -60,4 +60,4 @@ $$\rho_{j}^{n+1} e_{j}^{n+1}=\rho_{j}^{n} e_{j}^{n}+\Delta t\left(\frac{\overlin
 
 Following the equation above it seem like they use the values of the reconsructed velocities on the edges of the cell to compute $$ \nabla \cdot \mathbf{v} $$ while cholla is using the centered values on the neighboring cell
 
-$$ p_{j}^{n}\left(\frac{\overline{v}_{j+1}-\overline{v}_{j-1}}{2*\Delta x_{j}}\right)$$
+$$ p_{j}^{n}\left(\frac{v_{j+1}-v_{j-1}}{2\Delta x_{j}}\right)$$
