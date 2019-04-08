@@ -42,6 +42,8 @@ Now I add the pressure term $$p \nabla \cdot \mathbf{v} $$ to the integration of
 <video src="{{ site.url }}assets/videos/phase_diagram_temperature_pressure_5.mp4" width="500" height="500" controls preload> </video>
 </div>
 
+The result was that the pressure term is cooling some of the cells and bringing them to temperatures below the temperature floor of $$1K$$ and then my simple heating scheme is heating those cells, look on the low temperature cells and you will see how they are moving over the temperature floor. My conclusion is that the false adiabats we have been seeing are the result of gas cooled to the temperature floor $$1k$$ on the Hydro step and then heated by the UV background, since the heating rate must have a dependency on the density that must be the origin of the slope on the false adiabats.
+
 
 
 
@@ -50,3 +52,8 @@ Now I set a temperature floor at $$300K$$ after the hydro step and before the co
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_tempFloor.mp4" width="500" height="500" controls preload> </video>
 </div>
+
+
+My conclusion is that the pressure term $$p \nabla \cdot \mathbf{v} $$ in the hydro step could be a source of error, in the ENZO paper they have:
+
+$$\rho_{j}^{n+1} e_{j}^{n+1}=\rho_{j}^{n} e_{j}^{n}+\Delta t\left(\frac{\overline{\rho}_{j+1 / 2} \overline{v}_{j+1 / 2} \overline{e}_{j+1 / 2}-\overline{\rho}_{j-1 / 2} \overline{v}_{j-1 / 2} \overline{e}_{j-1 / 2}}{\Delta x_{j}}\right)-\Delta t p_{j}^{n}\left(\frac{\overline{v}_{j+1 / 2}-\overline{v}_{j-1 / 2}}{\Delta x_{j}}\right)$$
