@@ -58,6 +58,6 @@ My conclusion is that the pressure term $$p \nabla \cdot \mathbf{v} $$ in the hy
 
 $$\rho_{j}^{n+1} e_{j}^{n+1}=\rho_{j}^{n} e_{j}^{n}+\Delta t\left(\frac{\overline{\rho}_{j+1 / 2} \overline{v}_{j+1 / 2} \overline{e}_{j+1 / 2}-\overline{\rho}_{j-1 / 2} \overline{v}_{j-1 / 2} \overline{e}_{j-1 / 2}}{\Delta x_{j}}\right)-\Delta t p_{j}^{n}\left(\frac{\overline{v}_{j+1 / 2}-\overline{v}_{j-1 / 2}}{\Delta x_{j}}\right)$$
 
-Following the equation above it seem like they use the values of the reconstructed velocities on the edges of the cell to compute $$ \nabla \cdot \mathbf{v} $$ while Cholla is using the centered values on the neighboring cell
+Following the equation above it seem like they use the values of the reconstructed velocities on the edges of the cell to compute $$ \nabla \cdot \mathbf{v} $$ while Cholla is using the centered values on the neighboring cells
 
 $$ p_{j}^{n}\left(\frac{v_{j+1}-v_{j-1}}{2\Delta x_{j}}\right)$$
