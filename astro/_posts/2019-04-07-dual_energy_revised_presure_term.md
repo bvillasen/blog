@@ -20,7 +20,7 @@ categories: cholla
 **Column 6:**  Phase diagram showing the temperature computed from the Advected Internal Energy for ALL the gas.
 
 
-For all the simulations below the advected internal energy and the total internal energy are synchronized and the advected internal energy is used for the condition with $$/eta_1=0.02$$
+For all the simulations below the advected internal energy and the total internal energy are synchronized and the advected internal energy is used for the condition with $$\eta_1=0.02$$
 
 First I want to make sure that our conclusion about the false adiabats is correct, for this I turn on grackle cooling and after Reionization I don't apply the cooling update to cells which temperature is below 300K, as expected several cells move to the temperature floor but without them being heated by the UV background they don't move to form the false adiabats.
 
