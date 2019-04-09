@@ -42,7 +42,7 @@ and the comparison is below:
 **Row 1** Evolution with the previous form of the pressure term but using a time step 10 times smaller $$\Delta a = 0.0001$$.
 
 
-There's practically no difference when changing the pressure term, and using a small time step reduces the lower temperature. 
+There's practically no difference when changing the pressure term, and using a small time step reduces the lower temperature deviations but not completely. 
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_testP.mp4" width="500" height="500" controls preload> </video>
