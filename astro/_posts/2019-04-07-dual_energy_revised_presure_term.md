@@ -35,11 +35,11 @@ $$p_{j}^{n}\left(\frac{\overline{v}_{j+1 / 2}-\overline{v}_{j-1 / 2}}{\Delta x_{
 
 and the comparison is below:
 
-**Row 1** Evolution with the previous form of the pressure term on the advected internal energy.
+**Row 1:** Evolution with the previous form of the pressure term on the advected internal energy.
 
-**Row 2** Evolution with the revised form of the pressure term on the advected internal energy.
+**Row 2:** Evolution with the revised form of the pressure term on the advected internal energy.
 
-**Row 3** Evolution with the previous form of the pressure term but using a time step 10 times smaller $$\Delta a = 0.0001$$.
+**Row 3:** Evolution with the previous form of the pressure term but using a time step 10 times smaller $$\Delta a = 0.0001$$.
 
 
 There's practically no difference when changing the pressure term, and using a small time step reduces the lower temperature deviations but not completely. 
