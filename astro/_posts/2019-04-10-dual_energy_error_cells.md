@@ -40,7 +40,7 @@ $$ ( U + \Delta$$ )^n =  U^{n-1} + \Delta$$^{n-1} $$
 
 The blue line corresponds to the temperature in logarithmic scale. 
 
-<img src="{{ site.url }}assets/images/error_cells_0.png">
+<img src="{{ site.url }}assets/images/error_cells_1.png">
 
 The change due to the divergence term is always positive!, this means that this term is heating the gas.
 
