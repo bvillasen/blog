@@ -34,7 +34,7 @@ Now I track the first 5 cells to hit the temperature floor, here are their last 
 
 From the  last snapshots I get the Advected Internal Energy ( U_advected ). also I write the change in Internal energy corresponding to the Advection term ( $$\Delta$$ advc_term ) and the change due to the divergence of the velocity ( $$\Delta$$ P Div(v) ).
 
-The values are shown below:
+The values as a function of time are shown below:
 
 <img src="{{ site.url }}assets/images/error_cells_0.png">
 
