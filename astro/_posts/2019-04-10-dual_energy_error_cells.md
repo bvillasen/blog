@@ -44,6 +44,6 @@ The blue line corresponds to the temperature in logarithmic scale.
 
 The change due to the divergence term is always positive!, this means that this term is heating the gas.
 
-The Conclusion is that the divergence term is not causing the cooling of the gas, the error is coming from the advection term. Previously we saw that without the Div(v) term the advection was correct, could it be that in during that idealized test in which the temperature remains uniform the pressure gradients are low so that we don't see errors comming from the advection term.  
+The Conclusion is that the divergence term is not causing the cooling of the gas, the error is coming from the advection term. Previously we saw that without the Div(v) term the advection was correct, could it be that during that idealized test in which the temperature remains uniform the pressure gradients are low so that we don't see errors comming from the advection term.  
 
 
