@@ -36,7 +36,7 @@ From the  last snapshots I get the Advected Internal Energy ( U_advected ). also
 
 The values as a function of time are shown below:
 
-$$ ( U + \Delta$$ )^n =  U^{n-1} + \Delta$$^{n-1} $$
+$$ ( U + \Delta )^n =  U^{n-1} + \Delta$$^{n-1} $$
 
 The blue line corresponds to the temperature in logarithmic scale. 
 
