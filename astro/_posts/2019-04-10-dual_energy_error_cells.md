@@ -46,4 +46,9 @@ The change due to the divergence term is always positive!, this means that this 
 
 The Conclusion is that the divergence term is not causing the cooling of the gas, the error is coming from the advection term. Previously we saw that without the Div(v) term the advection was correct, could it be that during that idealized test in which the temperature remains uniform the pressure gradients are low so that we don't see errors comming from the advection term.  
 
+Here is th evolution of the advected Internal Energy without the divergence term on the integration, the same cells fall to the floor at the same time.
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/phase_diagram_error_1.mp4" width="500" height="500" controls preload> </video>
+</div>
 
