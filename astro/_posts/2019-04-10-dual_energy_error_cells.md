@@ -52,3 +52,11 @@ Here is the evolution of the advected Internal Energy without the divergence ter
 <video src="{{ site.url }}assets/videos/phase_diagram_error_1.mp4" width="500" height="500" controls preload> </video>
 </div>
 
+
+Here is the evolution using PCM for the reconstruction, the low temperature deviations are gone!
+
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/phase_diagram_PCM.mp4" width="500" height="500" controls preload> </video>
+</div>
+
