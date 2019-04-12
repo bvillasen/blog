@@ -60,3 +60,4 @@ Here is the evolution using PCM for the reconstruction, the low temperature devi
 <video src="{{ site.url }}assets/videos/phase_diagram_PCM.mp4" width="500" height="500" controls preload> </video>
 </div>
 
+Now the gas is heating too much, the conclusion is that the reconstruction scheme we used PPMC is either inappropriate for this conditions or the implementation is incorrect, I find very suspicious that the advection term is lowering the advected internal energy so much but not the density.
