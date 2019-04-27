@@ -23,11 +23,11 @@ Here is a comparison of the phase diagram using PLMP reconstruction changing the
 
 **Row 1:** PCM with half step update
 
-**Row 2:** PCM without half step update
+**Row 2:** PCM **without** half step update
 
-**Row 1:** PLMP with half step update
+**Row 3:** PLMP with half step update
 
-**Row 2:** PLMP without half step update
+**Row 4:** PLMP **without** half step update
 
 
 <div style="text-align: center">
