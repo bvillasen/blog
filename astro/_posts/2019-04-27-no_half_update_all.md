@@ -39,13 +39,21 @@ For some reason PPMP crashes immediately.
 
 ### PCM
 
-
+<img src="{{ site.url }}assets/images/ps_256_cooling_uv_de02_PCM.png">
 
 ### PLMP 
 
+
+<img src="{{ site.url }}assets/images/ps_256_cooling_uv_de02_PLMP.png">
 
 
 ### PLMC
 
 
+<img src="{{ site.url }}assets/images/ps_256_cooling_uv_de02_PLMC.png">
+
+
 ### PPMC
+
+
+<img src="{{ site.url }}assets/images/ps_256_cooling_uv_de02_PPMC.png">
