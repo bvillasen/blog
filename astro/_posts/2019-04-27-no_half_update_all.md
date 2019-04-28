@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CHOLLA_PM: No half update"
+title:  "CHOLLA_PM: Power Spectrum No half update"
 date:   2019-04-26 17:10:24 -0800
 categories: cholla
 ---
