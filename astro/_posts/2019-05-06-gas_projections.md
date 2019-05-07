@@ -7,9 +7,9 @@ categories: cholla
 
 The phase_diagram using a uniform initial velocity $$vx = vy = vz = 160 km/s $$ and no gravity ( cooling is on ) and $$\eta=0$$ (always using total internal energy):
 
-**Row 1:** Normal pressure of the flux of E and momentum
+**Row 1:** Normal pressure on the flux of E and momentum
 
-**Row 2:** No pressure of the flux of E and momentum
+**Row 2:** No pressure on the flux of E and momentum
 
 
 <div style="text-align: center">
