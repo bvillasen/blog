@@ -18,7 +18,7 @@ The phase_diagram using a uniform initial velocity $$vx = vy = vz = 160 km/s $$ 
  
 No spurious heating of the gas!  
 
-To track the differences on the hydro conserved variables I plot projection ( 5 Mpc deep );
+To track the differences on the hydro conserved variables I plot projections ( 5 Mpc deep );
 
 I used PPCM for the reconstruction and HLLC for the Reimann solver.
 
