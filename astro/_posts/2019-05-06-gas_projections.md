@@ -13,7 +13,7 @@ The phase_diagram using a uniform initial velocity $$vx = vy = vz = 160 km/s $$ 
 
 
 <div style="text-align: center">
-<video src="{{ site.url }}assets/videos/phase_diagram_v0Max.mp4" width="500" height="500" controls preload> </video>
+<video src="{{ site.url }}assets/videos/phase_diagram_uniform_vel.mp4" width="500" height="500" controls preload> </video>
 </div>
  
 No spurious heating of the gas!  
