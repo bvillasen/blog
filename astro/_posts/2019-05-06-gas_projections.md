@@ -45,7 +45,10 @@ Now using $$\eta=1$$ always using advected internal energy and not synchronizing
 </div>
 
 
- 
+ Here is the phase diagram for the simulation using $$\eta=1$$ (only advected internal energy )
 
-
+ <div style="text-align: center">
+ <video src="{{ site.url }}assets/videos/phase_diagram_de1.mp4" width="500" height="500" controls preload> </video>
+ </div>
+  
  
