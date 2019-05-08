@@ -51,4 +51,6 @@ Now using $$\eta=1$$ always using advected internal energy and not synchronizing
  <video src="{{ site.url }}assets/videos/phase_diagram_de1.mp4" width="500" height="500" controls preload> </video>
  </div>
   
+ Here I show the fraction of the 90 percentile of the internal energy to the 90 percentile of the kinetic energy to show how small errors in the kinetic energy result in large errors on the internal energy.
  
+ <img src="{{ site.url }}assets/images/percentile_90.png">
