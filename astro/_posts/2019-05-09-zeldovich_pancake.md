@@ -29,7 +29,7 @@ Now when I use the **Total Internal Energy** I get errors in the temperature alm
 <video src="{{ site.url }}assets/videos/zeldovich_de001_enzo.mp4" width="500" height="500" controls preload> </video>
 </div>
 
-The error are not on the boundary conditions, if I move the peak the error still occur on the maxima and minima of the density field as you can see below:
+The errors are not on the boundary conditions, if I move the  density peak from the center, the errors still occur on the maximum and minimum of the density field as you can see below:
 
  <img src="{{ site.url }}assets/images/zeldovich_4.png">
  
