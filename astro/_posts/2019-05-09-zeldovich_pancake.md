@@ -31,7 +31,7 @@ Now when I use the **Total Internal Energy** I get errors in the temperature alm
 
 The errors are not on the boundary conditions, if I move the  density peak from the center, the errors still occur on the maximum and minimum of the density field as you can see below:
 
- <img src="{{ site.url }}assets/images/zeldovich_4.png">
+ <img src="{{ site.url }}assets/images/zeldovich_1.png">
  
 I conclude that since when using the advected internal energy the results are similar then overall the gravity and cosmology implementation are correct and there is still one error to find in the evolution of the total energy.
 
