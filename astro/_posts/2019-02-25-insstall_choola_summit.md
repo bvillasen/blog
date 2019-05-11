@@ -29,14 +29,12 @@ make install
 ```
 
 ## Install Grackle
-Get the repository from Bitbucket.
+Get the repository from [HERE]( https://github.com/grackle-project/grackle ).
 
-Dowload MAKEFILE_SUMMIT from here.
 
-Change paths on the Makefile to match your local directories.
+Change paths on the Makefile (src/clib/Make.mach.summit) to match your local directories.
 ```
 cd grackle/src/clib
-cp MAKEFILE_SUMMIT Make.mach.summit
 make machine-summit
 make opt-high
 make omp-on
