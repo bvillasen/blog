@@ -25,7 +25,7 @@ Without Gravity The Thermal Energy remains normal, but the kinetic energy is 10 
 To test if a smaller timestep makes a difference I ran the cases with no gravity for different initial velocities using $$\Delta a=1 \times 10^{-5}$$, here are the results:
 
 <div style="text-align: center">
-<video src="{{ site.url }}assets/videos/zeldovich_energy_da00001.mp4" width="500" height="500" controls preload> </video>
+<video src="{{ site.url }}assets/videos/zeldovich_energy_da00001_HLL.mp4" width="500" height="500" controls preload> </video>
 </div>
 
 Even when using a tiny timestep the high kinetic energy introduces errors on the thermal energy!
