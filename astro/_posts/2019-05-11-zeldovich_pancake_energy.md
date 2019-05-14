@@ -29,3 +29,10 @@ To test if a smaller timestep makes a difference I ran the cases with no gravity
 </div>
 
 Even when using a tiny timestep the high kinetic energy introduces errors on the thermal energy!!
+
+
+**Now using SIMPLE Integrator Instead of VL:** Including velocities for the reconstruction ( same as CTU ).  
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/zeldovich_energy_da00001_HLL_SIMPLE.mp4" width="500" height="500" controls preload> </video>
+</div>
