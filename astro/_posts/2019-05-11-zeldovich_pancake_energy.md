@@ -28,4 +28,4 @@ To test if a smaller timestep makes a difference I ran the cases with no gravity
 <video src="{{ site.url }}assets/videos/zeldovich_energy_da00001_HLL.mp4" width="500" height="500" controls preload> </video>
 </div>
 
-Even when using a tiny timestep the high kinetic energy introduces errors on the thermal energy!
+Even when using a tiny timestep the high kinetic energy introduces errors on the thermal energy!!
