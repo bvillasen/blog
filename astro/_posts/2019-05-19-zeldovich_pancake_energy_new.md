@@ -6,7 +6,7 @@ categories: cholla
 ---
 
 
-Here is the Zeldovich Pancake compared against Enzo again, now I show differen Reconstruction and Solver combinations :
+Here is the Zeldovich Pancake compared against Enzo again, now I show different Reconstruction and Solver combinations :
 
 **Only Advected Internal Energy**
 
@@ -24,7 +24,7 @@ The Parabolic reconstruction methods look much more similar to the Enzo evolutio
 
 Surprisingly the evolutions are not that different.
 
-If I set $$\eta=0.001$$ ( supposedly ) equal to the value used in Enzo I get that the gas that is using the **Total Internal Energy** follow the same evolution as the noDual_Energy enzo, this indicates that we are not using the same prescription for selecting which internal_energy to use that Enzo is using:   
+If I set $$\eta=0.001$$ ( supposedly ) equal to the value used in Enzo I get that the gas that is using the **Total Internal Energy** follow the same evolution as the noDual_Energy enzo, this indicates that we are not using the same prescription for selecting which internal_energy to use that Enzo:   
 
 
 <div style="text-align: center">
