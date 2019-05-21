@@ -36,7 +36,7 @@ If I set $$\eta=0.001$$ ( supposedly ) equal to the value used in Enzo I get tha
 
 $$p_{j}^{n}\left(\frac{\overline{v}_{j+1 / 2}-\overline{v}_{j-1 / 2}}{\Delta x_{j}}\right)$$
 
-now the results are slightly different, in the animation avobe **newPDivV** is for the evolution using the updated  $$p \nabla \cdot \mathbf{v} $$ term. 
+now the results are slightly different, in the animation below **newPDivV** is for the evolution using the updated  $$p \nabla \cdot \mathbf{v} $$ term. 
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/zeldovich_enzo_PPMC_DE_newPDivV.mp4" width="500" height="500" controls preload> </video>
