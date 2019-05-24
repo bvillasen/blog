@@ -28,3 +28,10 @@ Using The Gravitational Work to update the Total Energy and Teyssier scheme:
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/zeldovich_enzo_simple_beta_gravWork.mp4" width="500" height="500" controls preload> </video>
 </div>    
+
+Using The both Dual Energy Conditions ( Enzo and Teyssier):
+  
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/zeldovich_enzo_simple_beta_convDE.mp4" width="500" height="500" controls preload> </video>
+</div>    
