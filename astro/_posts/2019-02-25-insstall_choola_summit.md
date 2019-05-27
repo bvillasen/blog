@@ -90,6 +90,6 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/ccs/home/bvilasen/code/grackle/lib
 
 cd $MEMBERWORK/ast149/cholla
 date
-export OMP_NUM_THREADS=16
+export OMP_NUM_THREADS=12
 jsrun -n 8 -a 1 -c 7 -g 1 -l CPU-CPU -d packed -b packed:7 ./cholla tests/3D/Cosmological_hydro_256_summit.txt > $WORK_DIR/run_output.log |sort
 ```
