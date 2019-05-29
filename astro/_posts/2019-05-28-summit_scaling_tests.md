@@ -97,7 +97,7 @@ The timing values will be appended to the **run_timing.log**  file ( same locati
 **2:** nz ( cells ) \\
 **3:** Number of GPUs \\
 **4:** Number of OpenMP threads \\
-**5:** Number of timesteps for the timing average \\  
+**5:** Number of timesteps for the timing average \\
 **6:** Average Time on Computing dt \\
 **7:** Average Time on Hydro \\
 **8:** Average Time on Boundary transfers \\
@@ -109,7 +109,7 @@ The timing values will be appended to the **run_timing.log**  file ( same locati
 **14:** Average Time on Update Particles Step 1 \\
 **15:** Average Time on Update Particles Step 2 ( also compute gravitational acceleration ) \\
 **16:** Average Time on Grackle Cooling \\
-**17:** Average Timestep time \\
+**17:** Average Timestep time 
 
 
 ### Cosmological Simulations:
