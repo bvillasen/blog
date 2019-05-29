@@ -7,7 +7,7 @@ categories: cholla
 
 ### Cholla Location:
 
-I installed all the necessary software under the **PROJHOME** directory:
+I installed all the necessary software ( FFTW, PFFT, GRACKLE ) under the **PROJHOME** directory:
 
 ```
 /ccs/proj/ast149
@@ -57,11 +57,11 @@ jsrun -n 4 -a 1 -c 7 -g 1 -r 4 -l CPU-CPU -d packed -b packed:7 ./cholla tests/3
 
 This will run 4 MPI processes on 1 node.
 
-**-n:** Number of resources
-**-a:** Number of MPI tasks per resource
-**-c:** Number of physical cores per resource
-**-g:** Number of GPUs per resource
-**-r:** Number of resources per node
+**-n:** Number of resources \\
+**-a:** Number of MPI tasks per resource \\
+**-c:** Number of physical cores per resource \\
+**-g:** Number of GPUs per resource \\
+**-r:** Number of resources per node \\
 
 For a visual distribution of the resources check: [jsrun Visualizer](https://jsrunvisualizer.olcf.ornl.gov/?s4f0o128n6c7g1r11d1b27l0=)
 
@@ -92,24 +92,24 @@ Length units are **kpc**. Note that the physical length must match the number of
 
 The timing values will be appended to the **run_timing.log**  file ( same location as Cholla excecutable ), the columns correspond to:
 
-**0:** nx ( cells )
-**1:** ny ( cells )
-**2:** nz ( cells )
-**3:** Number of GPUs
-**4:** Number of OpenMP threads
-**5:** Number of timesteps for the timing average 
-**6:** Average Time on Computing dt
-**7:** Average Time on Hydro
-**8:** Average Time on Boundary transfers
-**9:** Average Time on Gravitational Potential
-**10:** Average Time on Potential Boundary transfers
-**11:** Average Time on Compute Particles Density
-**12:** Average Time on Particles Boundary transfers
-**13:** Average Time on Particles Density boundary transfers
-**14:** Average Time on Update Particles Step 1
-**15:** Average Time on Update Particles Step 2 ( also compute gravitational acceleration )
-**16:** Average Time on Grackle Cooling
-**17:** Average Timestep time
+**0:** nx ( cells ) \\
+**1:** ny ( cells ) \\
+**2:** nz ( cells ) \\
+**3:** Number of GPUs \\
+**4:** Number of OpenMP threads \\
+**5:** Number of timesteps for the timing average \\  
+**6:** Average Time on Computing dt \\
+**7:** Average Time on Hydro \\
+**8:** Average Time on Boundary transfers \\
+**9:** Average Time on Gravitational Potential \\
+**10:** Average Time on Potential Boundary transfers \\
+**11:** Average Time on Compute Particles Density \\
+**12:** Average Time on Particles Boundary transfers \\
+**13:** Average Time on Particles Density boundary transfers \\
+**14:** Average Time on Update Particles Step 1 \\
+**15:** Average Time on Update Particles Step 2 ( also compute gravitational acceleration ) \\
+**16:** Average Time on Grackle Cooling \\
+**17:** Average Timestep time \\
 
 
 ### Cosmological Simulations:
