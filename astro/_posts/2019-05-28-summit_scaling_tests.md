@@ -65,7 +65,7 @@ This will run 4 MPI processes on 1 node.
 
 For a visual distribution of the resources check: [jsrun Visualizer](https://jsrunvisualizer.olcf.ornl.gov/?s4f0o128n6c7g1r11d1b27l0=)
 
-To change the size of the problem you need to increase the number of Resources and the nodes accordingly ( also change the number of resources per node ), for example to run using 64 GPUs:
+To change the size of the problem you need to increase the number of Resources and the number of nodes accordingly ( also change the number of resources per node, 6 GPUs per node ), for example to run using 64 GPUs:
 
 ```
 #BSUB -nnodes 11
