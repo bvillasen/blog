@@ -125,6 +125,55 @@ I ran two complete cosmological simulations, the outputs are in the **PROJWORK**
 
 **2: cosmo_1024:**  A $$100 Mpc^3$$ box using $$1024^3$$ cells/particles. It took about 8 hours. This had to be ran in 4 separate submissions since the max run time is 2 hours for jobs using less than  46 nodes.
 
+### Compress Snapshot Data:
 
+I added scripts to combine the several output files in to a single snapshot file, in the Cholla folder:
+
+To compress run the python script you probably will want to use an interactive job, you can request one by:
+
+```
+bsub -W 10 -nnodes 1 -P AST149 -Is /bin/bash
+```
+
+the command above will request 1 node for 10 minutes. Once the interactive job was initialized you need to add the needed modules and run the python script. 
+
+
+```
+module load hdf5
+module load python/2.7.15-anaconda2-5.3.0
+python python_scripts/compress_snapshots.py
+```
+
+You will have to change the input_directory and output_directory accordingly to math the location of the raw Cholla output files and the location where the compressed files will be written, currently this are set to compress the $$1024^3$$ simulation:
+
+```
+dataDir = '/gpfs/alpine/proj-shared/ast149/cosmo_tests/'
+inDir = dataDir + 'cosmo_1024/output_snapshots/'
+outDir = dataDir + 'cosmo_1024/snapshots/'
+```
+
+Additionally you can choose which snapshots to compress, you can set **snapshots_all** and it will compress all the snapshots available on the input directory or you can use a list with the number of the snapshots to compress, the example below will compress snapshot 99 and snapshot 199
+
+```
+# snapshots_to_compress = snapshots_all
+snapshots_to_compress = [ 99, 199 ]
+``` 
+ 
+ Finally you can choose which fields you want to save and the float precision:
+ 
+ ```
+ hydro_fields = ['density', 'GasEnergy']
+ particles_fields = ['density']
+ 
+ precision = np.float32
+ ```
+ 
+ The example above will only compress the selected fields for hydro and particles, to compress all the available fields use:
+  
+ ```
+ hydro_fields = 'all'
+ particles_fields = 'all'
+ ```
+    
 
  
