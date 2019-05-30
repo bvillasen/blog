@@ -90,7 +90,7 @@ zlen=25000.0
 
 Length units are **kpc**. Note that the physical length must match the number of cells for each direction so that $$dx = dy = dz$$
 
-The timing values will be appended to the **run_timing.log**  file ( same location as Cholla excecutable ), the columns correspond to:
+At the end of the each simulation the average timing values for each section of the timestep will be appended to the **run_timing.log**  file ( same location as Cholla excecutable ), the columns correspond to:
 
 **0:** nx ( cells ) \\
 **1:** ny ( cells ) \\
@@ -127,9 +127,9 @@ I ran two complete cosmological simulations, the outputs are in the **PROJWORK**
 
 ### Compress Snapshot Data:
 
-I added scripts to combine the several output files in to a single snapshot file, in the Cholla folder:
+I added scripts to combine the several output files into a single snapshot file. You can find these scripts under the directory **python_scripts** in the Cholla folder :
 
-To compress run the python script you probably will want to use an interactive job, you can request one by:
+To run the python script you probably will want to use an interactive job, you can request one by:
 
 ```
 bsub -W 10 -nnodes 1 -P AST149 -Is /bin/bash
@@ -144,7 +144,7 @@ module load python/2.7.15-anaconda2-5.3.0
 python python_scripts/compress_snapshots.py
 ```
 
-You will have to change the input_directory and output_directory accordingly to math the location of the raw Cholla output files and the location where the compressed files will be written, currently this are set to compress the $$1024^3$$ simulation:
+In the **compress_snapshots.py** you can change the input_directory and output_directory accordingly to match the location of the raw Cholla output files (inDir) and the location where the compressed files will be written (outDir), currently this are set to compress the $$1024^3$$ simulation:
 
 ```
 dataDir = '/gpfs/alpine/proj-shared/ast149/cosmo_tests/'
@@ -159,7 +159,7 @@ Additionally you can choose which snapshots to compress, you can set **snapshots
 snapshots_to_compress = [ 99, 199 ]
 ``` 
  
- Finally you can choose which fields you want to save and the float precision:
+ Finally you can choose which fields you want to save and the floating point precision:
  
  ```
  hydro_fields = ['density', 'GasEnergy']
