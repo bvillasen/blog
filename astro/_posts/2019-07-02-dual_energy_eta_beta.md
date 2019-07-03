@@ -56,10 +56,12 @@ Now only using the total internal energy  if  $$U_{total} > U_{advected}$$
 
 **No Pressure Jump Condition**
 
-
+ <img src="{{ site.url }}assets/images/ps_0.005_cooling_uv_PPMC_HLLC_SIMPLE_eta0.005_beta0.250_0.000.png">
 
 
 **Using Pressure Jump Condition** and  $$\alpa=10.0$$
+
+ <img src="{{ site.url }}assets/images/ps_0.005_cooling_uv_PPMC_HLLC_SIMPLE_eta0.005_beta0.250_0.000_PressureJump10.png">
 
 
 
