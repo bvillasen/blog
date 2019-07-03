@@ -7,7 +7,7 @@ categories: cholla
 
 The simulations are $$128^3$$ and 50Mpc.
 
-**Dual Energy Parameters:** $$\eta=0.005$$   $$\beta_0 = 0.25$$   $$\beta_1 = 0.0$$
+**Dual Energy Parameters:** $$\eta=0.005$$    $$\beta_0 = 0.25$$     $$\beta_1 = 0.0$$
 
 ### Shock Detection
 
@@ -17,7 +17,7 @@ From Fryxell 200 the Pressure Jump Condition for shock detection is:
 
  $$\frac{\left|\langle P\rangle_{i+1}^{n}-\langle P\rangle_{i-1}^{n}\right|}{\min \left(\langle P\rangle_{i+1}^{n},\langle P\rangle_{i-1}^{n}\right)}> \alpha \gamma \frac{\left|\langle\rho\rangle_{i+1}^{n}-\langle\rho\rangle_{i-1}^{n}\right|}{\min \left(\langle\rho\rangle_{i+1}^{n},\langle\rho\rangle_{i-1}^{n}\right)}$$
  
- Their implementation uses $$\alpha = 0.1$$.
+ Their implementation uses $$\alpha = 0.1$$
  
  To ignore fluctuations due to noise a condition in the density is also applied:
  
@@ -32,7 +32,7 @@ Now Using Pressure Jump condition:
 
 **Row 2:** Using $$\alpha=0.1$$
 
-Now only using the total internal energy ( $$U_{total}$$ )  if  $$U_{total} > U_{advected}$$ 
+Now only using the total internal energy  if  $$U_{total} > U_{advected}$$ 
 
 **Row 3:** Using $$\alpha=1.0$$
 
@@ -46,7 +46,7 @@ Now only using the total internal energy ( $$U_{total}$$ )  if  $$U_{total} > U_
 
 
 
-**Using Pressure Jump Condition **  $$\alpa=10.0$$
+**Using Pressure Jump Condition**  and $$\alpa=10.0$$
 
 
 
@@ -59,7 +59,7 @@ Now only using the total internal energy ( $$U_{total}$$ )  if  $$U_{total} > U_
 
 
 
-**Using Pressure Jump Condition **  $$\alpa=10.0$$
+**Using Pressure Jump Condition** and  $$\alpa=10.0$$
 
 
 
