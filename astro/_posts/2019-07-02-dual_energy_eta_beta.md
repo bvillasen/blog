@@ -42,8 +42,6 @@ Now only using the Total Internal Energy  if  $$U_{total} > U_{advected}$$
 <video src="{{ site.url }}assets/videos/phase_diagram_DE_beta_simple_Pressure10.mp4" width="500" height="500" controls preload> </video>
 </div>
 
-
-
 ### Chemistry Projection
 
 **No Pressure Jump Condition**
