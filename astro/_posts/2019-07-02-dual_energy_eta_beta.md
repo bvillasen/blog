@@ -32,7 +32,7 @@ Now Using Pressure Jump condition:
 
 **Row 2:** Using $$\alpha=0.1$$
 
-Now only using the total internal energy  if  $$U_{total} > U_{advected}$$ 
+Now only using the Total Internal Energy  if  $$U_{total} > U_{advected}$$ 
 
 **Row 3:** Using $$\alpha=1.0$$
 
@@ -44,10 +44,16 @@ Now only using the total internal energy  if  $$U_{total} > U_{advected}$$
 **No Pressure Jump Condition**
 
 
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/chemistry_DE_beta_simple.mp4" width="500" height="500" controls preload> </video>
+</div>
 
 
 **Using Pressure Jump Condition** $$\alpha=10.0$$
 
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/chemistry_DE_beta_simple_Pressure10.mp4" width="500" height="500" controls preload> </video>
+</div>
 
 
 
