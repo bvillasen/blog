@@ -8,7 +8,9 @@ categories: cholla
 
 The Enzo Simulation is not using Dual Energy
 
-The Cholla Simulation is using the same Dual Energy parameters as described in Enzo paper
+The Cholla Simulation is using the same Dual Energy parameters as described in Enzo paper.
+
+
 **Dual Energy Parameters:** $$\eta=0.001$$    $$\beta_0 = 0.00$$     $$\beta_1 = 0.0$$
 
  
