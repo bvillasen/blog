@@ -12,6 +12,8 @@ $$
 \rho=\left\{\begin{array}{ll}{\alpha \bar{\rho} ,} & {\text { if }\rho > \alpha \bar{\rho} } \\ {\rho,} & {\text { otherwise }}\end{array}\right.
 $$
 
+test
+
 
 **Dual Energy Parameters:** $$\eta=0.005$$    $$\beta_0 = 0.12$$     $$\beta_1 = 0.0$$
 
