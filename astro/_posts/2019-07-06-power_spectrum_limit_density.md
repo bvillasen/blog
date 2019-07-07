@@ -18,6 +18,6 @@ $$
 **Dual Energy Parameters:** $$\eta=0.005$$    $$\beta_0 = 0.12$$     $$\beta_1 = 0.0$$
 
 
-**Redshift = 0 **
+**Redshift = 0**
 
  <img src="{{ site.url }}assets/images/ps_0.005_cooling_uv_PPMC_HLLC_SIMPLE_eta0.005_beta0.120_0.000_densLimit.png">
