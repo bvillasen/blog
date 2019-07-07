@@ -6,7 +6,7 @@ categories: cholla
 ---
 
 
-Comparison of the power spectrum when limiting the overdensities on both simulation according to the next rule:
+Comparison of the power spectrum when limiting the overdensities on both simulations according to the following rule:
 
 $$
 \rho=\left\{\begin{array}{ll}{\alpha \rho_{mean} ,} & {\text { if } \rho > \alpha \rho_{mean}  \\ {\tilde{e},} & {\text { if }\left(\tilde{E}-\frac{1}{2} \tilde{v}^{2}\right) / \tilde{E}<\eta_{1}}\end{array}\right.
