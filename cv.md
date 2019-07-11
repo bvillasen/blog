@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-## Online Courses Taken:
+<!-- ## Online Courses Taken:
 
 ### Software and Computer Science:
 
@@ -37,4 +37,4 @@ permalink: /cv/
 
 
 
-</ul>
+</ul> -->
