@@ -58,7 +58,12 @@ $$
 D_{L1} = \frac{1}{N} \mathlarger{\mathlarger{‎‎\sum}} \frac{ |  x_{i}^{cholla} - x_{i}^{enzo} |  }{ x_{i}^{enzo} }
 $$
 
+**NOTE:** The scale for each field is different.
 
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/l1_difference_eta2.mp4" width="500" height="500" controls preload> </video>
+</div>
 
 
 
