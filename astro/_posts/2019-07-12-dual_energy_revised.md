@@ -21,4 +21,8 @@ $$
 
 ## Comparison: VL and SIMPLE Integrators
 
-Both simulations are using the next Dual Energy parameters: **$$\eta_1 = 0.001$$    $$eta_2=0.03$$
+Both simulations are using the next Dual Energy parameters: **$$\eta_1 = 0.001$$    $$eta_2=0.03$$**
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/phase_diagram_DE_VL.mp4" width="500" height="500" controls preload> </video>
+</div>
