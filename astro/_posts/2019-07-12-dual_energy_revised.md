@@ -31,7 +31,7 @@ Both simulations are using the next Dual Energy parameters: **$$\eta_1 = 0.001$$
 <video src="{{ site.url }}assets/videos/phase_diagram_DE_VL.mp4" width="500" height="500" controls preload> </video>
 </div>
 
-Lets forget about VL integrator.
+Let's forget about VL integrator.
 
 
 ## Changing $$\eta_2$$:
