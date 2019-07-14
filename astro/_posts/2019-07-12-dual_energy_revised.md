@@ -65,6 +65,7 @@ $$
 <video src="{{ site.url }}assets/videos/l1_difference_eta2.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
+updated
 
 ## Zeldovich Pancake Revised:
 
