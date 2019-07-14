@@ -55,7 +55,7 @@ Let's forget about VL integrator.
 Here is the L1 Distance defined as:
 
 $$
-D_{L1} = \frac{1}{N} \mathlarger{\mathlarger{‎‎\sum}} \frac{ |  x_{i}^{cholla} - x_{i}^{enzo} |  }{ x_{i}^{enzo} }
+D_{L1} = \frac{1}{N} \sum \frac{ |  x_{i}^{cholla} - x_{i}^{enzo} |  }{ x_{i}^{enzo} }
 $$
 
 **NOTE:** The scale for each field is different.
