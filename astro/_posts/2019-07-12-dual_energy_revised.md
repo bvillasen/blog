@@ -38,6 +38,10 @@ Let's forget about VL integrator.
 
 **Phase Diagram**
 
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/phase_diagram_several_eta2.mp4" width="500" height="500" controls preload> </video>
+</div>
+
 
 **Power Spectrum**
 
