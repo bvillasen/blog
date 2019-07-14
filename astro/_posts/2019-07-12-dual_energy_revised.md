@@ -52,7 +52,7 @@ Let's forget about VL integrator.
 
 **Cell Difference**
 
-Here is the L1 Distance defined as:
+Here is the L1 Distance defined for a field $$x$$ as:
 
 $$
 D_{L1} = \frac{1}{N} \sum \frac{ |  x_{i}^{cholla} - x_{i}^{enzo} |  }{ x_{i}^{enzo} }
