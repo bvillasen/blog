@@ -62,7 +62,7 @@ $$
 
 
 <div style="text-align: center">
-<video src="{{ site.url }}assets/videos/l1_difference_eta2.mp4" width="500" height="500" controls preload> </video>
+<video src="{{ site.url }}assets/videos/l1_difference_eta2.mp4" controls preload> </video>
 </div>
 
 
