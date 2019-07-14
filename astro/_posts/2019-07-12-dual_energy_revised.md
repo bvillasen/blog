@@ -36,21 +36,21 @@ Let's forget about VL integrator.
 
 ## Changing $$\eta_2$$:
 
-### **Phase Diagram**
+### Phase Diagram
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_several_eta2.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
 
-### **Power Spectrum**
+### Power Spectrum
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/ps_128_eta2.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
 
-### **Cell Difference**
+### Cell Difference
 
 Here is the L1 Distance defined for a field $$x$$ as:
 
