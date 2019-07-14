@@ -41,6 +41,11 @@ Let's forget about VL integrator.
 
 **Power Spectrum**
 
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/ps_128_eta2.mp4" width="500" height="500" controls preload> </video>
+</div>
+
+
 **Cell Difference**
 
 
