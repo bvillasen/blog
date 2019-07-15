@@ -66,8 +66,11 @@ $$
 </div>
 
 
-## Zeldovich Pancake Revised:
+## Zeldovich Pancake Revised
 
-Coming soon.
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/zeldovich_eta2.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
 
 
