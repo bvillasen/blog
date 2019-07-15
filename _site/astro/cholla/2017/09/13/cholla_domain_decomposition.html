@@ -10,8 +10,8 @@
   <meta name="description" content="256 x 256 x 256 in 16 gpus:">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/astro/cholla/2017/09/13/cholla_domain_decomposition.html">
-  <link rel="alternate" type="application/rss+xml" title="My Research" href="http://localhost:4000/feed.xml">
+  <link rel="canonical" href="https://bvillasen.github.io/blog//astro/cholla/2017/09/13/cholla_domain_decomposition.html">
+  <link rel="alternate" type="application/rss+xml" title="My Research" href="https://bvillasen.github.io/blog//feed.xml">
 </head>
 
 
@@ -39,6 +39,10 @@
           
         
           
+          <a class="page-link" href="/results/">Results</a>
+          
+        
+          
           <a class="page-link" href="/about/">About</a>
           
         
@@ -48,6 +52,10 @@
         
           
           <a class="page-link" href="/cv/">CV</a>
+          
+        
+          
+        
           
         
           
@@ -83,7 +91,7 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h3 id="256-x-256-x-256-in-16-gpus">256 x 256 x 256 in 16 gpus:</h3>
+    <h3 id="x-256-x-256-in-16-gpus">256 x 256 x 256 in 16 gpus:</h3>
 
 <p>** Before MPI_routines modification: **</p>
 
@@ -285,7 +293,7 @@ procID 15 nxl 64 nxls 192
 Local domain: x[ 0.750 1.000 ] y[ 0.500 1.000 ] z[ 0.500 1.000 ]
 **</strong>*****</p>
 
-<h3 id="512-x-256-x-256-in-16-gpus">512 x 256 x 256 in 16 gpus:</h3>
+<h3 id="x-256-x-256-in-16-gpus-1">512 x 256 x 256 in 16 gpus:</h3>
 
 <p>** Before MPI_routines modification: **</p>
 
@@ -485,77 +493,78 @@ procID 15 nxl 128 nxls 384
 Local domain: x[ 0.750 1.000 ] y[ 0.500 1.000 ] z[ 0.500 1.000 ]
 **</strong>*****</p>
 
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
- <span class="cp">#if defined (DE) || defined(STATIC_GRAV)
-</span><span class="n">d</span>  <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span>            <span class="n">id</span><span class="p">];</span>
-<span class="n">d_inv</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span> <span class="o">/</span> <span class="n">d</span><span class="p">;</span>
-<span class="n">vx</span> <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">1</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">*</span> <span class="n">d_inv</span><span class="p">;</span>
-<span class="n">vy</span> <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">*</span> <span class="n">d_inv</span><span class="p">;</span>
-<span class="n">vz</span> <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">*</span> <span class="n">d_inv</span><span class="p">;</span>
-<span class="cp">#endif
+<p>```c</p>
+
+<p>#if defined (DE) || defined(STATIC_GRAV)
+d  =  dev_conserved[            id];
+d_inv = 1.0 / d;
+vx =  dev_conserved[1<em>n_cells + id] * d_inv;
+vy =  dev_conserved[2</em>n_cells + id] * d_inv;
+vz =  dev_conserved[3<em>n_cells + id] * d_inv;
+#endif
 #ifdef DE
-</span><span class="n">P</span>  <span class="o">=</span> <span class="p">(</span><span class="n">dev_conserved</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">-</span> <span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">*</span><span class="n">d</span><span class="o">*</span><span class="p">(</span><span class="n">vx</span><span class="o">*</span><span class="n">vx</span> <span class="o">+</span> <span class="n">vy</span><span class="o">*</span><span class="n">vy</span> <span class="o">+</span> <span class="n">vz</span><span class="o">*</span><span class="n">vz</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">gamma</span> <span class="o">-</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">);</span>
-<span class="c1">//if (d &lt; 0.0 || d != d) printf("Negative density before final update.\n");</span>
-<span class="c1">//if (P &lt; 0.0) printf("%d Negative pressure before final update.\n", id);</span>
-<span class="n">ipo</span> <span class="o">=</span> <span class="n">xid</span><span class="o">+</span><span class="mi">1</span> <span class="o">+</span> <span class="n">yid</span><span class="o">*</span><span class="n">nx</span> <span class="o">+</span> <span class="n">zid</span><span class="o">*</span><span class="n">nx</span><span class="o">*</span><span class="n">ny</span><span class="p">;</span>
-<span class="n">jpo</span> <span class="o">=</span> <span class="n">xid</span> <span class="o">+</span> <span class="p">(</span><span class="n">yid</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">nx</span> <span class="o">+</span> <span class="n">zid</span><span class="o">*</span><span class="n">nx</span><span class="o">*</span><span class="n">ny</span><span class="p">;</span>
-<span class="n">kpo</span> <span class="o">=</span> <span class="n">xid</span> <span class="o">+</span> <span class="n">yid</span><span class="o">*</span><span class="n">nx</span> <span class="o">+</span> <span class="p">(</span><span class="n">zid</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">nx</span><span class="o">*</span><span class="n">ny</span><span class="p">;</span>
-<span class="n">vx_imo</span> <span class="o">=</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">1</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">imo</span><span class="p">]</span> <span class="o">/</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="n">imo</span><span class="p">];</span>
-<span class="n">vx_ipo</span> <span class="o">=</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">1</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">ipo</span><span class="p">]</span> <span class="o">/</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="n">ipo</span><span class="p">];</span>
-<span class="n">vy_jmo</span> <span class="o">=</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">jmo</span><span class="p">]</span> <span class="o">/</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="n">jmo</span><span class="p">];</span>
-<span class="n">vy_jpo</span> <span class="o">=</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">jpo</span><span class="p">]</span> <span class="o">/</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="n">jpo</span><span class="p">];</span>
-<span class="n">vz_kmo</span> <span class="o">=</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">kmo</span><span class="p">]</span> <span class="o">/</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="n">kmo</span><span class="p">];</span>
-<span class="n">vz_kpo</span> <span class="o">=</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">kpo</span><span class="p">]</span> <span class="o">/</span> <span class="n">dev_conserved</span><span class="p">[</span><span class="n">kpo</span><span class="p">];</span>
-<span class="cp">#endif
-</span>
-<span class="c1">// update the conserved variable array</span>
-<span class="n">dev_conserved</span><span class="p">[</span>            <span class="n">id</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dtodx</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_x</span><span class="p">[</span>            <span class="n">imo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_x</span><span class="p">[</span>            <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtody</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_y</span><span class="p">[</span>            <span class="n">jmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_y</span><span class="p">[</span>            <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtodz</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_z</span><span class="p">[</span>            <span class="n">kmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_z</span><span class="p">[</span>            <span class="n">id</span><span class="p">]);</span>
-<span class="n">dev_conserved</span><span class="p">[</span>  <span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dtodx</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_x</span><span class="p">[</span>  <span class="n">n_cells</span> <span class="o">+</span> <span class="n">imo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_x</span><span class="p">[</span>  <span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtody</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_y</span><span class="p">[</span>  <span class="n">n_cells</span> <span class="o">+</span> <span class="n">jmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_y</span><span class="p">[</span>  <span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtodz</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_z</span><span class="p">[</span>  <span class="n">n_cells</span> <span class="o">+</span> <span class="n">kmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_z</span><span class="p">[</span>  <span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]);</span>
-<span class="n">dev_conserved</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dtodx</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_x</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">imo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_x</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtody</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_y</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">jmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_y</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtodz</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_z</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">kmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_z</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]);</span>
-<span class="n">dev_conserved</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dtodx</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_x</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">imo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_x</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtody</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_y</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">jmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_y</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtodz</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_z</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">kmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_z</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]);</span>
-<span class="c1">//fz = dtodx * (dev_F_x[3*n_cells + imo] - dev_F_x[3*n_cells + id])</span>
-<span class="c1">//                              +  dtody * (dev_F_y[3*n_cells + jmo] - dev_F_y[3*n_cells + id])</span>
-<span class="c1">//                              +  dtodz * (dev_F_z[3*n_cells + kmo] - dev_F_z[3*n_cells + id]);</span>
-<span class="n">dev_conserved</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dtodx</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_x</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">imo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_x</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtody</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_y</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">jmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_y</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtodz</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_z</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">kmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_z</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]);</span>
-<span class="cp">#ifdef DE
-</span><span class="n">dev_conserved</span><span class="p">[</span><span class="mi">5</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dtodx</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_x</span><span class="p">[</span><span class="mi">5</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">imo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_x</span><span class="p">[</span><span class="mi">5</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtody</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_y</span><span class="p">[</span><span class="mi">5</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">jmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_y</span><span class="p">[</span><span class="mi">5</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="n">dtodz</span> <span class="o">*</span> <span class="p">(</span><span class="n">dev_F_z</span><span class="p">[</span><span class="mi">5</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">kmo</span><span class="p">]</span> <span class="o">-</span> <span class="n">dev_F_z</span><span class="p">[</span><span class="mi">5</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">])</span>
-                              <span class="o">+</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">*</span><span class="n">P</span><span class="o">*</span><span class="p">(</span><span class="n">dtodx</span><span class="o">*</span><span class="p">(</span><span class="n">vx_imo</span><span class="o">-</span><span class="n">vx_ipo</span><span class="p">)</span> <span class="o">+</span> <span class="n">dtody</span><span class="o">*</span><span class="p">(</span><span class="n">vy_jmo</span><span class="o">-</span><span class="n">vy_jpo</span><span class="p">)</span> <span class="o">+</span> <span class="n">dtodz</span><span class="o">*</span><span class="p">(</span><span class="n">vz_kmo</span><span class="o">-</span><span class="n">vz_kpo</span><span class="p">));</span>
-<span class="cp">#endif
-</span><span class="n">d</span>  <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span>            <span class="n">id</span><span class="p">];</span>
-<span class="n">d_inv</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span> <span class="o">/</span> <span class="n">d</span><span class="p">;</span>
-<span class="n">vx</span> <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">1</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">*</span> <span class="n">d_inv</span><span class="p">;</span>
-<span class="n">vy</span> <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">*</span> <span class="n">d_inv</span><span class="p">;</span>
-<span class="n">vz</span> <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">*</span> <span class="n">d_inv</span><span class="p">;</span>
-<span class="n">P</span>  <span class="o">=</span> <span class="p">(</span><span class="n">dev_conserved</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">-</span> <span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">*</span><span class="n">d</span><span class="o">*</span><span class="p">(</span><span class="n">vx</span><span class="o">*</span><span class="n">vx</span> <span class="o">+</span> <span class="n">vy</span><span class="o">*</span><span class="n">vy</span> <span class="o">+</span> <span class="n">vz</span><span class="o">*</span><span class="n">vz</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">gamma</span> <span class="o">-</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">);</span>
-<span class="c1">//if (P &lt; 0.0) printf("%3d %3d %3d Negative pressure after final update. %f %f %f %f %f\n", xid, yid, zid, dev_conserved[4*n_cells + id], 0.5*d*vx*vx, 0.5*d*vy*vy, 0.5*d*vz*vz, P);</span>
-<span class="cp">#ifdef STATIC_GRAV
-</span><span class="n">calc_g_3D_CUDA</span><span class="p">(</span><span class="n">xid</span><span class="p">,</span> <span class="n">yid</span><span class="p">,</span> <span class="n">zid</span><span class="p">,</span> <span class="n">x_off</span><span class="p">,</span> <span class="n">y_off</span><span class="p">,</span> <span class="n">z_off</span><span class="p">,</span> <span class="n">n_ghost</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">,</span> <span class="n">dz</span><span class="p">,</span> <span class="n">xbound</span><span class="p">,</span> <span class="n">ybound</span><span class="p">,</span> <span class="n">zbound</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gx</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gy</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gz</span><span class="p">);</span>
-<span class="n">d_n</span>  <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span>            <span class="n">id</span><span class="p">];</span>
-<span class="n">d_inv_n</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span> <span class="o">/</span> <span class="n">d_n</span><span class="p">;</span>
-<span class="n">vx_n</span> <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">1</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">*</span> <span class="n">d_inv_n</span><span class="p">;</span>
-<span class="n">vy_n</span> <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">*</span> <span class="n">d_inv_n</span><span class="p">;</span>
-<span class="n">vz_n</span> <span class="o">=</span>  <span class="n">dev_conserved</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">*</span> <span class="n">d_inv_n</span><span class="p">;</span>
-<span class="n">dev_conserved</span><span class="p">[</span>  <span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">*</span><span class="n">dt</span><span class="o">*</span><span class="n">gx</span><span class="o">*</span><span class="p">(</span><span class="n">d</span> <span class="o">+</span> <span class="n">d_n</span><span class="p">);</span>
-<span class="n">dev_conserved</span><span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">*</span><span class="n">dt</span><span class="o">*</span><span class="n">gy</span><span class="o">*</span><span class="p">(</span><span class="n">d</span> <span class="o">+</span> <span class="n">d_n</span><span class="p">);</span>
-<span class="n">dev_conserved</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">*</span><span class="n">dt</span><span class="o">*</span><span class="n">gz</span><span class="o">*</span><span class="p">(</span><span class="n">d</span> <span class="o">+</span> <span class="n">d_n</span><span class="p">);</span>
-<span class="c1">//gcorr =  0.5*dt*gz*(d + d_n);</span>
-<span class="n">dev_conserved</span><span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">n_cells</span> <span class="o">+</span> <span class="n">id</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">25</span><span class="o">*</span><span class="n">dt</span><span class="o">*</span><span class="n">gx</span><span class="o">*</span><span class="p">(</span><span class="n">d</span> <span class="o">+</span> <span class="n">d_n</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">vx</span> <span class="o">+</span> <span class="n">vx_n</span><span class="p">)</span>
-                              <span class="o">+</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">25</span><span class="o">*</span><span class="n">dt</span><span class="o">*</span><span class="n">gy</span><span class="o">*</span><span class="p">(</span><span class="n">d</span> <span class="o">+</span> <span class="n">d_n</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">vy</span> <span class="o">+</span> <span class="n">vy_n</span><span class="p">)</span>
-                              <span class="o">+</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">25</span><span class="o">*</span><span class="n">dt</span><span class="o">*</span><span class="n">gz</span><span class="o">*</span><span class="p">(</span><span class="n">d</span> <span class="o">+</span> <span class="n">d_n</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">vz</span> <span class="o">+</span> <span class="n">vz_n</span><span class="p">);</span>
-<span class="cp">#endif
-</span></code></pre></div></div>
+P  = (dev_conserved[4</em>n_cells + id] - 0.5<em>d</em>(vx<em>vx + vy</em>vy + vz<em>vz)) * (gamma - 1.0);
+//if (d &lt; 0.0 || d != d) printf(“Negative density before final update.\n”);
+//if (P &lt; 0.0) printf(“%d Negative pressure before final update.\n”, id);
+ipo = xid+1 + yid</em>nx + zid<em>nx</em>ny;
+jpo = xid + (yid+1)<em>nx + zid</em>nx<em>ny;
+kpo = xid + yid</em>nx + (zid+1)<em>nx</em>ny;
+vx_imo = dev_conserved[1<em>n_cells + imo] / dev_conserved[imo];
+vx_ipo = dev_conserved[1</em>n_cells + ipo] / dev_conserved[ipo];
+vy_jmo = dev_conserved[2<em>n_cells + jmo] / dev_conserved[jmo];
+vy_jpo = dev_conserved[2</em>n_cells + jpo] / dev_conserved[jpo];
+vz_kmo = dev_conserved[3<em>n_cells + kmo] / dev_conserved[kmo];
+vz_kpo = dev_conserved[3</em>n_cells + kpo] / dev_conserved[kpo];
+#endif</p>
+
+<p>// update the conserved variable array
+dev_conserved[            id] += dtodx * (dev_F_x[            imo] - dev_F_x[            id])
+                              +  dtody * (dev_F_y[            jmo] - dev_F_y[            id])
+                              +  dtodz * (dev_F_z[            kmo] - dev_F_z[            id]);
+dev_conserved[  n_cells + id] += dtodx * (dev_F_x[  n_cells + imo] - dev_F_x[  n_cells + id])
+                              +  dtody * (dev_F_y[  n_cells + jmo] - dev_F_y[  n_cells + id])
+                              +  dtodz * (dev_F_z[  n_cells + kmo] - dev_F_z[  n_cells + id]);
+dev_conserved[2<em>n_cells + id] += dtodx * (dev_F_x[2</em>n_cells + imo] - dev_F_x[2<em>n_cells + id])
+                              +  dtody * (dev_F_y[2</em>n_cells + jmo] - dev_F_y[2<em>n_cells + id])
+                              +  dtodz * (dev_F_z[2</em>n_cells + kmo] - dev_F_z[2<em>n_cells + id]);
+dev_conserved[3</em>n_cells + id] += dtodx * (dev_F_x[3<em>n_cells + imo] - dev_F_x[3</em>n_cells + id])
+                              +  dtody * (dev_F_y[3<em>n_cells + jmo] - dev_F_y[3</em>n_cells + id])
+                              +  dtodz * (dev_F_z[3<em>n_cells + kmo] - dev_F_z[3</em>n_cells + id]);
+//fz = dtodx * (dev_F_x[3<em>n_cells + imo] - dev_F_x[3</em>n_cells + id])
+//                              +  dtody * (dev_F_y[3<em>n_cells + jmo] - dev_F_y[3</em>n_cells + id])
+//                              +  dtodz * (dev_F_z[3<em>n_cells + kmo] - dev_F_z[3</em>n_cells + id]);
+dev_conserved[4<em>n_cells + id] += dtodx * (dev_F_x[4</em>n_cells + imo] - dev_F_x[4<em>n_cells + id])
+                              +  dtody * (dev_F_y[4</em>n_cells + jmo] - dev_F_y[4<em>n_cells + id])
+                              +  dtodz * (dev_F_z[4</em>n_cells + kmo] - dev_F_z[4<em>n_cells + id]);
+#ifdef DE
+dev_conserved[5</em>n_cells + id] += dtodx * (dev_F_x[5<em>n_cells + imo] - dev_F_x[5</em>n_cells + id])
+                              +  dtody * (dev_F_y[5<em>n_cells + jmo] - dev_F_y[5</em>n_cells + id])
+                              +  dtodz * (dev_F_z[5<em>n_cells + kmo] - dev_F_z[5</em>n_cells + id])
+                              +  0.5<em>P</em>(dtodx<em>(vx_imo-vx_ipo) + dtody</em>(vy_jmo-vy_jpo) + dtodz<em>(vz_kmo-vz_kpo));
+#endif
+d  =  dev_conserved[            id];
+d_inv = 1.0 / d;
+vx =  dev_conserved[1</em>n_cells + id] * d_inv;
+vy =  dev_conserved[2<em>n_cells + id] * d_inv;
+vz =  dev_conserved[3</em>n_cells + id] * d_inv;
+P  = (dev_conserved[4<em>n_cells + id] - 0.5</em>d<em>(vx</em>vx + vy<em>vy + vz</em>vz)) * (gamma - 1.0);
+//if (P &lt; 0.0) printf(“%3d %3d %3d Negative pressure after final update. %f %f %f %f %f\n”, xid, yid, zid, dev_conserved[4<em>n_cells + id], 0.5</em>d<em>vx</em>vx, 0.5<em>d</em>vy<em>vy, 0.5</em>d<em>vz</em>vz, P);
+#ifdef STATIC_GRAV
+calc_g_3D_CUDA(xid, yid, zid, x_off, y_off, z_off, n_ghost, dx, dy, dz, xbound, ybound, zbound, &amp;gx, &amp;gy, &amp;gz);
+d_n  =  dev_conserved[            id];
+d_inv_n = 1.0 / d_n;
+vx_n =  dev_conserved[1<em>n_cells + id] * d_inv_n;
+vy_n =  dev_conserved[2</em>n_cells + id] * d_inv_n;
+vz_n =  dev_conserved[3<em>n_cells + id] * d_inv_n;
+dev_conserved[  n_cells + id] += 0.5</em>dt<em>gx</em>(d + d_n);
+dev_conserved[2<em>n_cells + id] += 0.5</em>dt<em>gy</em>(d + d_n);
+dev_conserved[3<em>n_cells + id] += 0.5</em>dt<em>gz</em>(d + d_n);
+//gcorr =  0.5<em>dt</em>gz<em>(d + d_n);
+dev_conserved[4</em>n_cells + id] += 0.25<em>dt</em>gx<em>(d + d_n)</em>(vx + vx_n)
+                              +  0.25<em>dt</em>gy<em>(d + d_n)</em>(vy + vy_n)
+                              +  0.25<em>dt</em>gz<em>(d + d_n)</em>(vz + vz_n);
+#endif
+```</p>
 
   </div>
 

@@ -10,8 +10,8 @@
   <meta name="description" content="Starting from the December-15 commit ( last commit from Evan )">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/astro/cholla/2017/09/19/cholla_adding_particles.html">
-  <link rel="alternate" type="application/rss+xml" title="My Research" href="http://localhost:4000/feed.xml">
+  <link rel="canonical" href="https://bvillasen.github.io/blog//astro/cholla/2017/09/19/cholla_adding_particles.html">
+  <link rel="alternate" type="application/rss+xml" title="My Research" href="https://bvillasen.github.io/blog//feed.xml">
 </head>
 
 
@@ -39,6 +39,10 @@
           
         
           
+          <a class="page-link" href="/results/">Results</a>
+          
+        
+          
           <a class="page-link" href="/about/">About</a>
           
         
@@ -48,6 +52,10 @@
         
           
           <a class="page-link" href="/cv/">CV</a>
+          
+        
+          
+        
           
         
           
@@ -135,20 +143,18 @@
   <li>Changed function VL_Algorithm_3D to use new Update_Conserved_Variables_3D function</li>
 </ul>
 
-<p>** Overlapping hydro and potential calculation **</p>
-<ul>
-  <li>breaking set_boundaries function to send hydro boundaries and potential boundaries separately</li>
-  <li>Added parameter <strong>which_bound</strong> to function: Set_Boundary_Conditions</li>
-  <li>Added parameter <strong>which_bound</strong> to function: Set_Boundaries_MPI</li>
-  <li>Added parameter <strong>which_bound</strong> to function: Set_Boundaries_MPI_BLOCK</li>
-  <li>Added parameter <strong>which_bound</strong> to function: Load_and_Send_MPI_Comm_Buffers</li>
-  <li>Should I modify **  Step 2 - Set non-MPI x-boundaries ** ?</li>
-  <li>Added parameter <strong>which_bound</strong> to function: Wait_and_Unload_MPI_Comm_Buffers_BLOCK</li>
-  <li>Added parameter <strong>which_bound</strong> to function: Unload_MPI_Comm_Buffers</li>
-  <li>Added parameter <strong>which_bound</strong> to function: Unload_MPI_Comm_Buffers_BLOCK</li>
-  <li>Using <strong>which_bound</strong> I separated the boundery transfers for conserved variables and potential</li>
-  <li>In main I made an OMP parallel that separates the hydro update and the potential calculation.</li>
-</ul>
+<p>** Overlapping hydro and potential calculation **
+- breaking set_boundaries function to send hydro boundaries and potential boundaries separately
+- Added parameter <strong>which_bound</strong> to function: Set_Boundary_Conditions
+- Added parameter <strong>which_bound</strong> to function: Set_Boundaries_MPI
+- Added parameter <strong>which_bound</strong> to function: Set_Boundaries_MPI_BLOCK
+- Added parameter <strong>which_bound</strong> to function: Load_and_Send_MPI_Comm_Buffers
+- Should I modify **  Step 2 - Set non-MPI x-boundaries ** ?
+- Added parameter <strong>which_bound</strong> to function: Wait_and_Unload_MPI_Comm_Buffers_BLOCK
+- Added parameter <strong>which_bound</strong> to function: Unload_MPI_Comm_Buffers
+- Added parameter <strong>which_bound</strong> to function: Unload_MPI_Comm_Buffers_BLOCK
+- Using <strong>which_bound</strong> I separated the boundery transfers for conserved variables and potential
+- In main I made an OMP parallel that separates the hydro update and the potential calculation.</p>
 
   </div>
 

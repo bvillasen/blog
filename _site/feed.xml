@@ -4,242 +4,130 @@
     <title>My Research</title>
     <description>A simple blog to document my research
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 31 Jan 2019 12:28:01 -0800</pubDate>
-    <lastBuildDate>Thu, 31 Jan 2019 12:28:01 -0800</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <link>https://bvillasen.github.io/blog//</link>
+    <atom:link href="https://bvillasen.github.io/blog//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 15 Jul 2019 16:36:14 -0700</pubDate>
+    <lastBuildDate>Mon, 15 Jul 2019 16:36:14 -0700</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Project Goals</title>
-        <description>&lt;h2 id=&quot;goals-for-the-project&quot;&gt;Goals for the project:&lt;/h2&gt;
+        <title>Simulated Lya Spectra</title>
+        <description>&lt;h2 id=&quot;ly-alpha-forest-from-cholla-simulations&quot;&gt;Ly-&lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; Forest from Cholla Simulations&lt;/h2&gt;
 
-&lt;ul&gt;
+&lt;h3 id=&quot;single-absorber&quot;&gt;Single Absorber&lt;/h3&gt;
 
-  &lt;li&gt; Learn basic concepts about cosmology and structure formation. &lt;/li&gt;
+&lt;p&gt;The opacity &lt;script type=&quot;math/tex&quot;&gt;\tau_{\nu}&lt;/script&gt; for cold interstellar gas can be approximated by:&lt;/p&gt;
 
-  &lt;li&gt; Load data from Dark Matter simulations performed with the code GADGET2. &lt;/li&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\tau_{\nu}=\frac{\pi e^{2}}{m_{e} c} f_{\ell u} N_{\ell} \phi_{\nu}&lt;/script&gt;
 
-  &lt;ul&gt;
+&lt;p&gt;The line profile function &lt;script type=&quot;math/tex&quot;&gt;\phi_{\nu}&lt;/script&gt; is generally a Voigt profile, meaning that it has a Gaussian
+core and Lorentzian damping wings. If we focus on the  Gaussian core, we can approximate
+&lt;script type=&quot;math/tex&quot;&gt;\phi_{\nu}&lt;/script&gt; by a pure Gaussian,&lt;/p&gt;
 
-    &lt;li&gt; Plot the positions of the particles as a function of time and make an animation. &lt;/li&gt;
-  &lt;/ul&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\phi_{\nu}=\frac{1}{\sqrt{\pi} b} e^{-\left(1-\nu / \nu_{0}\right)^{2} /(b / c)^{2}} ; \quad b \equiv \sqrt{2} \sigma_{v}&lt;/script&gt;
 
-&lt;li&gt; Interpolate the mass of the particles into a uniform grid to get the Dark Matter density field &lt;/li&gt;   
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt; is the &lt;strong&gt;Doppler broadening parameter&lt;/strong&gt;. This has a maximum value of &lt;script type=&quot;math/tex&quot;&gt;1/\sqrt{\pi b}&lt;/script&gt;
+at line center &lt;script type=&quot;math/tex&quot;&gt;\nu=\nu_0&lt;/script&gt; , so the (maximum) line center optical depth is:&lt;/p&gt;
 
-&lt;ul&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\tau_{0}=\sqrt{\pi} \frac{e^{2}}{m_{e} c} \frac{f_{\ell u} \lambda_{u \ell} N_{\ell}}{b}=0.758\left(\frac{N_{\ell}}{10^{13} \mathrm{cm}^{-2}}\right)\left(\frac{f_{\ell u}}{0.4162}\right)\left(\frac{\lambda_{u \ell}}{1215.7 \mathrm{A}}\right)\left(\frac{10 \mathrm{km} \mathrm{s}^{-1}}{b}\right)&lt;/script&gt;
 
-  &lt;li&gt; Plot the Dark Matter density as a function of time and make an animation &lt;/li&gt;
+&lt;p&gt;where &lt;strong&gt;&lt;script type=&quot;math/tex&quot;&gt;\lambda_{u \ell} = c/\nu_0&lt;/script&gt;&lt;/strong&gt; , and the normalization quantities are
+those appropriate for the Lyman-&lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; line of hydrogen. The optical depth in the
+Gaussian part of the line profile is then&lt;/p&gt;
 
-  &lt;/ul&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\tau_{\nu}=\tau_{0} e^{-u^{2} / b^{2}}&lt;/script&gt;
 
-&lt;li&gt; Use the halo finder ROCKSTAR to locate the halos in the simulation &lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;group-1&quot;&gt;Group 1&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt; Locate the particles corresponding to each halo and measure the density profile of each halo. Density profile = density of the halo as a function of radius. &lt;/li&gt;
-
-&lt;li&gt; Compare the density profiles of the halos in the simulation to the corresponding Navarro-Frenk-White (NFW) model. &lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;nfw-resources&quot;&gt;NFW Resources&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Navarro%E2%80%93Frenk%E2%80%93White_profile&quot;&gt; NFW wikipedia &lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/astro-ph/9508025.pdf&quot;&gt; NFW PAPER &lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;group-2&quot;&gt;Group 2&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt; Measure the number of halos as a function of mass ( halo mass function ) on the simulation. &lt;/li&gt;
-
-&lt;li&gt; Use ROCKSTAR to compute the halo merger trees and study the formation history of the most massive halos on the simulation. The merger trees tell us how as time progresses in the simulation the halos merge to form bigger halos. &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;halo-mass-function-resources&quot;&gt;Halo Mass Function Resources&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.quora.com/What-is-the-dark-matter-halo-mass-function-Is-there-an-equation-for-it&quot;&gt;What is the Halo Mass Function &lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;halo-merger-trees-resources&quot;&gt;Halo Merger Trees Resources&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.cosmosim.org/cms/documentation/database-structure/merger-trees/&quot;&gt; Halo Merger Tree Introduction &lt;/a&gt;&lt;/p&gt;
-
-&lt;!-- &lt;/ul&gt; --&gt;
+&lt;p&gt;where &lt;strong&gt;&lt;script type=&quot;math/tex&quot;&gt;u=c(\nu_0 - \nu)/\nu&lt;/script&gt;&lt;/strong&gt; is the velocity shift required to produce a frequency shift &lt;strong&gt;&lt;script type=&quot;math/tex&quot;&gt;\nu&lt;/script&gt;&lt;/strong&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 30 Jan 2019 17:10:24 -0800</pubDate>
-        <link>http://localhost:4000/ay9/2019/01/30/project_goals.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ay9/2019/01/30/project_goals.html</guid>
+        <pubDate>Mon, 15 Jul 2019 10:10:24 -0700</pubDate>
+        <link>https://bvillasen.github.io/blog//results/2019/07/15/transmited_flux.html</link>
+        <guid isPermaLink="true">https://bvillasen.github.io/blog//results/2019/07/15/transmited_flux.html</guid>
         
         
-        <category>ay9</category>
+        <category>results</category>
         
       </item>
     
       <item>
-        <title>Week 3: Reading Material</title>
-        <description>&lt;h2 id=&quot;more-youtube-videos&quot;&gt;More Youtube Videos:&lt;/h2&gt;
+        <title>Cholla_PM: Dual Energy Corrected</title>
+        <description>&lt;p&gt;This is the new implementation of Dual Energy, following Bryan 2013:&lt;/p&gt;
 
-&lt;p&gt;The Beginig of Everything&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wNDGgL73ihY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;The pressure is computed using the next condition:&lt;/p&gt;
 
-&lt;p&gt;Picture of the Big Bang&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/_mZQ-5-KYHw&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+p=\left\{\begin{array}{ll}{\rho(\gamma-1)\left(E-\mathbf{v}^{2} / 2\right),} &amp; {\left(E-\mathbf{v}^{2} / 2\right) / E&gt;\eta_{1}} \\ {\rho(\gamma-1) e,} &amp; {\left(E-\mathbf{v}^{2} / 2\right) / E&lt;\eta_{1}}\end{array}\right. %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The Internal Energy is synchronized using &lt;strong&gt;only&lt;/strong&gt; the next condition:&lt;/p&gt;
 
-&lt;h2 id=&quot;gadget2&quot;&gt;Gadget2:&lt;/h2&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+e=\left\{\begin{array}{ll}{\left(E-\mathbf{v}^{2} / 2\right),} &amp; {\rho\left(E-\mathbf{v}^{2} / 2\right) / \max \left(\rho_{j-1} E_{j-1}, \rho_{j} E_{j}, \rho_{j+1} E_{j+1}\right)&gt;\eta_{2}} \\ {e,} &amp; {\rho\left(E-\mathbf{v}^{2} / 2\right) / \max \left(\rho_{j-1} E_{j-1}, \rho_{j} E_{j}, \rho_{j+1} E_{j+1}\right)&lt;\eta_{2}}\end{array}\right. %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;strong&gt;The paper about Gadget2 code&lt;/strong&gt; &lt;a href=&quot;https://wwwmpa.mpa-garching.mpg.de/gadget/gadget2-paper.pdf&quot;&gt; LINK TO PDF DOCUMENT &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;comparison-vl-and-simple-integrators&quot;&gt;Comparison: VL and SIMPLE Integrators&lt;/h2&gt;
 
-&lt;h2 id=&quot;dark-matter-halos&quot;&gt;Dark Matter Halos&lt;/h2&gt;
+&lt;p&gt;Both simulations are using the next Dual Energy parameters: &lt;strong&gt;&lt;script type=&quot;math/tex&quot;&gt;\eta_1 = 0.001&lt;/script&gt;    &lt;script type=&quot;math/tex&quot;&gt;\eta_2=0.03&lt;/script&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;The structure and evolution of cold dark matter halos&lt;/strong&gt; &lt;a href=&quot;https://www.ucolick.org/~diemand/vl/publ/dm_dm_minirev.pdf&quot;&gt; LINK TO PDF DOCUMENT &lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 27 Jan 2019 17:10:24 -0800</pubDate>
-        <link>http://localhost:4000/ay9/2019/01/27/week3_reading_material.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ay9/2019/01/27/week3_reading_material.html</guid>
-        
-        
-        <category>ay9</category>
-        
-      </item>
-    
-      <item>
-        <title>Week 1: Summary</title>
-        <description>&lt;p&gt;We talked about the code we will use for running the Dark Matter  simulations &lt;strong&gt;Gadget2&lt;/strong&gt;, the link is here: &lt;a href=&quot;https://wwwmpa.mpa-garching.mpg.de/gadget/&quot;&gt;GADGET2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Row 1:&lt;/strong&gt; SIMPLE Integrator&lt;/p&gt;
 
-&lt;p&gt;We mentioned that the simulations have millions of particles and we need to find the regions were particles density is high ( regions were the particles are clustered due to gravity ) these regions are the dark matter halos.&lt;/p&gt;
-
-&lt;p&gt;We will use ROCKSTAR as our halo finder, rockstar will receive the outputs from the simulation and will return the halo catalogs, which is a list of all the halos and the properties of of each halo: position, velocities, mass, spin, shape, etc.&lt;/p&gt;
-
-&lt;p&gt;You can find ROCKSTAR here:   &lt;a href=&quot;https://bitbucket.org/gfcstanford/rockstar&quot;&gt; ROCKSTAR &lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I added a folder for the project in &lt;strong&gt;hyperion&lt;/strong&gt; and also individual folders for each one of you, feel free to create new Jupyter notebooks there.&lt;/p&gt;
-
-&lt;p&gt;Next class the class will be more formal, please bring your laptop and a notebook if you need to take notes.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Jan 2019 17:10:24 -0800</pubDate>
-        <link>http://localhost:4000/ay9/2019/01/17/week1_summary.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ay9/2019/01/17/week1_summary.html</guid>
-        
-        
-        <category>ay9</category>
-        
-      </item>
-    
-      <item>
-        <title>Week 1: Reading Material</title>
-        <description>&lt;h2 id=&quot;some-fun-youtube-videos&quot;&gt;Some Fun Youtube Videos:&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Dark Matter Cartoon:&lt;/strong&gt;&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/QAa2O_8wBUQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;strong&gt;Dark Matter &amp;amp; Dark Energy explained:&lt;/strong&gt;&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ULoc-QUwH74&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;strong&gt;Dark Matter Simulation:&lt;/strong&gt;&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/2qeT4DkEX-w&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;now-something-more-serious&quot;&gt;Now something more serious:&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Introduction to Dark Matter:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ttt.astro.su.se/~ez/kurs/gradU/DM.pdf&quot;&gt; LINK TO PDF DOCUMENT &lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The link above points to a good Introduction to Dark Matter. Feel free to not pay to much attention to equations for now. Also &lt;strong&gt;ignore section 1.7 and 1.8&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Any questions, just send me a message:  &lt;a href=&quot;mailto:brvillas@ucsc.edu&quot;&gt;brvillas@ucsc.edu&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 09 Jan 2019 17:10:24 -0800</pubDate>
-        <link>http://localhost:4000/ay9/2019/01/09/week1_reading_material.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ay9/2019/01/09/week1_reading_material.html</guid>
-        
-        
-        <category>ay9</category>
-        
-      </item>
-    
-      <item>
-        <title>Introduction: Analysis of Dark Matter Simulations</title>
-        <description>&lt;h2 id=&quot;dark-matter&quot;&gt;Dark Matter&lt;/h2&gt;
-
-&lt;p&gt;Dark matter is a kind of matter that scientists believe to exist and accounts for about 85% of all the mass in the universe. Ordinary matter is the kind of matter that forms stars, planets, humans, hydrogen, protons, electrons, etc. Ordinary matter is called baryonic matter. Dark matter differs from baryonic matter in that dark matter doesn’t interact with light, this means that dark matter doesn’t emit any light and it is completely transparent, for this reason we can’t “see” dark matter in the regular sense.&lt;/p&gt;
-
-&lt;p&gt;The way we “observe” dark matter and infer its existence is by measuring its gravitational influence on stars, galaxies and light itself. In this sense, dark matter is a source of gravity that we aren’t able to see and so far we still can’t detect, but we see its gravitational pull on other massive objects like stars and galaxies.&lt;/p&gt;
-
-&lt;p&gt;The actual evidence points to our Universe having a lot more dark matter than baryonic matter, as a result the gravitational pull from dark matter is much more dominant. This have very important effects, because of its gravitational attraction dark matter clump together forming very massive clumps, this clumps are called &lt;strong&gt;dark matter halos&lt;/strong&gt;, at the same time the gravity from the dark matter pulls the baryonic matter in to the center of the halos, in these regions the gravitational pull is strong enough to give rise to very high densities of baryonic matter, densities become so high that hydrogen atoms fuse together emitting a lot of energy in form of light, this results in the formation of a star. In the interior of dark matter halos millions of stars are formed and all these stars form a galaxy.&lt;/p&gt;
-
-&lt;p&gt;Another important role of dark matter is on its influence in the expansion of the universe, due its gravitational attraction the amount of dark matter in the Universe is directly linked to the expansion of the Universe.&lt;/p&gt;
-
-&lt;h2 id=&quot;dark-matter-simulations&quot;&gt;Dark Matter Simulations&lt;/h2&gt;
-
-&lt;p&gt;In order to study how dark matter affects the formation of galaxies, scientists use supercomputers to run &lt;strong&gt;Dark Matter Cosmological Simulations&lt;/strong&gt; in which the dynamical evolution of the dark matter in a very large volume of the Universe ( thousands of galaxies ) is calculated, in other words, we calculate the movement of dark matter elements in response to their gravitational attraction resulting in the time evolution of the dark matter density field.&lt;/p&gt;
-
-&lt;p&gt;The animation below shows the time 3D evolution of the dark matter in a cosmological simulation. Shown in the animation is the dark matter density, the regions of bright color are regions were the density is high and dark regions is were the density is low. As you can see in the animation the simulation starts with the dark matter distributed almost uniformly in all the box except for some inhomogeneities and as time advances the inhomogeneities where the density is slightly higher become brighter and brighter, this means that they become more dense (more massive) due their gravitational attraction. After the first half of the animation you can see that all the volume is populated by bright clumps, these are the dark matter halos and in the inner parts of those clumps is where galaxies form.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Row 2:&lt;/strong&gt; VL Integrator&lt;/p&gt;
 
 &lt;div style=&quot;text-align: center&quot;&gt;
-&lt;video src=&quot;http://localhost:4000assets/videos/cosmo_10.mp4&quot; height=&quot;600&quot; width=&quot;600&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
+&lt;video src=&quot;https://bvillasen.github.io/blog/assets/videos/phase_diagram_DE_VL.mp4&quot; width=&quot;100%&quot; height=&quot;auto&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;dark-matter-halos&quot;&gt;Dark Matter Halos&lt;/h2&gt;
+&lt;p&gt;Let’s forget about VL integrator.&lt;/p&gt;
 
-&lt;p&gt;So now we know that regions where the dark matter density is high ( higher to a certain threshold ) are called halos. In the figure below you can see a projection of the dark matter density that corresponds to a small part of the volume shown in the animation above ( somewhat like a zoom-in to a small region of the entire box ), again the bright yellowish regions are high density regions ( halos ) and the dark purplish regions are low density regions. On the right panel you can see the same region but here the halos are highlighted with white circles, the radius of the circle is proportional to the mass of the halo.&lt;/p&gt;
+&lt;h2 id=&quot;changing-eta2&quot;&gt;Changing &lt;script type=&quot;math/tex&quot;&gt;\eta_2&lt;/script&gt;:&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/density_halos.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;the-project&quot;&gt;The Project&lt;/h2&gt;
-
-&lt;p&gt;The goal of this project will be to identify the dark matter halos in a cosmological simulation and then do some analysis on their evolution and formation history  as well statistical analysis of all the halos in the simulation.&lt;/p&gt;
-
-&lt;p&gt;For the project:&lt;/p&gt;
-
-&lt;ul&gt;
-
-&lt;li&gt; We will understand fundamental concepts of cosmology and galaxy formation. &lt;/li&gt;
-
-&lt;li&gt; We will learn the basics of Phyton programming and its application to scientific programming. &lt;/li&gt;
-
-&lt;li&gt; We will learn how to read and write data files, including formats for efficient storage for large data files (HDF5). &lt;/li&gt;
-
-&lt;li&gt; Using the mass and positions of the Dark Matter particles we will compute the density field of the Dark Matter and plot the evolution of the density field as a function of time. This will result in a nice animation. &lt;/li&gt;
-
-&lt;li&gt; We will use ROCKSTAR to locate the dark matter halos resulting on halo catalogs of the simulation. &lt;/li&gt;
-
-&lt;li&gt; Depending on the progress and the time available we will perform some halo analysis, beginning with the halo mass function and then analyzing the halo merger trees to study the halos formation histories. &lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;NO PROGRAMMING EXPERIENCE IS REQUIRED&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;contact&quot;&gt;Contact&lt;/h2&gt;
-
-&lt;p&gt;If you are interested or have any questions, please send me a message at &lt;strong&gt;brvillas@ucsc.edu&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 07 Jan 2019 17:10:24 -0800</pubDate>
-        <link>http://localhost:4000/ay9/2019/01/07/project_summary.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ay9/2019/01/07/project_summary.html</guid>
-        
-        
-        <category>ay9</category>
-        
-      </item>
-    
-      <item>
-        <title>CHOLLA_PM Test: Phase Diagram Separate Internal Energy</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/fraction_Dual_Energy.png&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;phase-diagram&quot;&gt;Phase Diagram&lt;/h3&gt;
 
 &lt;div style=&quot;text-align: center&quot;&gt;
-&lt;video src=&quot;http://localhost:4000assets/videos/thermal_history_DEcomponents.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
+&lt;video src=&quot;https://bvillasen.github.io/blog/assets/videos/phase_diagram_several_eta2.mp4&quot; width=&quot;100%&quot; height=&quot;auto&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
 &lt;/div&gt;
+
+&lt;h3 id=&quot;power-spectrum&quot;&gt;Power Spectrum&lt;/h3&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+&lt;video src=&quot;https://bvillasen.github.io/blog/assets/videos/ps_128_eta2.mp4&quot; width=&quot;100%&quot; height=&quot;auto&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;cell-difference&quot;&gt;Cell Difference&lt;/h3&gt;
+
+&lt;p&gt;Here is the L1 Distance defined for a field &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;D_{L1} = \frac{1}{N} \sum \frac{ |  x_{i}^{cholla} - x_{i}^{enzo} |  }{ x_{i}^{enzo} }&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; The scale for each field is different.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+&lt;video src=&quot;https://bvillasen.github.io/blog/assets/videos/l1_difference_eta2.mp4&quot; width=&quot;100%&quot; height=&quot;auto&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;projections&quot;&gt;Projections&lt;/h2&gt;
+
+&lt;p&gt;Dual Energy parameters used for Cholla: &lt;strong&gt;&lt;script type=&quot;math/tex&quot;&gt;\eta_1 = 0.001&lt;/script&gt;    &lt;script type=&quot;math/tex&quot;&gt;\eta_2=0.03&lt;/script&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now the projected distance is 25 Mpc/h  and &lt;strong&gt;the difference ranges from [-1, 1].&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+&lt;video src=&quot;https://bvillasen.github.io/blog/assets/videos/projections_eta2.mp4&quot; width=&quot;100%&quot; height=&quot;auto&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;zeldovich-pancake-revised&quot;&gt;Zeldovich Pancake Revised&lt;/h2&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+&lt;video src=&quot;https://bvillasen.github.io/blog/assets/videos/zeldovich_eta2.mp4&quot; width=&quot;100%&quot; height=&quot;auto&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now only for &lt;strong&gt;&lt;script type=&quot;math/tex&quot;&gt;\eta_2=0.03&lt;/script&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+&lt;video src=&quot;https://bvillasen.github.io/blog/assets/videos/zeldovich_eta2_0.030.mp4&quot; width=&quot;100%&quot; height=&quot;auto&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
+&lt;/div&gt;
+
 </description>
-        <pubDate>Wed, 12 Dec 2018 17:10:24 -0800</pubDate>
-        <link>http://localhost:4000/astro/cholla/2018/12/12/phase_diagram_de_components.html</link>
-        <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/12/12/phase_diagram_de_components.html</guid>
+        <pubDate>Sat, 13 Jul 2019 18:10:24 -0700</pubDate>
+        <link>https://bvillasen.github.io/blog//astro/cholla/2019/07/13/dual_energy_revised.html</link>
+        <guid isPermaLink="true">https://bvillasen.github.io/blog//astro/cholla/2019/07/13/dual_energy_revised.html</guid>
         
         
         <category>astro</category>
@@ -249,18 +137,86 @@
       </item>
     
       <item>
-        <title>CHOLLA_PM Test: Phase Diagram Adding Ek_min to Dual Energy Sync</title>
-        <description>&lt;h3 id=&quot;phase-diagram&quot;&gt;Phase diagram:&lt;/h3&gt;
-
-&lt;p&gt;Adding the condition for the gas to have &lt;script type=&quot;math/tex&quot;&gt;E_{k} &gt; 0.4 \overline{ E_{k} }&lt;/script&gt; ( E_k = Kinetic energy ) in order to use the internal energy computed from the total energy, the effects can be seen in the lower panels:&lt;/p&gt;
-
-&lt;div style=&quot;text-align: center&quot;&gt;
-&lt;video src=&quot;http://localhost:4000assets/videos/thermal_history_limEk.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
-&lt;/div&gt;
+        <title>GRACKLE Hydro Simulation, Reionization</title>
+        <description>
 </description>
-        <pubDate>Fri, 07 Dec 2018 17:10:24 -0800</pubDate>
-        <link>http://localhost:4000/astro/cholla/2018/12/07/enzo_phase_diagram2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/12/07/enzo_phase_diagram2.html</guid>
+        <pubDate>Fri, 12 Jul 2019 10:10:24 -0700</pubDate>
+        <link>https://bvillasen.github.io/blog//results/2019/07/12/hydro_cooling_reionization.html</link>
+        <guid isPermaLink="true">https://bvillasen.github.io/blog//results/2019/07/12/hydro_cooling_reionization.html</guid>
+        
+        
+        <category>results</category>
+        
+      </item>
+    
+      <item>
+        <title>GRACKLE Hydro Simulation, no UV Background</title>
+        <description>
+</description>
+        <pubDate>Fri, 12 Jul 2019 10:10:24 -0700</pubDate>
+        <link>https://bvillasen.github.io/blog//results/2019/07/12/hydro_cooling_UVoff.html</link>
+        <guid isPermaLink="true">https://bvillasen.github.io/blog//results/2019/07/12/hydro_cooling_UVoff.html</guid>
+        
+        
+        <category>results</category>
+        
+      </item>
+    
+      <item>
+        <title>Adiabatic Hydro Simulation</title>
+        <description>
+</description>
+        <pubDate>Thu, 11 Jul 2019 10:10:24 -0700</pubDate>
+        <link>https://bvillasen.github.io/blog//results/2019/07/11/adiabatic_simulation.html</link>
+        <guid isPermaLink="true">https://bvillasen.github.io/blog//results/2019/07/11/adiabatic_simulation.html</guid>
+        
+        
+        <category>results</category>
+        
+      </item>
+    
+      <item>
+        <title>Zeldovich Pancake Test</title>
+        <description>
+</description>
+        <pubDate>Wed, 10 Jul 2019 11:10:24 -0700</pubDate>
+        <link>https://bvillasen.github.io/blog//results/2019/07/10/zeldovich_pancake_test.html</link>
+        <guid isPermaLink="true">https://bvillasen.github.io/blog//results/2019/07/10/zeldovich_pancake_test.html</guid>
+        
+        
+        <category>results</category>
+        
+      </item>
+    
+      <item>
+        <title>Dark Matter Power Spectrum</title>
+        <description>
+</description>
+        <pubDate>Wed, 10 Jul 2019 10:10:24 -0700</pubDate>
+        <link>https://bvillasen.github.io/blog//results/2019/07/10/dark_matter_power_spectrum.html</link>
+        <guid isPermaLink="true">https://bvillasen.github.io/blog//results/2019/07/10/dark_matter_power_spectrum.html</guid>
+        
+        
+        <category>results</category>
+        
+      </item>
+    
+      <item>
+        <title>Cholla_PM: Power Spectrum Density Upper Limit </title>
+        <description>&lt;p&gt;Comparison of the power spectrum when limiting the overdensities on both simulations according to the following rule:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\rho=\left\{\begin{array}{ll}{\alpha \bar{\rho} ,} &amp; {\text { if }\rho &gt; \alpha \bar{\rho} } \\ {\rho,} &amp; {\text { otherwise }}\end{array}\right. %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Dual Energy Parameters:&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;\eta=0.005&lt;/script&gt;    &lt;script type=&quot;math/tex&quot;&gt;\beta_0 = 0.12&lt;/script&gt;     &lt;script type=&quot;math/tex&quot;&gt;\beta_1 = 0.0&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Redshift = 0&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://bvillasen.github.io/blog/assets/images/ps_0.005_cooling_uv_PPMC_HLLC_SIMPLE_eta0.005_beta0.120_0.000_densLimit.png&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 06 Jul 2019 18:10:24 -0700</pubDate>
+        <link>https://bvillasen.github.io/blog//astro/cholla/2019/07/06/power_spectrum_limit_density.html</link>
+        <guid isPermaLink="true">https://bvillasen.github.io/blog//astro/cholla/2019/07/06/power_spectrum_limit_density.html</guid>
         
         
         <category>astro</category>
@@ -270,28 +226,28 @@
       </item>
     
       <item>
-        <title>CHOLLA_PM Test: Phase Diagram Changing Dual Energy</title>
-        <description>&lt;h3 id=&quot;phase-diagram&quot;&gt;Phase diagram:&lt;/h3&gt;
+        <title>Cholla_PM: Enzo without Dual Energy </title>
+        <description>&lt;p&gt;The Enzo Simulation is not using Dual Energy&lt;/p&gt;
 
-&lt;p&gt;Changing the threshold in the Dual Energy implementation and the integration time step:&lt;/p&gt;
+&lt;p&gt;The Cholla Simulation is using the same Dual Energy parameters as described in Enzo paper.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/temperature_DE_v_1.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dual Energy Parameters:&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;\eta=0.001&lt;/script&gt;    &lt;script type=&quot;math/tex&quot;&gt;\beta_0 = 0.00&lt;/script&gt;     &lt;script type=&quot;math/tex&quot;&gt;\beta_1 = 0.0&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/temperature_DE_m_1.png&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;phase-diagram&quot;&gt;Phase Diagram&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Row 1:&lt;/strong&gt; Using Change in Kinetic Energy for Total Energy Gravity Update.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Row 2:&lt;/strong&gt; Using Gravitational Work for Total Energy Gravity Update.&lt;/p&gt;
 
 &lt;div style=&quot;text-align: center&quot;&gt;
-&lt;video src=&quot;http://localhost:4000assets/videos/thermal_history_DE_1.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
+&lt;video src=&quot;https://bvillasen.github.io/blog/assets/videos/phase_diagram_DE_beta_simple_beta0.00_noDE.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;adding-a-second-order-gravity-integration-scheme&quot;&gt;Adding a Second Order Gravity Integration Scheme:&lt;/h3&gt;
-
-&lt;p&gt;From Nyx implementation:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/nyx_gravity.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;After Reionization Enzo is stuck in error messages.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 23 Nov 2018 17:10:24 -0800</pubDate>
-        <link>http://localhost:4000/astro/cholla/2018/11/23/enzo_phase_diagram1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/11/23/enzo_phase_diagram1.html</guid>
+        <pubDate>Wed, 03 Jul 2019 18:10:24 -0700</pubDate>
+        <link>https://bvillasen.github.io/blog//astro/cholla/2019/07/03/enzo_no_dual_energy.html</link>
+        <guid isPermaLink="true">https://bvillasen.github.io/blog//astro/cholla/2019/07/03/enzo_no_dual_energy.html</guid>
         
         
         <category>astro</category>
@@ -301,81 +257,57 @@
       </item>
     
       <item>
-        <title>CHOLLA_PM Test: Phase Diagram Changing Dual Energy</title>
-        <description>&lt;h3 id=&quot;phase-diagram&quot;&gt;Phase diagram:&lt;/h3&gt;
+        <title>Cholla_PM: Gravitational Work Again</title>
+        <description>&lt;p&gt;Comparison of the total energy evolution using the change in kinetic energy against the gravitational work&lt;/p&gt;
 
-&lt;p&gt;Changing the threshold in the Dual Energy implementation and the integration time step:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dual Energy Parameters:&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;\eta=0.005&lt;/script&gt;    &lt;script type=&quot;math/tex&quot;&gt;\beta_0 = 0.25&lt;/script&gt;     &lt;script type=&quot;math/tex&quot;&gt;\beta_1 = 0.0&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/temperature_DE_v.png&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;phase-diagram&quot;&gt;Phase Diagram&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/temperature_DE_m.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Row 1:&lt;/strong&gt; Using Change in Kinetic Energy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Row 2:&lt;/strong&gt; Using Gravitational Work.&lt;/p&gt;
 
 &lt;div style=&quot;text-align: center&quot;&gt;
-&lt;video src=&quot;http://localhost:4000assets/videos/thermal_history_DE.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
+&lt;video src=&quot;https://bvillasen.github.io/blog/assets/videos/phase_diagram_DE_beta_simple_beta0.25_gravWork.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;adding-a-second-order-gravity-integration-scheme&quot;&gt;Adding a Second Order Gravity Integration Scheme:&lt;/h3&gt;
+&lt;h3 id=&quot;power-spectrum&quot;&gt;Power Spectrum&lt;/h3&gt;
 
-&lt;p&gt;From Nyx implementation:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Using Change in Kinetic Energy.&lt;/strong&gt;
+ &lt;img src=&quot;https://bvillasen.github.io/blog/assets/images/ps_0.005_cooling_uv_PPMC_HLLC_SIMPLE_eta0.005_beta0.250_0.000.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/nyx_gravity.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Using Gravitational Work.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://bvillasen.github.io/blog/assets/images/ps_0.005_cooling_uv_PPMC_HLLC_SIMPLE_eta0.005_beta0.250_0.000_gravWork.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;different-dual-energy-parameters&quot;&gt;Different Dual Energy Parameters&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Dual Energy Parameters:&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;\eta=0.005&lt;/script&gt;    &lt;script type=&quot;math/tex&quot;&gt;\beta_0 = 0.12&lt;/script&gt;     &lt;script type=&quot;math/tex&quot;&gt;\beta_1 = 0.0&lt;/script&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;phase-diagram-1&quot;&gt;Phase Diagram&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Row 1:&lt;/strong&gt; Using Change in Kinetic Energy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Row 2:&lt;/strong&gt; Using Gravitational Work.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+&lt;video src=&quot;https://bvillasen.github.io/blog/assets/videos/phase_diagram_DE_beta_simple_beta0.12_gravWork.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;power-spectrum-1&quot;&gt;Power Spectrum&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Using Change in Kinetic Energy.&lt;/strong&gt;
+&lt;img src=&quot;https://bvillasen.github.io/blog/assets/images/ps_0.005_cooling_uv_PPMC_HLLC_SIMPLE_eta0.005_beta0.120_0.000.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Using Gravitational Work.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://bvillasen.github.io/blog/assets/images/ps_0.005_cooling_uv_PPMC_HLLC_SIMPLE_eta0.005_beta0.120_0.000_gravWork.png&quot; /&gt;&lt;/p&gt;
+
 </description>
-        <pubDate>Wed, 21 Nov 2018 17:10:24 -0800</pubDate>
-        <link>http://localhost:4000/astro/cholla/2018/11/21/enzo_phase_diagram.html</link>
-        <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/11/21/enzo_phase_diagram.html</guid>
-        
-        
-        <category>astro</category>
-        
-        <category>cholla</category>
-        
-      </item>
-    
-      <item>
-        <title>CHOLLA_PM Test: Hydro Nyx Comparison</title>
-        <description>&lt;h3 id=&quot;updated-dm-only-power-spectrum&quot;&gt;Updated DM-ONLY power spectrum:&lt;/h3&gt;
-
-&lt;p&gt;The gravitational constant was different from the one in Nyx at the 5th digit, here are the new results, max differences are 0.25%&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/power_dm_nyx_256_1.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;gas-temperature&quot;&gt;Gas Temperature:&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Cholla gravWork :&lt;/strong&gt; The energy update is &lt;script type=&quot;math/tex&quot;&gt;\Delta E = dt \rho(  v \cdot  g)&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Cholla deltaEk :&lt;/strong&gt; The energy update is equal to the change in kinetic energy after the gravity update on the momentum.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Cholla uniform :&lt;/strong&gt; Evolution of a uniform gas under adiabatic cosmological expansion, it follows the &lt;script type=&quot;math/tex&quot;&gt;(1+z)^2&lt;/script&gt; scaling expected for a &lt;script type=&quot;math/tex&quot;&gt;\gamma = 5/3&lt;/script&gt; gas.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/temp_nyx_vol.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000assets/images/temp_nyx_mass.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;density---temperature-slices&quot;&gt;Density - Temperature Slices:&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Panel 1:&lt;/strong&gt; Evolution with Nyx.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Panel 2:&lt;/strong&gt; Evolution with Cholla using same initial conditions as Nyx using the change in kinetic energy for the energy update.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Panel 3:&lt;/strong&gt; Evolution with Cholla using same initial conditions as Nyx using &lt;script type=&quot;math/tex&quot;&gt;\Delta E = dt \rho(  v \cdot  g)&lt;/script&gt; for the energy update.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Panel 4:&lt;/strong&gt; Evolution with Enzo.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Panel 5:&lt;/strong&gt; Evolution with Cholla using same initial conditions as Enzo using &lt;script type=&quot;math/tex&quot;&gt;\Delta E = dt \rho(  v \cdot  g)&lt;/script&gt; for the energy update.&lt;/p&gt;
-
-&lt;div style=&quot;text-align: center&quot;&gt;
-&lt;video src=&quot;http://localhost:4000assets/videos/density_temp.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;phase-diagram&quot;&gt;Phase diagram:&lt;/h3&gt;
-
-&lt;div style=&quot;text-align: center&quot;&gt;
-&lt;video src=&quot;http://localhost:4000assets/videos/thermal_history_1.mp4&quot; width=&quot;500&quot; height=&quot;500&quot; controls=&quot;&quot; preload=&quot;&quot;&gt; &lt;/video&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 10 Nov 2018 17:10:24 -0800</pubDate>
-        <link>http://localhost:4000/astro/cholla/2018/11/10/nyx_comparison_hydro.html</link>
-        <guid isPermaLink="true">http://localhost:4000/astro/cholla/2018/11/10/nyx_comparison_hydro.html</guid>
+        <pubDate>Wed, 03 Jul 2019 18:10:24 -0700</pubDate>
+        <link>https://bvillasen.github.io/blog//astro/cholla/2019/07/03/gravitational_work_again.html</link>
+        <guid isPermaLink="true">https://bvillasen.github.io/blog//astro/cholla/2019/07/03/gravitational_work_again.html</guid>
         
         
         <category>astro</category>
