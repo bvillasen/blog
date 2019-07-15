@@ -67,10 +67,10 @@ $$
 
 ## Projections
 
-Both simulations are using the next Dual Energy parameters: **$$\eta_1 = 0.001$$    $$\eta_2=0.03$$**
+Dual Energy parameters used for Cholla: **$$\eta_1 = 0.001$$    $$\eta_2=0.03$$**
 
 
-Now the projected distance is 25 Mpc/h  and the difference ranges from [-1, 1]
+Now the projected distance is 25 Mpc/h  and **the difference ranges from [-1, 1].**
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/projections_eta2.mp4" width="100%"  height="auto" controls preload> </video>
