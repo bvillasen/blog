@@ -65,7 +65,7 @@ $$
 <video src="{{ site.url }}assets/videos/l1_difference_eta2.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
-##Projections
+## Projections
 
 Both simulations are using the next Dual Energy parameters: **$$\eta_1 = 0.001$$    $$\eta_2=0.03$$**
 
