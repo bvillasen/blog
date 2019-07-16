@@ -5,7 +5,7 @@ date:   2019-07-15 17:10:24 -0800
 categories: cholla
 ---
 
-**Comparison of different fields for the line of sight.**
+**Comparison of different fields for the same line of sight.**
 
 
 <div style="text-align: center">
