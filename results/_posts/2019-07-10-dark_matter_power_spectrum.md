@@ -24,7 +24,12 @@ H_0 = 67.66 \\
 n_s = 0.9665 \\
 $$
 
+
+**Box Size:** 100 Mpc/h
+
 #### Density Comparison
+
+**Projection:** 25 Mpc/h
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/dm_projection_100Mpc.mp4" width="100%"  height="auto" controls preload> </video>
