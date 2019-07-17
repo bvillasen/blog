@@ -33,3 +33,8 @@ Also the **Z** and **Y** components of the velocity are non-zero!
 
 The first suspect is the Gravitational Source, I will output and plot the potential, but it seems like for every line with an excess Y or Z velocity there is another line with the same excess in the other direction, this seems like a fluxes problem. 
 
+### No Gravity
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/zeldovich_error_noGrav.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
