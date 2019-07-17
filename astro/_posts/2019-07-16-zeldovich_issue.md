@@ -31,5 +31,5 @@ Integrator: VL
 
 Also the **Z** and **Y** components of the velocity are non-zero! 
 
-The first suspect is the Gravitational Source, I will output and plot the potential, but it seems like for every line with an excess Y or Z there is another line with the same excess in the other direction, this seems like a fluxes problem. 
+The first suspect is the Gravitational Source, I will output and plot the potential, but it seems like for every line with an excess Y or Z velocity there is another line with the same excess in the other direction, this seems like a fluxes problem. 
 
