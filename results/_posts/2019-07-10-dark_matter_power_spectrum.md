@@ -42,7 +42,7 @@ $$
 <img src="{{ site.url }}assets/images/power_dm_nyx_100Mpc.png">
 
 
-## Box Size: 500 Mpc/h
+## Box Size: 50 Mpc/h
 
 #### Density Comparison
 
