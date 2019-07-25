@@ -25,7 +25,7 @@ n_s = 0.9665 \\
 $$
 
 
-**Box Size:** 100 Mpc/h
+## Box Size: 100 Mpc/h
 
 #### Density Comparison
 
@@ -40,3 +40,21 @@ $$
 #### Power Spectrum
 
 <img src="{{ site.url }}assets/images/power_dm_nyx_100Mpc.png">
+
+
+## Box Size: 500 Mpc/h
+
+#### Density Comparison
+
+**Projection:** 25 Mpc/h
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/dm_projection_50Mpc.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+
+
+#### Power Spectrum
+
+<img src="{{ site.url }}assets/images/power_dm_nyx_50Mpc.png">
+
