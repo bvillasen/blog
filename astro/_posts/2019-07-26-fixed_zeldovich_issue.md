@@ -64,4 +64,7 @@ After fixing the bug, this are the results for the cosmological simulations usin
 </div>
 
 **Difference**
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/chemistry_128_difference.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
 
