@@ -36,3 +36,32 @@ After fixing the bug, this are the results for the cosmological simulations usin
 <video src="{{ site.url }}assets/videos/ps_128_eta2_new.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
+### Projections
+
+**$$eta_2 = 0.030 $$**
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/chemistry_128_eta2_0.030.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+**$$eta_2 = 0.035 $$**
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/chemistry_128_eta2_0.035.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+**$$eta_2 = 0.040 $$**
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/chemistry_128_eta2_0.040.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+**$$eta_2 = 0.045 $$**
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/chemistry_128_eta2_0.045.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+**$$eta_2 = 0.050 $$**
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/chemistry_128_eta2_0.050.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+**Difference**
+
