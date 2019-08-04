@@ -7,7 +7,7 @@ categories: cholla
 
 Here is the comparison for Zeldovich test using **HLLC** and **HLL**, both cases use **PPMC** and the Dual Energy parameters are:
 
-**$$/eta_1 = 0.001 $$**  **$$/eta_2 = 0.030 $$**
+**$$\eta_1 = 0.001 $$**  **$$\eta_2 = 0.030 $$**
 
 
 <div style="text-align: center">
