@@ -30,3 +30,15 @@ Now showing all the lines across the X direction
 <video src="{{ site.url }}assets/videos/zeldovich_PPMP_all.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
+### PLMC Reconstruction
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/zeldovich_PLMC_all.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+### PLMP Reconstruction
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/zeldovich_PLMP_all.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
