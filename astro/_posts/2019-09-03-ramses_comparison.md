@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cholla_PM: Ramses Comparison"
-date:   2019-09-03 17:10:24 -0800
+date:   2019-09-02 17:10:24 -0800
 categories: cholla
 ---
 Here is the Comparison against Ramses:
