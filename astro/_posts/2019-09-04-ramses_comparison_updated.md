@@ -19,3 +19,4 @@ Differences are < 0.5%.
 After changing to the parameters suggested by Romain:
 
  
+<img src="{{ site.url }}assets/images/temperature_comparison_0.png">
