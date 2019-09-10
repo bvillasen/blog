@@ -22,7 +22,7 @@ After changing to the parameters suggested by Romain:
 <img src="{{ site.url }}assets/images/temperature_comparison_0.png">
 
 
-After changing Dual Energy in Cholla to add the Truncation Error conditionÑ
+After changing Dual Energy in Cholla to add the Truncation Error condition.
 
 <img src="{{ site.url }}assets/images/temperature_comparison_beta0.3_slope1.png">
 
@@ -33,3 +33,5 @@ slope_limiter = Type of slope limiter used in the Godunov scheme for the piecewi
 ```
 
 <img src="{{ site.url }}assets/images/ps_128_hydro_ramses_PLMC_beta0.20_eta0.030_slope1.png">
+
+I tried running Ramses+Grackle but it seems like Ramses is not doing the advection of the chemical species and only pases neutral hydrogen and helium density based on hydrogen fraction X, seems like ionized fractions are always 0.
