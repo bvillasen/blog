@@ -26,7 +26,7 @@ After changing Dual Energy in Cholla to add the Truncation Error condition.
 
 <img src="{{ site.url }}assets/images/temperature_comparison_beta0.3_slope1.png">
 
-I compared the gas power spectrum using several parameters, the best match was when setting the slope limiter in ramses to 1 and $\beta=0.2$  $\eta=0.3$.
+I compared the gas power spectrum using several parameters, the best match was when setting the slope limiter in ramses to 1 and $$\beta=0.2$$  $$\eta=0.3$$.
 
 ```
 slope_limiter = Type of slope limiter used in the Godunov scheme for the piecewise linear reconstruction: slope_type=0: First order scheme, slope_type=1: MinMod limiter, slope_type=2: MonCen limiter, slope_type=3: Multi-dimensional MonCen limiter. 
