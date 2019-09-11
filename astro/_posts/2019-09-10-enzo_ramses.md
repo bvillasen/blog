@@ -16,4 +16,22 @@ Now using Cooling and UV Background:
 
 <img src="{{ site.url }}assets/images/temperature_comparison_enzo_ramses_uv.png">
 
+## Power Spectrum
+
+Here is the power spectrum for Cholla and Enzo without using Cooling/UV:
+
+### $$\eta=0.005$$
+
+<img src="{{ site.url }}assets/images/ps_128_hydro_enzo_SIMPLE_PPMP_eta0.005_beta0.00_grav4.png">
+
+### $$\eta=0.010$$
+
+<img src="{{ site.url }}assets/images/ps_128_hydro_enzo_SIMPLE_PPMP_eta0.010_beta0.00_grav4.png">
+
+### $$\eta=0.035$$
+
+<img src="{{ site.url }}assets/images/ps_128_hydro_enzo_SIMPLE_PPMP_eta0.035_beta0.00_grav4.png">
+
+
+
 
