@@ -33,7 +33,7 @@ Here is the power spectrum for Cholla and Enzo without using Cooling/UV:
 <img src="{{ site.url }}assets/images/ps_128_hydro_enzo_SIMPLE_PPMP_eta0.035_beta0.00_grav4.png">
 
 ### $$\eta=0.035$$ and $$\beta=0.2$$:
-**These where the parameters that best matched Ramses$$: Gas is much colder.**
+**These where the parameters that best matched Ramses: Gas is much colder.**
 
 <img src="{{ site.url }}assets/images/ps_128_hydro_enzo_SIMPLE_PPMP_eta0.035_beta0.20_grav4.png">
 
