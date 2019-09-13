@@ -24,7 +24,7 @@ First the comparison against **Nyx**, both Nyx and Cholla use the second order s
 
 Now the comparison against **Ramses**, both Ramses and Cholla use the fourth order stencial for the gradient of the potential.
 
-<img src="{{ site.url }}assets/images/power_dm_ramses.png">
+<img src="{{ site.url }}assets/images/power_dm_256_ramses.png">
 
 Now the comparison against **Enzo**, both Enzo and Cholla use the fourth order stencial for the gradient of the potential.
 
