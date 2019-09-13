@@ -54,5 +54,6 @@ Comparison against **Enzo** using $$eta==0.035$$ for Dual Energy
 
 <img src="{{ site.url }}assets/images/phase_diagram_33.png">
 
+### Projections 
 
-
+<img src="{{ site.url }}assets/images/chemistry_33_256_weight_density.png">
