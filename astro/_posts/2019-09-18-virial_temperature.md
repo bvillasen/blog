@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cholla_PM: Virial Temperature Comparision"
+title:  "Cholla_PM: Virial Temperature Comparison"
 date:   2019-09-18 17:10:24 -0800
 categories: cholla
 ---
