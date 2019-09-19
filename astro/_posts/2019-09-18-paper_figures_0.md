@@ -43,6 +43,6 @@ categories: cholla
 
 
 
-
+### Projections
 
 <img src="{{ site.url }}assets/images/projection_33_cividis.png">
