@@ -9,13 +9,13 @@ categories: cholla
 ## Zeldovich Pancake
 
 
-<img src="{{ site.url }}assets/images/zeldivich_78.png">
+<img src="{{ site.url }}assets/images/zeldovich_78.png">
 
 
 
 ## Dark Matter Comparison 
 
-<img src="{{ site.url }}assets/images/ps_256_nyx_ramses.png">
+<img src="{{ site.url }}assets/images/ps_256_dm_nyx_ramses.png">
 
 
 
