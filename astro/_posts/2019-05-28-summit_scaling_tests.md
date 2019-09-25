@@ -121,9 +121,9 @@ I ran two complete cosmological simulations, the outputs are in the **PROJWORK**
 /gpfs/alpine/proj-shared/ast149/cosmo_tests
 ```
 
-**1: cosmo_512:**  A $$50 Mpc^3$$ box using $$512^3$$ cells/particles. It took about 55 min.
+**1: cosmo_512:**  A $$50 Mpc^3$$ box using $$512^3$$ cells/particles. **It took about 55 min on 64 GPUs**.
 
-**2: cosmo_1024:**  A $$100 Mpc^3$$ box using $$1024^3$$ cells/particles. It took about 8 hours. This had to be ran in 4 separate submissions since the max run time is 2 hours for jobs using less than  46 nodes.
+**2: cosmo_1024:**  A $$100 Mpc^3$$ box using $$1024^3$$ cells/particles. **It took 8.1 hours on 64 GPUs**. This had to be ran in 4 separate submissions since the max run time is 2 hours for jobs using less than  46 nodes.
 
 ### Compress Snapshot Data:
 
