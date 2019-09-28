@@ -16,7 +16,7 @@ For this tests all the GPUs are evolving the same number of particles, because o
 ## Cosmological Simulation ( Adiabatic )
 
 
-On a realistic cosmological simulation the particles distribution becomes less uniform as the simulation progresses, this affects the computational load balance since processes that evolve regions that contain massive halos will have more particles than processes evolving under-dense regions. On a 1024$$^3$$ cell 50 Mpc/h simulation, the timestep at the end of the simulation took ~17% longer than at the beginning of the simulation.  
+On a realistic cosmological simulation the particles distribution becomes less uniform as the simulation progresses, this affects the computational load balance since processes that evolve regions that contain massive halos will have more particles than processes evolving under-dense regions. On a 1024$$^3$$ cell 50 Mpc/h simulation on 64 GPUs, the timestep at the end of the simulation took ~17% longer than at the beginning of the simulation.  
 
 
 
