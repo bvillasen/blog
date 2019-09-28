@@ -7,7 +7,7 @@ categories: cholla
 
 ## Scaling Test ( Adiabatic )
 
-For this test every GPU evolves a 25Mpc/h sub-volume and every sub-volume has the exact same initial conditions. The times shown in the figure bellow are the averages over the first 30 timesteps of a cosmological simulation starting at $$z=100$$.  
+For this test every GPU evolves a 25Mpc/h sub-volume and every sub-volume has the exact same initial conditions. The times shown in the figure bellow correspond to the time per timestep  averaged over the first 30 timesteps of a cosmological simulation starting at $$z=100$$.  
 
 <img src="{{ site.url }}assets/images/scaling_summit_adiabatic.png">
 
