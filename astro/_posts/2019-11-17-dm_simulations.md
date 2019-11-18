@@ -37,7 +37,7 @@ make install
 
 ## Initial Conditions
 
-To generate initial conditions for our simulations we will use [MUSIC] (https://www-n.oca.eu/ohahn/MUSIC/). Download and extract the .zip file. Then change the **Makefile** to add the FFTW and GSL directories:
+To generate initial conditions for our simulations we will use [MUSIC](https://www-n.oca.eu/ohahn/MUSIC/). Download and extract the .zip file. Then change the **Makefile** to add the FFTW and GSL directories:
 
 ```
 ### compile time configuration options
