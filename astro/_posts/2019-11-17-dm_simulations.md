@@ -62,7 +62,7 @@ LPATHS  = -L$(HOME)/local/lib -L/opt/local/lib -L/usr/local/lib -L$(FFTW_HOME)/l
 
 Then just *make* and if everything works correctly you should see the MUSIC executable.
 
-To run MUSIC you need to pass a parameter file with the configuration for your initial conditions, here is an example for a $$128^3$$ simulation:
+To run MUSIC you need to pass a parameter file (ics_parameters.conf) with the configuration for your initial conditions, here is an example for a $$128^3$$ simulation:
 
 ```
 [setup]
@@ -119,8 +119,9 @@ laplace_order		= 6
 grad_order		= 6
 ```
 
+To run music just pass the parameter file
 
-
-
+```
 export LD_LIBRARY_PATH=/home/bruno/code/gsl/lib:$LD_LIBRARY_PATH
-
+./MUSIC ics_parameters.conf
+```
