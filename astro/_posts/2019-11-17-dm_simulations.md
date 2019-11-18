@@ -23,7 +23,7 @@ make install
 
 ### GSL
 
-Download from [Here](ftp://ftp.gnu.org/gnu/gsl/) and istall it by:
+Download from [Here](ftp://ftp.gnu.org/gnu/gsl/) and install it by:
 
 ```
 tar -xzvf gsl-2.6.tar.gz 
