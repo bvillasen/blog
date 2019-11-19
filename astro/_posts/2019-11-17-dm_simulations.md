@@ -9,6 +9,12 @@ categories: dm
 
 ## Prerequisites 
 
+### MPI
+
+If you don't have MPI on your system you can get it from [Here](https://www.open-mpi.org/software/ompi/v3.0/).
+
+
+
 ### FFTW
 We will need to install FFTW.  To use Gadget2 we need FFTW2, you can download it from here: [FFTW](http://www.fftw.org/download.html) be sure to download FFTW-2.1.5 and install it by: 
 
@@ -16,7 +22,7 @@ We will need to install FFTW.  To use Gadget2 we need FFTW2, you can download it
 ```
 tar -xzvf fftw-2.1.5.tar.gz
 cd fftw-2.1.5
-./configure --prefix=/home/bruno/code/fftw_2 --enable-type-prefix --enable-threads
+./configure --prefix=/home/bruno/code/fftw_2 --enable-type-prefix --enable-threads --enable-mpi
 make
 make install
 ```
@@ -125,3 +131,39 @@ To run music just pass the parameter file
 export LD_LIBRARY_PATH=/home/bruno/code/gsl/lib:$LD_LIBRARY_PATH
 ./MUSIC ics_parameters.conf
 ```
+
+## Gadget2
+
+To run the simulation we will use Gadget2, download it from [Here](https://wwwmpa.mpa-garching.mpg.de/gadget/) and extract it by:
+
+```
+gunzip gadget-2.0.7.tar.gz
+tar -xvf gadget-2.0.7.tar
+
+```
+
+You will have to edit the Makefile, this are the changes I made:
+
+```
+#--------------------------------------- Single/Double Precision
+OPT   +=  -DDOUBLEPRECISION      
+OPT   +=  -DDOUBLEPRECISION_FFTW      
+
+
+SYSTYPE="falcon"
+
+#--------------------------------------- Adjust settings for target computer
+
+ifeq ($(SYSTYPE),"falcon")
+CC       =  mpicc   
+OPTIMIZE =  -O3 -Wall
+GSL_INCL =  -I/home/bruno/code/gsl/include
+GSL_LIBS =  -L/home/bruno/code/gsl/lib 
+FFTW_INCL=  -I/home/bruno/code/fftw_2/include
+FFTW_LIBS=  -L/home/bruno/code/fftw_2/lib
+MPICHLIB =
+HDF5INCL =  
+HDF5LIB  =  -lhdf5 -lz 
+endif
+```
+
