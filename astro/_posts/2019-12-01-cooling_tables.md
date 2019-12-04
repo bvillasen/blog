@@ -30,7 +30,8 @@ The cooling/heating rates for the metal component are passed as separate tables:
 
 > To calculate the cooling and heating contribution from metals, we run each of the above models twice, once with the full complement of elements and once with only H and He. For every point in each version of the model, we extract all cooling/heating components contributing at least $$10^{−10}$$ of the total rate. We then remove all components that appear in both the full and H/He models, leaving only the contributions of the metals. All of the data are organized in HDF5 files. The structure and discoverability of HDF5 files allow the data to be easily used for other applications. 
 
-To compute the metals tables I compute cooling and heating rates for Solar composition and subtract the cooling and heating rates from the previously computed *H and He only* cooling/heating rates  
+To compute the cooling and heating tables for metals, I compute cooling and heating rates for Solar composition and subtract the cooling and heating rates from the previously computed *H and He only* cooling/heating rates.  
+
 ## Simulation Comparison 
 
 Here is the power spectrum of the gas and neutral Hydrogen for a simulation that used the cloudy tables for primordial cooling/heating compared to the same simulation using the Grackle tables. Differences are due to the different cooling/heating rates from the cloudy results.
