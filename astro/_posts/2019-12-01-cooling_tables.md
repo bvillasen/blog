@@ -49,3 +49,15 @@ Here is the power spectrum of the gas and neutral Hydrogen for a simulation that
 ### Changing Primordial Tables and Metals Tables
 
 
+
+## Cloudy Parameter Example For Solar Composition
+
+```
+stop zone 1
+iterate to convergence
+hden -10
+table HM12 redshift 0. 
+constant temperature 10.000000 K linear
+no molecules
+```
+
