@@ -48,6 +48,7 @@ Here is the power spectrum of the gas and neutral Hydrogen for a simulation that
 
 ### Changing Primordial Tables and Metals Tables
 
+<img src="{{ site.url }}assets/images/ps_256_cool_uv_cloudy_metals_on.png"> 
 
 
 ## Cloudy Parameter Example For Solar Composition
