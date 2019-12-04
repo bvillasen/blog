@@ -32,6 +32,11 @@ The cooling/heating rates for the metal component are passed as separate tables:
 
 To compute the cooling and heating tables for metals, I compute cooling and heating rates for Solar composition and subtract the cooling and heating rates from the previously computed *H and He only* cooling/heating rates.  
 
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/cooling_tables_metals.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+
 ## Simulation Comparison 
 
 Here is the power spectrum of the gas and neutral Hydrogen for a simulation that used the cloudy tables for primordial cooling/heating compared to the same simulation using the Grackle tables. Differences are due to the different cooling/heating rates from the cloudy results.
