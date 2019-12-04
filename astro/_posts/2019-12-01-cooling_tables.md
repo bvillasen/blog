@@ -24,3 +24,11 @@ Additionally grackle takes in 3-dimensional tables for cooling and heating rates
 </div>
 
 
+
+## Simulation Comparison 
+
+Here is the power spectrum of the gas and neutral Hydrogen for a simulation that used the cloudy tables for primordial cooling/heating compared to the same simulation using the Grackle tables. Differences are due to the different cooling/heating rates from the cloudy results.
+
+
+<img src="{{ site.url }}assets/images/ps_256_cool_uv_cloudy_primordial.png"> 
+
