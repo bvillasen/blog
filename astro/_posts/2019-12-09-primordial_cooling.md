@@ -8,6 +8,9 @@ categories: cholla grackle
 From [Katz et al. 1995](https://arxiv.org/abs/astro-ph/9509107) I get the cooling rates gas of primordial composition and no incident radiation. Here are the cooling rates for the different processes:
 
 
-
 <img src="{{ site.url }}assets/images/primordial_cooling.png"> 
 
+
+Here is the comparison of the cooling rates from Katz+1995 the results from Cloudy and Grackle, non of them match!
+
+<img src="{{ site.url }}assets/images/primordial_cooling_comparison.png"> 
