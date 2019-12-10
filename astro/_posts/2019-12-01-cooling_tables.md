@@ -51,14 +51,83 @@ Here is the power spectrum of the gas and neutral Hydrogen for a simulation that
 <img src="{{ site.url }}assets/images/ps_256_cool_uv_cloudy_metals_on.png"> 
 
 
-## Cloudy Parameter Example For Solar Composition
+## Cloudy Parameter Example For Primordial Composition
 
 ```
-stop zone 1
-iterate to convergence
-hden -10
-table HM12 redshift 0. 
-constant temperature 10.000000 K linear
-no molecules
+                                                          Cloudy 17.01
+                                                        www.nublado.org
+
+                      **************************************17Jun01**************************************
+                      *                                                                                 *
+                      * stop zone 1                                                                     *
+                      * iterate to convergence                                                          *
+                      * hden -10.0                                                                      *
+                      * constant temperature T = 1.122018e+01 linear                                    *
+                      * table HM12 redshift 0.0                                                         *
+                      * #<<  HM12 GALAXY model    1 read.         z =          0.00                 >>> *
+                      * #<< FINAL:       z =          0.00                                          >>> *
+                      * element Lithium abundance -30                                                   *
+                      * element Beryllium abundance -30                                                 *
+                      * element Boron abundance -30                                                     *
+                      * element Carbon abundance -30                                                    *
+                      * element Nitrogen abundance -30                                                  *
+                      * element Oxygen abundance -30                                                    *
+                      * element Fluorine abundance -30                                                  *
+                      * element Neon abundance -30                                                      *
+                      * element Sodium abundance -30                                                    *
+                      * element Magnesium abundance -30                                                 *
+                      * element Aluminum abundance -30                                                  *
+                      * element Silicon abundance -30                                                   *
+                      * element Phosphorus abundance -30                                                *
+                      * element Sulphur abundance -30                                                   *
+                      * element Chlorine abundance -30                                                  *
+                      * element Argon abundance -30                                                     *
+                      * element Potassium abundance -30                                                 *
+                      * element Calcium abundance -30                                                   *
+                      * element Scandium abundance -30                                                  *
+                      * element Titanium abundance -30                                                  *
+                      * element Vanadium abundance -30                                                  *
+                      * element Chromium abundance -30                                                  *
+                      * element Manganese abundance -30                                                 *
+                      * element Iron abundance -30                                                      *
+                      * element Cobalt abundance -30                                                    *
+                      * element Nickel abundance -30                                                    *
+                      * element Copper abundance -30                                                    *
+                      * element Zinc abundance -30                                                      *
+                      * element Lithium off                                                             *
+                      * element Beryllium off                                                           *
+                      * element Boron off                                                               *
+                      * element Carbon off                                                              *
+                      * element Nitrogen off                                                            *
+                      * element Oxygen off                                                              *
+                      * element Fluorine off                                                            *
+                      * element Neon off                                                                *
+                      * element Sodium off                                                              *
+                      * element Magnesium off                                                           *
+                      * element Aluminum off                                                            *
+                      * element Silicon off                                                             *
+                      * element Phosphorus off                                                          *
+                      * element Sulphur off                                                             *
+                      * element Chlorine off                                                            *
+                      * element Argon off                                                               *
+                      * element Potassium off                                                           *
+                      * element Calcium off                                                             *
+                      * element Scandium off                                                            *
+                      * element Titanium off                                                            *
+                      * element Vanadium off                                                            *
+                      * element Chromium off                                                            *
+                      * element Manganese off                                                           *
+                      * element Iron off                                                                *
+                      * element Cobalt off                                                              *
+                      * element Nickel off                                                              *
+                      * element Copper off                                                              *
+                      * element Zinc off                                                                *
+                      * metals 1e-30                                                                    *
+                      * no molecules                                                                    *
+                      * punch last cooling file = "/home/bruno/Desktop/Dropbox/Developer/cooling_tools/cloudy_tools/primordial_uv/run_0//cooling_run_run0.cooling.temp"*
+                      * punch last heating file = "/home/bruno/Desktop/Dropbox/Developer/cooling_tools/cloudy_tools/primordial_uv/run_0//cooling_run_run0.heating.temp"*
+                      * punch last abundance file = "/home/bruno/Desktop/Dropbox/Developer/cooling_tools/cloudy_tools/primordial_uv/run_0//cooling_run_run0.abundance.temp"*
+                      * punch last ionization means file = "/home/bruno/Desktop/Dropbox/Developer/cooling_tools/cloudy_tools/primordial_uv/run_0//cooling_run_run0.ionization.temp"*
+                      * punch last physical conditions file = "/home/bruno/Desktop/Dropbox/Developer/cooling_tools/cloudy_tools/primordial_uv/run_0//cooling_run_run0.physical.temp"*
 ```
 

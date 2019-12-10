@@ -17,4 +17,4 @@ The composition dor the gas is: $$n_{H} = 1$$  $$n_{He} = 0.1$$
 
 Here is the comparison of the cooling rates from Katz+1995 the results from Cloudy and Grackle, non of them match!
 
-<img src="{{ site.url }}assets/images/primordial_cooling_comparison.png"> 
+<img src="{{ site.url }}assets/images/primordial_cooling_comparison_convergence.png"> 
