@@ -8,7 +8,7 @@ categories: cholla grackle
 From [Katz et al. 1995](https://arxiv.org/abs/astro-ph/9509107) I get the cooling rates gas of primordial composition and no incident radiation. Here are the cooling rates for the different processes:
 
 
-The composition dor the gas is: $$n_{H} = 1$$  $$n_{He} = 0.1$$  
+The composition dor the gas is: $$n_{H} = 1$$     $$n_{He} = 0.1$$  
 
 
 
