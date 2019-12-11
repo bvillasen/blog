@@ -12,14 +12,14 @@ The composition dor the gas is: $$n_{H} = 1$$  $$n_{He} = 0.1$$
 
 
 
-<img src="{{ site.url }}assets/images/primordial_cooling_comparison_cloudy13.png"> 
+<img src="{{ site.url }}assets/images/primordial_cooling.png"> 
 
 
 Here is the comparison of the cooling rates from Katz+1995 the results from Cloudy and Grackle.
 
 I tried using the older  Cloudy version C13 (instead of C17) and I found that the resulting  cooling rates from version C13 match the ones in the Grackle file, my guess is that Grackle used cloudy C13 to compute their tables. 
 
-<img src="{{ site.url }}assets/images/primordial_cooling_comparison_convergence_cloudy13.png"> 
+<img src="{{ site.url }}assets/images/primordial_cooling_comparison_cloudy13.png"> 
 
 My guess is that the differences in the Cooling/Heating rates for the HM12 background computed before are due to the different Cloudy versions and not due to the methodology employed to compute the tables.
 
