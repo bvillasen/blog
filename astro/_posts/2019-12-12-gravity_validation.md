@@ -21,7 +21,7 @@ This test was run on a 256$^3$ grid, on 8 GPUs using the **VL** integrator, **HL
 
 Particles can be included for the **Spherical_Collapse** test, in this case the initial positions of the particles are randomly generated on a sphere such that the density is quasi-uniform ( there will be local density fluctuations due to the random assignment of the positions ). Initial velocities of the particles are set to zero. 
 
-For this case the density of the particles in the sphere is set to $$\rho_p \aprox  1 $$ on top of the fluid density $$\rho_g=1$$ so that the total density is now $$\rho=2$$, this will cause the sphere to collapse faster.
+For this case the density of the particles in the sphere is set to $$\rho_p \approx  1 $$ on top of the fluid density $$\rho_g=1$$ so that the total density is now $$\rho=2$$, this will cause the sphere to collapse faster.
 
 
 <div style="text-align: center">
