@@ -13,6 +13,8 @@ The initial density of the fluid is set to $$\rho=1$$ and for simplicity **the g
 
 This test was run on a 256$^3$ grid, on 8 GPUs using the **VL** integrator, **HLLC** Riemann solver, and **PPMP** reconstruction. 
 
+The animation below shows the evolution of the density at the single central slide of the box, as expected the density increases as the sphere collapses and the density remains mostly uniform during the simulation.  
+
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/spherical_collapse.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
