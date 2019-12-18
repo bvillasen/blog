@@ -11,6 +11,8 @@ The **Spherical_Collapse** consists of  simple test for which a sphere of unifor
 
 The initial density of the fluid is set to $$\rho=1$$ and for simplicity **the gravitational constant is set $$G=1$$**. The following animation shows the collapse as a function of time. If the pressure forces are ignores, then it's easy to compute the velocity of the gas at any radius  of the sphere as a function of time from energy conservation, the velocity as a function of time can be integrated to obtain the radius of the sphere as a function of time. This analytical estimate of a the evolution of the radius is shown as a white circle in the animation bellow, it's important to keep in mind that the approximation is made for a pressure-less fluid, for this reason this approximation is only valid when the pressure gradients are small. 
 
+This test was run on a 256$^3$ grid, on 8 GPUs using the **VL** integrator, **HLLC** Riemann solver, and **PPMP** reconstruction. 
+
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/spherical_collapse.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
