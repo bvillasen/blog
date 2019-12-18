@@ -25,6 +25,7 @@ Particles can be included for the **Spherical_Collapse** test, in this case the 
 
 For this case the density of the particles in the sphere is set to $$\rho_p \approx  1 $$ on top of the fluid density $$\rho_g=1$$ so that the total density is now $$\rho=2$$, this will cause the sphere to collapse faster.
 
+On the animation bellow, the density fluctuations arise from the stochastic initialization of the particles positions, but mostly the density is quasi-uniform overall. 
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/spherical_collapse_particles.mp4" width="100%"  height="auto" controls preload> </video>
