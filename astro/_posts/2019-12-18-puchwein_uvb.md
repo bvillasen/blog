@@ -7,7 +7,7 @@ categories: puchwein uv
 
 ## UVB Spectrum
 
-Here is a comparison of the spectrum from the Puchwein+18 UVB to the HM12 for several redshifts:
+Here is a comparison of the spectrum from Puchwein+18 UVB to  HM12 for several redshifts:
 
 
 <img src="{{ site.url }}assets/images/uvb_comparison_1.png"> 
