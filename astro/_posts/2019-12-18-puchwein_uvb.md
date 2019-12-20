@@ -14,12 +14,13 @@ Here is a comparison of the spectrum from Puchwein+18 UVB to  HM12 for several r
 
 ## Photoheatig Rates
 
-Here is the comparison of the Photoheatig rates for both models:
-
+Here is the comparison of the Photoheatig rates for both models, dashed lines correspond to HM12:
 
 <img src="{{ site.url }}assets/images/heating_rates.png"> 
 
 ## Photoionization Rates
 
 
-Here is the comparison of the Photoionization rates for both models:
+Here is the comparison of the Photoionization rates for both models, dashed lines correspond to HM12:
+
+<img src="{{ site.url }}assets/images/ionization_rates.png"> 
