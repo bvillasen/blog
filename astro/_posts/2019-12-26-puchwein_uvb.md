@@ -24,12 +24,12 @@ $$n_s = 0.9665$$
 
 ## The Outputs
 
-Redshift Range: [ 100 16 ]   20 outputs ( uniform in scale factor ) \\
-Redshift Range: [ 16  10 ]   20 outputs ( uniform in scale factor ) \\
-Redshift Range: [ 10  7  ]   30 outputs ( uniform in scale factor ) \\
-Redshift Range: [ 7   5  ]   30 outputs ( uniform in scale factor ) \\ 
-Redshift Range: [ 5   3  ]   30 outputs ( uniform in scale factor ) \\
-Redshift Range: [ 3   2  ]   30 outputs ( uniform in scale factor )
+Redshift Range: [ 100, 16 ]   20 outputs ( uniform in scale factor ) \\
+Redshift Range: [ 16,  10 ]   20 outputs ( uniform in scale factor ) \\
+Redshift Range: [ 10,  7  ]   30 outputs ( uniform in scale factor ) \\
+Redshift Range: [ 7,   5  ]   30 outputs ( uniform in scale factor ) \\ 
+Redshift Range: [ 5,   3  ]   30 outputs ( uniform in scale factor ) \\
+Redshift Range: [ 3,   2  ]   30 outputs ( uniform in scale factor )
 
 ### Fields to save:
 
