@@ -11,10 +11,13 @@ The simualtion are 256$$^3$$ cells/particles on a 50 Mpc/h box.
 
 The cosmological parameters, Plank 2018:
 
+$$H_0 = $$
 $$\Omega_\Lambda = $$
 $$\Omega_m = $$
 $$\Omega_b = $$
 $$\sigma_8 = $$
+$$n_s = $$
+
 
 ### UVB Tables:
 
