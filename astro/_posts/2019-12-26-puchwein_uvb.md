@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "UVB Comparison"
+title:  "Cholla_PM: UVB Comparison"
 date:   2019-12-26 17:10:24 -0800
 categories: puchwein uv
 ---
