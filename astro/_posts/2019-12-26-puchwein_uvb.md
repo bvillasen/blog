@@ -11,7 +11,7 @@ The simualtion are 256$$^3$$ cells/particles on a 50 Mpc/h box.
 
 The cosmological parameters, [Plank 2018](https://arxiv.org/pdf/1807.06209.pdf):
 
-$$H_0 = 67.66$$
+$$H_0 = 67.66$$ \\
 $$\Omega_\Lambda = 0.6889$$
 $$\Omega_m = 0.3111$$
 $$\Omega_b = 0.0497$$
