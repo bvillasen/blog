@@ -29,6 +29,18 @@ $$n_s = 0.9665$$
 
 ##Phase Diagram
 
+The phase diagram as a function of redshift for the three cases:
+
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_uvb_comparison.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
+
+## Average Temperature
+
+The **mass weighted average temperature** as a function of redshift for the three cases:
+
+## Ionization Fraction
+
+The ionization fraction as a function of redshift for the three cases:
+
+
