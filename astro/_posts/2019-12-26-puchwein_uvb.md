@@ -7,7 +7,7 @@ categories: puchwein uv
 
 Here is the comparison for Cholla simulations using different UV Backgrounds:
 
-The simualtion are 256$$^3$$ cells/particles on a 50 Mpc/h box.
+The simulations are 256$$^3$$ cells/particles on a 50 Mpc/h box.
 
 The cosmological parameters, [Plank 2018](https://arxiv.org/pdf/1807.06209.pdf):
 
