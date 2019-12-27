@@ -38,6 +38,10 @@ The phase diagram as a function of redshift for the three cases:
 
 The **mass weighted average temperature** as a function of redshift for the three cases:
 
+
+<img src="{{ site.url }}assets/images/avrg_temperature_uvb_comparison.png"> 
+
+
 ## Ionization Fraction
 
 The ionization fraction as a function of redshift for the three cases:
