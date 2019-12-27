@@ -27,7 +27,7 @@ $$n_s = 0.9665$$
 
 ..* **Puchwein18_Cloudy**: Table for Puchwein18 model, computed with Cloudy C17.
 
-##Phase Diagram
+## Phase Diagram
 
 The phase diagram as a function of redshift for the three cases:
 
