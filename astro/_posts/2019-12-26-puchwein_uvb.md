@@ -40,6 +40,7 @@ Redshift Range: [ 3   2  ]   30 outputs ( uniform in scale factor )
 Space per Field per Snapshot: 69 GB 
 
 Space for DM simulation: 10.1 TB (160 Snapshots)
+
 Space for Hydro simulation: 43.9 TB (160 Snapshots)
 
 Snapshots could be saved in single precision cutting the required space by half. ??
