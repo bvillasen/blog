@@ -44,7 +44,7 @@ The **mass weighted average temperature** as a function of redshift for the thre
 
 ## Ionization Fraction
 
-The ionization fraction as a function of redshift for the three cases:
+The ionization fractions for H and He separately as a function of redshift for the three cases:
 
 
 <img src="{{ site.url }}assets/images/ionization_fraction_uvb_comparison.png"> 
