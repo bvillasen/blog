@@ -9,7 +9,7 @@ permalink: /cv/
 ### Software and Computer Science:
 
 <ul>
-<li>Algorithms and Data Structures, Microsoft. (EdX).<li>
+<li>Algorithms and Data Structures, Microsoft. (EdX).</li>
 <li>Learn to Program in Java, Microsoft. (EdX).</li>
 <li>Object Oriented Programming in Java, Microsoft. (EdX).</li>
 <li>Designing a Technical Solution, Microsoft. (EdX).</li>
