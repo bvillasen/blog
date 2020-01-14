@@ -9,6 +9,7 @@ permalink: /cv/
 ### Software and Computer Science:
 
 <ul>
+<li>Algorithms and Data Structures, Microsoft. (EdX).<li>
 <li>Learn to Program in Java, Microsoft. (EdX).</li>
 <li>Object Oriented Programming in Java, Microsoft. (EdX).</li>
 <li>Designing a Technical Solution, Microsoft. (EdX).</li>
@@ -24,4 +25,13 @@ permalink: /cv/
 
 
 </ul>
+
+
+## Projects
+
+### Volume Render 
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/dm_projection_50Mpc_2048.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
 
