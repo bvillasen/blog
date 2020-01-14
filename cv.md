@@ -45,6 +45,15 @@ permalink: /cv/
 
 ## Projects
 
+### Cosmological Simulations
+
+
+### Quantum Turbulence
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/quantum_turbulence.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
 ### Volume Render 
 
 <div style="text-align: center">
