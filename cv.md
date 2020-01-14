@@ -6,7 +6,23 @@ permalink: /cv/
 
 ## Bruno Villasenor
 
-### Online Courses Taken:
+### Education
+
+
+### Technical Skills
+
+### Work Experience
+
+### Teaching Experience
+
+### Mentoring Experience
+
+### Honors and Awards
+
+ 
+### Additional Education
+
+#### Online Courses Taken:
 
 <ul>
 <li>Algorithms and Data Structures, Microsoft. (EdX).</li>
