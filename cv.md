@@ -4,9 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-## Online Courses Taken:
-
-### Software and Computer Science:
+### Online Courses Taken:
 
 <ul>
 <li>Algorithms and Data Structures, Microsoft. (EdX).</li>
