@@ -30,6 +30,6 @@ permalink: /cv/
 ### Volume Render 
 
 <div style="text-align: center">
-<video src="{{ site.url }}assets/videos/dm_projection_50Mpc_2048.mp4" width="100%"  height="auto" controls preload> </video>
+<video src="{{ site.url }}assets/videos/ising_3D.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
