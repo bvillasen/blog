@@ -4,6 +4,8 @@ title: CV
 permalink: /cv/
 ---
 
+## Bruno Villasenor
+
 ### Online Courses Taken:
 
 <ul>
