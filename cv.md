@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-<!-- ## Online Courses Taken:
+## Online Courses Taken:
 
 ### Software and Computer Science:
 
@@ -19,22 +19,9 @@ permalink: /cv/
 <li>Machine Learning, Coursera. (Stanford). </li>
 <li>Machine Learning Foundations: A Case Study Approach, (U Washington). </li>
 <li>Coding the Matrix: Linear Algebra through CS Applications, Coursera. </li>
-
+<li>Differential Equations in Action, Udacity. </li>
 
 
 
 </ul>
 
-
-### Physics and others:
-
-<ul>
-<li>Galaxies and Cosmology, Coursera. (Caltec).</li>
-<li>From the Big Bang to Dark Energy, Coursera. (University of Tokyo). </li>
-<li>Confronting The Big Questions: Highlights of Modern Astronomy. </li>
-<li>Greatest Unsolved Mysteries of the Universe, Edx. ( ANU-ASTRO1x ) </li>
-<li>Differential Equations in Action, Udacity. </li>
-
-
-
-</ul> -->
