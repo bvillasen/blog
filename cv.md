@@ -48,6 +48,9 @@ permalink: /cv/
 ### Cosmological Simulations
 
 
+<img src="{{ site.url }}assets/images/projection_deep_1.png">
+
+
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/dm_50Mpc_3D.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
