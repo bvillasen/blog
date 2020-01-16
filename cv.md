@@ -20,6 +20,10 @@ Advisor:  Vladimir Avila-Ress
 
 ### Technical Skills
 
+**Basic Knowledge**         R, Matematica, Fortran
+**Intermediate Knowledge**  Java, Matlab, HTML
+**Advanced Knowledge**      Python, C/C++, CUDA, MPI, OpenMP, Julia
+
 ### Work Experience
 
 ### Teaching Experience
