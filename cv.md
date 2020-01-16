@@ -56,6 +56,10 @@ permalink: /cv/
 </div>
 
 
+<img src="{{ site.url }}assets/images/weak_scaling.png">
+
+
+
 
 ### Quantum Turbulence
 
