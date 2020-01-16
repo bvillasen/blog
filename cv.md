@@ -69,7 +69,7 @@ Advisor:  Vladimir Avila-Ress
 </div>
 
 
-<img src="{{ site.url }}assets/images/weak_scaling.png">
+<img src="{{ site.url }}assets/images/weak_scaling.pdf">
 
 
 
