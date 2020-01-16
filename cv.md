@@ -8,6 +8,15 @@ permalink: /cv/
 
 ### Education
 
+**University of California, Santa Cruz**   ( August 2016 - Expected Jun 2022 )
+Master of Science, Expected Ph.D. in Astronomy and Astrophysics
+Department of Astronomy and Astrophysics.  Advisor:  Brant Robertson
+
+**Universidad Nacional Autonoma de Mexico, UNAM**   ( August 2010 - June 2016 )
+Bachelor of Science in Physics.                       Final Grade:  9.4 / 10
+Thesis:  “On the kinematics of the stellar component of satellite galaxies as tracer of their dark matter distribution”  
+Advisor:  Vladimir Avila-Ress
+
 
 ### Technical Skills
 
