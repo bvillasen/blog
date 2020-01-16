@@ -48,6 +48,12 @@ permalink: /cv/
 ### Cosmological Simulations
 
 
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/dm_50Mpc_3D.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+
+
 ### Quantum Turbulence
 
 <div style="text-align: center">
