@@ -8,7 +8,7 @@ permalink: /cv/
 
 ### Education
 
-**University of California, Santa Cruz** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; ( August 2016 - Expected Jun 2022 ) \\
+**University of California, Santa Cruz** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;&emsp;&emsp;&ensp; ( August 2016 - Expected Jun 2022 ) \\
 Master of Science, Expected Ph.D. in Astronomy and Astrophysics                \\
 Department of Astronomy and Astrophysics.  \\
 Advisor:  Brant Robertson
@@ -34,7 +34,7 @@ Advisor: Eric James.
 
 
 **Summer Intern at Fermilab**, &emsp;&emsp;Fermi National Lab,&emsp;&emsp; Illinois,&emsp;&emsp; Summer 2011\\
-Received a "come back" offer to further develop of data analysis work done during the previous summer for the Higgs boson detection. Analyzed the Higgs Thrust from monte-carlo simulations and optimized the selection criteria for Higgs events from the Tevatron collider.\\
+Received a "come back" offer for further development of data analysis work done during the previous summer for the Higgs boson detection. Analyzed the Higgs Thrust from monte-carlo simulations and optimized the selection criteria for Higgs events from the Tevatron collider.\\
 Advisor: Eric James & Sergo Jindariani
 
 ### Teaching Experience
@@ -47,8 +47,11 @@ Advisor: Eric James & Sergo Jindariani
 
 ### Mentoring Experience
 
+**Python Bootcamp Instructor for the Lamat 2020 Participants**, UCSC, January 2020:\\
+Participated as the instructor for the 2020 Python Bootcamp. A one week long intensive program where the participants of the 2020 Lamat summer program learned the basics of scientific programming using Python so that they will be prepared for conducting scientific research in astrophysics during the summer.       
+
 **Graduate Student Instructor for Introduction to Research (ASTR 9)**,  UCSC, January 2019 - June 2019:\\
-Mentored a team of four first year undergraduate students through an astronomy research project that I designed. We ran and analyzed a set of dark matter cosmological simulations, located the and studied the dark matter halos density profile.
+Mentored a team of four first year undergraduate students through an astronomy research project that I designed. We ran and analyzed a set of dark matter cosmological simulations, located the dark matter halos and studied their density profile.
 
 ### Honors and Awards
 
@@ -122,13 +125,19 @@ Cholla uses MPI, CUDA and OpenMP to leverage the computing power of the largest 
 <img src="{{ site.url }}assets/images/weak_scaling.png">
 
 
+**Inferring the Dark Matter Density profiles of Satellite Galaxies from the Stellar Kinematics**
+
+For my undergraduate thesis, I analyzed a high resolution simulation of a system of galaxies similar to the local group, where the main galaxy had characteristics and dynamical properties similar to the Milky-Way ( mass, rotational velocity, thickness of the disk, etc. ). My work consisted of measuring the dynamical properties of the stars in the satellite galaxies and from those measurements I used Monte Carlo Markov Chains (MCMCs) to fit models to the density profiles of the dark matter halos that hosted those satellite galaxies. Then I compared the estimated density profiles to the real halo density profiles that I measured directly from the dark matter particles in the simulation, this allowed me to compare the results of statistical methods used in astronomy to estimate the dark matter profile of the halos from observed satellite galaxies to the actual profile in the simulation and evaluate how accurate are the estimates from observations. In particular I focused on the the density at the most inner part of the halos where currently there is a discrepancy between the theory and the observations, this is known as the Core-Cusp problem. 
+
+<img src="{{ site.url }}assets/images/dm_stars_thesis.png">
+
 
 
 ### Quantum Turbulence
 
 [GitHub Repository:   https://github.com/bvillasen/qTurbulence](GitHub Repository: https://github.com/bvillasen/qTurbulence)
 
-Using pyCUDA I developed software to solve the evolution of a Bose-Einstein condensate, which is a gas thats is cooled to temperatures near the absolute zero (-217 C), at this extreme temperature the gas becomes a super-fluid which means that the fluid has zero viscosity. The animation below shows the density of a simulated BEC on a rotating frame of reference, the tubular structures correspond to vortices where the gas is rotating and the density decreases. On a super-fluid the rotational energy of this vortices is not dissipated as in a regular fluid. 
+Using pyCUDA I developed software to solve the evolution of a Bose-Einstein condensate, which is a gas  cooled to temperatures near the absolute zero (-217 C), at this extreme temperature the gas becomes a super-fluid which means that the fluid has zero viscosity. The animation below shows the density of a simulated BEC on a rotating frame of reference, the tubular structures correspond to vortices where the gas is rotating and the density decreases. On a super-fluid the rotational energy of this vortices is not dissipated as in a regular fluid. 
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/quantum_turbulence.mp4" width="100%"  height="auto" controls preload> </video>
@@ -136,7 +145,7 @@ Using pyCUDA I developed software to solve the evolution of a Bose-Einstein cond
 
 The animation above is a real-time volumetric render of the simulation, this means that the software that I developed is using the  GPU to solve the physics equations that govern the dynamics of a quantum fluid and simultaneously the GPU is running a ray-tracing algorithm to generate a 3D render of the simulated volume.   
 
-From the data obtained from simulations I studied the properties of the turbuluent motion of the gas and compared to know properties of turbulence in regular fluids, in particular I showed that the energy power spectrum on the quantum fluid scales as the well known Kolmogorov relation for turbulence in viscous fluids. This work resulted in the following publication where propose a mechanism for developing a turbulent flow in a Bose-Einstein Condensate:
+From the data obtained from simulations I studied the properties of the turbuluent motion of the gas and compared to known properties of turbulence in regular fluids, in particular I showed that the energy power spectrum on the quantum fluid scales as the well known Kolmogorov relation for turbulence in viscous fluids. This work resulted in the following publication where we propose a mechanism for developing a turbulent flow in a Bose-Einstein Condensate:
 
 [**B. Villaseñor**, R. Zamora-Zamora, D. Bernal, and V. Romero-Rochín, ”*Quantum turbulence by
 vortex stirring in a spinor Bose-Einstein condensate*”, 2014, Phys. Rev. A 89, 033611.](https://ui.adsabs.harvard.edu/abs/2014PhRvA..89c3611V/abstract)
@@ -148,9 +157,9 @@ vortex stirring in a spinor Bose-Einstein condensate*”, 2014, Phys. Rev. A 89,
 
 [GitHub Repository: https://github.com/bvillasen/isingModel](https://github.com/bvillasen/isingModel)
 
-I believe that visualization plays a very important role in understanding the physical phenomena that we study by using computers to numerically solve the equations that govern the evolution of such processes, this motivated me to apply my knowledge of GPU computing and visualization to develop a 3D volume render that I could use to visualize the physics that I was solving.
+I believe that visualization plays a very important role in understanding the physical phenomena that we study by using computers to numerically solve the equations that govern their evolution, this motivated me to apply my knowledge of GPU computing and visualization to develop a 3D volume render that I could use to visualize the physics that I was solving.
 
-For this project I used **pyCUDA** to call CUDA kernels from python and run a ray-tracing algorithm over some volumetric data, then I used pyOpenGL to display the generated image and to record mouse or keyboard events, this allowed the user to interact with the simulation in real time. As a simple example, the animation bellow shows a 3D simulation of the "Ising Model" which is used to represent the orientations of the magnetic dipoles of atoms in  ferromagnetic materials, in this representation, the atomic "spins" can be in one of two states: pointing up or pointing down, the two states are represented as different colors in the visualization. Because of the thermal excitation of the material, each spin can change orientation whit a probability that increases with temperature, this means that when the temperature is low then the spins will tend to orient themselves and this will create a net magnetic field. In contrast, when the temperature increases the spins will start changing orientation randomly so that there is no net magnetic field.
+For this project I used **pyCUDA** to call CUDA kernels from python and run a ray-tracing algorithm over some volumetric data, then I used **pyOpenGL** to display the generated image and to record mouse or keyboard events, this allowed the user to interact with the simulation in real time. As a simple example, the animation bellow shows a 3D simulation of the "Ising Model" which is used to represent the orientations of the magnetic dipoles of atoms in  ferromagnetic materials, in this representation, the atomic "spins" can be in one of two states: pointing up or pointing down, the two states are represented as different colors in the visualization. Because of the thermal excitation of the material, each spin can change orientation whit a probability that increases with temperature, this means that when the temperature is low then the spins will tend to orient themselves and this will create a net magnetic field. In contrast, when the temperature increases the spins will start changing orientation randomly so that there is no net magnetic field.
 
 
 <div style="text-align: center">
