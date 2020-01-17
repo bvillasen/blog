@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-[**PDF Version HERE**]
+[**PDF Version HERE**]({{ site.url }}assets/files/CV_villasenor.pdf)
 
 ## Bruno Villasenor
 
