@@ -1,10 +1,12 @@
-<!-- ---
-layout: page
+---
+layout: post
+title:  "Quantum Turbulence"
+date:   2020-01-07 17:10:24 -0800
+categories: "projects"
 permalink: /projects/quantum_turbulence/
 ---
 
 
-### Quantum Turbulence
 
 [GitHub Repository:   https://github.com/bvillasen/qTurbulence](GitHub Repository: https://github.com/bvillasen/qTurbulence)
 
@@ -19,4 +21,4 @@ The animation above is a real-time volumetric render of the simulation, this mea
 From the data obtained from simulations I studied the properties of the turbulent motion of the gas and compared to known properties of turbulence in regular fluids, in particular I showed that the energy power spectrum on the quantum fluid scales as the well known Kolmogorov relation for turbulence in viscous fluids. This work resulted in the following publication where we propose a mechanism for developing a turbulent flow in a Bose-Einstein Condensate:
 
 [**B. Villaseñor**, R. Zamora-Zamora, D. Bernal, and V. Romero-Rochín, ”*Quantum turbulence by
-vortex stirring in a spinor Bose-Einstein condensate*”, 2014, Phys. Rev. A 89, 033611.](https://ui.adsabs.harvard.edu/abs/2014PhRvA..89c3611V/abstract) -->
+vortex stirring in a spinor Bose-Einstein condensate*”, 2014, Phys. Rev. A 89, 033611.](https://ui.adsabs.harvard.edu/abs/2014PhRvA..89c3611V/abstract)
