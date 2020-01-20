@@ -5,7 +5,7 @@ permalink: /projects/quantum_turbulence/
 
 <h2> Quantum Turbulence </h2>
 
-<h1>GPU accelerated pyCUDA Bose-Einstein Condensate simulation and visualization .</h1> 
+<h1>GPU accelerated pyCUDA Bose-Einstein Condensate simulation and visualization.</h1> 
 
 
 
