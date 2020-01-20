@@ -1,11 +1,10 @@
 ---
 layout: post
+title:  "Volume Render"
+date:   2020-01-07 17:10:24 -0800
+categories: "projects"
 permalink: /projects/volume_render/
 ---
-
-
-
-### Volume Render 
 
 [GitHub Repositoty: https://github.com/bvillasen/volumeRender](https://github.com/bvillasen/volumeRender)
 
