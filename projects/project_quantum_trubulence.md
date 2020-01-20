@@ -3,6 +3,10 @@ layout: page
 permalink: /projects/quantum_turbulence/
 ---
 
+<h2> Quantum Turbulence </h2>
+
+<h1>GPU accelerated pyCUDA Bose-Einstein Condensate simulation and visualization .</h1> 
+
 
 
 [GitHub Repository:   https://github.com/bvillasen/qTurbulence](GitHub Repository: https://github.com/bvillasen/qTurbulence)
