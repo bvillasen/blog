@@ -1,11 +1,10 @@
 ---
-layout: page
 permalink: /projects/volume_render/
 ---
 
 
 
-### Volume Render 
+### Volume Render default
 
 <!-- [GitHub Repositoty: https://github.com/bvillasen/volumeRender](https://github.com/bvillasen/volumeRender)
 
