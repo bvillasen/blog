@@ -5,6 +5,9 @@ permalink: /projects/volume_render/
 
 <h2> Volume Render </h2>
 
+<h1>A GPU accelerated pyCUDA/pyOpenGL ray-tracing based 3D visualization tool.</h1> 
+
+
 [GitHub Repositoty: https://github.com/bvillasen/volumeRender](https://github.com/bvillasen/volumeRender)
 
 [GitHub Repository: https://github.com/bvillasen/isingModel](https://github.com/bvillasen/isingModel)
