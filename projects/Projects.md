@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-<div class="home">
+<!-- <div class="home">
 
   <h1 class="page-heading"></h1>
 
@@ -18,4 +18,4 @@ permalink: /projects/
 * <a href="{{ site.url }}/projects/volume_render/"  > Volume Render  </a>
 
 
-</div>  
+</div>   -->
