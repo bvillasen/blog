@@ -106,6 +106,8 @@ vortex stirring in a spinor Bose-Einstein condensate*”, 2014, Phys. Rev. A 89,
   
 * <a href="{{ site.url }}projects/cholla/"  > CHOLLA: Large Scale Cosmological Hydrodynamical Simulations on Multiple GPUs  </a>
 
+* <a href="{{ site.url }}projects/galaxy_analysis/"  > Milky-Way Simulation Analysis  </a>
+
 * <a href="{{ site.url }}projects/quantum_turbulence/"  > Quantum Turbulence  </a>
 
 * <a href="{{ site.url }}projects/volume_render/"  > Volume Render  </a>
