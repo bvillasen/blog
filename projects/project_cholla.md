@@ -3,7 +3,7 @@ layout: page
 permalink: /projects/cholla/
 ---
 
-<h2>  CHOLLA:  </h1> 
+<h2>  CHOLLA:  </h2> 
 <h1 Large Scale Cosmological Hydrodynamical Simulations on Multiple GPUs. </h1>
 
 
