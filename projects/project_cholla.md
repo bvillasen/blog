@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 permalink: /projects/cholla/
 ---
@@ -37,4 +37,4 @@ Cholla uses MPI, CUDA and OpenMP to leverage the computing power of the largest 
 
 <img src="{{ site.url }}assets/images/weak_scaling.png">
 
-</div>
+</div> -->
