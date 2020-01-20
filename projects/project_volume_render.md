@@ -1,8 +1,5 @@
 ---
-layout: post
-title:  "Volume Render"
-date:   2020-01-07 17:10:24 -0800
-categories: "projects"
+layout: page
 permalink: /projects/volume_render/
 ---
 
