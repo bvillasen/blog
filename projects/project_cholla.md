@@ -3,8 +3,13 @@ layout: page
 permalink: /projects/cholla/
 ---
 
+<div class="home">
 
-### CHOLLA: Large Scale Cosmological Hydrodynamical Simulations on Multiple GPUs 
+  <h1 class="page-heading"></h1>
+
+  <h1 class="main-title">  Analysis of Dark Matter Simulations </h1>
+
+
 
 [GitHub Repository: https://github.com/bvillasen/cholla](https://github.com/bvillasen/cholla)
 
@@ -31,3 +36,5 @@ Cholla uses MPI, CUDA and OpenMP to leverage the computing power of the largest 
 
 
 <img src="{{ site.url }}assets/images/weak_scaling.png">
+
+</div>
