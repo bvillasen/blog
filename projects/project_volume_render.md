@@ -3,6 +3,8 @@ layout: page
 permalink: /projects/volume_render/
 ---
 
+<h2> Volume Render </h2>
+
 [GitHub Repositoty: https://github.com/bvillasen/volumeRender](https://github.com/bvillasen/volumeRender)
 
 [GitHub Repository: https://github.com/bvillasen/isingModel](https://github.com/bvillasen/isingModel)
