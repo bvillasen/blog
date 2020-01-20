@@ -102,6 +102,15 @@ vortex stirring in a spinor Bose-Einstein condensate*”, 2014, Phys. Rev. A 89,
 
 ## Projects
 
+#### Main projects that I had worked on:
+  
+* <a href="{{ site.url }}projects/cholla/"  > CHOLLA: Large Scale Cosmological Hydrodynamical Simulations on Multiple GPUs  </a>
+
+* <a href="{{ site.url }}projects/quantum_turbulence/"  > Quantum Turbulence  </a>
+
+* <a href="{{ site.url }}projects/volume_render/"  > Volume Render  </a>
+
+<!-- 
 ### CHOLLA: Large Scale Cosmological Hydrodynamical Simulations on Multiple GPUs 
 
 [GitHub Repository: https://github.com/bvillasen/cholla](https://github.com/bvillasen/cholla)
@@ -173,5 +182,5 @@ For this project I used **pyCUDA** to call CUDA kernels from python and run a ra
 <video src="{{ site.url }}assets/videos/ising_3D.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
-The animation above shows the Ising model for a 3D volume of 512$$^3$$ individual spins. I produced the animation by recording my screen as the simulation is running, as it can be seen I can interact with the simulation by rotating the simulated cube with my mouse, also I can control the variables shown, first it shows both spin orientation, then each orientation is shown individually and then at the end I increase the temperature beyond the critical temperature for which the material losses it's net magnetism due to the random orientations of the atomic spins.   
+The animation above shows the Ising model for a 3D volume of 512$$^3$$ individual spins. I produced the animation by recording my screen as the simulation is running, as it can be seen I can interact with the simulation by rotating the simulated cube with my mouse, also I can control the variables shown, first it shows both spin orientation, then each orientation is shown individually and then at the end I increase the temperature beyond the critical temperature for which the material losses it's net magnetism due to the random orientations of the atomic spins.    -->
 
