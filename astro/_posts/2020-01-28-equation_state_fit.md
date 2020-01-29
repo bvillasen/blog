@@ -11,11 +11,11 @@ Here I fit the phase diagram to the model:
 $$ T(\Delta) = T_0 \Delta ^\gamma $$
 
 
-First I do it by minimizing $-  \sum log[ P(\delta, T) ]$ with the help of scipy, this is the result:
+First I do it by minimizing $$-  \sum log[ P(\delta, T) ]$$ with the help of scipy, this is the result:
 
 <img src="{{ site.url }}assets/images/phase_diagram_fit_scipy.png"> 
 
-Now, I run an MCMC top sample the space of parameters {$$T_0$$, $$gamma$$} that maximize the probability $\sum log[ P(\delta, T) ]$, I use the *pymc* package to do so and from the sampling I get the posterior distribution for the parameters: 
+Now, I run an MCMC top sample the space of parameters {$$T_0$$, $$gamma$$} that maximize the probability $$\sum log[ P(\delta, T) ]$$, I use the *pymc* package to do so and from the sampling I get the posterior distribution for the parameters: 
 
 **Sampling for $$T_0$$:** 
 
