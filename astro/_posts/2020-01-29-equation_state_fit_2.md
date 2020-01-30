@@ -11,7 +11,7 @@ Here I fit the phase diagram to the model:
 $$ T(\Delta) = T_0 \Delta ^\gamma $$
 
 
-Now I take another approach, take slices of the phase diagram for a fixed overdensity, then locate the temperature for maximum probability and the temperature range  that sums 90\% of the probability, this gives data points { $$T_i$$, $$|sigma_i$$ } for the region of interest in the phase diagram, this data points are shown in orange in the figure below.   
+Now I take another approach, take slices of the phase diagram for a fixed overdensity, then locate the temperature for maximum probability and the temperature range  that sums 90\% of the probability, this gives data points { $$T_i$$, $$\sigma_i$$ } for the region of interest in the phase diagram, this data points are shown in orange in the figure below.   
 
 <img src="{{ site.url }}assets/images/phase_diagram_fit_mcmc.png"> 
 
