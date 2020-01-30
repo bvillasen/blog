@@ -18,7 +18,7 @@ Now I take another approach, take slices of the phase diagram for a fixed overde
 
 Now, I run the MCMC to find parameters {$$T_0$$, $$\gamma$$} that maximize the likelihood: 
 
-$$ P(T | T_0 , \gamma)=\exp \left(-\chi^{2}\right)$$  , where
+$$ P(T | T_0 , \gamma ) = \exp \left( -\chi^{2} \right) $$  , where
 
 $$\chi^{2}=\sum_{i} \frac{\left(T_i- T\left(\Delta_{i} |T_0 , \gamma\right)\right)^{2}}{2 \sigma_i^{2}}$$
 
