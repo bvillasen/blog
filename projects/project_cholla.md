@@ -17,12 +17,19 @@ Originally Cholla was a hydrodynamics solver that runs in multiple GPUs. For my 
  - Integration with Grackle, an open source library to solve the chemical network and track the ionization states of Hydrogen and Helium on the simulation. Also include a uniform time-dependent UV background to account for the reionization of the universe.
  
  
- The animation bellow shows the evolution of the dark matter for a Cholla simulation, the initial conditions are mostly uniform except for tiny perturbations corresponding to the quantum perturbations of the early universe, as time progresses the regions where the density is slightly higher exerts a gravitational pull over the surrounding material causing the growth of large dark matter structures called halos shown in yellow in the animation, the regions connecting the halos form the cosmic web. Galaxies are formed in the inner parts of dark matter halos.        
+ The animation below shows the evolution of the dark matter for a Cholla simulation, the initial conditions are mostly uniform except for tiny perturbations corresponding to the quantum perturbations of the early universe, as time progresses the regions where the density is slightly higher exerts a gravitational pull over the surrounding material causing the growth of large dark matter structures called halos shown in yellow in the animation, the regions connecting the halos form the cosmic web. Galaxies are formed in the inner parts of dark matter halos.        
 
  <div style="text-align: center">
  <video src="{{ site.url }}assets/videos/dm_50Mpc_3D.mp4" width="100%"  height="auto" controls preload> </video>
  </div>
  
+ Now, the following animation below show the evolution of the gas density for a high resolution simulation that I ran on Summit ( number 1 on the top500 ) using 512 GPUs
+ 
+ 
+  <div style="text-align: center">
+  <video src="{{ site.url }}assets/videos/hydro_50Mpc_2048_50Mpc_3D.mp4" width="100%"  height="auto" controls preload> </video>
+  </div>
+  
  The image below shows several components of a cosmological hydrodynamical simulation, the first column corresponds to the dark matter density, the second column shows the gas density, the third column correspond to the neutral hydrogen density and finally the last column shows the temperature of the gas. The top row shows the results from a simulation evolved using a popular code called [Enzo](https://enzo-project.org/) and the bottom show shows the result from an analogous simulation that I ran using Cholla on 8 Nvidia P100 GPUs.
   
  <img src="{{ site.url }}assets/images/projection_deep_1.png">
