@@ -23,7 +23,7 @@ Originally Cholla was a hydrodynamics solver that runs in multiple GPUs. For my 
  <video src="{{ site.url }}assets/videos/dm_50Mpc_3D.mp4" width="100%"  height="auto" controls preload> </video>
  </div>
  
- Now, the following animation below show the evolution of the gas density for a high resolution simulation that I ran on Summit ( number 1 on the top500 ) using 512 GPUs
+ Now, the following animation below shows the evolution of the gas density for a high resolution simulation that I ran on Summit ( number 1 on the top500 ) using 512 GPUs
  
  
   <div style="text-align: center">
