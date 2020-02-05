@@ -27,7 +27,7 @@ Originally Cholla was a hydrodynamics solver that runs in multiple GPUs. For my 
  
  
   <div style="text-align: center">
-  <video src="{{ site.url }}assets/videos/hydro_50Mpc_2048_50Mpc_3D.mp4" width="100%"  height="auto" controls preload> </video>
+  <video src="{{ site.url }}assets/videos/hydro_50Mpc_2048.mp4" width="100%"  height="auto" controls preload> </video>
   </div>
   
  The image below shows several components of a cosmological hydrodynamical simulation, the first column corresponds to the dark matter density, the second column shows the gas density, the third column correspond to the neutral hydrogen density and finally the last column shows the temperature of the gas. The top row shows the results from a simulation evolved using a popular code called [Enzo](https://enzo-project.org/) and the bottom show shows the result from an analogous simulation that I ran using Cholla on 8 Nvidia P100 GPUs.
