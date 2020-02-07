@@ -22,7 +22,7 @@ The path length in the sight line integration is then $$dr = a dx =  dv/H$$, whe
 Hubble flow velocity, and $$H$$ is the Hubble expansion rate at that redshift. In
 velocity coordinates, the optical depth is
 
-$$\tau_{v}=\frac{\pi e^{2} f_{l u} \lambda_{0}}{m_{e} c H} \int n_{X} \frac{1}{\sqrt{\pi} b} \exp \left[-\left(\frac{v-v_{0}}{b}\right)^{2}\right] d v$$
+$$\tau_{v}=\frac{\pi e^{2} f_{12} \lambda_{0}}{m_{e} c H} \int n_{X} \frac{1}{\sqrt{\pi} b} \exp \left[-\left(\frac{v-v_{0}}{b}\right)^{2}\right] d v$$
 
 <!-- 
 Although the gas data is fixed at the grid resolution, we can choose an arbitrary spectral resolution $$N_\mathrm{pix}$$ along the LOS. We also take the gas values as
