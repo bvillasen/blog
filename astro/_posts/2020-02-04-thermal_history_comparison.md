@@ -26,3 +26,18 @@ And Comparing to some of the data prsdented in [**Walther+2019**](https://ui.ads
 
 
 <img src="{{ site.url }}assets/images/thermal_history_data.png"> 
+
+
+### Cell trajectories on the phase diagram:
+
+Top row: UVB = HM12
+Bottom row: UVB = Puchwein18
+
+Each panel shows trajectories for 10 cells, the cells shows are the same for both UVB. 
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/thermal_history_trajectories.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+
+
