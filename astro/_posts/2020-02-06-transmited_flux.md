@@ -33,18 +33,18 @@ the discretized version of the optical depth is -->
 Using the following numerical values:
 
 
-$$ f_(12) = 0.416 $$
-$$ \lambda_{\mathrm{Lya} = 1.21567e-5   \mathrm{cm} $$ 
+$$ f_{12} = 0.416 $$
+$$ \lambda_{\mathrm{Lya}} = 1.21567e-5   \mathrm{cm} $$ 
 
 
 
 ### Single Absorber
 
 
-<img src="{{ site.url }}assets/images/transmited_flux_130.png">
+<img src="{{ site.url }}assets/images/single_absorber.png">
 
 
 ### Simulated spectra
 
  
-
+<img src="{{ site.url }}assets/images/transmited_flux_130.png">
