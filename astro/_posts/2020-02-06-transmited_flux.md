@@ -28,3 +28,23 @@ $$\tau_{v}=\frac{\pi e^{2} f_{12} \lambda_{0}}{m_{e} c H} \int n_{\mathrm{HI}} \
 Although the gas data is fixed at the grid resolution, we can choose an arbitrary spectral resolution $$N_\mathrm{pix}$$ along the LOS. We also take the gas values as
 constant across each cell. With $$i$$ as the cell index, and $$j$$ as the pixel index,
 the discretized version of the optical depth is -->
+
+
+Using the following numerical values:
+
+
+$$ f_(12) = 0.416 $$
+$$ \lambda_{\mathrm{Lya} = 1.21567e-5   \mathrm{cm} $$ 
+
+
+
+### Single Absorber
+
+
+<img src="{{ site.url }}assets/images/transmited_flux_130.png">
+
+
+### Simulated spectra
+
+ 
+
