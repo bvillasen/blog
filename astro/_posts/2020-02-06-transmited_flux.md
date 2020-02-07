@@ -16,6 +16,10 @@ length element. Assuming a Doppler line profile, the resulting optical depth is
 $$ \tau_{v}=\frac{\pi e^{2}}{m_{e} c} f_{12} \int \frac{n_{\mathrm{HI}}}{\Delta v_{D}} \frac{\exp \left[-\left(\frac{v-v_{0}}{\Delta v_{D}}\right)^{2}\right]}{\sqrt{\pi}} d r $$,
 
 where $$\Delta v_{D}= (b/c)v_{0} $$ is the Doppler width with the Doppler parameter
- $$b = b_\mathrm{thermal} = \sqrt{2k B T / m_\mathrm{H}} $$, and $$f_{12}$$ is the upward oscillator strength of the Ly$$\alpha$$ resonance transition of frequency $$v_0$$ .
+ $$b = b_\mathrm{thermal} = \sqrt{2k B T / m_\mathrm{H}} $$, and $$f_{12}$$ is the upward oscillator strength of the Ly$$\alpha$$ resonance transition of frequency $$v_0$$.
+ 
+The path length in the sight line integration is then $$dr = a dx =  dv/H$$, where $$r$$ is the proper distance, $$x$$ is the comoving distance, $$v$$ is the
+Hubble flow velocity, and $$H$$ is the Hubble expansion rate at that redshift. In
+velocity coordinates, the optical depth is
 
-
+$$\tau_{v}=\frac{\pi e^{2} f_{l u} \lambda_{0}}{m_{e} c H} \int n_{X} \frac{1}{\pi^{1 / 2} b} \exp \left[-\left(\frac{v-v_{0}}{b}\right)^{2}\right] d v$$
