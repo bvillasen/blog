@@ -33,7 +33,7 @@ the discretized version of the optical depth is -->
 Using the following numerical values:
 
 
-$$ f_{12} = 0.416 $$,   $$ \lambda_{\mathrm{Lya}} = 1.21567  x10{-5}   \mathrm{cm} $$ 
+$$ f_{12} = 0.416 $$,   $$ \lambda_{\mathrm{Lya}} = 1.21567  \times 10^{-5}   \mathrm{cm} $$ 
 
 
 
