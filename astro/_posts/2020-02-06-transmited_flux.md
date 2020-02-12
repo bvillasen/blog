@@ -45,5 +45,8 @@ $$ f_{12} = 0.416 $$,   $$ \lambda_{\mathrm{Lya}} = 1.21567  \times 10^{-5}   \m
 
 ### Simulated spectra
 
+
+<img src="{{ site.url }}assets/images/transmited_flux_hm12_147.png">
+
  
-<img src="{{ site.url }}assets/images/transmited_flux_130.png">
+<!-- <img src="{{ site.url }}assets/images/transmited_flux_130.png"> -->
