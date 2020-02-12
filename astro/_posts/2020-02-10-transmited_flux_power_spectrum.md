@@ -18,3 +18,7 @@ $$\Delta_{F}^{2}(k)=\frac{1}{\pi} k P_{F}(k) $$
 $$P_{F}(k)=V  \bigg \langle  \left|\tilde{\delta}_{F}(k)\right|^{2}  \bigg \rangle $$
 
 $$\tilde{\delta}_{F}(k)=\frac{1}{V} \int_{0}^{V} d v e^{-i k v} \delta_{F}(v)$$
+
+Here, $$\langle \cdot \rangle$$ denotes the ensemble average, and $$k = 2\pi/v$$ is the
+Fourier ‘frequency’ corresponding to v and has dimensions of
+(s/km).
