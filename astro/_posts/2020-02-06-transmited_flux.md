@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Transmited Flux"
+title:  "Transmitted Flux"
 date:   2020-02-06 17:10:24 -0800
 categories: gas cholla
 ---
