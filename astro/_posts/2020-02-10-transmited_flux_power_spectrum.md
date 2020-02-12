@@ -25,3 +25,20 @@ $$\tilde{\delta}_{F}(k)=\frac{1}{V} \int_{0}^{V} d v e^{-i k v} \delta_{F}(v)$$
 
 Here, $$\langle \cdot \rangle$$ denotes the ensemble average, and $$k = 2\pi/v$$ is the
 Fourier ‘frequency’ corresponding to $$v$$ and has dimensions of (s/km).
+
+
+### Power Spectrum for several redshifts 
+
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_all.png">
+
+Now limiting the range in $$k$$
+
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_all_zoom.png">
+
+
+Compared to results from [Walther+2019](https://ui.adsabs.harvard.edu/abs/2019ApJ...872...13W/abstract)
+
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_walther2019.png">
