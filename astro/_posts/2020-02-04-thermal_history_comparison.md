@@ -25,7 +25,7 @@ Now the values of [ $$T_0$$, $$\gamma$$ ] as a function of redshift
 And Comparing to some of the data prsdented in [**Walther+2019**](https://ui.adsabs.harvard.edu/abs/2019ApJ...872...13W/abstract)
 
 
-<img src="{{ site.url }}assets/images/thermal_history_data.png"> 
+<img src="{{ site.url }}assets/images/thermal_history_data+walther.png"> 
 
 
 ### Cell trajectories on the phase diagram:
