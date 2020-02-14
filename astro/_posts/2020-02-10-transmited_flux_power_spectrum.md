@@ -17,7 +17,7 @@ $$\delta_{F} \equiv \frac{F-\langle F\rangle}{\langle F\rangle} $$
 The FPS is written in terms of the dimensionless variance $$\Delta_F^2(k)$$ (strictly speaking a variance in $$\delta_F$$ per dex in $$k$$), defined by
 
 
-From **Whalther+2018**: We perform our power spectrum measurement on the flux contrast
+<!-- From **Whalther+2018**: We perform our power spectrum measurement on the flux contrast
 
 $$\delta_{F}=\frac{F-\bar{F}}{\bar{F}}$$
 
@@ -28,7 +28,8 @@ $$\tau_{\mathrm{eff}}=C+\tau_{0}\left(\frac{1+z}{1+z_{0}}\right)^{\beta}$$
 following the functional form and parameters from Becker
 et al. (2013): The best-fitting parameters are [$$\tau_0, \beta, C$$] = [0.751, 2.90, −0.132], for $$z_0  = 3.5$$.
 
-
+\tau_{\mathrm{eff}}=C+\tau_{0}\left(\frac{1+z}{1+z_{0}}\right)^{\beta}
+ -->
 
 
 
@@ -43,7 +44,6 @@ Fourier ‘frequency’ corresponding to $$v$$ and has dimensions of (s/km).
 
 
 
-\tau_{\mathrm{eff}}=C+\tau_{0}\left(\frac{1+z}{1+z_{0}}\right)^{\beta}
 
 ### Power Spectrum for several redshifts 
 
