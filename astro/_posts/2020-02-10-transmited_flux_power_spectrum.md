@@ -17,6 +17,21 @@ $$\delta_{F} \equiv \frac{F-\langle F\rangle}{\langle F\rangle} $$
 The FPS is written in terms of the dimensionless variance $$\Delta_F^2(k)$$ (strictly speaking a variance in $$\delta_F$$ per dex in $$k$$), defined by
 
 
+From **Whalther+2018**: We perform our power spectrum measurement on the flux contrast
+
+$$\delta_{F}=\frac{F-\bar{F}}{\bar{F}}$$
+
+with $$\bar{F}$$ being the mean transmission of the Lya forest, $$\bar{F}=\exp \left(-\tau_{\mathrm{eff}}\right)$$ with 
+
+$$\tau_{\mathrm{eff}}=C+\tau_{0}\left(\frac{1+z}{1+z_{0}}\right)^{\beta}$$
+
+following the functional form and parameters from Becker
+et al. (2013): The best-fitting parameters are [$$\tau_0, \beta, C$$] = [0.751, 2.90, −0.132], for $$z_0  = 3.5$$.
+
+
+
+
+
 $$\Delta_{F}^{2}(k)=\frac{1}{\pi} k P_{F}(k) $$
 
 $$P_{F}(k)=V  \bigg \langle  \left|\tilde{\delta}_{F}(k)\right|^{2}  \bigg \rangle $$
@@ -26,6 +41,9 @@ $$\tilde{\delta}_{F}(k)=\frac{1}{V} \int_{0}^{V} d v e^{-i k v} \delta_{F}(v)$$
 Here, $$\langle \cdot \rangle$$ denotes the ensemble average, and $$k = 2\pi/v$$ is the
 Fourier ‘frequency’ corresponding to $$v$$ and has dimensions of (s/km).
 
+
+
+\tau_{\mathrm{eff}}=C+\tau_{0}\left(\frac{1+z}{1+z_{0}}\right)^{\beta}
 
 ### Power Spectrum for several redshifts 
 
