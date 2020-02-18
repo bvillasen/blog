@@ -20,7 +20,7 @@ Originally Cholla was a hydrodynamics solver that runs in multiple GPUs. For my 
  The animation below shows the evolution of the dark matter for a Cholla simulation, the initial conditions are mostly uniform except for tiny perturbations corresponding to the quantum perturbations of the early universe, as time progresses the regions where the density is slightly higher exerts a gravitational pull over the surrounding material causing the growth of large dark matter structures called halos shown in yellow in the animation, the regions connecting the halos form the cosmic web. Galaxies are formed in the inner parts of dark matter halos.        
 
  <div style="text-align: center">
- <video src="{{ site.url }}assets/videos/dm_gas_density_50Mpc_3D.mp4" width="100%"  height="auto" controls preload> </video>
+ <video src="{{ site.url }}assets/videos/dm_gas_density_50Mpc.mp4" width="100%"  height="auto" controls preload> </video>
  </div>
  
  Now, the following animation below shows the evolution of the gas density for a high resolution simulation that I ran on Summit ( number 1 on the top500 ) using 512 GPUs
