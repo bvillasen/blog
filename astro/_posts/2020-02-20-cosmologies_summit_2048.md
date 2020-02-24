@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Alternative Cosmologies for Summit Simulations"
-date:   2020-02-10 17:10:24 -0800
+date:   2020-02-21 17:10:24 -0800
 categories: gas cholla
 ---
 
