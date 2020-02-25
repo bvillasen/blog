@@ -11,7 +11,7 @@ Here are the 4 different cosmologies used for additional Summit 2048$$^3$$ simul
 
 
 
-| ID &nbsp;|  $$H_0$$   |  $$\Omega_m$$  |  $$\Omega_{\Lambda}$$   |  $$\Omega_{b}$$   |  $$\sigma_8$$   |  $$n_s$$   | 
+| ID &nbsp;| &nbsp; $$H_0$$ &nbsp;  |  &nbsp;$$\Omega_m$$&nbsp;  |  &nbsp;$$\Omega_{\Lambda}$$&nbsp;   |  &nbsp;$$\Omega_{b}$$ &nbsp;  | &nbsp; $$\sigma_8$$ &nbsp;  | &nbsp; $$n_s$$ &nbsp;  | 
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | 0    |   67.66  | 0.3111 | 0.6889 | 0.0497 | 0.8102 |  0.9665 |
 | 1    |   68.35  | 0.3010 | 0.6990 | 0.0484 | 0.8068 |  0.9722 |
