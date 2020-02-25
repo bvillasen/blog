@@ -9,7 +9,6 @@ categories: gas cholla
 Here are the 4 different cosmologies used for additional Summit 2048$$^3$$ simulations:
 
 
-new
 
 | ID &nbsp;| &nbsp; $$H_0$$ &nbsp;  |  &nbsp;$$\Omega_m$$&nbsp;  |  &nbsp;$$\Omega_{\Lambda}$$&nbsp;   |  &nbsp;$$\Omega_{b}$$ &nbsp;  | &nbsp; $$\sigma_8$$ &nbsp;  | &nbsp; $$n_s$$ &nbsp;  | 
 | :--- | :--- : | :---  : | :---  : | :---  : | :---  : | :---  : |
