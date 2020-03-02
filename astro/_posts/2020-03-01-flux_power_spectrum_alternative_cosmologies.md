@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cholla_PM: 2048 Gas Fly by"
+title:  "Flux Power Spectrum Alternative Cosmologies"
 date:   2020-03-01 17:10:24 -0800
 categories: dm cholla
 ---
