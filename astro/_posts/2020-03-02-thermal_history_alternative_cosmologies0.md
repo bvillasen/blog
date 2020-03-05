@@ -19,7 +19,5 @@ Here are the 4 different cosmologies used for additional Summit 2048$$^3$$ simul
 | 4    |   70.69  | 0.2730 | 0.7270 | 0.0465 | 0.7997 |  0.9896 |
 
 
-### Flux Power Spectrum for several redshifts 
 
-
-<img src="{{ site.url }}assets/images/flux_power_spectrum_all_data_cosmo.png">
+<img src="{{ site.url }}assets/images/thermal_history_data+walther_cosmo_black.png">
