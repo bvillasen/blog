@@ -26,3 +26,27 @@ All all full hydro + dm + chemistry simulations, we timed 3 versions for each n_
 
 ### Cosmological Simulations
 
+All Simulations: box=50 Mpc/h
+
+Simulations that ran to z=0: 
+
+* 1 x ( 86 nodes, 512 GPUs, 2.5 hrs ) 1024$$^3$$ hydro simulation, UVB=HM12
+* 1 x ( 86 nodes, 512 GPUs, 2.5 hrs ) 1024$$^3$$ hydro simulation, UVB=PCHW19  
+
+
+Simulations that ran to z=2: 
+
+* 1 x ( 86 nodes, 512 GPUs, 4 hrs ) 2048$$^3$$ DM-Only simulation
+* 1 x ( 86 nodes, 512 GPUs, 12 hrs ) 2048$$^3$$ hydro simulation, UVB=HM12
+* 1 x ( 86 nodes, 512 GPUs, 12 hrs ) 2048$$^3$$ hydro simulation, UVB=PCHW19    
+* 4 x ( 86 nodes, 512 GPUs, 12 hrs ) 2048$$^3$$ hydro simulation, UVB=PCHW19, Alternative Cosmologies
+
+
+### Data Analysis
+
+Analysis of simulation outputs performed in Large-Memory Nodes on Rhea ( I don't remember what was the usage here but my guess is that around 100-120 node hours, I left my token in the office, but if you need the exact usage I can go to my office later  ).
+
+
+### Extra Stuff
+
+Evan also used some time ( Don't remember how much exactly but I think around 2000 node-hours )
