@@ -5,7 +5,7 @@ date:   2020-03-11 17:10:24 -0800
 categories: dm cholla
 ---
 
-This is the usage of Summit for project AST169
+This is the usage of Summit for project AST149
 
 
 ### Scaling Tests
