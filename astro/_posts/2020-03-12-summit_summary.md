@@ -12,7 +12,7 @@ This is the usage of Summit for project AST169
 
 For the Incite 2019 application we did several weak scaling tests:
 
-All all full hydro + dm + chemistry simulations, we timed 3 versions for each n_GPUs 128$$^3$$, 256$$^3$$ and 384$$^3$$ cells/particles per GPU  
+All all full hydro + dm + chemistry simulations, we timed 3 versions for each n_GPUs: 128$$^3$$, 256$$^3$$ and 384$$^3$$ cells/particles per GPU  
 
 
 * 3 x ( 2 nodes,  8 GPUs,  20 min each )
