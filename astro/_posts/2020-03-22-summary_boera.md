@@ -40,4 +40,15 @@ After sampling their MCMC with the new *artificial* $$P_k$$, they measure the co
 
 
 
+### Modeling Instantaneous Reionization
+
+They also model the temperature evolution at mean density, given by:
+
+\frac{d T}{d t}=-2 H T+\frac{2 T}{3 \Delta} \frac{d \Delta}{d t}+\frac{2}{3 k_{B} n_{\text {tot }}} \frac{d Q}{d t}
+
+
+
+
+
+
  
