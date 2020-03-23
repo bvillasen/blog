@@ -25,4 +25,4 @@ This is how they change the parameters:
 
 **Varying $$\tau_eff$$:** From what I understand they only changed the Mean Transmitted Flux that they use to normalize the transmitted flux fluctuations for the flux power spectrum, I don't think they changed the ionization fraction directly.
 
-**Varying $$u_0$$:**  
+**Varying $$u_0$$:**  Since they ran multiple simulations with different values of $$u_0$$, they measure the effect that different $$u_0$$ have on the flux power spectrum from their simulations (which they set to have the same $$T_0$$, $$\gamma$$, and $$\tau_eff$$$ ), from this fit a power law that then they use to get a $$u_0 -P_k$$ relation that they can use to sample their MCMC. It seems like they claim to understand the effect that different $$u_0$$ have on the power spectrum, so they can artificially change $$P_k$$ based on their empirical $$P_k-u_0$$ relation, **it's not clear how they take in to account the combined effects of changing the other 3 parameters as well as changing $$u_0$$.** 
