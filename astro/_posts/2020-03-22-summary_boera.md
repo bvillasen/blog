@@ -13,7 +13,7 @@ They ran a suite of 30 simulations most of them consist of a 10 Mpc/h box and $$
 
 <img src="{{ site.url }}assets/images/boera_0.png">
 
-Then they artificially extend their simulation by changing $$T_0$$, $$\gamma$$, $$\tau_eff$$, and $$u_0$$ as post-processing, the next figure shows the effect that changing this values has on the Flux Power Spectrum.
+Then they artificially extend their simulation by changing $$T_0$$, $$\gamma$$, $$\tau_{eff}$$, and $$u_0$$ as post-processing, the next figure shows the effect that changing this values has on the Flux Power Spectrum.
 
 
 <img src="{{ site.url }}assets/images/boera_1.png">
@@ -21,11 +21,11 @@ Then they artificially extend their simulation by changing $$T_0$$, $$\gamma$$, 
 This is how they change the parameters:
 
 
-**Varying $$\T_0$$ and $$\gamma$$:** They rotate and translate the entire $$T-\rho$$ plane to match a new $$T_0$$ and $$\gamma$$
+**Varying $$T_0$$ and $$\gamma$$:** They rotate and translate the entire $$T-\rho$$ plane to match a new $$T_0$$ and $$\gamma$$
 
-**Varying $$\tau_eff$$:** From what I understand they only changed the Mean Transmitted Flux that they use to normalize the transmitted flux fluctuations for the flux power spectrum, I don't think they changed the ionization fraction directly.
+**Varying $$\tau_{eff}$$:** From what I understand they only changed the Mean Transmitted Flux that they use to normalize the transmitted flux fluctuations for the flux power spectrum, I don't think they changed the ionization fraction directly.
 
-**Varying $$u_0$$:**  Since they ran multiple simulations with different values of $$u_0$$, they measure the effect that different $$u_0$$ have on the flux power spectrum from their simulations (which they set to have the same $$T_0$$, $$\gamma$$, and $$\tau_eff$$$ ), from this fit a power law that then they use to get a $$u_0 -P_k$$ relation that they can use to sample their MCMC. It seems like they claim to understand the effect that different $$u_0$$ have on the power spectrum, so they can artificially change $$P_k$$ based on their empirical $$P_k-u_0$$ relation, **it's not clear how they take in to account the combined effects of changing the other 3 parameters as well as changing $$u_0$$.** 
+**Varying $$u_0$$:**  Since they ran multiple simulations with different values of $$u_0$$, they measure the effect that different $$u_0$$ have on the flux power spectrum from their simulations (which they set to have the same $$T_0$$, $$\gamma$$, and $$\tau_{eff}$$ ), from this fit a power law that then they use to get a $$u_0 -P_k$$ relation that they can use to sample their MCMC. It seems like they claim to understand the effect that different $$u_0$$ have on the power spectrum, so they can artificially change $$P_k$$ based on their empirical $$P_k-u_0$$ relation, **it's not clear how they take in to account the combined effects of changing the other 3 parameters as well as changing $$u_0$$.** 
 
 
 Now, they can generate many *fake* simulations from each real simulation by changing the 4 parameters, it seems to me like they are  not interpolating between their real simulations, meaning that the new fake simulations generated from a real one are independent of the other real ones.
@@ -56,7 +56,10 @@ where:
 \frac{d Q_{\text {photo}, X}}{d t} \approx \frac{h \nu_{X}}{\gamma_{X}-1+\alpha_{b k}} \alpha_{A, X} n_{\tilde{X}} n_{e}
 
 
-by solving for $$T_0$$ and $$u_0$$ for different Instantaneous reionization histories, where they vary the redshift of reionization $$z_{rei}$$, the temperature of reionization $$T_{rei}$$ and the spectral index  of the ionizing UV Backgroud $$\alpha_{bk}$$
+by solving for $$T_0$$ and $$u_0$$ for different Instantaneous reionization histories, where they vary the redshift of reionization $$z_{rei}$$, the temperature of reionization $$T_{rei}$$ and the spectral index  of the ionizing UV Backgroud $$\alpha_{bk}$$, the following figure shows the effect that changing each parameter has on the evolution of $$T_0$$ and $$u_0$$
+
+
+<img src="{{ site.url }}assets/images/boera_6.png">
 
 
 
