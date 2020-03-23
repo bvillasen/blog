@@ -47,6 +47,17 @@ They also model the temperature evolution at mean density, given by:
 \frac{d T}{d t}=-2 H T+\frac{2 T}{3 \Delta} \frac{d \Delta}{d t}+\frac{2}{3 k_{B} n_{\text {tot }}} \frac{d Q}{d t}
 
 
+and the injected energy $$u_0$$ given by:
+
+\frac{d u_{0}}{d t}=\frac{1}{\bar{\rho}} \sum_{X} \frac{d Q_{p h o t o, X}}{d t}
+
+where: 
+
+\frac{d Q_{\text {photo}, X}}{d t} \approx \frac{h \nu_{X}}{\gamma_{X}-1+\alpha_{b k}} \alpha_{A, X} n_{\tilde{X}} n_{e}
+
+
+by solving for $$T_0$$ and $$u_0$$ for different Instantaneous reionization histories, where they vary the redshift of reionization $$z_{rei}$$, the temperature of reionization $$T_{rei}$$ and the spectral index  of the ionizing UV Backgroud $$\alpha_{bk}$$
+
 
 
 
