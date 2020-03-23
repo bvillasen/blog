@@ -13,7 +13,16 @@ They ran a suite of 30 simulations most of them consist of a 10 Mpc/h box and $$
 
 <img src="{{ site.url }}assets/images/boera_0.png">
 
-Then they artificially extend their simulation by changing $$T_0$$, $$\gamma$$, $$\tau_eff$$, and $$u_0$$ as postprocesing, the next figure shows the effect that changing this values has on the Flux Power Spectrum.
+Then they artificially extend their simulation by changing $$T_0$$, $$\gamma$$, $$\tau_eff$$, and $$u_0$$ as post-processing, the next figure shows the effect that changing this values has on the Flux Power Spectrum.
 
 
 <img src="{{ site.url }}assets/images/boera_1.png">
+
+This is how they change the parameters:
+
+
+**Varying $$\T_0$$ and $$\gamma$$:** They rotate and translate the entire $$T-\rho$$ plane to match a new $$T_0$$ and $$\gamma$$
+
+**Varying $$\tau_eff$$:** From what I understand they only changed the Mean Transmitted Flux that they use to normalize the transmitted flux fluctuations for the flux power spectrum, I don't think they changed the ionization fraction directly.
+
+**Varying $$u_0$$:**  
