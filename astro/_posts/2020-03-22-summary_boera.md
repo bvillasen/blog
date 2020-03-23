@@ -30,7 +30,10 @@ This is how they change the parameters:
 
 Now, they can generate many *fake* simulations from each real simulation by changing the 4 parameters, it seems to me like they are  not interpolating between their real simulations, meaning that the new fake simulations generated from a real one are independent of the other real ones.
 
- 
+After sampling their MCMC with the new *artificial* $$P_k$$, they measure the constrain values on 4 parameters as shown below for z=4.2
+
+
+<img src="{{ site.url }}assets/images/boera_2.png">
 
 
  
