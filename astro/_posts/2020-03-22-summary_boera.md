@@ -62,6 +62,10 @@ by solving for $$T_0$$ and $$u_0$$ for different Instantaneous reionization hist
 <img src="{{ site.url }}assets/images/boera_6.png">
 
 
+From their $$T_0$$ and $$u_0$$ measurements they constrain the instant reionization parameters, their results are summarized in the next figure.
+
+<img src="{{ site.url }}assets/images/boera_7.png">
+
 
 
 
