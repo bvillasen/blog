@@ -46,6 +46,9 @@ They also model the temperature evolution at mean density, given by:
 
 $$\frac{d T}{d t}=-2 H T+\frac{2 T}{3 \Delta} \frac{d \Delta}{d t}+\frac{2}{3 k_{B} n_{\text {tot }}} \frac{d Q}{d t}$$
 
+where:
+
+$$\frac{d Q}{d t}=\sum_{X} \frac{d Q_{p h o t o, X}}{d t}+\frac{d Q_{C o m p t o n}}{d t}+\sum_{i} \sum_{X} R_{i, X} n_{e} n_{X}$$
 
 and the injected energy $$u_0$$ given by:
 
