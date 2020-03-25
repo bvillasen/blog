@@ -20,3 +20,6 @@ The same for the optical depth
 
 
 <img src="{{ site.url }}assets/images/puchwein_1.png"> 
+
+<img src="{{ site.url }}assets/images/optical_depth_uvb_log.png"> 
+
