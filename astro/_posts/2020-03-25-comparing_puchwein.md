@@ -31,4 +31,4 @@ Comparing to my results, seems like there are differences in $$\gamma$$ for the 
 <img src="{{ site.url }}assets/images/ionization_fraction.png"> 
 
 
-**The H ionization fractions seem to match, so why are the optical depths so different for z>5?**
+**The H ionization fractions seem to match, so why are the optical depths so different for z>4.5?**
