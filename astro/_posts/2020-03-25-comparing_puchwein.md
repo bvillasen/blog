@@ -16,10 +16,19 @@ Comparing to my results, seems like there are differences in $$\gamma$$ for the 
 
 
 
-The same for the optical depth
+## Optical Depth
 
 
 <img src="{{ site.url }}assets/images/puchwein_1.png"> 
 
 <img src="{{ site.url }}assets/images/optical_depth_uvb_log.png"> 
 
+
+## Ionization Fraction
+
+<img src="{{ site.url }}assets/images/puchwein_2.png">
+
+<img src="{{ site.url }}assets/images/ionization_fraction.png"> 
+
+
+**The H ionization fractions seem to match, so why are the optical depths so different for z>5?**
