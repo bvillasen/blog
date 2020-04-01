@@ -24,4 +24,19 @@ At higher redshits, the optical depth increases as resolution decreases but it s
 <img src="{{ site.url }}assets/images/puchwein_1.png"> 
 
 
+This is what **Onorbe+2017** show for their optical depth resolution analysis:
+ 
+
+<img src="{{ site.url }}assets/images/onorbe_0.png"> 
+
+
 ### Transmitted Flux Power Spectrum
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_resolution.png"> 
+
+
+
+This is what **Onorbe+2017** show for their flux power spectrum resolution analysis:
+ 
+
+<img src="{{ site.url }}assets/images/onorbe_1.png"> 
