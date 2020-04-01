@@ -16,6 +16,8 @@ For all simulations the box size is **50 Mpc/h** and the different computational
 
 <img src="{{ site.url }}assets/images/optical_depth_uvb_log_res.png"> 
 
+<img src="{{ site.url }}assets/images/optical_depth_uvb_log_res_1.png"> 
+
 
 At higher redshits, the optical depth increases as resolution decreases but it still doesnt look like the one in Puchwein paper ( blue line in figure below )
 
