@@ -5,7 +5,7 @@ date:   2020-04-05 18:10:24 -0800
 categories: dm cholla
 ---
 
-From the Gadget2 paper:
+**From the Gadget2 paper:**
 
 The kernel as a function of distance $$r$$ and smoothing length $$h$$ is given by:
 
