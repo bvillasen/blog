@@ -53,7 +53,7 @@ I can use the values of $$\rho_i$$ and $$h_i$$ from the file to compute $$N_{\ma
 
 <img src="{{ site.url }}assets/images/n_smmoth.png"> 
 
-So, it seems like $$N_{\mathrm{sph}} \aprox 64$$
+So, it seems like $$N_{\mathrm{sph}} \approx 64$$
 
  
 
