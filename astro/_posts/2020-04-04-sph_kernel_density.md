@@ -53,9 +53,18 @@ I can use the values of $$\rho_i$$ and $$h_i$$ from the file to compute $$N_{\ma
 
 <img src="{{ site.url }}assets/images/n_smmoth.png"> 
 
-So, it seems like $$N_{\mathrm{sph}} \approx 64$$
+**So, it seems like $$N_{\mathrm{sph}} \approx 64$$**
 
- 
+
+
+### Measuring $$N_{\mathrm{neighbors}}$$  within $$h_i$$
+
+Now for each particle I measure the number of neighbors $$N_{\mathrm{neighbors}}$$ within the smoothing length $$h_i$$ obtained from the data file, the distribution is below:
+
+
+<img src="{{ site.url }}assets/images/N_neighbours.png"> 
+
+**So it's clear that not all particles have 64 neighboring particles within their smoothing length.**
 
  
 
