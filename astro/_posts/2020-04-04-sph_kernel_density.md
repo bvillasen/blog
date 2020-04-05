@@ -31,6 +31,33 @@ $$\frac{4 \pi}{3} h_{i}^{3} \rho_{i}=N_{\mathrm{sph}} \bar{m}$$
 where $$N_{\mathrm{sph}} $$ is the typical number of smoothing neighbours, and $$\bar{m}$$
 is an average particle mass.
 
+**Some things to notice:**
+
+The density at the $$i$$ particle position is computed by:
+
+$$\rho_{i}=\sum_{j=1}^{N} m_{j} W\left(\left|\boldsymbol{r}_{i j}\right|, h_{i}\right)$$,
+
+note that the smoothing length used is $$h_i$$ and not the smoothing length of the neighbors.
+
+
+### Measuring $$N_{\mathrm{sph}}$$
+
+
+From the equation:
+
+$$\frac{4 \pi}{3} h_{i}^{3} \rho_{i}=N_{\mathrm{sph}} \bar{m}$$
+
+I can use the values of $$\rho_i$$ and $$h_i$$ from the file to compute $$N_{\mathrm{sph}}$$, this is the distribution of values that I get.
+
+
+
+<img src="{{ site.url }}assets/images/n_smmoth.png"> 
+
+So, it seems like $$N_{\mathrm{sph}} \aprox 64$$
+
+ 
+
+ 
 
 ### Density Comparison
 
