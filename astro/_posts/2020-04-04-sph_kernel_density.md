@@ -16,8 +16,20 @@ $$W(r, h)=\frac{8}{\pi h^{3}}\left\{\begin{array}{ll}
 \end{array}\right.$$ 
 
 
+> 
+Of fundamental importance for any SPH formulation is the density estimate, which GADGET-2 does in the form
+$$\rho_{i}=\sum_{j=1}^{N} m_{j} W\left(\left|\boldsymbol{r}_{i j}\right|, h_{i}\right)$$
 
-
+>
+where $$r_{ij} ≡ r_i − r_j$$ , and $$W(r, h)$$ is the SPH smoothing kernel
+defined in equation (4).2 In our ‘entropy formulation’ of SPH, the
+adaptive smoothing lengths $$h_i$$ of each particle are defined such
+that their kernel volumes contain a constant mass for the estimated
+density, i.e. the smoothing lengths and the estimated densities obey
+the (implicit) equations
+$$\frac{4 \pi}{3} h_{i}^{3} \rho_{i}=N_{\mathrm{sph}} \bar{m}$$
+where $$N_{\mathrm{sph}} $$ is the typical number of smoothing neighbours, and $$\bar{m}$$
+is an average particle mass.
 
 
 ### Density Comparison
