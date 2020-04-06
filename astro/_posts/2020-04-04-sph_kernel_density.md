@@ -68,11 +68,41 @@ Now for each particle I measure the number of neighbors $$N_{\mathrm{neighbors}}
 
  
 
-### Density Comparison
+### Density Comparison Using Gadget $$h_i$$
 
-<img src="{{ site.url }}assets/images/density_kernel_0.png"> 
+First I compute the density passing the smoothing length $$h_i$$ that I get from the data file.
+
+**Panel 1:** Density on the data file.
+**Panel 2:** Density computed from the kernel using $$h_{64}$$.
+**Panel 3:** Fractional difference between the two densities.
+
+<img src="{{ site.url }}assets/images/density_kernel.png"> 
 
 
 Now I show the distribution of the fractional differences
 
-<img src="{{ site.url }}assets/images/density_difference_0.png"> 
+<img src="{{ site.url }}assets/images/density_difference_kernel.png"> 
+<!-- 
+Here is the fractional difference vs. density distribution
+
+<img src="{{ site.url }}assets/images/density_difference_kernel_2d.png">  -->
+
+
+
+### Density Comparison Using $$h_{64}$$
+
+Now I compute the density passing the smoothing length $$h_{64}$$ which is the radius that encloses 64 neighbors.
+
+**Panel 1:** Density on the data file.
+**Panel 2:** Density computed from the kernel using $$h_i$$ from the data file.
+**Panel 3:** Fractional difference between the two densities.
+
+<img src="{{ site.url }}assets/images/density_kernel_h64.png"> 
+
+
+Now I show the distribution of the fractional differences
+
+<img src="{{ site.url }}assets/images/density_difference_kernel_h64.png"> 
+
+
+**There densities computed with the two different smoothing length are not significantly different.**
