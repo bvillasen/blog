@@ -66,6 +66,13 @@ Now for each particle I measure the number of neighbors $$N_{\mathrm{neighbors}}
 
 **So it's clear that not all particles have 64 neighboring particles within their smoothing length.**
 
+
+### Density and $$N_{\mathrm{neighbors}}$$ Distribution
+
+This shows the distribution of $$\rho_i$$ in the field against the number of neighbors within  %%h_i$$ , the number of neighbors includes the central particle so N_neighbours=1 means that  there are no other particles within $$h_i$$ other than the central particle
+
+<img src="{{ site.url }}assets/images/density_2d_neighboours.png"> 
+
  
 
 ### Density Comparison Using Gadget $$h_i$$
@@ -86,6 +93,11 @@ Now I show the distribution of the fractional differences
 Here is the fractional difference vs. density distribution
 
 <img src="{{ site.url }}assets/images/density_difference_kernel_2d.png"> 
+
+
+Here is fractional difference vs. N_neighbors difference
+
+<img src="{{ site.url }}assets/images/density_difference_kernel_2d_neighboours.png"> 
 
 
 
