@@ -30,6 +30,14 @@ Originally Cholla was a hydrodynamics solver that runs in multiple GPUs. For my 
   <video src="{{ site.url }}assets/videos/gas_density_temperature_50Mpc.mp4" width="100%"  height="auto" controls preload> </video>
   </div>
   
+  
+The next animation shows a fly-by trough the evolving intergalactic medium, the animation was made by original software that  I developed using the high resolution data produced by a simulation that I ran in Summit.
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/cosmo_fly_4k.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+  
  The image below shows several components of a cosmological hydrodynamical simulation, the first column corresponds to the dark matter density, the second column shows the gas density, the third column correspond to the neutral hydrogen density and finally the last column shows the temperature of the gas. The top row shows the results from a simulation evolved using a popular code called [Enzo](https://enzo-project.org/) and the bottom show shows the result from an analogous simulation that I ran using Cholla on 8 Nvidia P100 GPUs.
   
  <img src="{{ site.url }}assets/images/projection_deep_1.png">
