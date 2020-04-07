@@ -35,7 +35,7 @@ is an average particle mass.
 
 The density at the $$i$$ particle position is computed by:
 
-$$\rho_{i}=\sum_{j=1}^{N} m_{j} W\left(\left|\boldsymbol{r}_{i j}\right|, h_{i}\right)$$,
+$$\rho_{i}=\sum_{j=1}^{N} m_{j} W\left(\left|\boldsymbol{r}_{i j}\right|, h_{i}\right)$$
 
 note that the smoothing length used is $$h_i$$ and not the smoothing length of the neighbors.
 
