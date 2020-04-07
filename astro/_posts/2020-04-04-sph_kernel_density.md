@@ -82,10 +82,10 @@ First I compute the density passing the smoothing length $$h_i$$ that I get from
 Now I show the distribution of the fractional differences
 
 <img src="{{ site.url }}assets/images/density_difference_kernel.png"> 
-<!-- 
+
 Here is the fractional difference vs. density distribution
 
-<img src="{{ site.url }}assets/images/density_difference_kernel_2d.png">  -->
+<img src="{{ site.url }}assets/images/density_difference_kernel_2d.png"> 
 
 
 
