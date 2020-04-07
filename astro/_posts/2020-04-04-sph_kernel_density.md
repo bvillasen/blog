@@ -69,7 +69,7 @@ Now for each particle I measure the number of neighbors $$N_{\mathrm{neighbors}}
 
 ### Density and $$N_{\mathrm{neighbors}}$$ Distribution
 
-This shows the distribution of $$\rho_i$$ in the field against the number of neighbors within  $$h_i$$ , the number of neighbors includes the central particle so N_neighbours=1 means that  there are no other particles within $$h_i$$ other than the central particle
+This shows the distribution of $$\rho_i$$ in the field against the number of neighbors within  $$h_i$$ , the number of neighbors includes the central particle so N_neighbors=1 means that  there are no other particles within $$h_i$$ other than the central particle
 
 <img src="{{ site.url }}assets/images/density_2d_neighboours.png"> 
 
