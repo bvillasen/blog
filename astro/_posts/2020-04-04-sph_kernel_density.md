@@ -100,6 +100,12 @@ Here is fractional difference vs. N_neighbors difference
 <img src="{{ site.url }}assets/images/density_difference_kernel_2d_neighboours.png"> 
 
 
+Now I focus on the 4000 particles with highest density an measure the fractional difference as I change the number of neighbors to compute the smoothing length.   
+
+
+<img src="{{ site.url }}assets/images/density_difference_neighbors.png"> 
+
+
 
 ### Density Comparison Using $$h_{64}$$
 
