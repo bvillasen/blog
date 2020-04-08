@@ -105,6 +105,8 @@ Now I focus on the 4000 particles with highest density an measure the fractional
 
 <img src="{{ site.url }}assets/images/density_difference_neighbors.png"> 
 
+**Changing the Number of neighbors to get them closer to 64 just increases the Fractional Difference**
+
 
 
 ### Density Comparison Using $$h_{64}$$
