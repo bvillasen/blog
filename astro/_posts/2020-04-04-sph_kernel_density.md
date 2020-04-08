@@ -131,7 +131,7 @@ Now I show the distribution of the fractional differences
 
 This shows the fractional difference between densities computed using $$h_i$$ and $$h_{64}$$.
 
-$$ \Delta_{\rho} == \frac{\rho_{h_{64}} - \rho_{h_{i}}}{\rho_{h_{i}}} $$
+$$ \Delta_{\rho} = \frac{\rho_{h_{64}} - \rho_{h_{i}}}{\rho_{h_{i}}} $$
 
 <img src="{{ site.url }}assets/images/density_difference_kernel_hi_h64.png"> 
 
