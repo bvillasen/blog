@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Phase Diagram from SPH Puchwein Simulations"
-date:   2020-04-05 18:10:24 -0800
+date:   2020-04-14 18:10:24 -0800
 categories: dm cholla
 ---
 
