@@ -12,10 +12,10 @@ On my previous post I found that there was more Neutral Hydrogen on the SPH(Grid
 
 I Think that the correct way to do the interpolation is given by the following equation:
 
-$$\rho^i_{HI}=\sum_{j=1}^{N} m^{j}_{HI} W_j$$
+$$\rho_{HI,i}=\sum_{j=1}^{N} m_{HI,j} W_j$$
 
 
-where $$ m^{j}_{HI} = HI^j * X * m^j$$ and $$HI^j$$ is the neutral hydrogen fraction from the Gadget file, $$X=0.759$$ is the hydrogen fraction and $$m^j$$ is the particle mass from the Gadget file. 
+where $$ m_{HI,j} = HI_j * X * m_j$$ and $$HI^j$$ is the neutral hydrogen fraction from the Gadget file, $$X=0.759$$ is the hydrogen fraction and $$m^j$$ is the particle mass from the Gadget file. 
  
 
 
