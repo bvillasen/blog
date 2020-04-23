@@ -15,7 +15,7 @@ I Think that the correct way to do the interpolation is given by the following e
 $$\rho_{HI,i}=\sum_{j=1}^{N} m_{HI,j} W_j$$
 
 
-where $$ m_{HI,j} = HI_j * X * m_j$$ and $$HI^j$$ is the neutral hydrogen fraction from the Gadget file, $$X=0.759$$ is the hydrogen fraction and $$m^j$$ is the particle mass from the Gadget file. 
+where $$ m_{HI,j} = HI_j * X * m_j$$ and $$HI_j$$ is the neutral hydrogen fraction from the Gadget file, $$X=0.759$$ is the hydrogen fraction and $$m_j$$ is the particle mass from the Gadget file. 
  
 
 
