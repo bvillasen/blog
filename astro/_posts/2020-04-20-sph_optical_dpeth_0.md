@@ -25,14 +25,14 @@ First I measure the density distributions directly from the particles on the SPH
 **Right Panel:** Neutral fraction distribution.
 
 
-<img src="{{ site.url }}assets/images/density_distribution.png"> 
+<img src="{{ site.url }}assets/images/ionization_fraction_H.png"> 
 
 
 
 Now I compare the same thing but for the SPH simulation I measure the distributions on the data that I interpolated to the 512$$^3$$ grid.
 
-<img src="{{ site.url }}assets/images/ionization_fraction_H.png"> 
 
+<img src="{{ site.url }}assets/images/density_distribution.png"> 
 
 Seems like the gas density distribution on the grid SPH is very close to the Cholla simulation but not for the HI distribution, **there is more HI on the SPH(Grid) data, this explains why the optical depth is higher when measured on the SPH(Grid).**
 
