@@ -39,7 +39,7 @@ Seems like the gas density distribution on the grid SPH is very close to the Cho
 
 ## Optical Depth Comparison
 
-Below I show the optical depth from the two interpolation methods and compare to the optical depth from the Cholla simulation
+Below I show the optical depth measured on the SPH(Grid) and compare to the optical depth from the Cholla simulation
 
 
 
