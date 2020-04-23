@@ -34,7 +34,7 @@ Now I compare the same thing but for the SPH simulation I measure the distributi
 
 <img src="{{ site.url }}assets/images/density_distribution.png"> 
 
-Seems like the gas density distribution on the grid SPH is very close to the Cholla simulation but not for the HI distribution, **there is more HI on the SPH(Grid) data, this explains why the optical depth is higher when measured on the SPH(Grid).**
+Seems like the gas density distribution on the grid SPH is very close to the Cholla simulation but this does not hold for the HI distribution, **there is more HI on the SPH(Grid) data, this could explains why the optical depth is higher when measured on the SPH(Grid).**
 
 
 ## Optical Depth Comparison
