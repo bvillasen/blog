@@ -33,7 +33,7 @@ If we make a variable change from frequency to velocity in the optical depth equ
 
 $$\tau=\frac{\pi e^{2}}{m_{e}  \nu_0 H} f_{12} \int \frac{n_{\mathrm{HI}}}{b} \frac{\exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right]}{\sqrt{\pi}} d u $$
 
-where $$u-u_{0}=\Deltau$$ is the relative velocity to the absorber. This can be rewritten as:
+where $$u-u_{0}=\Delta u$$ is the relative velocity to the absorber. This can be rewritten as:
 
 $$\tau=\frac{\pi e^{2} \lambda_0}{m_{e}  c H} \frac{f_{12}}{\sqrt{\pi}} \int \frac{n_{\mathrm{HI}}}{b} \exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right] d u $$
 
