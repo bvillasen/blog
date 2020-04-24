@@ -23,4 +23,10 @@ $$\begin{aligned}
 
 where $$\Omega_b$$ and $$\Omega_m$$ are the present day baryon and matter densities as a fraction of the critical density, $$h =
 H_0/100 \mathrm{km} \mathrm{s}^−1 \mathrm{Mpc}−1 $$ for the present day Hubble constant $$H_0$$, $$\Delta = \rho/ \langle \rho \rangle $$ is the normalised gas density, $$T_0$$ is the gas temperature at mean density, $$\gamma$$ is the slope of the temperature density relation and $$\Gamma_{−12} = \Gamma_{HI}/10^{−12} \mathrm{s}^{−1}$$ is the hydrogen photo-ionisation rate. The power-law temperature dependence is due to the case-A HII recombination coefficient, and $$\chi_{\mathrm{He}}$$ accounts for the extra electrons liberated during HeII reionisation; $$\chi_{\mathrm{He}} = 1.08$$ prior to HeII reionisation and $$\chi_{\mathrm{He}} = 1.16$$ afterwards for a helium fraction by mass
-of $$Y = 0.24$$ (Olive & Skillman 2004). The effective optical depth can then be estimated by integrating over all possible IGM densities $$\Delta$$.
+of $$Y = 0.24$$ (Olive & Skillman 2004). 
+
+The effective optical depth can then be estimated by integrating over all possible IGM densities $$\Delta$$:
+
+$$e^{-\tau_{\mathrm{eff}}}=\int_{0}^{\infty} d \Delta P_{V}(\Delta) \int d T P(T | \Delta) e^{-\tau(T, \Delta)}$$
+
+where $$P(T | \Delta)$$ is the probability distribution of temperatures for elements at density $$\Delta$$ and $$\tau_{eff} is the effective optical depth. Again, we emphasise that this ignores peculiar velocities of the gas, line blending (and indeed the wings of every line), and the clustering of the absorbers, but it provides a qualitative description of the evolving transmission.
