@@ -21,4 +21,9 @@ $$\tau_{\nu}=\frac{\pi e^{2}}{m_{e} c} f_{12} \int \frac{n_{\mathrm{HI}}}{\Delta
 
 where $$\Delta \nu_{\mathrm{D}}=(b/c)\nu_0$$ is the Doppler width with the Doppler parameter due tu thermal motions $$b=\sqrt{2k_bT/m_H}$$, and $$f_12$$ is the is the upward oscillator strength of the Ly$$\alpha$$ resonance transition of frequency $$\nu_0$$.
 
-*In the Optical depth equation they define $$\tau_{\nu}$$ as an integral over $$\nu$$ which I think is misused notation, I think that equation defines the optical depth at the frequency $$\nu_{\mathrm{obs}}$$ which corresponds to the frequency in the frame of the absorber that when corresponds to the Ly$$\alpha$$ frequency $$\nu_0$$.*  
+*In the Optical depth equation they define $$\tau_{\nu}$$ as an integral over $$\nu$$ which I think is misused notation, I think that equation defines the optical depth at the frequency $$\nu_{\mathrm{obs}}$$ which corresponds to the frequency in the frame of the absorber that when corresponds to the Ly$$\alpha$$ frequency $$\nu_0$$.*
+
+
+Not lets think of about an specific absorber that is moving with velocity $$u_0$$, if we set ourselves on the frame of the absorber, then we will see that our neighboring  gas elements are are moving with respect to us with velocity $$\Delts u$$( that depends on the distance to the neighbor ), since our neighbor is moving with respect to us then due to Doppler effect the frequency in which our neighbor will absorb is shifted with respect to our frequency of a absorption (which corresponds to $$\nu_0$$ ).  The frequency of absorption of our neighbor is given by Doppler effect:
+
+\nu=\nu_{0}\left(1-\frac{\Delta u}{c}\right)
