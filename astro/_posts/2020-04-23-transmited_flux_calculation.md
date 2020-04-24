@@ -123,6 +123,13 @@ def get_optical_depth( current_z, dr, H, dv, n_HI_los, vel_Hubble_los, vel_pecul
 ```
 
 
+To compute $$\tau_{eff}$$ there are two ways that I can think of:
+
+1. Compute the $$\tau_{mean}$$ along each skewer and then average over all skewers.
+
+2. compute $$F_mean$$ along each skewer, then average over all skewers and then compute $$\tau_{eff} = - \mathrm{log} \bar{F}$$
+
+
    
  
   
