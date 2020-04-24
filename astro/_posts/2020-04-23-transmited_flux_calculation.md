@@ -74,7 +74,7 @@ def extend_periodic( arr, n_ghost):
   return arr_periodic
   
 def get_optical_depth( current_z, dr, H, dv, n_HI_los, vel_Hubble_los, vel_peculiar_los, temp_los, space='redshift' ):
-  # Lymann Alpha Parameters
+  # Lyman Alpha Parameters
   Lya_lambda = 1.21567e-5 #cm  Rest wave length of the Lyman Alpha Transition
   Lya_nu = cgs.c / Lya_lambda
   f_12 = 0.416 #Oscillator strength
@@ -97,13 +97,13 @@ def get_optical_depth( current_z, dr, H, dv, n_HI_los, vel_Hubble_los, vel_pecul
   if space == 'redshift': velocity = vel_Hubble + vel_peculiar
   
   
-  tau_los = np.zeros(n_points) #Initialize arrays of zeros for the total optical delpth along the line of sight
+  tau_los = np.zeros(n_points) #Initialize arrays of zeros for the total optical depth along the line of sight
   
   #Loop over each cell
   for i in range(n_points):
     #Get  local values of the cell
     v_0 = velocity[i]                      #Velocity of the cell
-    n_HI_0 = n_HI[i]                       #HI nuimber density of the cell   
+    n_HI_0 = n_HI[i]                       #HI number density of the cell   
     temp_0 = temp[i]                       #temperature of the cell
     b = get_Doppler_parameter( temp_0 )    #Doppler parameter of the cell
     
@@ -112,7 +112,7 @@ def get_optical_depth( current_z, dr, H, dv, n_HI_los, vel_Hubble_los, vel_pecul
     phi = 1. / ( np.sqrt(np.pi) * b ) * np.exp( -1 * exponent**2 )
     tau = Lya_sigma * Lya_lambda  / H_cgs * n_HI_0 * phi * dv
     
-    #Add the Gaussian component from thi cell to the global optical depth along the line of sight
+    #Add the Gaussian component from this cell to the global optical depth along the line of sight
     tau_los += tau
     
   # Trim the ghost cells from the global optical depth 
