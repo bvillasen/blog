@@ -127,7 +127,7 @@ To compute $$\tau_{eff}$$ there are two ways that I can think of:
 
 1. Compute the $$\tau_{mean}$$ along each skewer and then average over all skewers.
 
-2. compute $$F_{mean}$$ along each skewer, then average over all skewers and then compute $$\tau_{eff} = - \mathrm{log} \bar{F}$$. I think this is the correct way.
+2. Compute $$F_{mean}$$ along each skewer, then average over all skewers and then compute $$\tau_{eff} = - \mathrm{log} \bar{F}$$. I think this is the correct way.
 
 I compared both ways of doing it and the differences are less than 2%.
 
