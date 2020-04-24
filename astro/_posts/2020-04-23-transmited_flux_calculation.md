@@ -24,12 +24,19 @@ where $$\Delta \nu_{\mathrm{D}}=(b/c)\nu_0$$ is the Doppler width with the Doppl
 *In the Optical depth equation they define $$\tau_{\nu}$$ as an integral over $$\nu$$ which I think is misused notation, I think that equation defines the optical depth at the frequency $$\nu_{\mathrm{obs}}$$ which corresponds to the frequency in the frame of the observer corresponds to the Ly$$\alpha$$ frequency $$\nu_0$$ when converted to the frame of the absorber.*
 
 
-Not lets think of about an specific absorber that is moving with velocity $$u_0$$, if we set ourselves on the frame of the absorber, then we will see that our neighboring  gas elements are are moving with respect to us with velocity $$\Delta u$$( that depends on the distance to the neighbor ), since our neighbor is moving with respect to us then due to Doppler effect the frequency in which our neighbor will absorb is shifted with respect to our frequency of a absorption (which corresponds to $$\nu_0$$ ).  The frequency of absorption of our neighbor is given by Doppler effect:
+Not lets think of about an specific absorber that is moving with velocity $$u_0$$, if we set ourselves on the frame of the absorber, then we will see that our neighboring  gas elements are are moving with respect to us with velocity $$\Delta u$$( that depends on the distance to the neighbor ), since our neighbor is moving with respect to us then due to Doppler effect the frequency in which our neighbor will absorb is shifted with respect to our frequency of a absorption (which corresponds to $$\nu_0$$ ).  In the frame of the absober, the frequency of absorption of our neighbor is given by Doppler effect:
 
 $$\nu=\nu_{0}\left(1-\frac{\Delta u}{c}\right)$$
 
 
 If we make a variable change from frequency to velocity in the optical depth equation and using the expansion of the universe to transform $$dr$$ to $$du$$ by $$du = H dr$$, we obtain:
 
-$$\tau=\frac{\pi e^{2}}{m_{e} H \nu_0} f_{12} \int \frac{n_{\mathrm{HI}}}{b} \frac{\exp \left[-\left(\frac{u-u_{0}}{\b}\right)^{2}\right]}{\sqrt{\pi}} d u $$
+$$\tau=\frac{\pi e^{2}}{m_{e}  \nu_0 H} f_{12} \int \frac{n_{\mathrm{HI}}}{b} \frac{\exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right]}{\sqrt{\pi}} d u $$
+
+This can be rewritten as:
+
+$$\tau=\frac{\pi e^{2} \lambda_0}{m_{e}  c H} \
+frac{f_{12}}{\sqrt{\pi}} \int \frac{n_{\mathrm{HI}}}{b} \exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right] d u $$
+
+ 
   
