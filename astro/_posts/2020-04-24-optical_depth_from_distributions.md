@@ -36,7 +36,7 @@ Again, we emphasise that this ignores peculiar velocities of the gas, line blend
 
 **An alterenative Calculation:**
 
-Following the previous method I think I could use the HI distribution directly from the simulation, so instead of $$\Delta$$ I could use $$\Delta_{\mathrm{HI}} = \rho_{\mathrm{HI}} / \langle {\rho_{\mathrm{HI}} $$, leading to:
+Following the previous method I think I could use the HI distribution directly from the simulation, so instead of $$\Delta$$ I could use $$\Delta_{\mathrm{HI}} = \rho_{\mathrm{HI}} / \langle \rho_{\mathrm{HI}} \rangle $$, leading to:
 
 
 
