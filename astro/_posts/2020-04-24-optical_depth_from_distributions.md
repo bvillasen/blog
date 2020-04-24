@@ -27,6 +27,6 @@ of $$Y = 0.24$$ (Olive & Skillman 2004).
 
 The effective optical depth can then be estimated by integrating over all possible IGM densities $$\Delta$$:
 
-$$e^{-\tau_{\mathrm{eff}}}=\int_{0}^{\infty} d \Delta P_{V}(\Delta) \int d T P(T | \Delta) e^{-\tau(T, \Delta)}$$
+$$e^{-\tau_{\mathrm{eff}}}=\int_{0}^{\infty} d \Delta P_{V}(\Delta) \int d T P(T | \Delta) e^{-\tau(T, \Delta)} $$
 
-where $$P(T | \Delta)$$ is the probability distribution of temperatures for elements at density $$\Delta$$ and $$\tau_{eff} is the effective optical depth. Again, we emphasise that this ignores peculiar velocities of the gas, line blending (and indeed the wings of every line), and the clustering of the absorbers, but it provides a qualitative description of the evolving transmission.
+<!-- where $$P(T | \Delta)$$ is the probability distribution of temperatures for elements at density $$\Delta$$ and $$\tau_{eff} is the effective optical depth. Again, we emphasise that this ignores peculiar velocities of the gas, line blending (and indeed the wings of every line), and the clustering of the absorbers, but it provides a qualitative description of the evolving transmission. -->
