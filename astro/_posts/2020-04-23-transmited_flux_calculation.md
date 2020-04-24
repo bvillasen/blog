@@ -31,9 +31,9 @@ $$\nu=\nu_{0}\left(1-\frac{\Delta u}{c}\right)$$
 
 If we make a variable change from frequency to velocity in the optical depth equation and using the expansion of the universe to transform $$dr$$ to $$du$$ by $$du = H dr$$, we obtain:
 
-$$\tau=\frac{\pi e^{2}}{m_{e}  \nu_0 H} f_{12} \int \frac{n_{\mathrm{HI}}}{b} \frac{\exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right]}{\sqrt{\pi}} d u $$
+$$\tau=\frac{\pi e^{2}}{m_{e}  \nu_0 H} f_{12} \int \frac{n_{\mathrm{HI}}}{b} \frac{\exp \left[-\left(\frac{\Delta u}{b}\right)^{2}\right]}{\sqrt{\pi}} d u $$
 
-where $$u-u_{0}=\Delta u$$ is the relative velocity to the absorber. This can be rewritten as:
+where $$\Delta u = u-u_{0}$$ is the relative velocity to the absorber. This can be rewritten as:
 
 $$\tau=\frac{\pi e^{2} \lambda_0}{m_{e}  c H} \frac{f_{12}}{\sqrt{\pi}} \int \frac{n_{\mathrm{HI}}}{b} \exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right] d u $$
 
