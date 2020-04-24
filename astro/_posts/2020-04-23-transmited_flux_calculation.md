@@ -37,5 +37,6 @@ where $$u-u_{0}=\Delta u$$ is the relative velocity to the absorber. This can be
 
 $$\tau=\frac{\pi e^{2} \lambda_0}{m_{e}  c H} \frac{f_{12}}{\sqrt{\pi}} \int \frac{n_{\mathrm{HI}}}{b} \exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right] d u $$
 
+This will give the optical depth at the velocity coordinate of the absorber $$u_0$$.
  
   
