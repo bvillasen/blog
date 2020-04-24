@@ -30,3 +30,19 @@ The effective optical depth can then be estimated by integrating over all possib
 $$e^{-\tau_{\mathrm{eff}}}=\int_{0}^{\infty} d \Delta P_{V}(\Delta) \int d T P(T | \Delta) e^{-\tau(T, \Delta)} $$
 
 where $$P(T | \Delta)$$ is the probability distribution of temperatures for elements at density $$\Delta$$ and $$\tau_{eff}$$ is the effective optical depth. Again, we emphasise that this ignores peculiar velocities of the gas, line blending (and indeed the wings of every line), and the clustering of the absorbers, but it provides a qualitative description of the evolving transmission.
+
+
+**An alterenative Calculation:**
+
+Following the previous method I think I could use the HI distribution directly from the simulation, so instead of $$\Delta$$ I could use $$\Delta_{\mathrm{HI}} = \rho_{\mathrm{HI}} / \langle {\rho_{\mathrm{HI}} $$, leading to:
+
+
+
+$$e^{-\tau_{\mathrm{eff}}}=\int_{0}^{\infty} d \Delta P_{V}(\Delta_{\mathrm{HI}}) \int d T P(T | \Delta_{\mathrm{HI}}) e^{-\tau(T, \Delta_{\mathrm{HI}})} $$
+
+
+and the optical depth for each element can be computed as the amplitude of the absorption line:
+
+
+$$\tau=\frac{\pi e^{2} \lambda_0}{m_{e}  c H} \frac{f_{12}}{\sqrt{\pi}}  \frac{n_{\mathrm{HI}}}{b}  $$
+
