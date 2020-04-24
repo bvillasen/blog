@@ -7,7 +7,7 @@ categorines: dm cholla
 
 <img src="{{ site.url }}assets/images/transmited_flux_pchw18.png"> 
 
-**Most equations were taken from this paper:  [Lukic 2016](https://arxiv.org/abs/1406.6361)**
+**Most equations were taken from this paper:  [Lukic et al. 2016](https://arxiv.org/abs/1406.6361)**
 
 
 The optical depth $$\tau$$ for Ly$$\alpha$$ scattering is given by:
