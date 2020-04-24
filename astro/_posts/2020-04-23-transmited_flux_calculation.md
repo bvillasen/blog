@@ -38,5 +38,10 @@ where $$\Delta u = u-u_{0}$$ is the relative velocity to the absorber. This can 
 $$\tau=\frac{\pi e^{2} \lambda_0}{m_{e}  c H} \frac{f_{12}}{\sqrt{\pi}} \int \frac{n_{\mathrm{HI}}}{b} \exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right] d u $$
 
 This will give the optical depth at the velocity coordinate of the absorber $$u_0$$.
+
+The result is that the optical depth at the position of the absorber has a contribution in absorption from the neighboring gas elements, this is becuase even when the neighbor is moving with respect to the absorber, due to the thermal motions of the atoms in the neighboring gas element a fraction of the neighboring gas will be at rest with respect top the absorber and this fraction of the neighbor will absorb at the same frequency as the absorber.
+
+The way I think of the calculation is that each element of gas (cell) will generate a Gaussian shaped optical depth around its velocity coordinate that only depend on the local Neutral Hydrogen density and temperature of the absorber and then the  optical depth along the line of sight is simple the sum of all the independent Gaussians. Another way of computing the optical depth along the line of sight would be to loop over each cell and sum the Gaussian contribution from the all the neighbors along the line of sight, this two options are equivalent, since they only differ in the order on which the sums are made.
+   
  
   
