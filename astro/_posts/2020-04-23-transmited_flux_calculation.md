@@ -39,9 +39,90 @@ $$\tau=\frac{\pi e^{2} \lambda_0}{m_{e}  c H} \frac{f_{12}}{\sqrt{\pi}} \int \fr
 
 This will give the optical depth at the velocity coordinate of the absorber $$u_0$$.
 
-The result is that the optical depth at the position of the absorber has a contribution in absorption from the neighboring gas elements, this is becuase even when the neighbor is moving with respect to the absorber, due to the thermal motions of the atoms in the neighboring gas element a fraction of the neighboring gas will be at rest with respect top the absorber and this fraction of the neighbor will absorb at the same frequency as the absorber.
+The result is that the optical depth at the position of the absorber has a contribution in absorption from the neighboring gas elements, this is because even when the neighbor is moving with respect to the absorber, due to the thermal motions of the atoms in the neighboring gas element a fraction of the neighboring gas will be at rest with respect top the absorber and this fraction of the neighbor will absorb at the same frequency as the absorber.
 
-The way I think of the calculation is that each element of gas (cell) will generate a Gaussian shaped optical depth around its velocity coordinate that only depend on the local Neutral Hydrogen density and temperature of the absorber and then the  optical depth along the line of sight is simple the sum of all the independent Gaussians. Another way of computing the optical depth along the line of sight would be to loop over each cell and sum the Gaussian contribution from the all the neighbors along the line of sight, this two options are equivalent, since they only differ in the order on which the sums are made.
+The way I think of the calculation is that each element of gas (cell) will generate a Gaussian shaped optical depth around its velocity coordinate that only depends on the local Neutral Hydrogen density and temperature of the absorber and then the  optical depth along the line of sight is simply the sum of all the independent Gaussians. Another way of computing the optical depth along the line of sight would be to loop over each cell and sum the Gaussian contribution from the all the neighbors along the line of sight (similar to the equation), this two options are equivalent, since they only differ in the order on which the sums are made.
+
+
+Here is my to generate the optical depth along the line of sight:
+
+```python
+
+#Doppler Shift for the frequency
+def get_nu( nu_0, v, c, z=None ):
+  nu = nu_0 * ( 1 - v/cgs.c  )
+  if z != None: nu = nu_0 * ( 1 - v/cgs.c  ) / ( 1 + z ) 
+  return  nu
+
+def get_Doppler_parameter( T ):
+  b = np.sqrt( 2* cgs.K_b / cgs.M_p * T )
+  return b
+  
+def get_Doppler_width( nu_0, T ):
+  b = get_Doppler_parameter( T ) 
+  delta_nu = b / cgs.c * nu_0
+  return delta_nu
+
+
+#Copy ghost cells to extend periodic boundaries   
+def extend_periodic( arr, n_ghost):
+  n = len(arr)
+  arr_periodic = np.zeros( n + 2*n_ghost )
+  arr_periodic[n_ghost:n+n_ghost] = arr
+  arr_periodic[:n_ghost] = arr[-n_ghost:]
+  arr_periodic[-n_ghost:] = arr[:n_ghost]
+  return arr_periodic
+  
+def get_optical_depth( current_z, dr, H, dv, n_HI_los, vel_Hubble_los, vel_peculiar_los, temp_los, space='redshift' ):
+  # Lymann Alpha Parameters
+  Lya_lambda = 1.21567e-5 #cm  Rest wave length of the Lyman Alpha Transition
+  Lya_nu = cgs.c / Lya_lambda
+  f_12 = 0.416 #Oscillator strength
+  Lya_sigma = np.pi * cgs.e_charge**2 / cgs.M_e / cgs.c * f_12
+  H_cgs = H * 1e5 / cgs.Mpc 
+  
+  #Extend Ghost cells for periodic boundaries
+  n_ghost = 256
+  n_HI = extend_periodic( n_HI_los, n_ghost)
+  vel_peculiar = extend_periodic( vel_peculiar_los, n_ghost )
+  temp = extend_periodic( temp_los, n_ghost) 
+  
+  n = len(n_HI_los)
+  r_proper = np.linspace( -n_ghost, n+n_ghost-1, n+2*n_ghost)* dr
+  vel_Hubble = H * r_proper * 1e5
+  
+  
+  n_points = len( n_HI )
+  if space == 'real': velocity = vel_Hubble
+  if space == 'redshift': velocity = vel_Hubble + vel_peculiar
+  
+  
+  tau_los = np.zeros(n_points) #Initialize arrays of zeros for the total optical delpth along the line of sight
+  
+  #Loop over each cell
+  for i in range(n_points):
+    #Get  local values of the cell
+    v_0 = velocity[i]                      #Velocity of the cell
+    n_HI_0 = n_HI[i]                       #HI nuimber density of the cell   
+    temp_0 = temp[i]                       #temperature of the cell
+    b = get_Doppler_parameter( temp_0 )    #Doppler parameter of the cell
+    
+    #Compute the Gaussian component of the optical depth from this single cell
+    exponent = ( vel_Hubble - v_0 ) / b
+    phi = 1. / ( np.sqrt(np.pi) * b ) * np.exp( -1 * exponent**2 )
+    tau = Lya_sigma * Lya_lambda  / H_cgs * n_HI_0 * phi * dv
+    
+    #Add the Gaussian component from thi cell to the global optical depth along the line of sight
+    tau_los += tau
+    
+  # Trim the ghost cells from the global optical depth 
+  tau_los = tau_los[n_ghost:-n_ghost]
+  return tau_los
+
+
+```
+
+
    
  
   
