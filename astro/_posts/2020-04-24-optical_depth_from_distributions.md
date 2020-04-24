@@ -40,7 +40,7 @@ Following the previous method I think I could use the HI distribution directly f
 
 
 
-$$e^{-\tau_{\mathrm{eff}}}=\int_{0}^{\infty} d \Delta P_{V}(\Delta_{\mathrm{HI}}) \int d T P(T | \Delta_{\mathrm{HI}}) e^{-\tau(T, \Delta_{\mathrm{HI}})} $$
+$$e^{-\tau_{\mathrm{eff}}}=\int_{0}^{\infty} d \Delta_{\mathrm{HI}} P_{V}(\Delta_{\mathrm{HI}}) \int d T P(T | \Delta_{\mathrm{HI}}) e^{-\tau(T, \Delta_{\mathrm{HI}})} $$
 
 
 and the optical depth for each element can be computed as the amplitude of the absorption line:
