@@ -44,7 +44,7 @@ The result is that the optical depth at the position of the absorber has a contr
 The way I think of the calculation is that each element of gas (cell) will generate a Gaussian shaped optical depth around its velocity coordinate that only depends on the local Neutral Hydrogen density and temperature of the absorber and then the  optical depth along the line of sight is simply the sum of all the independent Gaussians from all the cells. Another way of computing the optical depth along the line of sight would be to loop over each cell and sum the Gaussian contribution from the all the neighbors along the line of sight (similar to the integral equation), this two options are equivalent, since they only differ in the order on which the sums are made.
 
 
-Here is my to generate the optical depth along the line of sight:
+Here is my code to generate the optical depth along the line of sight:
 
 ```python
 
