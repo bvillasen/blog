@@ -9,7 +9,7 @@ categorines: dm cholla
 I compute the Effective Optical Depth from the full grid by averaging the transmitted flux of each cell:
 
 
-$$e^{-\tau_{\mathrm{eff}}}= \frac{1}[N] \sum e^{-\tau(n_{\mathrm{HI}})} $$
+$$e^{-\tau_{\mathrm{eff}}}= \frac{1}{N} \sum e^{-\tau(n_{\mathrm{HI}})} $$
 
 where the optical depth of each cell is given by:
 
@@ -24,9 +24,9 @@ The optical depth measured from the grid is higher compared to the one measured 
 
 The Numerical values of the optical depth at z=5 and z=5.5 are:
 
-$$\tau_{\mathrm{eff}}(z=5) \aprox 1.7$$
+$$\tau_{\mathrm{eff}}(z=5) \approx 1.7$$
 
-$$\tau_{\mathrm{eff}}(z=5.5) \aprox 2.1$$
+$$\tau_{\mathrm{eff}}(z=5.5) \approx 2.1$$
 
 Comparing to the result from **Puchwein et al. 2019**, seems like for the new optical depths measured from the grid are consistent with the ones reported by Ewald, 
 
