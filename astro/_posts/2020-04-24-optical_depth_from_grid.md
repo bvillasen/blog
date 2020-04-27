@@ -22,3 +22,14 @@ Plotting the new measurement:
 
 The optical depth measured from the grid is higher compared to the one measured from the skewers for z>4 but it's lower for z<4, it's not clear whats happening.
 
+The Numerical values of the optical depth at z=5 and z=5.5 are:
+
+$$\tau_{\mathrm{eff}}(z=5) \aprox 1.7$$
+
+$$\tau_{\mathrm{eff}}(z=5.5) \aprox 2.1$$
+
+Comparing to the result from **Puchwein et al. 2019**, seems like for the new optical depths measured from the grid are consistent with the ones reported by Ewald, 
+
+<img src="{{ site.url }}assets/images/puchwein_1.png"> 
+
+The question is: what is happening at z<4 for the optical depth measured from the grid.
