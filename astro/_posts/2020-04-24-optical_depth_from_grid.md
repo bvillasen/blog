@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Effective Optical Depth from Density from the Grid"
+title: "Effective Optical Depth from the Grid"
 date:   2020-04-26 11:10:24 -0800
 categorines: dm cholla
 ---
