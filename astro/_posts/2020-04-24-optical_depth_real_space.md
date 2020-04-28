@@ -14,3 +14,8 @@ Here I show the distribution of the average transmitted flux over each  skewer a
 
 
 <img src="{{ site.url }}assets/images/optical_depth_distribution.png"> 
+
+The optical depth measured in real space is higher, now lets compare as a function of redshift:
+
+
+<img src="{{ site.url }}assets/images/optical_depth_uvb_log_space.png"> 
