@@ -19,3 +19,9 @@ The optical depth measured in real space is higher, now lets compare as a functi
 
 
 <img src="{{ site.url }}assets/images/optical_depth_uvb_log_space.png"> 
+
+
+The optical depth measured in real space looks much more like the one reported by Ewald:
+
+
+<img src="{{ site.url }}assets/images/puchwein_1.png"> 
