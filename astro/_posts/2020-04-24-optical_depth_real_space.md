@@ -9,7 +9,7 @@ categorines: dm cholla
 
 Now I compare the optical depth measured from skewers taking in to account the peculiar velocities of the gas ( redshift space ) and ignoring the peculiar velocities ( real space ).
 
-Here I show the distribution of the average transmitted flux over each  skewer and the effective optical depth computed from the average transmitted flux of each skewer.
+Here I show the distribution of the average transmitted flux over each  skewer and the effective optical depth computed from the average transmitted flux of each skewer at z=5.
 
 
 
