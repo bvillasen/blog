@@ -29,7 +29,7 @@ The optical depth measured in real space looks much more like the one reported b
 
 Here I try an experiment where i measure the mean transmitted flux due to the absorption of a single Gaussian overdensity with a uniform temperature $$T=10^4 \mathrm{K}$$ and a velocity gradient across the center of the cloud
 
-$$ F_{\mathrm{diff}} = \frac{ \barF_{\mathrm{redshift}} - \barF_{\mathrm{real}}}{ \barF_{\mathrm{real}} } 
+$$ F_{\mathrm{diff}} = \frac{ \barF_{\mathrm{redshift}} - \barF_{\mathrm{real}}}{ \barF_{\mathrm{real}} } $$
 
 
 
