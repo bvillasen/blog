@@ -33,3 +33,9 @@ For reference here are some values of the thermal Doppler parameter for some tem
 
 
 $$b_{\mathrm{thermal}}(T=1\times 10^4) \approx 13 \mathrm{km/s} $$
+
+$$b_{\mathrm{thermal}}(T=5\times 10^4) \approx 29 \mathrm{km/s} $$
+
+$$b_{\mathrm{thermal}}(T=1\times 10^5) \approx 41 \mathrm{km/s} $$
+
+$$b_{\mathrm{thermal}}(T=1\times 10^6) \approx 128 \mathrm{km/s} $$
