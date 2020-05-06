@@ -7,7 +7,7 @@ categorines: dm cholla
 
 The depth distribution of an absorber that corresponds to the $$i$$ cell with neutral hydrogen density $$n_{\mathrm{HI},i}$$, Doppler parameter $$b_i$$ and velocity $$v_i$$ can be expressed as a Gaussian given by:
 
-$$\Phi_i(v) = n_{\mathrm{HI},i} \int \frac{1}{\sqrt{\pi} b_i} \mathrm{exp} \left[ -\left(\frac{v-v_i}{b_i} \right)^2 \right]  dv $$
+$$\Phi_i(v) = n_{\mathrm{HI},i} \frac{1}{\sqrt{\pi} b_i} \mathrm{exp} \left[ -\left(\frac{v-v_i}{b_i} \right)^2 \right]  $$
 
 
 Note that the velocity of the absorber $$v_i$$ includes the Hubble flow velocity at the position of cell $$i$$ and the peculiar velocity of the gas at that position:
