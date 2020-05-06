@@ -58,5 +58,5 @@ Then subtracting the integrals results in the area below:
 For this reason there is a factor of 2 that has to be included, this results in the contribution to the optical depth at cell $$j$$ from cell $$i$$ given by:
 
 
-$$\tau_{j,i} = n_{\mathrm{HI},i} frac{ erf(y_{j+1/2})  - erf(y_{j-1/2}) }{2}
+$$\tau_{j,i} = n_{\mathrm{HI},i} frac{ erf(y_{j+1/2})  - erf(y_{j-1/2}) }{2} $$
 
