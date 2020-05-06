@@ -12,7 +12,7 @@ $$\Phi_i(v) = n_{\mathrm{HI},i} \int \frac{1}{\sqrt{\pi} b_i} \mathrm{exp} \left
 
 Note that the velocity of the absorber $$v_i$$ includes the Hubble flow velocity at the position of cell $$i$$ and the peculiar velocity of the gas at that position:
 
-$$v_i = v_{\mathrm{H},i} + v_{\mathrm{LOS},i}
+$$v_i = v_{\mathrm{H},i} + v_{\mathrm{LOS},i} $$
 
 This distribution is shown in the figure below
 
@@ -58,5 +58,5 @@ Then subtracting the integrals results in the area below:
 For this reason there is a factor of 2 that has to be included, this results in the contribution to the optical depth at cell $$j$$ from cell $$i$$ given by:
 
 
-$$\tau_{j,i} = n_{\mathrm{HI},i} frac{ erf(y_{j+1/2})  - erf(y_{j-1/2}) }{2} $$
+$$\tau_{j,i} = n_{\mathrm{HI},i} \frac{ erf(y_{j+1/2})  - erf(y_{j-1/2}) }{2} $$
 
