@@ -9,9 +9,16 @@ The depth distribution of an absorber that corresponds to the $$i$$ cell with ne
 
 $$\Phi_i(v) = n_{\mathrm{HI},i} \int \frac{1}{\sqrt{\pi} b_i} e ^{ -(\frac{v-v_i}{b_i} )^2 }   dv $$
 
+
+Note that the velocity of the absorber $$v_i$$ includes the Hubble flow velocity at the position of cell $$i$$ and the peculiar velocity of the gas at that position:
+
+$$v_i = v_{\mathrm{H},i} + v_{\mathrm{LOS},i}
+
 This dritribution is shown in the figure below
 
 <img src="{{ site.url }}assets/images/gaussian_0.png">
+
+
 
 To compute the contribution of the absorber $$i$$ to the optical depth at cell $$j$$ located at the velocity coordinate $$v_j$$ we must integrate the Gaussian profile over the cell $$j$$, this is:
 
@@ -52,3 +59,4 @@ For this reason there is a factor of 2 that has to be included, this results in 
 
 
 $$\tau_{j,i} = n_{\mathrm{HI},i} frac{ erf(y_{j+1/2})  - erf(y_{j-1/2}) }{2}
+
