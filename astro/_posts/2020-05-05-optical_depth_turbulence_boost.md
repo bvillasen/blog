@@ -23,5 +23,5 @@ $$\tau_{eff}(t_{boost} = 0.25 ) = 1.57$$
 $$\tau_{eff}(t_{boost} = 0.5 ) = 1.63$$
 
 
-There is an increase in the Effective Optical Depth but it's sot that significant even for $$t_{boost}=0.25$$ 
+There is an increase in the Effective Optical Depth but it's not that significant even for $$t_{boost}=0.25$$ 
 
