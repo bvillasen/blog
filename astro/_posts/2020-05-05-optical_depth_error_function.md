@@ -10,6 +10,11 @@ categorines: dm cholla
 
 <img src="{{ site.url }}assets/images/gaussian_1.png">
 
+
+The definition of the error function is given by:
+
+$$\operatorname{erf} x=\frac{1}{\sqrt{\pi}} \int_{-x}^{x} e^{-t^{2}} d t$$
+
 <img src="{{ site.url }}assets/images/gaussian_2.png">
 
 <img src="{{ site.url }}assets/images/gaussian_3.png">
