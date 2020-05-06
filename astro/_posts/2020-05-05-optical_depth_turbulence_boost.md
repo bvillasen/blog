@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Optical Depth: Turbulence Boost"
+date:   2020-05-6 10:10:24 -0800
+categorines: dm cholla
+---
+
+Here I explore the effect of increasing the Doppler parameter $$b$$ because of turbulent velocities simply by multiplying the thermal Doppler parameter by a factor to include a *turbulence boost*, this is expressed as:
+
+
+$$b = b_{\mathrm{thermal}} \times ( 1 + t_boost ) $$
+
+I measure the Transmitted Fluxes for all the skewers at z=5 (in redshift space), the figure below shows the distribution for different values of $$t_boost$$
+
+<img src="{{ site.url }}assets/images/optical_depth_distribution_turbulence.png">
+
+
+
