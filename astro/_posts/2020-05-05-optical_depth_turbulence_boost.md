@@ -28,3 +28,8 @@ $$\tau_{eff}(t_{boost} = 0.5 ) = 1.63$$
 
 There is an increase in the Effective Optical Depth but it's not that significant even for $$t_{boost}=0.25$$ 
 
+
+For reference here are some values of the thermal Doppler parameter for some temperatures:
+
+
+$$b_{\mathrm{thermal}}(T=1\times 10^4) \approx 13 \mathrm{km/s} $$
