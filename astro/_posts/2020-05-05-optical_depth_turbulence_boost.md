@@ -18,8 +18,11 @@ Computing the Effective Optical Depth $$\tau_{eff}$$ from the average Transmitte
 
 
 $$\tau_{eff}(t_{boost} = 0.0 ) = 1.51$$
+
 $$\tau_{eff}(t_{boost} = 0.1 ) = 1.54$$
+
 $$\tau_{eff}(t_{boost} = 0.25 ) = 1.57$$
+
 $$\tau_{eff}(t_{boost} = 0.5 ) = 1.63$$
 
 
