@@ -58,7 +58,7 @@ Then subtracting the integrals results in the area below:
 For this reason there is a factor of 2 that has to be included, this results in the contribution to the optical depth at cell $$j$$ from cell $$i$$ given by:
 
 
-$$\tau_{j,i} = \frac{\pi e^{2} \lambda_0}{m_{e}  c H} f_{12} n_{\mathrm{HI},i} \frac{ erf(y_{j+1/2})  - erf(y_{j-1/2}) }{2} $$
+$$\tau_{j,i} = \frac{\pi e^{2} \lambda_0 f_{12}}{m_{e}  c H}  n_{\mathrm{HI},i} \frac{ erf(y_{j+1/2})  - erf(y_{j-1/2}) }{2} $$
 
 $$y_{j+1/2} = ( v_{j+1/2} - v_{\mathrm{H},i} - v_{\mathrm{LOS},i} )/b_i$$
 
