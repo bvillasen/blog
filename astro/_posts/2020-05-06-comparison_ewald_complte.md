@@ -46,8 +46,7 @@ After interpolating the particle data into a uniform grid, I measure the volume 
 
 
 #### z= 5.5
-<img src="{{ site.url }}asset
-
+<img src="{{ site.url }}assets/images/phase_diagram_sph_grid_z5.5.png">
 
 **Both simulations have almost identical power law temperature-density relations.**
 
@@ -63,7 +62,7 @@ Next I measured the **gas density** and the **neutral hydrogen density** distrib
 **Right Panel:** Neutral fraction distribution.
 
 
-<img src="{{ site.url }}assets/images/ionization_fraction_H.png"> 
+<img src="{{ site.url }}assets/images/density_distribution.png"> 
 
 
 ### Transmitted Flux Calculation:
