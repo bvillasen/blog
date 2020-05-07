@@ -37,7 +37,7 @@ I interpolate the particle data onto a grid ( $$512^3$$ cells ). For the interpo
 
 
 
-### Phase Diagram
+### Phase Diagram Comparison
 
 After interpolating the particle data into a uniform grid, I measure the volume weighted temperature-density distribution for the two snapshots and compare to the ones from the Cholla Simulation:
 
@@ -52,7 +52,7 @@ After interpolating the particle data into a uniform grid, I measure the volume 
 **Both simulations have almost identical power law temperature-density relations.**
 
 
-### Neutral Hydrogen Distribution
+### Density Distribution Comparison
 
 Next I measured the **gas density** and the **neutral hydrogen density** distributions on the Grid-SPH data and compared to the ones in the Cholla simulation ( only for z=5):
 
@@ -64,5 +64,26 @@ Next I measured the **gas density** and the **neutral hydrogen density** distrib
 
 
 <img src="{{ site.url }}assets/images/ionization_fraction_H.png"> 
+
+
+### Transmitted Flux Calculation:
+
+
+The following figure shows the Optical Depth $$\tau$$  and transmitted flux $$F$$  for a single skewer from the Cholla simulation at z=5:
+
+<img src="{{ site.url }}assets/images/transmited_flux_pchw18_z=5.png"> 
+
+The optical depth $$\tau$$ is computed from the integral of a Gaussian profile for each absorber, this is given by:
+
+
+
+$$\tau_{j} = \frac{\pi e^{2} \lambda_0 f_{12}}{m_{e}  c H} \sum_i  n_{\mathrm{HI},i} \frac{ erf(y_{j+1/2,i})  - erf(y_{j-1/2,i}) }{2} $$
+
+$$y_{j+1/2,i} = ( v_{j+1/2} - v_{\mathrm{H},i} - v_{\mathrm{LOS},i} )/b_i$$
+
+$$y_{j-1/2,i} = ( v_{j-1/2} - v_{\mathrm{H},i} - v_{\mathrm{LOS},i} )/b_i$$
+
+
+**View appendix at the end for a discussion about using a Voigt profile instead of a Gaussian profile**
 
 
