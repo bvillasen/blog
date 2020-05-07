@@ -65,6 +65,9 @@ Next I measured the **gas density** and the **neutral hydrogen density** distrib
 <img src="{{ site.url }}assets/images/density_distribution.png"> 
 
 
+**The density distributions for both simulations are surprisingly similar.** 
+
+
 ### Transmitted Flux Calculation:
 
 
