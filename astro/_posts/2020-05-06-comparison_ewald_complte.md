@@ -54,6 +54,15 @@ After interpolating the particle data into a uniform grid, I measure the volume 
 
 ### Neutral Hydrogen Distribution
 
+Next I measured the **gas density** and the **neutral hydrogen density** distributions on the Grid-SPH data and compared to the ones in the Cholla simulation ( only for z=5):
 
+**Left Panel:** Gas density distribution.
+
+**Center Panel:** HI density distribution.
+
+**Right Panel:** Neutral fraction distribution.
+
+
+<img src="{{ site.url }}assets/images/ionization_fraction_H.png"> 
 
 
