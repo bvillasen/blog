@@ -34,7 +34,7 @@ The interpolation is done as following:
 
 $$\rho(x)=\sum_{j=1}^{N} m_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)$$
 
-$$\rho_{\mathrm{HI}}(x)=\sum_{j=1}^{N} m_{\mathrm{HI}}_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)$$
+$$\rho_{\mathrm{HI}}(x)=\sum_{j=1}^{N} m_{\mathrm{HI},j} W\left(\left|\mathbf{r}\right|, h_{i}\right)$$
 
 $$v(x)= \frac{\sum_{j=1}^{N} \rho_{j} v_j W\left(\left|\mathbf{r}\right|, h_{i}\right)}{ \sum_{j=1}^{N} \rho_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)}$$
 
@@ -114,7 +114,8 @@ The measurements I get from the SPH simulation are consistent with the Cholla si
 
 **From Puchwein et al. 2015:** [Here](https://ui.adsabs.harvard.edu/abs/2015MNRAS.450.4081P/abstract)
 
->Synthetic Lyman α forest spectra:
+Synthetic Lyman α forest spectra:
+
 We compute synthetic Lyman $$\alpha$$ forest spectra in post-processing.
 This allows us to directly compare the effective optical depth for
 absorption as well as other statistics of the simulated spectra to
@@ -133,5 +134,23 @@ absorption as a function of velocity offset along each line of sight,
 which can then be easily converted into a transmitted flux fraction,
 $$F = e^{ −τ}$$ , as a function of wavelength or redshift. *
 
+**From Bolton & Haehnelt 2007:** [Here](https://academic.oup.com/mnras/article/374/2/493/987359)
+
+We construct synthetic spectra from the output of the radiative trans-
+fer simulations as follows. Each line-of-sight is rebinned to have
+N = 4096 pixels of proper width $$\delta R$$, each of which has a neutral
+hydrogen number density $$n_{\mathrm{HI}}$$ , temperature $$T$$, peculiar velocity $$v_{\mathrm{pec}}$$
+and Hubble velocity $$v_{\mathrm{H}} associated with it. The Lya optical depth in
+each pixel is computed assuming a Voigt line profile, such that the
+optical depth in pixel $$i$$ corresponding to Hubble velocity $$v_{\mathrm{H}}(i)$$ is:
+
+$$\tau_{\alpha}(i)=\frac{c \sigma_{\alpha} \delta R}{\pi^{1 / 2}} \sum_{j=1}^{N} \frac{n_{\mathrm{HI}}(j)}{b(j)} H(a, x)$$
+
+Here $$b=\left(2 k_{\mathrm{B}} T / m_{\mathrm{H}}\right)^{1 / 2}$$ is the Doppler parameter, $$\sigma_{\alphaα} = 4.48 \times
+10^{−18} \mathrm{cm}^2$$ is the Lya scattering cross-section and $$H(a, x)$$ is the
+Hjerting function (Hjerting 1938)
+
+
+$$H(a, x)=\frac{a}{\pi} \int_{-\infty}^{\infty} \frac{\mathrm{e}^{-y^{2}}}{a^{2}+(x-y)^{2}} \mathrm{d} y,$$
 
 
