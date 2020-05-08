@@ -8,12 +8,14 @@ categorines: dm cholla
 ## Cholla Simulations:
 
 Box Size = 50 Mpc/h
+
 Numerical Size:  Uniform Grid $$2048^3$$ cells,  and $$2048^3$$ dark matter particles
 
 
 ## SPH Simulations:
 
 Box Size = 10 Mpc/h
+
 Numerical Size:  $$512^3$$ gas particles,  and $$512^3$$ dark matter particles
 
 
@@ -32,7 +34,7 @@ The interpolation is done as following:
 
 $$\rho(x)=\sum_{j=1}^{N} m_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)$$
 
-$$\rho_{\mathrm{HI}}(x)=\sum_{j=1}^{N} m{\mathrm{HI}}_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)$$
+$$\rho_{\mathrm{HI}}(x)=\sum_{j=1}^{N} m_{\mathrm{HI}}_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)$$
 
 $$v(x)= \frac{\sum_{j=1}^{N} \rho_{j} v_j W\left(\left|\mathbf{r}\right|, h_{i}\right)}{ \sum_{j=1}^{N} \rho_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)}$$
 
@@ -105,5 +107,31 @@ After computing the transmitted flux $$F$$ for 16384 skewers I compute the effec
 
 The measurements I get from the SPH simulation are consistent with the Cholla simulation, in redshift space the SPH $$\tau_{eff}$$ is somewhat lower to the Cholla measurement, but **in real space $$\tau_{eff}$$ is very similar in both simulations and also consistent with the values reported on Puchwein et al. 2019.** 
    
+   
+   
+### Appendix: Voigt Profile
+
+
+**From Puchwein et al. 2015:** [Here](https://ui.adsabs.harvard.edu/abs/2015MNRAS.450.4081P/abstract)
+
+>Synthetic Lyman α forest spectra:
+We compute synthetic Lyman $$\alpha$$ forest spectra in post-processing.
+This allows us to directly compare the effective optical depth for
+absorption as well as other statistics of the simulated spectra to
+observations. We select 5000 randomly placed lines of sight through
+each output of the simulation box, along directions parallel to one
+of the coordinate axes (randomly selected among x, y and z). Each
+line of sight is represented by 2048 pixels. We then compute the
+neutral hydrogen density, temperature and velocity of the IGM along
+these lines of sight by adding up the density contributions and
+averaging the temperatures and velocities of all SPH particles whose
+smoothing lengths are intersected. Our calculation of the spectra
+accounts for Doppler shifts due to bulk flows of the gas as well
+as for thermal broadening of the Lyman $$\alpha$$ line (see e.g. Bolton
+& Haehnelt 2007). This yields the optical depth, $$\tau$$ , for Lyman $$\alpha$$
+absorption as a function of velocity offset along each line of sight,
+which can then be easily converted into a transmitted flux fraction,
+$$F = e^{ −τ}$$ , as a function of wavelength or redshift. *
+
 
 
