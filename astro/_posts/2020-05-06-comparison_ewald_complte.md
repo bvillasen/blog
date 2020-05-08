@@ -153,4 +153,9 @@ Hjerting function (Hjerting 1938)
 
 $$H(a, x)=\frac{a}{\pi} \int_{-\infty}^{\infty} \frac{\mathrm{e}^{-y^{2}}}{a^{2}+(x-y)^{2}} \mathrm{d} y,$$
 
+where $$x=\left[v_{\mathrm{H}}(i)-u(j)\right] / b(j)$$ , $$u(j)=v_{\mathrm{H}}(j)+v_{\mathrm{pec}}(j)$$,  $$a = \Lambda_{\alpha} \lambda_{\alpha} / 4 \pi b(j)$$ , $$\Lambda_{\alpha}=6.265 \times 10^{8} \mathrm{s}^{-1}$$ is the damping constant and $$\lambda_{\alpha}=1215.67 \AA $$ is the wavelength of the Lyα transition.
+
+
+**I computed the optical depth using the Voigt profile described above to the Gaussian profile and the differences where less than 1%**. I only did this for a single skewer because the computational cost of using the Voigt profile is much larger.
+
 
