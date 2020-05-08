@@ -28,6 +28,14 @@ $$W(r, h)=\frac{8}{\pi h^{3}}\left\{\begin{array}{ll}
 0, & \frac{r}{h}>1
 \end{array}\right.$$ 
 
+The interpolation is done as following:
+
+$$\rho(x)=\sum_{j=1}^{N} m_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)$$
+
+$$\rho_{\mathrm{HI}}(x)=\sum_{j=1}^{N} m{\mathrm{HI}}_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)$$
+
+$$v(x)= \frac{\sum_{j=1}^{N} \rho_{j} v_j W\left(\left|\mathbf{r}\right|, h_{i}\right)}{ \sum_{j=1}^{N} \rho_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)}$$
+
 
 I interpolate the particle data onto a grid ( $$512^3$$ cells ). For the interpolation I used two different methods:
 
@@ -93,7 +101,9 @@ $$y_{j-1/2,i} = ( v_{j-1/2} - v_{\mathrm{H},i} - v_{\mathrm{LOS},i} )/b_i$$
 After computing the transmitted flux $$F$$ for 16384 skewers I compute the effective optical depth $$\tau_{eff} = - \mathrm{ln}\, \langle F \rangle$$. The following figure shows the evolution of $$\tau_{eff}$$ as a function of redshift for the Cholla simulation, additionally I show $$\tau_{eff}$$ computed from the same number of skewers crossing the SPH(Grid) box for the two snapshots I have.
 
 
+<img src="{{ site.url }}assets/images/optical_depth_uvb_log_space_new.png">
 
+The measurements I get from the SPH simulation are consistent with the Cholla simulation, in redshift space the SPH $$\tau_{eff}$$ is somewhat lower to the Cholla measurement, but **in real space $$\tau_{eff}$$ is very similar in both simulations and also consistent with the values reported on Puchwein et al. 2019.** 
    
 
 
