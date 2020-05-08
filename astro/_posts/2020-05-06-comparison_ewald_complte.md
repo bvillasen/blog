@@ -107,6 +107,9 @@ After computing the transmitted flux $$F$$ for 16384 skewers I compute the effec
 
 The measurements I get from the SPH simulation are consistent with the Cholla simulation, in redshift space the SPH $$\tau_{eff}$$ is somewhat lower to the Cholla measurement, but **in real space $$\tau_{eff}$$ is very similar in both simulations and also consistent with the values reported on Puchwein et al. 2019.** 
    
+
+
+### Transmitted Flux Power Spectrum   
    
    
 ### Appendix: Voigt Profile
@@ -140,7 +143,7 @@ We construct synthetic spectra from the output of the radiative trans-
 fer simulations as follows. Each line-of-sight is rebinned to have
 N = 4096 pixels of proper width $$\delta R$$, each of which has a neutral
 hydrogen number density $$n_{\mathrm{HI}}$$ , temperature $$T$$, peculiar velocity $$v_{\mathrm{pec}}$$
-and Hubble velocity $$v_{\mathrm{H}} associated with it. The Lya optical depth in
+and Hubble velocity $$v_{\mathrm{H}}$$ associated with it. The Lya optical depth in
 each pixel is computed assuming a Voigt line profile, such that the
 optical depth in pixel $$i$$ corresponding to Hubble velocity $$v_{\mathrm{H}}(i)$$ is:
 
