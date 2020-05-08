@@ -111,6 +111,14 @@ The measurements I get from the SPH simulation are consistent with the Cholla si
 
 ### Transmitted Flux Power Spectrum   
    
+This is the Transmitted Flux Power Spectrum measured in Redshift space:
+
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_z2_space_new.png">
+<img src="{{ site.url }}assets/images/flux_power_spectrum_z5_space_new.png">
+
+   
+   
    
 ### Appendix: Voigt Profile
 
