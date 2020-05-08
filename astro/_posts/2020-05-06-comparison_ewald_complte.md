@@ -61,8 +61,7 @@ Next I measured the **gas density** and the **neutral hydrogen density** distrib
 
 **Right Panel:** Neutral fraction distribution.
 
-
-<img src="{{ site.url }}assets/images/density_distribution.png"> 
+<img src="{{ site.url }}assets/images/density_distribution_new.png"> 
 
 
 **The density distributions for both simulations are surprisingly similar.** 
@@ -87,5 +86,14 @@ $$y_{j-1/2,i} = ( v_{j-1/2} - v_{\mathrm{H},i} - v_{\mathrm{LOS},i} )/b_i$$
 
 
 **View appendix at the end for a discussion about using a Voigt profile instead of a Gaussian profile**
+
+### Effective Optical Depth:
+
+
+After computing the transmitted flux $$F$$ for 16384 skewers I compute the effective optical depth $$\tau_{eff} = - \mathrm{ln}\, \langle F \rangle$$. The following figure shows the evolution of $$\tau_{eff}$$ as a function of redshift for the Cholla simulation, additionally I show $$\tau_{eff}$$ computed from the same number of skewers crossing the SPH(Grid) box for the two snapshots I have.
+
+
+
+   
 
 
