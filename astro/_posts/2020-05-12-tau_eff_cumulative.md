@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Effective Optical Depth Cumulative Distributions"
-date:   2020-05-7 10:10:24 -0800
+date:   2020-05-12 10:10:24 -0800
 categorines: dm cholla
 ---
 
