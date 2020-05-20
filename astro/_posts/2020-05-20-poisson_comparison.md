@@ -7,7 +7,7 @@ categorines: dm cholla
 
 To compare the new Poisson Solver Paris implemented by Trey White into Cholla, I ran a set of identical Dark Matter Only cosmological simulations, the parameters of the simulations are:
 
-**Box Size:** 50 Mpc/h comuving 
+**Box Size:** 50 Mpc/h comoving 
 
 **Numerical Size:** 256$$^3$$ dark matter particles 
 
