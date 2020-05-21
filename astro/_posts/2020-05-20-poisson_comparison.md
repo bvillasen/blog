@@ -26,7 +26,7 @@ In terms of performance in my tests the Paris solver was ~2x faster than the PFF
 
 
 
-Here is the comparison of the solution for PFFT and Paris solvers for the same simulation but solved with a lower resolution: 128$$^3$$ dark matter particles, the differences appear to be very similar as the 256$$^3$$ simulation.
+Here is the comparison of the solution for PFFT and Paris solvers for the same simulation but solved with a lower resolution: 128$$^3$$ dark matter particles, the differences appear to be similar as the 256$$^3$$ simulation.
 
 
 <img src="{{ site.url }}assets/images/ps_comparison_pfft_paris_128.png">
