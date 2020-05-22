@@ -10,10 +10,10 @@ Here I compare the line of sight measurements for the first 5 skewers from the d
 
 The only difference is on the line of sight velocity, I measure significantly higher velocities. The way I am interpolating the particles velocities is following the next equation: 
 
-$$v(x)= \frac{\sum_{j=1}^{N} \rho_{j} v_j W\left(\left|\mathbf{r}\right|, h_{i}\right)}{ \sum_{j=1}^{N} \rho_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)}$$
+$$v(x)= \frac{\sum_{i=1}^{N} \rho_{j} v_j W\left(\left|\mathbf{r}\right|, h_{i}\right)}{ \sum_{i=1}^{N} \rho_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)}$$
 
 
-where $$r = | x - x_i |$$ is the distance between the particle and the interpolation position. 
+where $$r = \| x - x_i \|$$ is the distance between the particle and the interpolation position. 
 
 
 On purple I plot the Optical Depth and Transmitted flux computed using my measurements of $$n_{\mathrm{HI}}$$ and $$T$$ but Ewalds $$v_{\mathrm{los}}$$ instead, just to show that we obtain the same $$\tau$$ given the same velocities. 
