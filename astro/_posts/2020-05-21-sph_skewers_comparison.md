@@ -1,0 +1,35 @@
+---
+layout: post
+title: "SPH Skewers Direct Comparison "
+date:   2020-05-21 10:10:24 -0800
+categorines: dm cholla
+---
+
+Here I compare 
+
+
+The only difference is on the line of sight velocity, I measure significantly higher velocities. The way I am interpolating the particles velocities is following the next equation: 
+
+$$v(x)= \frac{\sum_{j=1}^{N} \rho_{j} v_j W\left(\left|\mathbf{r}\right|, h_{i}\right)}{ \sum_{j=1}^{N} \rho_{j} W\left(\left|\mathbf{r}\right|, h_{i}\right)}$$
+
+
+where $$r = | x - x_i |$$ is the distance between the particle and the particle and the interpolation position. 
+
+
+<img src="{{ site.url }}assets/images/skewer_0_12.png">
+
+
+
+<img src="{{ site.url }}assets/images/skewer_1_12.png">
+
+
+
+<img src="{{ site.url }}assets/images/skewer_2_12.png">
+
+
+
+<img src="{{ site.url }}assets/images/skewer_3_12.png">
+
+
+<img src="{{ site.url }}assets/images/skewer_5_12.png">
+

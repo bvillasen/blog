@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Poisson Solver Comparison: PFFT and Paris "
-date:   2020-05-12 10:10:24 -0800
+date:   2020-05-20 10:10:24 -0800
 categorines: dm cholla
 ---
 
