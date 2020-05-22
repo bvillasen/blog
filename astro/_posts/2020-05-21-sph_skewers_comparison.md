@@ -20,20 +20,21 @@ On purple I plot the Optical Depth and Transmitted flux computed using my measur
 
 Additionally I measure the $$\tau_{eff}$$ along the skewer and indeed the higher velocities result in lower measurements of $$\tau_{eff}$$ for all the 5 skewers. 
 
+
+## 1
 <img src="{{ site.url }}assets/images/skewer_0_12.png">
 
-
-
+## 2
 <img src="{{ site.url }}assets/images/skewer_1_12.png">
 
 
-
+## 3
 <img src="{{ site.url }}assets/images/skewer_2_12.png">
 
 
-
+## 4
 <img src="{{ site.url }}assets/images/skewer_3_12.png">
 
-
+## 5
 <img src="{{ site.url }}assets/images/skewer_5_12.png">
 
