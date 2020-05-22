@@ -18,7 +18,7 @@ where $$r = \| x - x_i \|$$ is the distance between the particle and the interpo
 
 On purple I plot the Optical Depth and Transmitted flux computed using my measurements of $$n_{\mathrm{HI}}$$ and $$T$$ but Ewalds $$v_{\mathrm{los}}$$ instead, just to show that we obtain the same $$\tau$$ given the same velocities. 
 
-Additionally I measure the $$\tau_{eff}$$ along the skewer and indeed the higher velocities result in lower measurements of $$\tau_eff$$ for all the 5 skewers. 
+Additionally I measure the $$\tau_{eff}$$ along the skewer and indeed the higher velocities result in lower measurements of $$\tau_{eff}$$ for all the 5 skewers. 
 
 <img src="{{ site.url }}assets/images/skewer_0_12.png">
 
