@@ -6,23 +6,23 @@ categorines: dm cholla
 ---
 
 
-After adding the $$\sqrt{a}$$ factor to the particles velocities., I can reproduce the optical depth of the skewers provided by Ewald:
+After adding the $$\sqrt{a}$$ factor to the particles velocities., I can reproduce the optical depth of the skewers provided by Ewald. The blue lines are the Skewers that I compute and the orange lines correspond to the LOS data provided by Ewald, differences on the effective optical depth for each skewers are less than 1%
 
-## 1
+## Skewer 1
 <img src="{{ site.url }}assets/images/skewer_0_12_1.png">
 
-## 2
+## Skewer 2
 <img src="{{ site.url }}assets/images/skewer_1_12_1.png">
 
 
-## 3
+## Skewer 3
 <img src="{{ site.url }}assets/images/skewer_2_12_1.png">
 
 
-## 4
+## Skewer 4
 <img src="{{ site.url }}assets/images/skewer_3_12_1.png">
 
-## 5
+## Skewer 5
 <img src="{{ site.url }}assets/images/skewer_5_12_1.png">
 
 
@@ -33,6 +33,9 @@ The figure below shows the Density-LOSVelocity distribution for 5000 skewers fro
 <img src="{{ site.url }}assets/images/dens_vel_distribution_12.png">
 
 
-Now if I multiply the Colla peculiar velocities by   $$\sqrt{a}$$ the velocities are very similar to the SPH skewer LOS velocities, as shown in the figure below:
+Now if I multiply the Cholla peculiar velocities by   $$\sqrt{a}$$ the velocities are very similar to the SPH skewer LOS velocities, as shown in the figure below:
 
 <img src="{{ site.url }}assets/images/dens_vel_distribution_factor_12.png">
+
+
+**Then the question is: Am I missing a factor of $$\sqrt{a}$$ when interpreting the Cholla gas peculiar velocities?** 
