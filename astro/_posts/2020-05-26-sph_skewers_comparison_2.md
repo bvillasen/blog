@@ -39,3 +39,9 @@ Now if I multiply the Cholla peculiar velocities by   $$\sqrt{a}$$ the velocitie
 
 
 **Then the question is: Am I missing a factor of $$\sqrt{a}$$ when interpreting the Cholla gas peculiar velocities?** 
+
+
+If I add the $$\sqrt{a}$$ factor, the effective optical depth is shown in the figure below:
+
+<img src="{{ site.url }}assets/images/optical_depth_uvb_log_space_multiple_axis_new_sqrta.png">
+
