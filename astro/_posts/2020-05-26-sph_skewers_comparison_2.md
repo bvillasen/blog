@@ -45,3 +45,60 @@ If I add the $$\sqrt{a}$$ factor, the effective optical depth is shown in the fi
 
 <img src="{{ site.url }}assets/images/optical_depth_uvb_log_space_multiple_axis_new_sqrta.png">
 
+
+
+
+## Flux Power Spectrum Small Scales:
+
+
+
+### Without $$\sqrt{a}$$ factor 
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_z2_space_axis.png">
+
+
+### With $$\sqrt{a}$$ factor 
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_z2_space_axis_sqrta.png">
+
+
+
+
+### Without $$\sqrt{a}$$ factor 
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_z5_space_axis.png">
+
+
+### With $$\sqrt{a}$$ factor 
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_z5_space_axis_sqrta.png">
+
+
+
+
+
+## Flux Power Spectrum Large Scales:
+
+
+
+### Without $$\sqrt{a}$$ factor 
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_all_data_black_z2_boss_axis.png">
+
+
+### With $$\sqrt{a}$$ factor 
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_all_data_black_z2_boss_axis_sqrta.png">
+
+
+
+
+### Without $$\sqrt{a}$$ factor 
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_all_data_black_z4_boss_axis.png">
+
+
+### With $$\sqrt{a}$$ factor 
+
+<img src="{{ site.url }}assets/images/flux_power_spectrum_all_data_black_z4_boss_axis_sqrta.png">
+
