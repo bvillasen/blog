@@ -26,7 +26,7 @@ After adding the $$\sqrt{a}$$ factor to the particles velocities., I can reprodu
 <img src="{{ site.url }}assets/images/skewer_5_12_1.png">
 
 
-After adding the factor of $$\sqrt{a}$$, the value of $$\tau_{eff}$$ that I measure from the skewers computed from the SPH simulation also matches the value of $$\tau_{eff}$$ reported in Puchwein etal. 2019. But after including the $$\tau_{eff}$$ factor on the SPH particle velocities, then the peculiar velocities on the Cholla simulation are higher than the peculiar velocities in the SPH simulation.
+After adding the factor of $$\sqrt{a}$$, the value of $$\tau_{eff}$$ that I measure from the skewers computed from the SPH simulation also matches the value of $$\tau_{eff}$$ reported in Puchwein etal. 2019. But after including the $$\sqrt{a}$$ factor on the SPH particle velocities, then the peculiar velocities on the Cholla simulation are higher than the peculiar velocities in the SPH simulation.
 
 The figure below shows the Density-LOSVelocity distribution for 5000 skewers from the Cholla simulation compared to same distribution computed from 5000 skewers from the SPH simulation  at z=5, **the peculiar velocities of the sph skewers includes the $$\sqrt{a}$$ factor.**
  
