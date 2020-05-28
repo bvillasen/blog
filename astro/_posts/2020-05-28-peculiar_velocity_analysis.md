@@ -21,6 +21,8 @@ I ran adiabatic simulations ( without a UVB but I dont think this will affect si
 
 **Note that I added the $$\sqrt{a}$$ factor to the  Gadget peculiar velocities when loading them.**
 
+For the Gadget analysis, I measure the density and velocity directly from the SPH particles, that is why the distribution is higher for large overdensities when compared to the volume weighted distributions for the grid simulations ( Cholla and Enzo ).  
+
 <video src="{{ site.url }}assets/videos/dens_vel_distribution_comparison.mp4" width="100%"  height="auto" controls preload> </video>
 
 
