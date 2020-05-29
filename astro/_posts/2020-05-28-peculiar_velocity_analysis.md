@@ -35,6 +35,7 @@ Now I compare the LOS Velocities of the skewers provided by Ewald to the velocit
 
 
 **Ewald line:** LOS velocities from the skewers provided by Ewald
+
 **Ewald / $$\sqrt{a}$$ line:** LOS velocities from the skewers provided by Ewald divided by $$\sqrt{a}$$
 
 
