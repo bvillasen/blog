@@ -27,3 +27,17 @@ For the Gadget analysis, I measure the density and velocity directly from the SP
 
 
 I think that the peculiar velocities on the snapshots provided by Ewald already include the $$\sqrt{a}$$ factor, multiplying again by $$\sqrt{a}$$ leads to incorrect low peculiar velocities. 
+
+
+
+
+Now I compare the LOS Velocities of the skewers provided by Ewald to the velocities ( in a single axis ) on the 3 simulations that I ran. 
+
+
+**Ewald line:** LOS velocities from the skewers provided by Ewald
+**Ewald / $$\sqrt{a}$$ line:** LOS velocities from the skewers provided by Ewald divided by $$\sqrt{a}$$
+
+
+When I divide the skewer  velocities by a factor of $$\sqrt{a}$$ I can reproduce the velocities on the simulations, otherwise the velocities are too low.
+
+<img src="{{ site.url }}assets/images/vel_distribution_skewers.png">
