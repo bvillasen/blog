@@ -17,7 +17,7 @@ Here I show the Overdensity-Velocity distribution measured from the SPH particle
 <img src="{{ site.url }}assets/images/dens_vel_distribution_ewald_sqrta.png">
 
 
-I ran adiabatic simulations ( without a UVB but I dont think this will affect significantly the peculiar velocities ) for the same initial conditions on a 50 Mpc/h box and $$256^3$$ particles-cells usning Cholla, Enzo and Gadget. Below I show the evolution of the Overdensity-Velocity distribution for the 3 simulations as well as the distribution of the DM particles velocities.
+I ran adiabatic simulations ( without a UVB but I don't think this will affect significantly the peculiar velocities ) for the same initial conditions on a 50 Mpc/h box and $$256^3$$ particles-cells using Cholla, Enzo and Gadget. Below I show the evolution of the Overdensity-Velocity distribution for the 3 simulations as well as the distribution of the DM particles velocities.
 
 **Note that I added the $$\sqrt{a}$$ factor to the  Gadget peculiar velocities when loading them.**
 
