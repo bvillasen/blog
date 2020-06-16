@@ -20,7 +20,7 @@ The distributions seems similar enough.
 
 Now I compare the flux power spectrum and their measurement is very different than mine. There are a couple things in their measurement that seem wrong:
 
-1. If their $$k$$ scale is too small, if correct the scales that they are plotting are ~30 Mpc/$$h$$ to ~630 Mpc/$$h$$, maybe they are missing a factor of 2$$\pi$$ but still those would be large scales where the Flux power spectrum looks different.
+1. Their $$k$$ scale is too small, if correct the scales that they are plotting are ~30 Mpc/$$h$$ to ~630 Mpc/$$h$$, maybe they are missing a factor of 2$$\pi$$ but still those would be large scales where the Flux power spectrum looks different.
 
 2. Their measurements at both redshifts have very similar normalizations, this simply can't be right because the average transmitted flux is smaller by a factor of ~2 going from z=3 to z=4
 
