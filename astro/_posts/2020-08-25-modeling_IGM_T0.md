@@ -34,7 +34,7 @@ where the first term corresponds to the expansion of the universe, the second an
  
 
 
-Figure below show the evolution of the  temperature at mean density $$T_0$$ resulting from integrating the model using the [Puchwein et al. 2019](https://arxiv.org/abs/1801.04931) rates compared to the results of a high resolution simulation using the same photoionization and photoheating models.
+Figure below show the evolution of the  temperature at mean density $$T_0$$ resulting from integrating the model using the [Puchwein et al. 2019](https://arxiv.org/abs/1801.04931) rates compared to the results of a high resolution simulation using the same photoionization and photoheating rates.
 
 
 <img src="{{ site.url }}assets/images/temp_evolution.png">
