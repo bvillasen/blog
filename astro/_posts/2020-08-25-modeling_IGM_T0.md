@@ -26,7 +26,7 @@ here the first term is the photoheating of species $$X=\{ \mathrm{HI}, \mathrm{H
 
 The cooling and heating rates depend on the ionization fractions of H and He, for these reason the ionization states of both elements have to be integrated simultaneously with the temperature. The number density of the chemical species $$x$$ follows the following equation:
 
-$$\frac{d n_X}{d t}= =-3 H n_X + \Gamma_{\gamma, X} n_X  + \Gamma_{e,X} n_e n_X + \alpha_X n_e n_X $$
+$$\frac{d n_X}{d t}= -3 H n_X + \Gamma_{\gamma, X} n_X  + \Gamma_{e,X} n_e n_X + \alpha_X n_e n_X $$
 
 where the first term corresponds to the expansion of the universe, the second and third terms account for photoionization from the UV background and collisional ionization with free electrons and the last term corresponds to recombination of ions.    
 
