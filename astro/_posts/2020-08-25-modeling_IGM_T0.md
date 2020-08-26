@@ -24,7 +24,7 @@ here the first term is the photoheating of species $$X=\{ \mathrm{HI}, \mathrm{H
 
 * Free-Free emission (Bremsstrahlung) 
 
-The cooling and heating rates depend on the ionization fractions of H and He, for these reason the ionization states of both elements have to be integrated simultaneously with the temperature. The number density of the chemical species $$x$$ follows the following equation:
+The cooling and photoheating rates depend on the ionization fractions of H and He, for these reason the ionization states of both elements have to be integrated simultaneously with the temperature. The number density of the chemical species $$X$$ follows the following equation:
 
 $$\frac{d n_X}{d t}= -3 H n_X + \Gamma_{\gamma, X} n_X  + \Gamma_{e,X} n_e n_X + \alpha_X n_e n_X $$
 
