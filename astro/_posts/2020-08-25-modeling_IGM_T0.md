@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Simplified model of the Temperature of the IGM"
+title: "Simplified Model of the Temperature of the IGM"
 date:   2020-08-25 10:10:24 -0800
 categorines: dm cholla
 ---
