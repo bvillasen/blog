@@ -46,3 +46,9 @@ The figure below compares the ionization fractions, the results from the simplif
 
 <img src="{{ site.url }}assets/images/ionization_fractions.png">
 
+
+Rescaling the HeII photoionization and phothoheating rates by HeII_factor results in diffent trayectories for HeII reionization but they all converge to the same evolution after $$z \lesssim 3$$ as shown if the figure below
+
+
+<img src="{{ site.url }}assets/images/temp_evolution_HeII_factor.png">
+ 
