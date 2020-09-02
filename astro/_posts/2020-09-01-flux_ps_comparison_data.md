@@ -15,7 +15,7 @@ $$  \chi^{2} = \sum_{i}^N \left[ \frac{ P(k_i)^{\mathrm{observ}} - P(k_i)^{\math
 The errors $$\Delta_{\mathrm{P19}}$$ and $$\Delta_{\mathrm{HM12}}$$ shown in the figures for each snapshot are computed as:
 
 
-$$\Delta =  \frac{ \sqrt{ \chi^2 } }{ N }  $$ 
+$$\Delta = \sqrt{ \frac{ \chi^2 }{ N } } $$ 
 
 <img src="{{ site.url }}assets/images/fps_comparison_boss.png">
 
