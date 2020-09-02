@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flux Power Spectrum Comparison to Data Quantified "
-date:   2020-08-25 10:10:24 -0800
+date:   2020-09-01 10:10:24 -0800
 categorines: dm cholla
 ---
 
