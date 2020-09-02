@@ -7,7 +7,7 @@ categorines: dm cholla
 
 Figures below show the differences in the Flux Power Spectrum measured in our simulations compared to the observational data. The differences are quantified by $$\chi^2$$ defined as:
 
-$$  \chi^{2}=\sum_{i}^{N\left[\frac{P(k_i}^{\mathrm{observ}} - P(k_i}^{\mathrm{model}}}{\sigma_{i}}^{\mathrm{observ}}  \right]^{2}
+$$  \chi^{2}=\sum_{i}^{N\left[\frac{P(k_i}^{\mathrm{observ}} - P(k_i}^{\mathrm{model}}}{\sigma_{i}}^{\mathrm{observ}}  \right]^{2} $$
 
 
 
