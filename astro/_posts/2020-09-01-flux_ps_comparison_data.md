@@ -23,3 +23,12 @@ $$\Delta = \sqrt{ \frac{ \chi^2 }{ N } } $$
 For the small scale  comparison the scales selected are $$ 0.01 \leq k \leq 0.1 \, \mathrm{s} \, \mathrm{km}^{-1} $$ and the measurements of $$\chi^2$$ is computed separately for each of the observational data sets. 
 
 <img src="{{ site.url }}assets/images/fps_comparison.png">
+
+
+
+Now comparig  $$ 0.02 \leq k \leq 0.1 \, \mathrm{s} \, \mathrm{km}^{-1} $$ 
+
+
+<img src="{{ site.url }}assets/images/fps_comparison_k2.png">
+
+
