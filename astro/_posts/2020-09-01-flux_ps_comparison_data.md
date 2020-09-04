@@ -12,23 +12,32 @@ $$  \chi^{2} = \sum_{i}^N \left[ \frac{ P(k_i)^{\mathrm{observ}} - P(k_i)^{\math
 
 
 
-The errors $$\Delta_{\mathrm{P19}}$$ and $$\Delta_{\mathrm{HM12}}$$ shown in the figures for each snapshot are computed as:
+The reduced error $$\chi^2_{\nu, \mathrm{P19}}$$ and $$\chi^2_{\nu, \mathrm{HM12}}$$ shown in the figures for each snapshot are computed as:
 
 
-$$\Delta = \sqrt{ \frac{ \chi^2 }{ N } } $$ 
-
-<img src="{{ site.url }}assets/images/fps_comparison_boss.png">
+$$\chi^2_{\nu} = \frac{ \chi^2 }{ N } } $$ 
 
 
 For the small scale  comparison the scales selected are $$ 0.01 \leq k \leq 0.1 \, \mathrm{s} \, \mathrm{km}^{-1} $$ and the measurements of $$\chi^2$$ is computed separately for each of the observational data sets. 
 
-<img src="{{ site.url }}assets/images/fps_comparison.png">
+<img src="{{ site.url }}assets/images/fps_comparison_k1.png">
+
+
+The distribution of $$\chi^2_{\nu}$$ for the two models is summarized in the following figure:
+
+
+<img src="{{ site.url }}assets/images/chi2_z.png">
+
+For $$2\lesssim z \lesssim 4.5$$,  $$ \langle \chi^2_\nu \rangle   \sim 2$$ for the P19 model  compared to $$ \langle \chi^2_\nu \rangle \sim 8$$ for the HM12 model
+
+
+For the large scale comparison with the eBOSS data the differences are much larger 
+
+<img src="{{ site.url }}assets/images/fps_comparison_boss.png">
+
+\
 
 
 
-Now comparig  $$ 0.02 \leq k \leq 0.1 \, \mathrm{s} \, \mathrm{km}^{-1} $$ 
-
-
-<img src="{{ site.url }}assets/images/fps_comparison_k2.png">
 
 
