@@ -28,7 +28,14 @@ The distribution of $$\chi^2_{\nu}$$ for the two models is summarized in the fol
 
 <img src="{{ site.url }}assets/images/chi2_z.png">
 
+
+
 For $$2\lesssim z \lesssim 4.5$$,  $$ \langle \chi^2_\nu \rangle   \sim 2$$ for the P19 model  compared to $$ \langle \chi^2_\nu \rangle \sim 8$$ for the HM12 model
+
+
+Now comparing in the $$ k \leq 0.01 \, \mathrm{s} \, \mathrm{km}^{-1} $$ range:
+
+<img src="{{ site.url }}assets/images/fps_comparison_k_less1.png">
 
 
 For the large scale comparison with the eBOSS data the differences are much larger 
