@@ -50,3 +50,9 @@ categorines: dm cholla
 **Animation 5:**
 
 
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/cosmo_fly_4k.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+**Animation 6:**
+
