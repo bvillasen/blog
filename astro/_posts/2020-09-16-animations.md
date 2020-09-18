@@ -40,3 +40,13 @@ categorines: dm cholla
 
 **Animation 4:**
 
+
+
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/phase_diagram_uvb_comparison_balck.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+**Animation 5:**
+
+
