@@ -24,3 +24,19 @@ categorines: dm cholla
 
 **Animation 2:**
 
+
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/dm_gas_density_50Mpc_new.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+**Animation 3:**
+
+
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/gas_density_temperature_50Mpc_new.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
+
+**Animation 4:**
+
