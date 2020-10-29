@@ -11,3 +11,15 @@ $$\frac{d T}{d t}=-2 H T+\frac{2 T}{3 \Delta} \frac{d \Delta}{d t} - \frac{T}{\s
 
 <img src="{{ site.url }}assets/images/temp_evolution_Grackle.png">
 
+
+
+
+
+
+
+Below is the evolution of the Density-Temperature distribution
+
+
+<div style="text-align: center">
+<video src="{{ site.url }}assets/videos/phase_diagram_uvb_comparison_balck.mp4" width="100%"  height="auto" controls preload> </video>
+</div>
