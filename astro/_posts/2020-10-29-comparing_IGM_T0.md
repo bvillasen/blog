@@ -9,6 +9,8 @@ The model is solving:
 
 $$\frac{d T}{d t}=-2 H T+\frac{2 T}{3 \Delta} \frac{d \Delta}{d t} - \frac{T}{\sum_i X_i }\frac{d \sum_i X_i}{dt}   +\frac{2}{3 k_{B} n_{t o t}} \frac{d Q}{d t} $$
 
+The code for the solver is here: [https://github.com/bvillasen/thermal_IGM](https://github.com/bvillasen/thermal_IGM)
+
 <img src="{{ site.url }}assets/images/temp_evolution_Grackle.png">
 
 
