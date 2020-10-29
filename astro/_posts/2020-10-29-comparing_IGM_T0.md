@@ -13,7 +13,43 @@ $$\frac{d T}{d t}=-2 H T+\frac{2 T}{3 \Delta} \frac{d \Delta}{d t} - \frac{T}{\s
 
 
 
+The Cooling mechanisms for Bruno's model
 
+* Collisional Excitation Cooling: 
+- **HI + e:** Hui & Gnedin 97
+- **HeII + e:** Hui & Gnedin 97
+
+
+* Collisional Ionization Cooling: 
+- **HI + e:** Katz et al 95
+- **HeI + e:** Katz et al 95
+- **HeII + e:** Katz et al 95
+
+
+* Collisional Ionization Rates: 
+- **HI + e:** Hui & Gnedin 97
+- **HeI + e:** Abel et al. 97
+- **HeII + e:** Abel et al. 97
+- **HI + HI:** Lenzuni et at. 91
+- **HII + HI:** Lenzuni et at. 91
+- **HeI + HI:** Lenzuni et at. 91
+
+* Recombination Cooling:
+- **HII:** Hui & Gnedin 97
+- **HeII:** Hui & Gnedin 97
+- **HeII dielectronic:** Hui & Gnedin 97
+- **HeIII:** Hui & Gnedin 97
+
+* Recombination Rates:
+- **HII:** Hui & Gnedin 97
+- **HeII:** Hui & Gnedin 97
+- **HeII dielectronic:**  Hui & Gnedin 97
+- **HeIII:** Katz et al 95
+
+
+* Bremsstrahlung Cooling: Katz et al 95
+ 
+* CMB Compton Cooling: Milles & Ostriker 2001
 
 
 
