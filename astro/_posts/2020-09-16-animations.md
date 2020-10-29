@@ -7,7 +7,7 @@ categorines: dm cholla
 
 
 
-
+<!-- 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/zeldovich_black.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
@@ -22,7 +22,7 @@ categorines: dm cholla
 <video src="{{ site.url }}assets/videos/dm_50Mpc_projection_nyx_cholla.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
-**Animation 2:**
+**Animation 2:** -->
 
 
 
@@ -30,7 +30,7 @@ categorines: dm cholla
 <video src="{{ site.url }}assets/videos/dm_gas_density_50Mpc_new.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
-**Animation 3:**
+**Animation 1:**
 
 
 
@@ -38,21 +38,21 @@ categorines: dm cholla
 <video src="{{ site.url }}assets/videos/gas_density_temperature_50Mpc_new.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
-**Animation 4:**
+**Animation 2:**
 
 
 
-
+<!-- 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_uvb_comparison_balck.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
-**Animation 5:**
+**Animation 5:** -->
 
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/cosmo_fly_4k.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
-**Animation 6:**
+**Animation 3:**
 
