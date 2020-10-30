@@ -11,7 +11,7 @@ $$\frac{d T}{d t}=-2 H T+\frac{2 T}{3 \Delta} \frac{d \Delta}{d t} - \frac{T}{\s
 
 The code for the solver is here: [https://github.com/bvillasen/thermal_IGM](https://github.com/bvillasen/thermal_IGM)
 
-<img src="{{ site.url }}assets/images/temp_evolution_Grackle.png">
+<img src="{{ site.url }}assets/images/temp_evolution_error.png">
 
 
 
