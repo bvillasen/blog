@@ -15,7 +15,7 @@ Comapred to the results from my one-cell analytical model:
 
 
 
-<img src="{{ site.url }}assets/images/temp_evolution_HeI_scale.png">
+<img src="{{ site.url }}assets/images/temp_evolution_HI_scale.png">
 
 
 
