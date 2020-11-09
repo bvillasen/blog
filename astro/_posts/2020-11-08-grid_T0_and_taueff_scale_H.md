@@ -15,13 +15,13 @@ Comapred to the results from my one-cell analytical model:
 
 
 
-<img src="{{ site.url }}assets/images/new_temp_evolution_HeI_scale.png">
+<img src="{{ site.url }}assets/images/temp_evolution_HeI_scale.png">
 
 
 
 Here is the effect in the Effective Optical Depth:
 
 
-<img src="{{ site.url }}assets/images/grid_scale_H_optical_depth.png">
-
+<img src="{{ site.url }}assets/images/grid_scale_H_optical_depth_new.png">
+                                      
 
