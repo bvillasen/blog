@@ -10,3 +10,7 @@ From her papaer [here](https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.1736K/abs
 
 
 <img src="{{ site.url }}assets/images/mean_flux_keating.png">
+
+Here compared to other datasets:
+
+<img src="{{ site.url }}assets/images/grid_optical_depth_data.png">
