@@ -14,3 +14,25 @@ From her papaer [here](https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.1736K/abs
 Here compared to other datasets:
 
 <img src="{{ site.url }}assets/images/grid_optical_depth_data.png">
+
+
+
+I choose the following data points to fit to:
+
+
+<img src="{{ site.url }}assets/images/mcmc_tau_fit.png">
+
+
+
+After sampling the MCMC for the scale_H parameter, this is the posterior distribution:
+
+<img src="{{ site.url }}assets/images/scale_H.png">
+
+
+
+Here is the Effective Optical depth for the obtained distribution of scale_H:
+
+
+<img src="{{ site.url }}assets/images/mcmc_tau.png">
+
+
