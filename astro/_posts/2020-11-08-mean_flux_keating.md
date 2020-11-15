@@ -22,17 +22,3 @@ I choose the following data points to fit to:
 
 <img src="{{ site.url }}assets/images/mcmc_tau_fit.png">
 
-
-
-After sampling the MCMC for the scale_H parameter, this is the posterior distribution:
-
-<img src="{{ site.url }}assets/images/scale_H.png">
-
-
-
-Here is the Effective Optical depth for the obtained distribution of scale_H:
-
-
-<img src="{{ site.url }}assets/images/mcmc_tau.png">
-
-
