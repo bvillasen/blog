@@ -8,10 +8,14 @@ categorines: cholla
 
 ### Scale_H
 
+
+#### Grid Trajectories:
 <img src="{{ site.url }}assets/images/fig_composite_scale_H_grid.png">
 
+#### Parameter Posterior
 <img src="{{ site.url }}assets/images/scale_H_composite.png">
 
+#### Fitted Trajectory:
 <img src="{{ site.url }}assets/images/fig_composite_scale_H_sampling.png">
 
 
@@ -21,10 +25,14 @@ categorines: cholla
 
 ### Scale_He
 
+
+#### Grid Trajectories:
 <img src="{{ site.url }}assets/images/fig_composite_scale_He_grid.png">
 
+#### Parameter Posterior:
 <img src="{{ site.url }}assets/images/scale_He_composite.png">
 
+#### Fitted Trajectory:
 <img src="{{ site.url }}assets/images/fig_composite_scale_He_sampling.png">
 
 
@@ -35,8 +43,12 @@ categorines: cholla
 
 ### Delta_z_He
 
+
+#### Grid Trajectories:
 <img src="{{ site.url }}assets/images/fig_composite_deltaZ_He_grid.png">
 
+#### Parameter Posterior:
 <img src="{{ site.url }}assets/images/deltaZ_He_composite.png">
 
+#### Fitted Trajectory:
 <img src="{{ site.url }}assets/images/fig_composite_deltaZ_He_sampling.png">
