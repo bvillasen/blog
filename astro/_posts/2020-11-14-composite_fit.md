@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fit to T0 and Tau_eff"
+title: "Fit HeII and HI parameters to T0 and Tau_eff"
 date:   2020-11-14 10:10:24 -0800
 categorines: cholla
 ---
