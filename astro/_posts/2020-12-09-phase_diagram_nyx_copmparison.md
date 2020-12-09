@@ -9,7 +9,7 @@ Here I compare the density-temperature distribution from analogous **adiabatic**
 
 - Box: 50 Mpc/h, 256$$^3$$ cells ( uniform resolution )
 
-
+Changed animation vcodec
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_nyx_cholla.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
