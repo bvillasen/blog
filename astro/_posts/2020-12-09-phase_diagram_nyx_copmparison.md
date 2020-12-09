@@ -14,7 +14,7 @@ Here I compare the density-temperature distribution from analogous **adiabatic**
 <video src="{{ site.url }}assets/videos/phase_diagram_nyx_cholla.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
-As shown, the evolution of the gas temperature is very different, the temperatures for the IGM from the Nyx simulation are ~10$$^4$$ K for a simulation in which no heating is present. For the Cholla simulation the IGM cools adiabatically during the entire simulation and only the gas that collapsed into halos is heated to high temperatures.
+As shown, the evolution of the gas temperature is very different, the temperatures for the IGM from the Nyx simulation are ~10$$^4$$ K at $$z>2$$ for a simulation in which no heating is present. For the Cholla simulation the IGM cools adiabatically during the entire simulation and only the gas that collapsed into halos is heated to high temperatures.
 
 The contents of the Makefile for compiling Nyx:
 
