@@ -19,23 +19,33 @@ Originally Cholla was a hydrodynamics solver that runs in multiple GPUs. For my 
  
  The animation below shows the evolution of the dark matter for a Cholla simulation, the initial conditions are mostly uniform except for tiny perturbations corresponding to the quantum perturbations of the early universe, as time progresses the regions where the density is slightly higher exerts a gravitational pull over the surrounding material causing the growth of large dark matter structures called halos shown in yellow in the animation, the regions connecting the halos form the cosmic web. Galaxies are formed in the inner parts of dark matter halos.        
 
+ 
  <div style="text-align: center">
- <video src="{{ site.url }}assets/videos/dm_gas_density_50Mpc.mp4" width="100%"  height="auto" controls preload> </video>
+ <video src="{{ site.url }}assets/videos/dm_gas_density_50Mpc_new.mp4" width="100%"  height="auto" controls preload> </video>
  </div>
  
  Now, the following animation below shows the evolution of the gas density for a high resolution simulation that I ran on Summit ( number 1 on the top500 ) using 512 GPUs
  
  
-  <div style="text-align: center">
-  <video src="{{ site.url }}assets/videos/gas_density_temperature_50Mpc.mp4" width="100%"  height="auto" controls preload> </video>
-  </div>
-  
-  
+ <div style="text-align: center">
+ <video src="{{ site.url }}assets/videos/gas_density_temperature_50Mpc_new.mp4" width="100%"  height="auto" controls preload> </video>
+ </div>
+ 
+ 
 The next animation shows a fly-by trough the evolving intergalactic medium, the animation was made by original software that  I developed using the high resolution data produced by a simulation that I ran in Summit.
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/cosmo_fly_4k.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
+
+
+
+<img src="{{ site.url }}assets/images/projection_cosmo.pdf">
+
+
+
+
+
 
   
  The image below shows several components of a cosmological hydrodynamical simulation, the first column corresponds to the dark matter density, the second column shows the gas density, the third column correspond to the neutral hydrogen density and finally the last column shows the temperature of the gas. The top row shows the results from a simulation evolved using a popular code called [Enzo](https://enzo-project.org/) and the bottom show shows the result from an analogous simulation that I ran using Cholla on 8 Nvidia P100 GPUs.
