@@ -39,7 +39,7 @@ The next animation shows a fly-by trough the evolving intergalactic medium, the 
 </div>
 
 
-The image below shows the main components of a cosmological simulation, this is a very high resolution simulation consisting of 2048 $$^3$$ cells that I ran using 512 GPUs in Summit. 
+The image below shows the main components of a cosmological simulation, this is a very high resolution simulation consisting of 2048$$^3$$ cells that I ran using 512 GPUs in Summit. 
 
 
 <img src="{{ site.url }}assets/images/image_composed_dm_white.png">
@@ -60,5 +60,3 @@ Cholla uses MPI, CUDA and OpenMP to leverage the computing power of the largest 
 
 
 <img src="{{ site.url }}assets/images/weak_scaling.png">
-
-</div>
