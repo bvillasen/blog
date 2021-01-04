@@ -18,7 +18,7 @@ The standard deviation of the power spectrum  is computed from the diagonal of t
 <img src="{{ site.url }}assets/images/ps_sigma.png">
 
 
-As shown the standard deviation is proportional to $$1/\sqrt{N_s}$$, if I choose the $$\sigma$$ from the $$N=5000$$ bootstrap then $$\sigma/P(k) \sim 0.1$$.
+As shown, the standard deviation is proportional to $$1/\sqrt{N_s}$$, if I choose the $$\sigma$$ resulting from the $$N=5000$$ bootstrap then $$\sigma/P(k) \sim 0.1$$.
 
 Below is the comparison to the data using $$\sigma$$ from the $$N_s=5000$$ bootstrap.
 
