@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "P(k) Error bars"
-date:   2021-01-13 11:21:24 -0800
+date:   2021-01-22 11:21:24 -0800
 categorines: cholla
 ---
 
