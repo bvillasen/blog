@@ -28,4 +28,6 @@ Using the values obtained from the previous fit:
 
 ## Temperature Evolution
 
+From my single cell integrator:
+
 <img src="{{ site.url }}assets/images/temp_evolution_mod_deltaZ_H.png">
