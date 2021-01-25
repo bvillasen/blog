@@ -15,14 +15,19 @@ Using the values obtained from the previous fit:
 
 ## T0 and $$\tau_{eff}$$
 
-<img src="{{ site.url }}assets/images/fig_T0_tau_deltaZ_H.png">
+<img src="{{ site.url }}assets/images/fig_T0_tau_P10_Mod_0.png">
 
 
 
 
 ## Flux Power Spectrum: Small Scales
 
-<img src="{{ site.url }}assets/images/flux_ps_grid_small_highZ_deltaZ_H.png">
+<img src="{{ site.url }}assets/images/flux_ps_grid_small_P10_Mod_0.png">
+
+
+## Flux Power Spectrum: Small Scales
+
+<img src="{{ site.url }}assets/images/flux_ps_grid_large_P10_Mod_0.png">
  
 
 
