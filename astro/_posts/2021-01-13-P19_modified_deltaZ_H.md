@@ -25,9 +25,13 @@ Using the values obtained from the previous fit:
 <img src="{{ site.url }}assets/images/flux_ps_grid_small_P19_mod_0_new.png">
 
 
-## Flux Power Spectrum: Small Scales
+## Flux Power Spectrum: Large Scales
 
 <img src="{{ site.url }}assets/images/flux_ps_grid_large_P19_mod_0_new.png">
+
+## Flux Power Spectrum: Middle Scales
+
+<img src="{{ site.url }}assets/images/flux_ps_grid_middle_P19_mod_0_new.png">
  
 
 
