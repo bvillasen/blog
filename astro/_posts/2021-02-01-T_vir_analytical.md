@@ -11,7 +11,7 @@ categorines: cholla
 From the Sheth & Tormen 1999 halo mass function I compute the number of halos in a 50 $$h^{-1}$$Mpc box:
 
 
-<img src="{{ site.url }}assets/images/N_halos_in_box_sheth99.png">
+<img src="{{ site.url }}assets/images/N_in_box_sheth99.png">
 
 
 
