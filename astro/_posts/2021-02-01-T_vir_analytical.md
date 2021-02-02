@@ -32,7 +32,7 @@ This proves that the missing unresolved small halos are responsible for the "sha
 
 
 
-<!-- 
+
 
 ## Press & Schechter 
 
@@ -47,4 +47,4 @@ From the analytical number of halos I compute the mean virial temperature and co
 
 The Halo M_vir range used for this calculation is $$10$$ Msun/h to $$10^{18}$$ Msun/h:
 
-<img src="{{ site.url }}assets/images/virial_temperature_log_analytical.png"> -->
+<img src="{{ site.url }}assets/images/virial_temperature_log_analytical.png">
