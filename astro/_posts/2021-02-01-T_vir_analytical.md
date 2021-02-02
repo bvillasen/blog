@@ -22,7 +22,7 @@ The Halo M_vir range used for this calculation is $$10$$ Msun/h to $$10^{18}$$ M
 <img src="{{ site.url }}assets/images/virial_temperature_log_analytical_sheth99.png">
 
 
-Now if I limit the minimum halo mass in the calculation to $$M_{min}= 6.4 \times 10^{10} \, h^{-1}\mathrm{M_\odot}$$ which correspond to 100*particle_mass and what we define as the cut for resolved halos, now the analytical temperature looks much more like the temperature from the simulations:
+Now if I limit the minimum halo mass in the calculation to $$M_{min}= 6.4 \times 10^{10} \, h^{-1}\mathrm{M_\odot}$$, which correspond to 100*particle_mass, and what we define as the cut for resolved halos, now the analytical temperature looks much more like the temperature from the simulations:
 
 
 <img src="{{ site.url }}assets/images/virial_temperature_log_analytical_sheth99_mcut.png">
