@@ -7,7 +7,7 @@ categorines: cholla
 
 
 
-From the Press & Schechter formalism I computhe the number of halos in a 50 $$h^{-1}$$Mpc box:
+From the Press & Schechter formalism I compute the number of halos in a 50 $$h^{-1}$$Mpc box:
 
 
 <img src="{{ site.url }}assets/images/N_halos_in_box.png">
