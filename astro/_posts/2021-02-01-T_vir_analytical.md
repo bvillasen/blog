@@ -16,6 +16,6 @@ From the Press & Schechter formalism I compute the number of halos in a 50 $$h^{
 
 From the analytical number of halos I compute the mean virial temperature and compare to the simulation measurements:
 
-The Halo M_vir range used for this calculation is $10$ Msun/h to $$10^{18}$$ Msun/h:
+The Halo M_vir range used for this calculation is $$10$$ Msun/h to $$10^{18}$$ Msun/h:
 
 <img src="{{ site.url }}assets/images/virial_temperature_log_analytical.png">
