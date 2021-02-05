@@ -19,5 +19,7 @@ categorines: cholla
 
 <img src="{{ site.url }}assets/images/fig_tau_HeII_P19.png">
 
+<img src="{{ site.url }}assets/images/fig_tau_HeII_CHIPS.png">
+
 
 
