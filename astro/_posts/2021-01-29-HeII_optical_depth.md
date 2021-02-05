@@ -40,7 +40,7 @@ $$b=\sqrt{ \frac {2 k_{\mathrm{B}} T }{ 4*m_{\mathrm{H}}} }$$
 
 Cross Section:
 
-$$ \sigma = \frac {\pi e^2}{ m_e c^2 } f \lambda $$
+$$ \sigma = \frac {\pi e^2}{ m_e c^2 }  \lambda_0 f $$
 
 $$ \sigma_{\mathrm{HeII}} = \frac{ \sigma_{\mathrm{HI}} }{ 4} $$
 
