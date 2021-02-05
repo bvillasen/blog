@@ -40,8 +40,8 @@ $$b=\sqrt{ \frac {2 k_{\mathrm{B}} T }{ 4*m_{\mathrm{H}}} }$$
 
 Cross Section:
 
-$$ \sigma = \frac {\pi e^2}{ m_e c^2 } f \lamda $$
+$$ \sigma = \frac {\pi e^2}{ m_e c^2 } f \lambda $$
 
-$$ \sigma_{\mathrm{HeII}} = 1/4 \sigma_{\mathrm{HI}} $$
+$$ \sigma_{\mathrm{HeII}} = \frac{ \sigma_{\mathrm{HI}} }{ 4} $$
 
 [source here.](https://arxiv.org/pdf/astro-ph/9812429.pdf)
