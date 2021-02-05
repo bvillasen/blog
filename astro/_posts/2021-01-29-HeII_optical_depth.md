@@ -14,7 +14,7 @@ categorines: cholla
 <img src="{{ site.url }}assets/images/tau_HeII_data.png">
 
 
-## HeII Optical Depth from P19
+## HeII Effective Optical Depth from P19
 
 
 <img src="{{ site.url }}assets/images/fig_tau_HeII_P19.png">
@@ -22,13 +22,13 @@ categorines: cholla
 <img src="{{ site.url }}assets/images/fig_tau_HeII_CHIPS.png">
 
 
-## HeII Optical Depth from P19 Modified
+## HeII Effective Optical Depth from P19 Modified
 
 <img src="{{ site.url }}assets/images/fig_tau_HeII_P19m.png">
 
 
 
-## HeII Optical depth along a skewer
+## HeII Effective Optical depth along a skewer
 
 Optical Depth:
 
