@@ -14,7 +14,7 @@ $$\beta_{\mathrm{H}} = [0.6 \,\,\,\, 1.0   ] $$
 $$\Delta z_{\mathrm{He}} = [0.0 \,\,\,\, 0.8   ] $$
 
 
-The  mean $$P(k)$$ from each simulation is shown below:
+The  mean $$P(k)$$ from each simulation is shown below,  as expected changing $$\beta_{\mathrm{H}}$$ results in the largest change in P(k) as the normalization changes:
 
 
 <img src="{{ site.url }}assets/images/flux_ps_grid_small_P19m.png">
