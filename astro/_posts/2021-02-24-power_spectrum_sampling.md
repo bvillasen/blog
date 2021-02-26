@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "P{k) Sampling "
+title: "P(k) Sampling "
 date:   2021-02-24 11:21:24 -0800
 categorines: cholla
 ---
