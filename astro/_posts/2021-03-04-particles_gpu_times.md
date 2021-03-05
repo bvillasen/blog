@@ -28,3 +28,14 @@ Wiout counting the time for the Poisson solver (Time Grav Potential), the time f
 **Time Particles CPU = 31.868 ms**
 
 For this test the GPU version is ~5.7 times faster! 
+
+
+Below I compare the difference in the DM density from both simulation the max[abs($$\Delta \rho / \rho)] as a function of redshift is shown below:
+
+<img src="{{ site.url }}assets/images/delta_rho.png">
+
+
+
+and the mean[abs($$\Delta \rho / \rho)] as a function of redshift is shown below:
+
+<img src="{{ site.url }}assets/images/delta_rho_mean.png">
