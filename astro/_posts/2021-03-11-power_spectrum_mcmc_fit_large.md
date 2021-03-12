@@ -42,5 +42,17 @@ Below is the evolution of the  power spectrum from the fitted posterior distribu
 <img src="{{ site.url }}assets/images/flux_ps_sampling_small_boss_walter.png">
 <img src="{{ site.url }}assets/images/flux_ps_sampling_middle_boss_walter.png">
 
+
+
+
+Now fitting to **Walther**, **Boera** and **Viel** data sets:
+
+<img src="{{ site.url }}assets/images/corner_walther_boera_viel.png">
+
+
+<img src="{{ site.url }}assets/images/fig_T0_sampling_walther_boera_viel.png">
+
  
- 
+
+<img src="{{ site.url }}assets/images/flux_ps_sampling_small_walther_boera_viel.png">
+<img src="{{ site.url }}assets/images/flux_ps_sampling_large_walther_boera_viel.png">
