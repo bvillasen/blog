@@ -37,9 +37,9 @@ Below is the evolution of the  temperature from the fitted posterior distributio
 Below is the evolution of the  power spectrum from the fitted posterior distribution of the parameters:
 
 
-<img src="{{ site.url }}assets/imagesflux_ps_sampling_large_boss_walter.png">
-<img src="{{ site.url }}assets/imagesflux_ps_sampling_small_boss_walter.png">
-<img src="{{ site.url }}assets/imagesflux_ps_sampling_middle_boss_walter.png">
+<img src="{{ site.url }}assets/images/flux_ps_sampling_large_boss_walter.png">
+<img src="{{ site.url }}assets/images/flux_ps_sampling_small_boss_walter.png">
+<img src="{{ site.url }}assets/images/flux_ps_sampling_middle_boss_walter.png">
 
  
  
