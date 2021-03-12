@@ -18,12 +18,13 @@ $$\Delta z_{\mathrm{He}} = [-0.1, \, 0.2, \, 0.5, \, 0.8  ] $$
 $$\Delta z_{\mathrm{H}} = [ -0.6, \, -0.4, \, -0.2, \, 0.0   ] $$
 
 
+**I fit to the temperature data and the power spectrum from different data sets.**
 
-The distributions from fitting to the **Boss** and **Walther** data separately are:
+The distributions from fitting  to  the **Boss** and **Walther** data separately are:
  
 <img src="{{ site.url }}assets/images/corner_boss_walther.png">
 
-When I fit to bot datasets simultaneously, the results are very different:
+When I fit to bot datasets **simultaneously** the results are very different:
 
 <img src="{{ site.url }}assets/images/corner_boss_walther_both.png">
  
