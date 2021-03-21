@@ -20,7 +20,7 @@ $$\Delta z_{\mathrm{H}} = [ -0.6, \, -0.4, \, -0.2, \, 0.0, \, 0.2   ] $$
 
 
 
-**Fit to the temperature data and the power spectrum from the BOSS data sets.**
+**Fit to the temperature data and the power spectrum from the BOSS data set.**
 
 <img src="{{ site.url }}assets/images/corner_power_spectrum_boss.png">
 
