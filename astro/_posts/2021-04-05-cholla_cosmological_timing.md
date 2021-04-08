@@ -16,10 +16,10 @@ The different configurations are:
 
 
 #### CPU
-- Hydro conserved data is evolved on the GPU but copied back and forward from and to the host every time-step
-- Poisson equation is solved on the GPU (Paris) but the density and potential are copied back and forward from and to the host every time-step 
-- Particles are evolved on the host, each MPI porcess uses 7 OpenMP threads to do the particles computation
-- MPI boundary buffers for hydro, potential, particles density and particles transfers are loaded/unloaded on the host
+- Hydro conserved data is evolved on the GPU but copied back and forward from and to the host every time-step.
+- Poisson equation is solved on the GPU (Paris) but the density and potential are copied back and forward from and to the host every time-step.
+- Particles are evolved on the host, each MPI porcess uses 7 OpenMP threads to do the particles computations.
+- MPI boundary buffers for hydro, potential, particles density and particles transfers are loaded/unloaded on the host.
 
 
 #### PARTICLES_GPU
@@ -30,7 +30,7 @@ The different configurations are:
 
 #### GRAVITY_GPU
 - Paris loads the density (hydro and particles) from the GPU and outputs the potential to the GPU, avoiding copies to the host.
-- The potential boundary buffers are loaded/unloaded on the GPU and copied back to the host for the MPI transfers  
+- The potential boundary buffers are loaded/unloaded on the GPU and copied back to the host for the MPI transfers.  
  
 #### GPU_MPI
 - The Hydro data is not copied back and forward to the host.
@@ -39,7 +39,7 @@ The different configurations are:
 - The particles density boundary buffers and particles transfer buffers are transfered directly from the GPU. 
  
 
-The avertage times per iteration for the different stages are shown below. On top of each bar I show the performance increase of each configuration with respect to the CPU configuration.
+The average times per iteration for the different stages are shown below. On top of each bar I show the performance increase of each configuration with respect to the CPU configuration.
 
 <img src="{{ site.url }}assets/images/cholla_cosmo_timing.png">
 
