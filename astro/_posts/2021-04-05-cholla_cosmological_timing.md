@@ -39,5 +39,7 @@ The different configurations are:
 - The particles density boundary buffers and particles transfer buffers are transfered directly from the GPU. 
  
 
+The avertage times per iteration for the different stages are shown below. On top of each bar I show the performance increase of each configuration with respect to the CPU configuration.
+
 <img src="{{ site.url }}assets/images/cholla_cosmo_timing.png">
 
