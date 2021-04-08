@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Timing for Optimized Cholla "
-date:   2021-04-07 11:21:24 -0800
+date:   2021-04-08 11:21:24 -0800
 categorines: cholla
 ---
 
