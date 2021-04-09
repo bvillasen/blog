@@ -22,6 +22,8 @@ Using Fixed best fit $$\Delta z_{\mathrm{He}} = 0.28 $$
 <img src="{{ site.url }}assets/images/flux_ps_multiple_lines_small_scale_He.png">
 
 
+<img src="{{ site.url }}assets/images/flux_ps_multiple_lines_middle_scale_He.png">
+
 
 
 #### Effects of changing  $$\Delta z_{\mathrm{He}} $$:
@@ -34,5 +36,7 @@ Using Fixed best fit $$\beta_{\mathrm{He}} = 0.44$$
 
 <img src="{{ site.url }}assets/images/flux_ps_multiple_lines_small_deltaZ_He.png">
 
+
+<img src="{{ site.url }}assets/images/flux_ps_multiple_lines_middle_deltaZ_He.png">
 
 
