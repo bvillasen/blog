@@ -17,7 +17,9 @@ If we rescale the Transmitted flux along the line of sight by a factor $$\alpha$
 
 $$ F^\prime = \alpha F $$  
 
+
 $$\overline{F^\prime} = \alpha  \overline{F} $$ 
+
 
 $$\delta_{F}^\prime = \delta_{F} $$
 
@@ -37,6 +39,12 @@ $$ \overline{F^\prime} = \frac{1}{N} \sum  \mathrm{exp}( - \tau  )^{\alpha} $$
 
 
 where $$N$$ is the number of pixels in the skewer.
+
+Then the Flux Fluctuations become:
+
+
+$$\delta_{F}^\prime = \frac{ \mathrm{exp}( - \tau  )^{\alpha} }{ \frac{1}{N} \sum  \mathrm{exp}( - \tau  )^{\alpha} } $$
+
 
 
 
