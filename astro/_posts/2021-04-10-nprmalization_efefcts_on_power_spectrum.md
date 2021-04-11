@@ -46,11 +46,18 @@ Then the Flux Fluctuations become:
 $$\delta_{F}^\prime = \frac{ \mathrm{exp}( - \tau  )^{\alpha} }{ \frac{1}{N} \sum  \mathrm{exp}( - \tau  )^{\alpha} } $$
 
 
+seems like the Flux fluctuations from the rescaled optical depth $$\delta_F^{\prime}$$ can not be expressed as linear transformation from the original  $$\delta_F$$, which would result in an scale dependent rescaling of the Flux Power Spectrum.
+
+
+
 
 
 #### Effects rescaling $$\tau$$ as a function of redshift
 
-The effects for $$k > 0.1$$ are mostly scale independent 
+
+To evaluate the effect that rescaling $$tau$$ has on the Flux Power Spectrum, **I rescale all the skewers $$tau$$ by a factor $$\alpha$$ and compare the resulting $$P(k)$$ to the original $$P(k)$$**, the results for several redshifts are shown below. 
+
+From the figures below it can be seen that **the effects of the rescaling $$\tau$$ on $$P(k)$$ are mostly scale independent for $$k < 0.1$$ ** 
 
 <img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_25.png">
 <img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_30.png">
