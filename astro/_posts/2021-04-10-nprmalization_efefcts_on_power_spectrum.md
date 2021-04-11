@@ -29,7 +29,12 @@ Now, if instead we rescale the Optical Depth along the line of sight, such that:
 $$\tau^\prime = \alpha \tau $$
 
 
-$$ F^\prime = \mathrm{exp}( - \tau^\prime ) = \mathrm{exp}( - \alpha \tau  ) $$
+$$ F^\prime = \mathrm{exp}( - \tau^\prime ) = \mathrm{exp}( - \alpha \tau  ) = \mathrm{exp}( - \tau  )^{\alpha}  $$
+
+$$ \overline{F^\prime} = \frac{1}{N} \sum  \mathrm{exp}( - \tau  )^{\alpha} $$
+
+
+where $$N$$ is the number of pixels in the skewer.
 
 
 
