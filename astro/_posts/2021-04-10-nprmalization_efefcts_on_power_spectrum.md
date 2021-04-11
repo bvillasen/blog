@@ -15,7 +15,7 @@ $$\delta_{F} \,=\, \frac{F- \overline{F} }{ \overline{F}} \,=\, \frac{F}{ \overl
 If we rescale the Transmitted flux along the line of sight by a factor $$\alpha$$, then:
 
 
-$$ F^\prime = \alpha F \; \Rightarrow \;  \overline{F}^\prime = \alpha  \overline{F} \; \Rightarrow \; \delta_{F}^\prime = \delta_{F} $$
+$$ F^\prime = \alpha F \; \Rightarrow \;  \overline{F^\prime} = \alpha  \overline{F} \; \Rightarrow \; \delta_{F}^\prime = \delta_{F} $$
 
 Then, rescaling the Transmitted Flux has no effect on the Flux Power Spectrum  
 
@@ -27,11 +27,11 @@ Now, if instead we rescale the Optical Depth along the line of sight, such that:
 $$\tau^\prime = \alpha \tau $$
 
 
-$$ F^\prime = \mathrm{exp}( - \tau^\prime ) = \mathrm{exp}( - \alpha \tau  ) 
+$$ F^\prime = \mathrm{exp}( - \tau^\prime ) = \mathrm{exp}( - \alpha \tau  ) $$
 
 
 
-#### Effects rescaling $$tau$$ as a function of redshift
+#### Effects rescaling $$\tau$$ as a function of redshift
 
 The effects for $$k > 0.1$$ are mostly scale independent 
 
