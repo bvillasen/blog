@@ -35,14 +35,13 @@ $$ F^\prime = \mathrm{exp}( - \tau^\prime ) = \mathrm{exp}( - \alpha \tau  )
 
 The effects for $$k > 0.1$$ are mostly scale independent 
 
-<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_55.png">
-<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_53.png">
-<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_50.png">
-<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_48.png">
-<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_48.png">
-<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_45.png">
-<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_40.png">
-<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_35.png">
-<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_30.png">
 <img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_25.png">
+<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_30.png">
+<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_35.png">
+<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_40.png">
+<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_45.png">
+<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_48.png">
+<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_50.png">
+<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_53.png">
+<img src="{{ site.url }}assets/images/fig_rescaled_power_spectrum_55.png">
  
