@@ -16,7 +16,9 @@ If we rescale the Transmitted flux along the line of sight by a factor $$\alpha$
 
 
 $$ F^\prime = \alpha F $$  
+
 $$\overline{F^\prime} = \alpha  \overline{F} $$ 
+
 $$\delta_{F}^\prime = \delta_{F} $$
 
 Then, rescaling the Transmitted Flux has no effect on the Flux Power Spectrum  
