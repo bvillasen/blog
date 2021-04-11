@@ -47,7 +47,7 @@ $$\delta_{F}^\prime = \frac{ \mathrm{exp}( - \tau  )^{\alpha} }{ \frac{1}{N} \su
 
 and the Flux fluctuations from the original optical depth:
 
-$$\delta_{F} = \frac{ \mathrm{exp}( - \tau  ) }{ \frac{1}{N} \sum  \mathrm{exp}( - \tau  ) - 1 $$
+$$\delta_{F} = \frac{ \mathrm{exp}( - \tau  ) }{ \frac{1}{N} \sum  \mathrm{exp}( - \tau  ) } - 1 $$
 
 
 seems like the Flux fluctuations from the rescaled optical depth $$\delta_F^{\prime}$$ can not be expressed as linear transformation from the original  $$\delta_F$$, which would result in an scale dependent rescaling of the Flux Power Spectrum.
