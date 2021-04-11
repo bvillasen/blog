@@ -59,7 +59,7 @@ seems like the Flux fluctuations from the rescaled optical depth $$\delta_F^{\pr
 #### Effects rescaling $$\tau$$ as a function of redshift
 
 
-To evaluate the effect that rescaling $$tau$$ has on the Flux Power Spectrum, **I rescale all the skewers $$tau$$ by a factor $$\alpha$$ and compare the resulting $$P(k)$$ to the original $$P(k)$$**, the results for several redshifts are shown below. 
+To evaluate the effect that rescaling $$tau$$ has on the Flux Power Spectrum, **I rescale $$tau$$ from the skewers in a snapshot by a factor $$\alpha$$ and compare the resulting $$P(k)$$ to the original $$P(k)$$**, the results for several redshifts are shown below. 
 
 From the figures below it can be seen that **the effects of the rescaling $$\tau$$ on $$P(k)$$ are mostly scale independent for $$k < 0.1$$ ** 
 
