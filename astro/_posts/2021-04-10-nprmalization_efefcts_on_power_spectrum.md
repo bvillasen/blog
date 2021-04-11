@@ -31,7 +31,7 @@ $$ F^\prime = \mathrm{exp}( - \tau^\prime ) = \mathrm{exp}( - \alpha \tau  )
 
 
 
-#### Effects resvalong $$tau$$ as a function of redshift
+#### Effects rescaling $$tau$$ as a function of redshift
 
 The effects for $$k > 0.1$$ are mostly scale independent 
 
