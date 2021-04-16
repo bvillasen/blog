@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fit to large scale  Walther P(k)  "
-date:   2021-04-12 08:00:24 -0800
+date:   2021-04-13 08:00:24 -0800
 categorines: cholla
 ---
 
