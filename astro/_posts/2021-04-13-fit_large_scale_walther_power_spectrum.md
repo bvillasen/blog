@@ -6,7 +6,7 @@ categorines: cholla
 ---
 
 
-First I fit to the **large scales ($$k<0.02$$) Walther P(k)**
+First I fit to the **large scales ($$k<0.02$$) from the Walther P(k)**
 
 
 
