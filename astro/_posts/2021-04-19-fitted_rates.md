@@ -16,13 +16,13 @@ From my fit to the BOSS P(k) and tau_HeII the values for the best fit parameters
 
 
 
-$$\beta_{\mathrm{He}} = 0.46 \,\,\, [ ]$$
+$$\beta_{\mathrm{He}} = 0.46 \,\,\, [ \, 0.37 \,\, 0.69 \,  ]$$
 
-$$\beta_{\mathrm{H}} = 0.78 \,\,\, [ ]$$
+$$\beta_{\mathrm{H}} = 0.78 \,\,\, [  \, 0.76 \,\, 0.79 \, ]$$
 
-$$\Delta z_{\mathrm{He}} = 0.28 \,\,\, [ ]$$
+$$\Delta z_{\mathrm{He}} = 0.28 \,\,\, [  \, 0.15 \,\, 0.35 \,]$$
 
-$$\Delta z_{\mathrm{H}} = 0.04 \,\,\, [ ]$$
+$$\Delta z_{\mathrm{H}} = 0.04 \,\,\, [  \, -0.01 \,\, 0.08 \, ]$$
 
 
 
