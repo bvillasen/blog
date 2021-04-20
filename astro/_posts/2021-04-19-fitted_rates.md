@@ -42,9 +42,9 @@ Links to the text files containing the marginalized Photoheating and Photoioniza
 
 [File with UVB rates evaluated at the Highest Likelihood values of the parameters](https://github.com/bvillasen/blog/blob/master/assets/files/fit_uvb_rates_BOSS/uvb_rates.txt)
 
-[File with UVB rates evaluated at 2.5 percentile of the marginalized distribution ](https://github.com/bvillasen/blog/blob/master/assets/files/fit_uvb_rates_BOSS/uvb_rates_percentile2.5.txt)
+[File with UVB rates evaluated at the lower end of the 95% HPD Interval ](https://github.com/bvillasen/blog/blob/master/assets/files/fit_uvb_rates_BOSS/uvb_rates_percentile2.5.txt)
 
-[File with UVB rates evaluated at 97.5 percentile of the marginalized distribution ](https://github.com/bvillasen/blog/blob/master/assets/files/fit_uvb_rates_BOSS/uvb_rates_percentile97.5.txt)
+[File with UVB rates evaluated at the higher end of the 95% HPD Interval ](https://github.com/bvillasen/blog/blob/master/assets/files/fit_uvb_rates_BOSS/uvb_rates_percentile97.5.txt)
 
 
 
