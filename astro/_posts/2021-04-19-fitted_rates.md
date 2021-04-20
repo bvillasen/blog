@@ -22,6 +22,12 @@ Link to the text files containing the marginalized Photoheating and Photoionizat
 - 6: HeII Photoionization Rate
 
 
+[File with UVB rates evaluated at the Highest Likelihood values of the parameters](https://github.com/bvillasen/blog/blob/master/assets/files/fit_uvb_rates_BOSS/uvb_rates.txt)
+
+[File with UVB rates evaluated at 2.5 percentile of the marginalized distribution ](https://github.com/bvillasen/blog/blob/master/assets/files/fit_uvb_rates_BOSS/uvb_rates_percentile2.5.txt)
+
+[File with UVB rates evaluated at 97.5 percentile of the marginalized distribution ](https://github.com/bvillasen/blog/blob/master/assets/files/fit_uvb_rates_BOSS/uvb_rates_percentile97.5.txt)
+
 
 
 The marginalized Photoheating and Photoheating rates for H and He are plotted below:
