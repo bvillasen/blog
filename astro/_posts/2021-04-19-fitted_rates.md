@@ -26,7 +26,7 @@ $$\Delta z_{\mathrm{H}} = 0.04 \,\,\, [ ]$$
 
 
 
-Link to the text files containing the marginalized Photoheating and Photoionization rates are below:
+Links to the text files containing the marginalized Photoheating and Photoionization rates are below:
 
 
 **In each file the columns correspond to:**
