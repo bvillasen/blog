@@ -12,7 +12,7 @@ Below are the posterior distribution of the parameters for the fit:
 <img src="{{ site.url }}assets/images/corner_boss.png">
 
 
-From my fit to the BOSS P(k) and tau_HeII the values for the best fit parameters are:
+From my fit to the BOSS P(k) and tau_HeII the values for the best fit parameters are (brackets show the 95% HPD interval):
 
 
 
