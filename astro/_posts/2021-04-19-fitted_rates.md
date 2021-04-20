@@ -43,5 +43,5 @@ Link to the text files containing the marginalized Photoheating and Photoionizat
 
 The marginalized Photoheating and Photoheating rates for H and He are plotted below:
 
-<img src="{{ site.url }}assets/images/fig_flux_ps_samples_all_boss_walther.png">
+<img src="{{ site.url }}assets/images/fig_UVB_rates_fit.png">
 
