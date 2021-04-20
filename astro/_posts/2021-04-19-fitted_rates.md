@@ -5,6 +5,13 @@ date:   2021-04-16 08:00:24 -0800
 categorines: cholla
 ---
 
+
+Below are the posterior distribution of the parameters for the fit:
+
+
+<img src="{{ site.url }}assets/images/corner_boss.png">
+
+
 From my fit to the BOSS P(k) and tau_HeII the values for the best fit parameters are:
 
 
