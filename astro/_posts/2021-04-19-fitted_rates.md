@@ -50,5 +50,11 @@ Links to the text files containing the marginalized Photoheating and Photoioniza
 
 The marginalized Photoheating and Photoheating rates for H and He are plotted below:
 
-<img src="{{ site.url }}assets/images/fig_UVB_rates_fit.png">
+<img src="{{ site.url }}assets/images/fig_UVB_rates_new.png">
 
+
+
+Comparing the HI Photoionization Rate to the data presented in Gallego et al. 2021:
+
+<img src="{{ site.url }}assets/images/fig_phothoionization_HI.png">
+ 
