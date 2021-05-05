@@ -5,7 +5,7 @@ date:   2021-05-04 08:00:24 -0800
 categorines: cholla
 ---
 
-Comparison of the measurements done on 3 simulations all using our current fiducial rescaled P19 model:
+Comparison of the measurements of the thermal history, effective optical depth and Lya flux power spectrum from 3 simulations, all using our current fiducial rescaled P19 model:
 
 $$\beta_{\mathrm{He}} = 0.46$$
 
