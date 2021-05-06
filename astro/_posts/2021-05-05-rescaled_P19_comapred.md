@@ -26,7 +26,7 @@ $$\Delta z_{\mathrm{H}} = 0.04$$
 
 ### Comparison to Boera
 
-<img src="{{ site.url }}assets/images/flux_power_spectrum_grid_all_boss_boera.png">
+<img src="{{ site.url }}assets/images/flux_power_spectrum_grid_all_highZ.png">
 
 
 
