@@ -29,4 +29,4 @@ $$\Delta z_{\mathrm{H}} = 0.04$$
 <img src="{{ site.url }}assets/images/flux_power_spectrum_grid_all_highZ_res.png">
 
 
-The P(k) from the low resolution simulation has significant differences from the higher resolution simulations for $$z>3.2$$,  the optical depth also is different at those redshifts. We might need to do a higher resolution simulation ($$4096^3$$) if we want to use a $$200^3$$ Mpc/h volume.
+The P(k) from the low resolution simulation has significant differences from the higher resolution simulations for $$z>3.2$$,  the HI effective optical depth also is different at those redshifts. We might need to do a higher resolution simulation ($$4096^3$$) if we want to use a $$200^3$$ Mpc/h volume.
