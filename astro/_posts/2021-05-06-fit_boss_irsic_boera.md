@@ -21,3 +21,8 @@ categorines: cholla
 
 ### Fit to BOSS + Irsic + Boera
 <img src="{{ site.url }}assets/images/corner_boss_irsic_boera.png">
+
+
+
+### All 
+<img src="{{ site.url }}assets/images/corner_all.png">
