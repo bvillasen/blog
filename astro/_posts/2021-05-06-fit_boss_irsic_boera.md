@@ -26,3 +26,29 @@ categorines: cholla
 
 ### All 
 <img src="{{ site.url }}assets/images/corner_all.png">
+
+
+
+## Best Fit Values
+
+**From the original fit to BOSS:**
+
+$$\beta_{\mathrm{He}} = 0.46 \,\,\, [ \, 0.37 \,\, 0.69 \,  ]$$
+
+$$\beta_{\mathrm{H}} = 0.78 \,\,\, [  \, 0.76 \,\, 0.79 \, ]$$
+
+$$\Delta z_{\mathrm{He}} = 0.28 \,\,\, [  \, 0.15 \,\, 0.35 \,]$$
+
+$$\Delta z_{\mathrm{H}} = 0.04 \,\,\, [  \, -0.01 \,\, 0.08 \, ]$$
+
+
+**From the new fit to BOSS + Irsic + Boera:**
+
+
+$$\beta_{\mathrm{He}} = 0.44 \,\,\, [ \, 0.37 \,\, 0.50 \,  ]$$
+
+$$\beta_{\mathrm{H}} = 0.78 \,\,\, [  \, 0.77 \,\, 0.79 \, ]$$
+
+$$\Delta z_{\mathrm{He}} = 0.27 \,\,\, [  \, 0.22 \,\, 0.33 \,]$$
+
+$$\Delta z_{\mathrm{H}} = 0.05 \,\,\, [  \, 0.02 \,\, 0.08 \, ]$$
