@@ -52,3 +52,14 @@ $$\beta_{\mathrm{H}} = 0.78 \,\,\, [  \, 0.77 \,\, 0.79 \, ]$$
 $$\Delta z_{\mathrm{He}} = 0.27 \,\,\, [  \, 0.22 \,\, 0.33 \,]$$
 
 $$\Delta z_{\mathrm{H}} = 0.05 \,\,\, [  \, 0.02 \,\, 0.08 \, ]$$
+
+
+### Temperature Evolution
+
+<img src="{{ site.url }}assets/images/fig_T0_sampling_boss_irsic_boera.png">
+
+
+
+### Effective Optical Depth Evolution
+
+<img src="{{ site.url }}assets/images/fig_tau_HeII_sampling_boss_irsic_boera.png">
