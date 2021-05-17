@@ -6,15 +6,15 @@ categorines: cholla
 ---
 
 
-Evolution of the density-temperature distribution for the new Rescaled P19 model:
+Evolution of the density-temperature distribution from the 100 Mpc/h $$2048^3$$ box using  our  new Rescaled P19 model:
 
-$$\beta_{\mathrm{He}} = 0.44 \,\,\, [ \, 0.37 \,\, 0.50 \,  ]$$
+$$\beta_{\mathrm{He}} = 0.44 $$
 
-$$\beta_{\mathrm{H}} = 0.78 \,\,\, [  \, 0.77 \,\, 0.79 \, ]$$
+$$\beta_{\mathrm{H}} = 0.78 $$
 
-$$\Delta z_{\mathrm{He}} = 0.27 \,\,\, [  \, 0.22 \,\, 0.33 \,]$$
+$$\Delta z_{\mathrm{He}} = 0.27$$
 
-$$\Delta z_{\mathrm{H}} = 0.05 \,\,\, [  \, 0.02 \,\, 0.08 \, ]$$
+$$\Delta z_{\mathrm{H}} = 0.05 $$
  
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_rescaled_P19.mp4" width="100%"  height="auto" controls preload> </video>
