@@ -16,6 +16,6 @@ $$\Delta z_{\mathrm{He}} = 0.27 \,\,\, [  \, 0.22 \,\, 0.33 \,]$$
 
 $$\Delta z_{\mathrm{H}} = 0.05 \,\,\, [  \, 0.02 \,\, 0.08 \, ]$$
  
-
+<div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_rescaled_P19.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
