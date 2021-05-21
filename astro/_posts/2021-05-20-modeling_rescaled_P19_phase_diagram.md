@@ -21,7 +21,7 @@ $$\Delta z_{\mathrm{H}} = 0.05 $$
 </div>
 
 
-From the Density-Temperature distribution I measure the 65% Highest Probability Interval for the temperature at constant overdensity, from those I fit different models:
+From the Density-Temperature distribution I measure the 65% Highest Probability Interval for the temperature at constant overdensity, from those I get the temperature values as a function of overdensity wich I use to fit different models:
 
 
 **Top Panels:**
