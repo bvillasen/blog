@@ -33,7 +33,7 @@ Below I show the Input power spectrum used to generate the initial conditions fo
 <img src="{{ site.url }}assets/images/fig_wdm_tau_difference.png">
 
 
-## Flux Power Spectrum Difference
+## Flux Power Spectrum Difference Relative to CDM
 
 
 #### For the WDM mass = 3.0 keV only 
