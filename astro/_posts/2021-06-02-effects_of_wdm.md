@@ -6,7 +6,7 @@ categorines: cholla
 ---
 
 
-To measure the effects of including wdm our measuremenets, I ran 3 simulations with WDM masses of [ 0.5, 1.0, 3.0 ] keV, all of them use the our new model for the photoheating and photoionization rates:
+To measure the effects of including wdm our measuremenets, I ran 3 simulations with WDM masses of [ 0.5, 1.0, 3.0 ] keV, all of them use the our new model for the photoheating and photoionization rates. The simualtion box is 50 Mpc/h and a 1024^3 grid for all.
 
 $$\beta_{\mathrm{He}} = 0.44 $$
 
