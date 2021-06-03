@@ -33,15 +33,20 @@ Below I show the Input power spectrum used to generate the initial conditions fo
 <img src="{{ site.url }}assets/images/fig_wdm_tau_difference.png">
 
 
-## Flux Power Spectrum
+## Flux Power Spectrum Difference
 
 
-### For the WDM mass = 3.0 keV only 
+#### For the WDM mass = 3.0 keV only 
 <img src="{{ site.url }}assets/images/fig_wdm_ps_difference_m3.0kev.png">
 
-### For the 3 WDM masses  
+#### For the 3 WDM masses  
 <img src="{{ site.url }}assets/images/fig_wdm_ps_difference_all.png">
 
+
+## Flux Power Spectrum Compared to Data
+<img src="{{ site.url }}assets/images/flux_ps_grid_large_wdm.png">
+<img src="{{ site.url }}assets/images/flux_ps_grid_middle_wdm.png">
+<img src="{{ site.url }}assets/images/flux_ps_grid_small_highz_wdm.png">
 
 
 
