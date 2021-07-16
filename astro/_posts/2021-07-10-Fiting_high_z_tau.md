@@ -74,5 +74,6 @@ Now I run a $$1024^3$$ simulation with the new photoionization rate:
 <img src="{{ site.url }}assets/images/flux_ps_grid_small_mod_gamma.png">
 
 
+## Temperature Evolution
 
-
+<img src="{{ site.url }}assets/images/fig_thermal_evolution_mod_gamma.png">
