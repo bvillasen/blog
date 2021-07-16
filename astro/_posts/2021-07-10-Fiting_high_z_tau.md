@@ -69,6 +69,10 @@ Now I run a $$1024^3$$ simulation with the new photoionization rate:
 
 <img src="{{ site.url }}assets/images/fig_HI_tau_modified_gamma.png">
 
+<img src="{{ site.url }}assets/images/flux_ps_grid_large_mod_gamma.png">
+<img src="{{ site.url }}assets/images/flux_ps_grid_middle_mod_gamma.png">
+<img src="{{ site.url }}assets/images/flux_ps_grid_small_mod_gamma.png">
+
 
 
 
