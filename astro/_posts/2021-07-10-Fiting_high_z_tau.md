@@ -77,3 +77,11 @@ Now I run a $$1024^3$$ simulation with the new photoionization rate:
 ## Temperature Evolution
 
 <img src="{{ site.url }}assets/images/fig_thermal_evolution_mod_gamma.png">
+
+
+**How to construct modified Photoheating Rates**
+
+
+<img src="{{ site.url }}assets/images/fig_heat_ion_fraction.png">
+
+ 
