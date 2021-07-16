@@ -27,16 +27,19 @@ First I try separating Gamma for $$ z < 5.8$$ and $$z > 5.8$$ then I allow to re
 
 The results:
 
- 
 
+<img src="{{ site.url }}assets/images/fig_HI_fraction_models_split.png">
+ 
 
 
 ### Analytical Fit to Gamma:
 
 
+<img src="{{ site.url }}assets/images/ionization_rate_HI_analytical.png">
 
-### 
+<img src="{{ site.url }}assets/images/ionization_rate_HI_multiple.png">
 
+<img src="{{ site.url }}assets/images/fig_HI_fraction_models.png">
 
 
 ### Reconstruct $$\Gamma$$ from the HI fraction
