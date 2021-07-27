@@ -11,13 +11,13 @@ The parameters for the UVB rates are the combinations of the following:
 
 
 
-$$\beta_{\mathrm{He}} = \,[ \, 0.2 \,\, 1.0 \,  ]$$
+$$\beta_{\mathrm{He}} = \,[ \, 0.2 \,\, , \,\, 1.0 \,  ]$$
 
-$$\beta_{\mathrm{H}} = \, [  \, 0.4 \,\, 1.2 \, ]$$
+$$\beta_{\mathrm{H}} = \, [  \, 0.4 \,\, , \,\, 1.2 \, ]$$
 
-$$\Delta z_{\mathrm{He}} = \, [  \, -0.4 \,\, 0.6 \,]$$
+$$\Delta z_{\mathrm{He}} = \, [  \, -0.4 \,\, , \,\, 0.6 \,]$$
 
-$$\Delta z_{\mathrm{H}} = \, [  \, -0.4 \,\, 0.4 \, ]$$
+$$\Delta z_{\mathrm{H}} = \, [  \, -0.4 \,\, , \,\, 0.4 \, ]$$
 
 
 <img src="{{ site.url }}assets/images/flux_ps_grid_large_wdm_2kev.png"> 
