@@ -11,3 +11,6 @@ categorines: cholla
 
 
 <img src="{{ site.url }}assets/images/fig_reconstructed_gamma_new.png">
+
+
+<img src="{{ site.url }}assets/images/UVB_rates_modified_gamma.png">
