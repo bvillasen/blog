@@ -18,7 +18,9 @@ Originally Cholla was a hydrodynamics solver that runs in multiple GPUs. For my 
  
  3D render of the evolution of the gas over the history of the Universe from a high resolution Cholla simulation performed in Summit (ORNL) and rendered with an original GPU implementation of a ray tracer.  
  
- <iframe width="100%" height="auto" src="https://www.youtube.com/embed/oHn1oOX-OHA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ Updated height
+ 
+ <iframe width="100%" src="https://www.youtube.com/embed/oHn1oOX-OHA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  
  The animation below shows the evolution of the dark matter for a Cholla simulation, the initial conditions are mostly uniform except for tiny perturbations corresponding to the quantum perturbations of the early universe, as time progresses the regions where the density is slightly higher exerts a gravitational pull over the surrounding material causing the growth of large dark matter structures called halos shown in yellow in the animation, the regions connecting the halos form the cosmic web. Galaxies are formed in the inner parts of dark matter halos.        
 
