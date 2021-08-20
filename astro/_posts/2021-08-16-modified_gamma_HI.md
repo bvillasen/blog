@@ -22,3 +22,5 @@ categorines: cholla
 
 
 <img src="{{ site.url }}assets/images/flux_ps_mopdified_gamma.png">
+
+<img src="{{ site.url }}assets/images/fig_HI_tau_modified_gamma_new_1.png">
