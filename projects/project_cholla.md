@@ -16,7 +16,7 @@ Originally Cholla was a hydrodynamics solver that runs in multiple GPUs. For my 
  - A Particle-Mesh scheme to solve the collisionless dynamics of the dark matter particles.\\
  - Developed a Hydrogen + Helium chemical network to account for the reionization of the Universe from a uniform time-dependent UV background.
  
- 3D render of the evolution of the gas over the history of the Universe from a high resolution Cholla simulation performed in Summit (ORNL) and rendered with an original GPU implementation of a ray tracer.  
+ 3D render of the evolution of the gas over the history of the Universe from a high resolution Cholla simulation performed using 512 GPUs in Summit (ORNL) and rendered with an original GPU implementation of a ray tracer.  
  
  <div style="text-align: center">
  <video src="{{ site.url }}assets/videos/fly_by_3D_gas_density.mp4" width="100%"  height="auto" controls preload> </video>
