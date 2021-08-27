@@ -11,4 +11,6 @@ categorines: cholla
 <img src="{{ site.url }}assets/images/fig_T0_boera_ps.png">
 
 
+<img src="{{ site.url }}assets/images/flux_ps_boera_ps.png">
+
 
