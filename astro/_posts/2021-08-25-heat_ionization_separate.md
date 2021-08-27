@@ -19,3 +19,7 @@ categorines: cholla
 
 
 <img src="{{ site.url }}assets/images/fig_T0_newFit.png">
+
+
+
+<img src="{{ site.url }}assets/images/tau_He.png">

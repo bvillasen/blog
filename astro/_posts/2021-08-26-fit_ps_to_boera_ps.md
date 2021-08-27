@@ -6,6 +6,9 @@ categorines: cholla
 ---
 
 
-
+<img src="{{ site.url }}assets/images/corner_boera_ps.png">
 
 <img src="{{ site.url }}assets/images/fig_T0_boera_ps.png">
+
+
+
