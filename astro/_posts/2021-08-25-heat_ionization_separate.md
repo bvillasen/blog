@@ -12,10 +12,10 @@ categorines: cholla
 
 
 
-<img src="{{ site.url }}assets/images/ps_flux_difference_0.png">
+<img src="{{ site.url }}assets/images/flux_ps_difference_0.png">
 
 
-<img src="{{ site.url }}assets/images/ps_flux_difference_both.png">
+<img src="{{ site.url }}assets/images/flux_ps_difference_both.png">
 
 
 <img src="{{ site.url }}assets/images/fig_T0_newFit.png">
