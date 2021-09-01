@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Early Reionization PS and Temperature"
-date:   2021-09-18 08:00:24 -0800
+date:   2021-08-18 08:00:24 -0800
 categorines: cholla
 ---
 

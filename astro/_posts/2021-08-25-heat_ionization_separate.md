@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Changing Heating and Ionization Rates Separately"
-date:   2021-09-24 08:00:24 -0800
+date:   2021-08-24 08:00:24 -0800
 categorines: cholla
 ---
 
