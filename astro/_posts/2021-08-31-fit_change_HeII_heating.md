@@ -10,3 +10,7 @@ categorines: cholla
 
 <img src="{{ site.url }}assets/images/HeII_heat_ion.png">
 
+<img src="{{ site.url }}assets/images/temp_evolution_changed_HeII_heat.png">
+
+
+
