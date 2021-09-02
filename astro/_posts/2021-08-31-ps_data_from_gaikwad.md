@@ -17,8 +17,5 @@ From their paper:
 <img src="{{ site.url }}assets/images/gaikwad_ps_0.png">
 <img src="{{ site.url }}assets/images/gaikwad_ps_1.png">
 
-
-
-
 Both images show $$P(k)$$ at z=3.0, the images show different measurements.
 
