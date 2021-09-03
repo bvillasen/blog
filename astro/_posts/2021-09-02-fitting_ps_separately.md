@@ -12,4 +12,4 @@ Fitting the ionization state and temperature by fitting to the observational Pow
 <img src="{{ site.url }}assets/images/flux_fit_redshift.png"> 
 
 
-<img src="{{ site.url }}assets/images/flux_ps_difference.png"> 
+<img src="{{ site.url }}assets/images/flux_ps_difference_redshift.png"> 
