@@ -16,6 +16,9 @@ Fitting the ionization state and temperature by fitting to the observational Pow
 
 
 
+<img src="{{ site.url }}assets/images/fig_T0_separate_heat_ion_redshift.png"> 
+
+
 ### Now including the $$P(k)$$ data from Walther et al.
  
 
@@ -23,3 +26,7 @@ Fitting the ionization state and temperature by fitting to the observational Pow
 
 
 <img src="{{ site.url }}assets/images/flux_ps_difference_redshift_walther.png"> 
+
+
+
+<img src="{{ site.url }}assets/images/fig_T0_separate_heat_ion_redshift_walther.png"> 
