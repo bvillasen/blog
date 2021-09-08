@@ -20,7 +20,7 @@ categorines: cholla
 
 
 
-### WDM $m$=2.0 keV
+### WDM $$m$$=2.0 keV
 
 
 <img src="{{ site.url }}assets/images/flux_ps_wdm_2.0.png"> 
