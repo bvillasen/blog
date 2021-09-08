@@ -16,7 +16,7 @@ categorines: cholla
 
 <img src="{{ site.url }}assets/images/fig_T0_fit_to_boera.png"> 
 
-<img src="{{ site.url }}assets/images/fig_tau_HI_fit_to_boera_wdm.png">
+<img src="{{ site.url }}assets/images/fig_tau_HI_fit_to_boera.png">
 
 
 
