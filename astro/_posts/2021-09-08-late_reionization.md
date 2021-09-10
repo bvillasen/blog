@@ -33,3 +33,25 @@ categorines: cholla
 
 <img src="{{ site.url }}assets/images/fig_tau_HI_fit_to_boera_zreion5p4.png">
 
+
+
+### Best-Fit Parameters
+
+#### Joint Fit 
+
+<img src="{{ site.url }}assets/images/corner_late_joint.png">
+
+
+#### Independent  Fit $$z$$ = 4.2
+
+<img src="{{ site.url }}assets/images/corner_z4p2.png">
+
+#### Independent  Fit $$z$$ = 4.6
+
+<img src="{{ site.url }}assets/images/corner_z4p6.png">
+
+#### Independent  Fit $$z$$ = 5.0
+
+<img src="{{ site.url }}assets/images/corner_z5p0.png">
+
+
