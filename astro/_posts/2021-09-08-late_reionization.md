@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Comparison to WDM Grid"
+title: "Late Reionization compared to Boera P(k)"
 date:   2021-09-07 010:00:24 -0800
 categorines: cholla
 ---
