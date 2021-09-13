@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First WDM Grid compared to Boera and Boera_viel P(k) "
+title: "First WDM Grid compared to Boera and iel P(k) "
 date:   2021-09-07 12:00:24 -0800
 categorines: cholla
 ---
@@ -26,7 +26,7 @@ categorines: cholla
 <img src="{{ site.url }}assets/images/corner_wdm_boera_viel_r2.png"> 
 
 
-### Parameters Distribution Fit to $$z=5.0$$
+### Parameters Distribution Fit to $$z=5.4$$
  
 <img src="{{ site.url }}assets/images/corner_wdm_boera_viel_r3.png"> 
 
