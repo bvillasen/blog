@@ -27,16 +27,16 @@ categorines: cholla
  
 <img src="{{ site.url }}assets/images/corner_wdm_boera_r2.png"> 
 
-<!-- 
+
 
 ### Power Spectrum 
 
-<img src="{{ site.url }}assets/images/flux_ps_difference_zreion5p4.png"> 
+<img src="{{ site.url }}assets/images/flux_ps_wdm_boera.png"> 
 
 
 ### Power Spectrum Difference
 
-<img src="{{ site.url }}assets/images/flux_ps_difference_zreion5p4.png">  -->
+<img src="{{ site.url }}assets/images/flux_ps_difference_wdm_boera.png"> 
 
 
 
