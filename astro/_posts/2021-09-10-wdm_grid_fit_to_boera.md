@@ -31,6 +31,13 @@ Using the corrected measurement to do the fit:
 ### Power Spectrum Difference
 <img src="{{ site.url }}assets/images/flux_ps_difference_cdm_boera_c.png"> 
 
+### Temperature
+<img src="{{ site.url }}assets/images/fig_T0_fit_to_boera_cdm_boera_c.png"> 
+
+### Effective Optical Depth
+<img src="{{ site.url }}assets/images/fig_tau_HI_fit_to_boera_cdm_boera_c.png">
+
+
 
 ## WDM Fit to Boera
 
@@ -51,3 +58,11 @@ Using the corrected measurement to do the fit:
 
 ### Power Spectrum Difference
 <img src="{{ site.url }}assets/images/flux_ps_difference_wdm_boera_c.png"> 
+
+### Temperature
+<img src="{{ site.url }}assets/images/fig_T0_fit_to_boera_wdm_boera_c.png"> 
+
+### Effective Optical Depth
+<img src="{{ site.url }}assets/images/fig_tau_HI_fit_to_boera_wdm_boera_c.png">
+
+
