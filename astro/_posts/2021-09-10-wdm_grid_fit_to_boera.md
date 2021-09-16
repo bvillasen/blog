@@ -6,12 +6,12 @@ categorines: cholla
 ---
 
 
-## WDM Fit to Boera
 
 In her paper Boera reports two measurements of the powers spectrum, one of the is corrected for instrument resolution.
 
 Using the corrected measurement to do the fit:
   
+## CDM Fit to Boera
 
 ### Parameters Distribution Joint Fit to all redshifts 
 
