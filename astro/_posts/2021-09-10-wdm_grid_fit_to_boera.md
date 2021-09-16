@@ -14,34 +14,40 @@ Using the corrected measurement to do the fit:
 ## CDM Fit to Boera
 
 ### Parameters Distribution Joint Fit to all redshifts 
-
-
 <img src="{{ site.url }}assets/images/corner_cdm_boera_c.png"> 
 
-
-
 ### Parameters Distribution Fit to $$z=4.2$$
- 
-<img src="{{ site.url }}assets/images/corner_cdm_boera_c_r0.png"> 
+ <img src="{{ site.url }}assets/images/corner_cdm_boera_c_r0.png"> 
 
 ### Parameters Distribution Fit to $$z=4.6$$
- 
 <img src="{{ site.url }}assets/images/corner_cdm_boera_c_r1.png"> 
 
 ### Parameters Distribution Fit to $$z=5.0$$
- 
 <img src="{{ site.url }}assets/images/corner_cdm_boera_c_r2.png"> 
 
-
-
 ### Power Spectrum 
-
-<img src="{{ site.url }}assets/images/flux_ps_cdm_boera_c.png"> 
-
+<img src="{{ site.url }}assets/images/flux_ps_cdm_boera_c.png">
 
 ### Power Spectrum Difference
-
 <img src="{{ site.url }}assets/images/flux_ps_difference_cdm_boera_c.png"> 
 
 
+## WDM Fit to Boera
 
+### Parameters Distribution Joint Fit to all redshifts 
+<img src="{{ site.url }}assets/images/corner_wdm_boera_c.png"> 
+
+### Parameters Distribution Fit to $$z=4.2$$
+ <img src="{{ site.url }}assets/images/corner_wdm_boera_c_r0.png"> 
+
+### Parameters Distribution Fit to $$z=4.6$$
+<img src="{{ site.url }}assets/images/corner_wdm_boera_c_r1.png"> 
+
+### Parameters Distribution Fit to $$z=5.0$$
+<img src="{{ site.url }}assets/images/corner_wdm_boera_c_r2.png"> 
+
+### Power Spectrum 
+<img src="{{ site.url }}assets/images/flux_ps_wdm_boera_c.png">
+
+### Power Spectrum Difference
+<img src="{{ site.url }}assets/images/flux_ps_difference_wdm_boera_c.png"> 
