@@ -27,14 +27,14 @@ Now I turn the **photoheating and photoionization** from the UVB for $$z<6.2$$
 
 
 
-Now I shift the UVB rates $$Delta z ~ 1.0$ (Reionization happens at $$z\sim 7$$ ) and turn the **photoheating and photoionization** from the UVB for $$z<7.2$$
+Now I shift the UVB rates $$Delta z ~ 1.0$$ (Reionization happens at $$z\sim 7$$ ) and turn the **photoheating and photoionization** from the UVB for $$z<7.2$$
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_P19m_zero_heat_ion_1.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
 
 
-Now I shift the UVB rates $$Delta z ~ 2.0$ (Reionization happens at $$z\sim 8$$ ) and turn the **photoheating and photoionization** from the UVB for $$z<8.2$$
+Now I shift the UVB rates $$Delta z ~ 2.0$$ (Reionization happens at $$z\sim 8$$ ) and turn the **photoheating and photoionization** from the UVB for $$z<8.2$$
 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_P19m_zero_heat_ion_2.mp4" width="100%"  height="auto" controls preload> </video>
