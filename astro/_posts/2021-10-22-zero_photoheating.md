@@ -39,3 +39,8 @@ Now I shift the UVB rates $$Delta z ~ 2.0$ (Reionization happens at $$z\sim 8$$ 
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_P19m_zero_heat_ion_2.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
+
+
+Here is the evolution of $$T_0$$ and $$\gamma$$
+
+<img src="{{ site.url }}assets/images/fig_thermal_zero_heat.png">
