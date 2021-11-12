@@ -23,7 +23,7 @@ Fitting the WDM mass and the Hydrogen photoionization and photoheating separatel
 
 
 ### Temperature of the IGM for the fits
-<img src="{{ site.url }}assets/images/wdm_boera_new/fig_T0_fit_to_boera_wdm.png">
+<img src="{{ site.url }}assets/images/wdm_boera_new/fig_T0_fit_to_boera.png">
 
 ### Power Spectrum for the fits
 <img src="{{ site.url }}assets/images/wdm_boera_new/flux_ps.png">
