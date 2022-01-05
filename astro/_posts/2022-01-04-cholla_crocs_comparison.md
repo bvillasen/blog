@@ -18,11 +18,6 @@ Clearly the is a multiplicative offset. If I rescale the Crocs halo masses by $$
 
 
 
-
-<!-- Now I exclude the subhalos from both catalogs, the result is below: 
-<img src="{{ site.url }}assets/images/crocs_comparison/mass_function_comparison_nosubhalos.png"> -->
-
-
 Conclusions:
 
 1. Seems like there is a factor of $h$ missing from the halo masses in one of the catalogs.
