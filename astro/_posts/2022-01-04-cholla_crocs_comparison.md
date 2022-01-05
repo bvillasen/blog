@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Crocs - Cholla Halos comparison "
-date:   2022-01-02 010:00:24 -0800
+title: "Crocs Cholla Halos comparison "
+date:   2021-12-25 010:00:24 -0800
 categorines: cholla
 ---
 
