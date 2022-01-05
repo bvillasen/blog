@@ -21,6 +21,6 @@ Here is the mass function for all the snapshots shared.
 Conclusions:
 
 1. Seems like there is a factor of $$h$$ missing from the halo masses in one of the catalogs.
-2. There are more low mass halos in the Cholla catalogs, note that all this have sizes smaller than one cell of the uniform grid. 
+2. There are more low mass halos in the Cholla catalogs, note that all these halos have sizes smaller than one cell of the uniform grid. 
 
 
