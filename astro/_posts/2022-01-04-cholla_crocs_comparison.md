@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Crocs Cholla Halos comparison "
+title: "Crocs Cholla Halo Mass Function Comparison "
 date:   2021-12-25 010:00:24 -0800
 categorines: cholla
 ---
