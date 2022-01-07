@@ -25,4 +25,8 @@ Now I perform the fit from the full grid (600 simulations), below are the result
 
 
 <img src="{{ site.url }}assets/images/wdm_mcmc_fit/corner.png">
+
+<img src="{{ site.url }}assets/images/wdm_mcmc_fit/flux_ps_wdm.png">
+ 
+<img src="{{ site.url }}assets/images/wdm_mcmc_fit/fig_T0_wdm.png">
  
