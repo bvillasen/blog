@@ -24,5 +24,5 @@ The marginalized temperature evolution for each fit is below:
 Now I perform the fit from the full grid (600 simulations), below are the results:
 
 
-
+<img src="{{ site.url }}assets/images/wdm_mcmc_fit/corner.png">
  
