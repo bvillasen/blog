@@ -11,6 +11,13 @@ From a set of simulations ($$L=50\,h^{-1}\mathrm{Mpc}$$, $$N=1024^{3}$$) I measu
 
 <img src="{{ site.url }}assets/images/wdm_matter_distribution/density_distribution.png">
 
+## Transmitted Cumulative distribution
+
+Now I show the distribution of the Lya Transmitted Flux from the simulations, the vertical lines correspond to the mean transmitted flux showing that the IGM is more opaque for lower masses of the WDM. 
+
+
+<img src="{{ site.url }}assets/images/wdm_matter_distribution/flux_distribution.png">
+
 
 ## DM density power_spectrum
 
