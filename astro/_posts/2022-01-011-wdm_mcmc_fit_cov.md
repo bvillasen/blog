@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WDM Simulations: MCMC fit using covariance matrix"
-date:   2022-01-11 010:00:24 -0800
+date:   2022-01-10 010:00:24 -0800
 categorines: cholla
 ---
 
