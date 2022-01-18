@@ -23,3 +23,20 @@ Now I run a full cosmological simulation ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=256
 <div style="text-align: center">
 <video src="{{ site.url }}assets/videos/phase_diagram_grackle_cholla.mp4" width="100%"  height="auto" controls preload> </video>
 </div>
+
+
+### Lya Transmitted Flux along skewers
+
+From I higer resolution simulation  ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=1024^3$$ ), I measure the Lya transmitted flux along some skewers crossing the box, the comparison for several redshift values is below
+
+#### $$z = 5.0$$
+<img src="{{ site.url }}assets/images/cholla_chem_validation/skewers_comparison_0.png">
+
+#### $$z = 4.0$$
+<img src="{{ site.url }}assets/images/cholla_chem_validation/skewers_comparison_1.png">
+
+#### $$z = 3.0$$
+<img src="{{ site.url }}assets/images/cholla_chem_validation/skewers_comparison_2.png">
+
+#### $$z = 2.0$$
+<img src="{{ site.url }}assets/images/cholla_chem_validation/skewers_comparison_3.png">
