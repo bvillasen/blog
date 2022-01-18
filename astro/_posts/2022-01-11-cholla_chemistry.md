@@ -40,3 +40,11 @@ From a higher resolution simulation  ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=1024^3$
 
 #### $$z = 2.0$$
 <img src="{{ site.url }}assets/images/cholla_chem_validation/skewers_comparison_3.png">
+
+
+### Lya Effective Optical Depth
+
+From the ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=1024^3$$ ) simulation, I measure the evolution of the Lya Effective Optical Depth, the comparison is below:
+
+<img src="{{ site.url }}assets/images/cholla_chem_validation/tau_comparison.png">
+   
