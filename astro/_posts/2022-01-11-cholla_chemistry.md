@@ -47,4 +47,14 @@ From a higher resolution simulation  ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=1024^3$
 From the ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=1024^3$$ ) simulation, I measure the evolution of the Lya Effective Optical Depth, the comparison is below:
 
 <img src="{{ site.url }}assets/images/cholla_chem_validation/tau_comparison.png">
-   
+
+
+
+### Lya Flux Power Spectrum
+
+From the ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=1024^3$$ ) simulation, I measure the evolution of the Lya Flux Power Spectrum, the comparison is below:
+
+<img src="{{ site.url }}assets/images/cholla_chem_validation/ps_comparison.png">
+
+There are some differences as large as $$\sim 25\%$$ on small scales. 
+      
