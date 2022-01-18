@@ -27,7 +27,7 @@ Now I run a full cosmological simulation ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=256
 
 ### Lya Transmitted Flux along skewers
 
-From I higer resolution simulation  ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=1024^3$$ ), I measure the Lya transmitted flux along some skewers crossing the box, the comparison for several redshift values is below
+From a higher resolution simulation  ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=1024^3$$ ), I measure the Lya transmitted flux along some skewers crossing the box, the comparison for several redshift values is below
 
 #### $$z = 5.0$$
 <img src="{{ site.url }}assets/images/cholla_chem_validation/skewers_comparison_0.png">
