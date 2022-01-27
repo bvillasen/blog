@@ -25,49 +25,40 @@ From our WDM grid of simulations I show the covariance matrices from several mod
 To see the effects of changing the parameters independently, I change only one of the parameters while leaving the other equal to the default parameters below:
 
 
-### Changing $$m_{\mathrm{WDM}}$$
+### At $$z= 5.0$$
 
-#### At $$z= 5.0$$
+#### Changing $$m_{\mathrm{WDM}}$$
 <img src="{{ site.url }}assets/images/covariance_matrix/snap_25/cm_multiple_wdm_mass_normalized.png">
-#### At $$z= 4.6$$
-<img src="{{ site.url }}assets/images/covariance_matrix/snap_29/cm_multiple_wdm_mass_normalized.png">
-#### At $$z= 4.2$$
-<img src="{{ site.url }}assets/images/covariance_matrix/snap_33/cm_multiple_wdm_mass_normalized.png">
-
-### Changing $$\beta_{\mathrm{H}}^{\mathrm{ion}}$$
-
-#### At $$z= 5.0$$
+#### Changing $$\beta_{\mathrm{H}}^{\mathrm{ion}}$$
 <img src="{{ site.url }}assets/images/covariance_matrix/snap_25/cm_multiple_scale_H_ion_normalized.png">
-#### At $$z= 4.6$$
-<img src="{{ site.url }}assets/images/covariance_matrix/snap_29/cm_multiple_scale_H_ion_normalized.png">
-#### At $$z= 4.2$$
-<img src="{{ site.url }}assets/images/covariance_matrix/snap_33/cm_multiple_scale_H_ion_normalized.png">
-
-### Changing $$\alpha E_{\mathrm{He}}$$
-
-#### At $$z= 5.0$$
+#### Changing $$\alpha E_{\mathrm{He}}$$
 <img src="{{ site.url }}assets/images/covariance_matrix/snap_25/cm_multiple_scale_H_Eheat_normalized.png">
-#### At $$z= 4.6$$
-<img src="{{ site.url }}assets/images/covariance_matrix/snap_29/cm_multiple_scale_H_Eheat_normalized.png">
-#### At $$z= 4.2$$
-<img src="{{ site.url }}assets/images/covariance_matrix/snap_33/cm_multiple_scale_H_Eheat_normalized.png">
-
-### Changing $$\Delta z_{\mathrm{H}}$$
-
-#### At $$z= 5.0$$
+#### Changing $$\Delta z_{\mathrm{H}}$$
 <img src="{{ site.url }}assets/images/covariance_matrix/snap_25/cm_multiple_deltaZ_H_normalized.png">
-#### At $$z= 4.6$$
+
+
+### At $$z= 4.6$$
+
+#### Changing $$m_{\mathrm{WDM}}$$
+<img src="{{ site.url }}assets/images/covariance_matrix/snap_29/cm_multiple_wdm_mass_normalized.png">
+#### Changing $$\beta_{\mathrm{H}}^{\mathrm{ion}}$$
+<img src="{{ site.url }}assets/images/covariance_matrix/snap_29/cm_multiple_scale_H_ion_normalized.png">
+#### Changing $$\alpha E_{\mathrm{He}}$$
+<img src="{{ site.url }}assets/images/covariance_matrix/snap_29/cm_multiple_scale_H_Eheat_normalized.png">
+#### Changing $$\Delta z_{\mathrm{H}}$$
 <img src="{{ site.url }}assets/images/covariance_matrix/snap_29/cm_multiple_deltaZ_H_normalized.png">
-#### At $$z= 4.2$$
+
+
+
+
+### At $$z= 4.2$$
+
+#### Changing $$m_{\mathrm{WDM}}$$
+<img src="{{ site.url }}assets/images/covariance_matrix/snap_33/cm_multiple_wdm_mass_normalized.png">
+#### Changing $$\beta_{\mathrm{H}}^{\mathrm{ion}}$$
+<img src="{{ site.url }}assets/images/covariance_matrix/snap_33/cm_multiple_scale_H_ion_normalized.png">
+#### Changing $$\alpha E_{\mathrm{He}}$$
+<img src="{{ site.url }}assets/images/covariance_matrix/snap_33/cm_multiple_scale_H_Eheat_normalized.png">
+#### Changing $$\Delta z_{\mathrm{H}}$$
 <img src="{{ site.url }}assets/images/covariance_matrix/snap_33/cm_multiple_deltaZ_H_normalized.png">
-
-
-
-
-
-
-
-
-
-
 
