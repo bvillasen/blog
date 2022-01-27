@@ -57,4 +57,19 @@ From the ( $$L=50 h^{-1} \mathrm{Mpc}$$, $$N=1024^3$$ ) simulation, I measure th
 <img src="{{ site.url }}assets/images/cholla_chem_validation/ps_comparison.png">
 
 There are some differences as large as $$\sim 25\%$$ on small scales. 
+
+
+### Slices from the Simulations 
+
+#### z=5.4
+<img src="{{ site.url }}assets/images/cholla_chem_validation/slices_comparison_1.png">
+
+#### z=4.0
+<img src="{{ site.url }}assets/images/cholla_chem_validation/slices_comparison_5.png">
+
+#### z=3.0
+<img src="{{ site.url }}assets/images/cholla_chem_validation/slices_comparison_10.png">
+
+#### z=2.0
+<img src="{{ site.url }}assets/images/cholla_chem_validation/slices_comparison_15.png">
       
