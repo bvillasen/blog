@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cholla Chemistry solver compared to Grackle "
-date:   2022-01-11 010:00:24 -0800
+date:   2022-01-15 010:00:24 -0800
 categorines: cholla
 ---
 
