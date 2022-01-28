@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Covariance matrices from WDM simulations"
-date:   2022-01-25 010:00:24 -0800
+date:   2022-01-26 010:00:24 -0800
 categorines: cholla
 ---
 
