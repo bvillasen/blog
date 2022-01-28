@@ -24,6 +24,17 @@ From our WDM grid of simulations I show the covariance matrices from several mod
 
 To see the effects of changing the parameters independently, I change only one of the parameters while leaving the other equal to the default parameters below:
 
+$$m_\mathrm{WDM}^{-1} = 0\,\,\ \mathrm{(CDM)}$$
+
+
+$$\beta_{\mathrm{H}}^{\mathrm{ion}} = 1.0 $$
+ 
+ 
+$$\alpha E_{\mathrm{He}} = 0.9 $$
+
+
+$$\Delta z_{\mathrm{H}} = 0.0$$
+
 
 ### At $$z= 5.0$$
 
