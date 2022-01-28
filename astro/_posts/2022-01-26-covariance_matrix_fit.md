@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MCMC Fitting using covariance matrix"
-date:   2022-01-27 010:00:24 -0800
+date:   2022-01-26 011:00:24 -0800
 categorines: cholla
 ---
 
