@@ -13,7 +13,7 @@ First I compare a "single zone" test where the simulation is a small box with un
 
 The evolution of the temperature and the abundances of the chemical species are shown below:
 
-<img src="{{ site.url }}assets/images/cholla_chem_validation_fixed/single_cell_comparison.png">
+<img src="{{ site.url }}assets/images/cholla_chem_validation_fixed/single_cell_comparison_new.png">
   
 
 
