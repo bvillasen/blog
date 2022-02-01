@@ -15,7 +15,7 @@ The evolution of the temperature and the abundances of the chemical species are 
 
 <img src="{{ site.url }}assets/images/cholla_chem_validation_fixed/single_cell_comparison_new.png">
   
-
+There are some small differences around 2% in the temperature. The ionization states of H and He seem extremely close showing differences smaller than 0.002% !!!
 
 ### Density-Temperature distribution
 
