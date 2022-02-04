@@ -39,7 +39,7 @@ I chose the 16 closest models from which I measure the rescaled covariance matri
 The parameters for the chosen models are the combinations of the following:
 
 
-$$ m_{\mathrm{WDM}}$$: [ 3.0,  4.0 ] keV
+$$ m_{\mathrm{WDM}}$$: [ 3.0,  5.0 ] keV
 
 $$\beta_{\mathrm{H}}^{\mathrm{ion}} $$: [ 1.0, 1.4 ]
 
