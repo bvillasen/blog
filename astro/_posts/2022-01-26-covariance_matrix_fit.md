@@ -23,3 +23,15 @@ Here I compare the fits that result from using the uncertainty $$sigma$$ against
 
 ### Fit only to $$z=5.0$$
 <img src="{{ site.url }}assets/images/wdm_mcmc_fit_covariance_matrix/corner_r2.png">
+
+
+## Covariance from the simulations
+
+
+Now I measure the effect of using the covariance matrix from the models which I rescale to have the same $$sigma$$ as the data by applying the equation:
+
+
+$$C_{i j}= C_{i j}^{s i m} \frac{ \sqrt{C_{i i}^{\text {data }} C_{j j}^{\text {data }}} }{\sqrt{C_{i i}^{s i m} C_{j j}^{s i m}}}  $$
+
+
+<img src="{{ site.url }}assets/images/wdm_mcmc_fit_covariance_matrix/marginalized.png">
