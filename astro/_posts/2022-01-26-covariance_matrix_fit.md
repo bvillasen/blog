@@ -43,7 +43,7 @@ $$ m_{\mathrm{WDM}}$$: [ 3.0,  4.0 ] keV
 
 $$\beta_{\mathrm{H}}^{\mathrm{ion}} $$: [ 1.0, 1.4 ]
 
-$$ \alpha E_{\mathrm{H} $$: [ 0.5, 0.9 ]
+$$ \alpha E_{\mathrm{H}} $$: [ 0.5, 0.9 ]
 
 $$ \Delta z_{\mathrm{H}} $$: [-0.5, 0.5]
  
