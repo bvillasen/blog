@@ -9,4 +9,7 @@ categorines: cholla
 
 <img src="{{ site.url }}assets/images/wdm_paper/corner_wdm.png">
 
+
 <img src="{{ site.url }}assets/images/wdm_paper/flux_ps_wdm.png">
+
+<img src="{{ site.url }}assets/images/wdm_paper/corner_cdm.png">
