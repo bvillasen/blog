@@ -16,6 +16,6 @@ categorines: cholla
 ## Posterior distribution of the CDM-Only grid fit 
 <img src="{{ site.url }}assets/images/wdm_paper/corner_cdm.png">
 
-## Marginalized Power Spectrum form the WDM Best Bit and the CDM Besty Fit
+## Marginalized Power Spectrum form the WDM Best Bit and the CDM Best Fit
 <img src="{{ site.url }}assets/images/wdm_paper/flux_ps_wdm.png">
 
