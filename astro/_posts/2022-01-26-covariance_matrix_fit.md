@@ -55,3 +55,16 @@ Now I fix the UVB parameters to those closest to the best-fit and use the covari
 
 
 <img src="{{ site.url }}assets/images/wdm_mcmc_fit_covariance_matrix/marginalized_wdm_masses_bootstrap.png">
+
+## Marginalized Power Spectrum
+
+Now I show the marginalized Power Spectrum from fitting the three redshifts simultaneously using the Covariance Matrix from Boera el al. and also just using $$\sigma$$.
+
+
+<img src="{{ site.url }}assets/images/wdm_mcmc_fit_covariance_matrix/flux_ps_wdm_Highest_Likelihood.png">
+
+Now the same but **fitting each redshift independently.**
+
+
+<img src="{{ site.url }}assets/images/wdm_mcmc_fit_covariance_matrix/flux_ps_wdm_Highest_Likelihood_independent_redshift.png">
+
