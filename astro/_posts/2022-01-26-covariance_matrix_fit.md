@@ -49,4 +49,9 @@ $$ \Delta z_{\mathrm{H}} $$: [-0.5, 0.5]
  
 The marginalized distributions for the fits from the 16 covariance matrices is shown below:
 
-<img src="{{ site.url }}assets/images/wdm_mcmc_fit_covariance_matrix/marginalized.png">
+<img src="{{ site.url }}assets/images/wdm_mcmc_fit_covariance_matrix/marginalized_closest_to_best_fit.png">
+
+Now I fix the UVB parameters to those closest to the best-fit and use the covariance matrix obtained from the different different $$m_\mathrm{WDM}$$ simulations.  
+
+
+<img src="{{ site.url }}assets/images/wdm_mcmc_fit_covariance_matrix/marginalized_wdm_masses_bootstrap.png">
