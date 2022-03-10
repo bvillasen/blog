@@ -19,3 +19,11 @@ Irsic et al. provides the full covariance across all the redshift bins, instead 
 ### BOSS. 
 <img src="{{ site.url }}assets/images/thermal_covariance_matrix_data/covariance_matrix_boss_normalized.png">
 
+
+## Full Covariance Matrix used for the fit
+
+Combining all the different matrices I build the full covariance matrix that I will use for the new MCMC fit
+
+
+<img src="{{ site.url }}assets/images/thermal_covariance_matrix_data/covariance_matrix_normalized.png">
+     
