@@ -26,4 +26,9 @@ Combining all the different matrices I build the full covariance matrix that I w
 
 
 <img src="{{ site.url }}assets/images/thermal_covariance_matrix_data/covariance_matrix_normalized.png">
+
+The inverse of the full covariance matrix is shown below:
+
+<img src="{{ site.url }}assets/images/thermal_covariance_matrix_data/covariance_matrix_inverse_normalized.png">
+
      
