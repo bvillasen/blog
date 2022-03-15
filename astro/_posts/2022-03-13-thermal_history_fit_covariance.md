@@ -20,4 +20,4 @@ I repeat the mcmc sampling using the published covariace matrices for the $$P(k)
 <img src="{{ site.url }}assets/images/thermal_history_covariance_fit/tau_HI.png">
 
 ### HeII Effective Optical Depth
-<img src="{{ site.url }}assets/images/thermal_history_covariance_fit/tau_He_grid_new_.png">
+<img src="{{ site.url }}assets/images/thermal_history_covariance_fit/tau_He_grid_new.png">
