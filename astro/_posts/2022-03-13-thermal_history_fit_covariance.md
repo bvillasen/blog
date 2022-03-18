@@ -27,3 +27,6 @@ I repeat the mcmc sampling using the published covariace matrices for the $$P(k)
 
 ### Thompson Optical Depth
 <img src="{{ site.url }}assets/images/thermal_history_covariance_fit/tau_electron.png">
+
+### Temperature evolution for reduced photoheating
+<img src="{{ site.url }}assets/images/thermal_history_covariance_fit/reduced_heating_fract.png">
