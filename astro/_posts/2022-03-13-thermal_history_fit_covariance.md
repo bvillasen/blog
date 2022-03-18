@@ -21,3 +21,9 @@ I repeat the mcmc sampling using the published covariace matrices for the $$P(k)
 
 ### HeII Effective Optical Depth
 <img src="{{ site.url }}assets/images/thermal_history_covariance_fit/tau_He_grid_new.png">
+
+### HI Fraction
+<img src="{{ site.url }}assets/images/thermal_history_covariance_fit/HI_fraction.png">
+
+### Thompson Optical Depth
+<img src="{{ site.url }}assets/images/thermal_history_covariance_fit/tau_electron.png">
