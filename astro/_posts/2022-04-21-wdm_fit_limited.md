@@ -33,3 +33,7 @@ categorines: cholla
 ## Removed first 6 low-$$k$$ points
 <img src="{{ site.url }}assets/images/wdm_limited_fit/corner_wdm_noLowK_6.png">
 <img src="{{ site.url }}assets/images/wdm_limited_fit/flux_ps_wdm_noLowK_6.png">
+
+## Removed first 8 low-$$k$$ points
+<img src="{{ site.url }}assets/images/wdm_limited_fit/corner_wdm_noLowK_8.png">
+<img src="{{ site.url }}assets/images/wdm_limited_fit/flux_ps_wdm_noLowK_8.png">
