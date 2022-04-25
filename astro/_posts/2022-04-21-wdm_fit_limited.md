@@ -8,7 +8,7 @@ categorines: cholla
 
 ## Removed last 1 high-$$k$$ point
 <img src="{{ site.url }}assets/images/wdm_limited_fit/corner_wdm_noHighK_1.png">
-<img src="{{ site.url }}assets/images/wdm_limited_fit/flux_ps_wdm_noHighK_1.png">
+<img src="{{ site.url }}assets/images/wdm_limited_fit/flux_ps_wdm_noHighK_1_new.png">
 
 ## Removed last 2 high-$$k$$ points
 <img src="{{ site.url }}assets/images/wdm_limited_fit/corner_wdm_noHighK_2.png">
