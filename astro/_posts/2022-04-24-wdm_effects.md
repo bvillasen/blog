@@ -1,10 +1,17 @@
 ---
 layout: post
-title: "WDM fit to limited P(k) data points "
+title: "WDM Effects on P(k) "
 date:   2022-04-24 010:00:24 -0800
 categorines: cholla
 ---
 
+
+### High-$$z$$ Matter Power Spectrum of WDM compared to CDM
+
+
+<img src="{{ site.url }}assets/images/wdm_ps_effects/ps_ratio_wdm_high_z_1.png">
+
+<img src="{{ site.url }}assets/images/wdm_ps_effects/ps_ratio_wdm_high_z_2.png">
 
 ### Power spectrum of WDM compared to CDM
 
