@@ -13,3 +13,12 @@ categorines: cholla
 ### Fractional difference in the phase digram of WDM with respect to CDM  at $$z=5.0$$
 
 <img src="{{ site.url }}assets/images/wdm_dens_temp/phase_diagram_diff.png">
+
+
+### Density ratio at $$z=5.0$$
+
+<img src="{{ site.url }}assets/images/wdm_dens_temp/density_ratio_wdm_2.png">
+
+### Temperature ratio at $$z=5.0$$
+
+<img src="{{ site.url }}assets/images/wdm_dens_temp/temperature_ratio_wdm_2.png">
