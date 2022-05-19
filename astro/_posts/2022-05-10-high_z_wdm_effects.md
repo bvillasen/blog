@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "WDM Effects on High Redshift Matter Power Spectrum "
+title: "WDM Effects on High Redshift Matter Power Spectrum  "
 date:   2022-05-10 010:00:24 -0800
 categorines: cholla
 ---
