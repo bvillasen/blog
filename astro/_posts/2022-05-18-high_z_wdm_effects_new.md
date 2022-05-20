@@ -38,4 +38,12 @@ Grid size: $$1024^3$$ and box size: $$L=5 h^{-1}\mathrm{MPC}$$
 
 
 
+Grid size: $$2048^3$$ and box size: $$L=10 h^{-1}\mathrm{MPC}$$ 
+
+<img src="{{ site.url }}assets/images/wdm_high_z_pk/flux_ps_2048_10Mpc_dmo_log.png">
+
+
+### All the DM-Only Simulations at $$z=100$$ (Initial Conditions)
+
+<img src="{{ site.url }}assets/images/wdm_high_z_pk/ps_diff_zid_0.png">
 
