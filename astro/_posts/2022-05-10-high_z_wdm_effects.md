@@ -11,6 +11,14 @@ categorines: cholla
 <img src="{{ site.url }}assets/images/wdm_high_z_pk/input_power_spectrum_wdm.png">
 
 
+### Evolution of $$P(k)$$ from Hydrodynamical Simulation 
+
+
+Grid size: $$2048^3$$ and box size: $$L=25 h^{-1}\mathrm{MPC}$$ 
+
+<img src="{{ site.url }}assets/images/wdm_high_z_pk/flux_ps_2048_hydro_log.png">
+
+
 
 ### Evolution of $$P(k)$$ from a DM-Only Simulation 
 
@@ -20,11 +28,4 @@ Grid size: $$1024^3$$ and box size: $$L=25 h^{-1}\mathrm{MPC}$$
 
 
 
-
-### Evolution of $$P(k)$$ from Hydrodynamical Simulation 
-
-
-Grid size: $$2048^3$$ and box size: $$L=25 h^{-1}\mathrm{MPC}$$ 
-
-<img src="{{ site.url }}assets/images/wdm_high_z_pk/flux_ps_2048_hydro_log.png">
 
