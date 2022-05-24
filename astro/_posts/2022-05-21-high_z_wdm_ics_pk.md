@@ -6,7 +6,7 @@ categorines: cholla
 ---
 
 
-## P(k) of the Initial Condtions Density (DM-Only  $$z=100$$) for CDM and 3.0kev WDM mass
+## P(k) of the Initial Condtions Density (DM-Only  $$z=100$$) for CDM and 3.0 kev WDM mass
 
 ### From a grid of $$N=1024^3$$ and $$L=25 h^{-1}\mathrm{Mpc}$$
 
