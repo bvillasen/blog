@@ -38,5 +38,5 @@ from the observations
 <img src="{{ site.url }}assets/images/wdm_pk_tsc/flux_ps_2.png">
 
 
-**Despite some differences in the gas matter power spectrum between CIC and TSC, the flux power spectrum shows negligible differences on the scales probed by the observations**
+**Despite some differences in the gas matter power spectrum between CIC and TSC, the flux power spectrum shows small differences on the scales probed by the observations**
    
