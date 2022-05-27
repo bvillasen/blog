@@ -38,5 +38,5 @@ from the observations
 <img src="{{ site.url }}assets/images/wdm_pk_tsc/flux_ps_2.png">
 
 
-**Despite some differences in the gas matter power spectrum between CIC and TSC, the flux power spectrum shows small differences on the scales probed by the observations**
+**Despite some differences in the gas matter power spectrum between CIC and TSC, the flux power spectrum shows only small differences on the scales probed by the observations and the flattening for $$k>0.1 \mathrm{s / km}$$ is still present even when comparing the TSC WDM simulation to the CIC CDM simulation. This shows that the flattening at $$k>0.1 \mathrm{s / km}$$ might not be caused by the excess power due to the CIC deposition.**
    
