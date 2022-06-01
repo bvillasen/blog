@@ -52,4 +52,21 @@ The Bottom panels show $$P_\mathrm{WDM,\,CIC}(k) / P_\mathrm{CDM,\,CIC}(k) $$ in
 
 
 **Despite some differences in the gas matter power spectrum between CIC and TSC, the flux power spectrum shows only small differences on the scales probed by the observations and the flattening for $$k>0.1 \mathrm{s / km}$$ is still present even when comparing the TSC WDM simulation to the CIC CDM simulation. This shows that the flattening at $$k>0.1 \mathrm{s / km}$$ might not be caused by the excess power due to the CIC deposition.**
+
+## Power Spectrum of the Un-Normalized Flux
+
+
+Here the flux power spectrum is taken directly from $$F$$ instead of from $$F/\bar{F}$$
+
+### z= 5.0   
+<img src="{{ site.url }}assets/images/wdm_pk_tsc/flux_ps_unnorm_0.png">
+
+
+### z= 4.6   
+<img src="{{ site.url }}assets/images/wdm_pk_tsc/flux_ps_unnorm_1.png">
+
+
+### z= 4.2   
+<img src="{{ site.url }}assets/images/wdm_pk_tsc/flux_ps_unnorm_2.png">
    
+**There are still differences on large scales from WDM respect to CDM**    
