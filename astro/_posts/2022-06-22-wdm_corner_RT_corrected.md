@@ -11,3 +11,11 @@ Now CDM is contained within 2$$\sigma$$
 
 <img src="{{ site.url }}assets/images/wdm_RT_corrected/corner_wdm_RT_corrected.png">
 
+
+### CDM Only fit
+
+<img src="{{ site.url }}assets/images/wdm_RT_corrected/corner_cdm_RT_corrected.png">
+
+### Flux power spectrum
+
+<img src="{{ site.url }}assets/images/wdm_RT_corrected/flux_ps_wdm_RT_corrected.png">
