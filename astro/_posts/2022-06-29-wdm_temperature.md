@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WDM Lya Flux rescaling temperature"
-date:   2022-06-29 010:00:24 -0800
+date:   2022-06-30 010:00:24 -0800
 categorines: cholla
 ---
 
