@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "WDM: HI power spectrum"
+title: "WDM: Flux Power Spectrum Suppression"
 date:   2022-07-11 010:00:24 -0800
 categorines: cholla
 ---
@@ -13,4 +13,4 @@ categorines: cholla
 
 ## Temperature
 
-For $$T_0~sim 8 \times 10^3 K$$ the corresponding Doppler velocity is $$~sim 11.5$$ km/s and the corresponding wave number $$k ~ sim 0.5 $$ s/km 
+For $$T_0 \sim 8 \times 10^3 K$$ the corresponding Doppler velocity is $$\sim 11.5$$ km/s and the corresponding wave number $$k \sim 0.5 $$ s/km 
