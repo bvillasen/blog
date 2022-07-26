@@ -27,3 +27,17 @@ Effects on $$P(k)$$ from free-streaming (left), Doppler broadening (center) and 
 
 ### Effect of Peculiar Velocities Suppressing $$P(k)$$
 <img src="{{ site.url }}assets/images/wdm_paper_new/flux_ps_ratio_real_space.png">
+
+
+### Fit from full WDM Grid
+<img src="{{ site.url }}assets/images/wdm_paper_new/corner_wdm.png">
+
+
+### Fit from full CDM-Only Grid
+<img src="{{ site.url }}assets/images/wdm_paper_new/corner_cdm.png">
+
+
+
+### Fit from full WDM Grid, Inhomogeneous UVB Corrected
+<img src="{{ site.url }}assets/images/wdm_paper_new/corner_wdm_RT_corrected.png">
+
