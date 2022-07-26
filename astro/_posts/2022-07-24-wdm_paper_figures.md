@@ -11,7 +11,7 @@ categorines: cholla
 <img src="{{ site.url }}assets/images/wdm_paper_new/slice.png">
 
 
-### WDM Effects on Density and Transmitted Flux density_flux_distributions
+### WDM Effects on Density and Transmitted Flux distributions
 <img src="{{ site.url }}assets/images/wdm_paper_new/density_flux_distributions_25Mpc.png">
 
 
