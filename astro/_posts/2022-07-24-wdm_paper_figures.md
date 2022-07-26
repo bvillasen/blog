@@ -19,5 +19,5 @@ categorines: cholla
 <img src="{{ site.url }}assets/images/wdm_paper_new/flux_ps_wdm.png">
 
 
-### Effect of Peculiar Velocities Suppresing $$P(k)$$
+### Effect of Peculiar Velocities Suppressing $$P(k)$$
 <img src="{{ site.url }}assets/images/wdm_paper_new/flux_ps_ratio_real_space.png">
