@@ -19,5 +19,11 @@ categorines: cholla
 <img src="{{ site.url }}assets/images/wdm_paper_new/flux_ps_wdm.png">
 
 
+### Suppresion of $$P(k)$$
+
+Effects on $$P(k)$$ from free-streaming (left), Doppler broadening (center) and Jeans smoothing (right)
+<img src="{{ site.url }}assets/images/wdm_paper_new/flux_ps_suppression.png">
+
+
 ### Effect of Peculiar Velocities Suppressing $$P(k)$$
 <img src="{{ site.url }}assets/images/wdm_paper_new/flux_ps_ratio_real_space.png">
