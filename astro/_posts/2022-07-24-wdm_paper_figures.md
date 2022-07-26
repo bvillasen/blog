@@ -14,5 +14,10 @@ categorines: cholla
 ### WDM Effects on Density and Transmitted Flux density_flux_distributions
 <img src="{{ site.url }}assets/images/wdm_paper_new/density_flux_distributions_25Mpc.png">
 
+
 ### WDM Effects on Flux Power Spectrum
 <img src="{{ site.url }}assets/images/wdm_paper_new/flux_ps_wdm.png">
+
+
+### Effect of Peculiar Velocities Suppresing $$P(k)$$
+<img src="{{ site.url }}assets/images/wdm_paper_new/flux_ps_ratio_real_space.png">
