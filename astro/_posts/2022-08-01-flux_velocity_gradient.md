@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Flux calculatiopn: Velocity gradient "
+title: "Flux calculation: Velocity gradient "
 date:   2022-08-01 010:00:24 -0800
 categorines: cholla
 ---
@@ -8,24 +8,24 @@ categorines: cholla
 
 Original equation for optical depth (Gaussian profile):
 
-$\tau_{\nu_{0}}=\frac{\pi e^{2}}{m_{e} c} f_{12} \int \frac{n_{\mathrm{HI}}}{\sqrt{\pi} \Delta \nu_{\mathrm{D}}} \exp \left[-\left(\frac{\nu-\nu_{0}}{\Delta \nu_{\mathrm{D}}}\right)^{2}\right] d r$
+$$\tau_{\nu_{0}}=\frac{\pi e^{2}}{m_{e} c} f_{12} \int \frac{n_{\mathrm{HI}}}{\sqrt{\pi} \Delta \nu_{\mathrm{D}}} \exp \left[-\left(\frac{\nu-\nu_{0}}{\Delta \nu_{\mathrm{D}}}\right)^{2}\right] d r$$
 
 
 Transform the integral from physical space to velocity space:
 
-$\tau_{u_{0}}=\frac{\pi e^{2} \lambda_{0}}{m_{e} c } f_{12} \int \frac{n_{\mathrm{HI}}}{\sqrt{\pi} b} \exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right] \left(\frac{du}{dr}  \right)^{-1}  d u$
+$$\tau_{u_{0}}=\frac{\pi e^{2} \lambda_{0}}{m_{e} c } f_{12} \int \frac{n_{\mathrm{HI}}}{\sqrt{\pi} b} \exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right] \left(\frac{du}{dr}  \right)^{-1}  d u$$
 
 In the Russian paper they use the absolute value of $$du/dr$$ instead ( I don't understand why, perhaps my calculus is rusty). The te equation is written:
 
-$\tau_{u_{0}}=\frac{\pi e^{2} \lambda_{0}}{m_{e} c } f_{12} \int \frac{n_{\mathrm{HI}}}{\sqrt{\pi} b} \exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right] \left|\frac{du}{dr}  \right|^{-1}  d u$
+$$\tau_{u_{0}}=\frac{\pi e^{2} \lambda_{0}}{m_{e} c } f_{12} \int \frac{n_{\mathrm{HI}}}{\sqrt{\pi} b} \exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right] \left|\frac{du}{dr}  \right|^{-1}  d u$$
 
 Which of the following is the correct version for the derivative inside the integral?
 
-$ \left|\frac{du}{dr}  \right| = H$
+$$ \left|\frac{du}{dr}  \right| = H$$
 
 or 
 
-$\left|\frac{du}{dr}  \right| = H + \nabla v_\mathrm{pec}(r)$
+$$\left|\frac{du}{dr}  \right| = H + \nabla v_\mathrm{pec}(r)$$
 
 If the second version (including) the gradient of $$v_\mathrm{pec}$$ is the correct one. Would you get the same optical depth 
 using the equation in frequency space (integrating over $$r$$) and using the equation in velocity space? **I don't think so. There is no gradient in frequency space and the transformation from frequency to velocity is linear (Doppler).**
