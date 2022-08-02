@@ -28,9 +28,10 @@ or
 $$\left|\frac{du}{dr}  \right| = H + \nabla v_\mathrm{pec}(r)$$
 
 If the second version (including) the gradient of $$v_\mathrm{pec}$$ is the correct one. Would you get the same optical depth 
-using the equation in frequency space (integrating over $$r$$) and using the equation in velocity space? **I don't think so. There is no gradient in frequency space and the transformation from frequency to velocity is linear (Doppler).**
+when using the equation in frequency space (integrating over $$r$$) and when using the equation in velocity space? **I don't think so. There is no gradient in frequency space and the transformation from frequency to velocity is linear (Doppler).**
 
-What I believe it's the correct answer is that when taking the equation from integrating over physical space ($$dr$$) to integrating over velocity space then one switches to integrating over the physical coordinate along the line of sight to the velocity coordinate along the line of sight. To go from position to velocity along the line of sight the relation is $$v = H\,r$$, I don't understand why would you include the peculiar velocity of the gas when transforming to velocity coordinate? 
+I believe the correct answer is that when taking the equation which integrates over physical space ($$dr$$) to make the transformation and integrate over velocity space one switches to integrate over the physical coordinate along the line of sight to the velocity coordinate along the line of sight. To go from position to velocity along the line of sight the relation is $$v = H\,r$$, I don't understand why would you include the peculiar velocity of the gas when transforming to velocity coordinate? 
+
 
 I suspect the the Russian version of the equation is the one that is incorrect. 
 
