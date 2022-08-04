@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flux calculation: Velocity gradient REVISEFD"
-date:   2022-08-01 010:00:24 -0800
+date:   2022-08-03 010:00:24 -0800
 categorines: cholla
 ---
 
