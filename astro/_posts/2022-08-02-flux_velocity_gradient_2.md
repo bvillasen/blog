@@ -13,22 +13,23 @@ $$\tau_{u_{0}}=\frac{\pi e^{2} \lambda_{0}}{m_{e} c } f_{12} \int \frac{n_{\math
 
 For the second form of the equation, using the gas velocity $$Hr + u_\mathrm{pec}$$ to do the integral, then 
 
-$$dr = \left| \frac{du}{dr} \right| ^{-1} du = \frac{1}{ H + \nabla u_\mathrm{pec}} du$$ 
+$$dr = \left| \frac{du}{dr} \right| ^{-1} du = \left| \frac{1}{ H + \nabla u_\mathrm{pec}} \right| du$$ 
 
-Where where  $$du =  | H dr + \Delta  u_\mathrm{pec} | $$ 
+Where   
 
-is the differential of the gas velocity along the LOS.
+$$du =  \left| H dr + \Delta  u_\mathrm{pec} \right| $$ 
+
+is the differential of the gas velocity along the LOS. **Note that an absolute value around $$du$$ is needed to avoid negative values.**   
 
 
 $$\tau_{u_{0}}=\frac{\pi e^{2} \lambda_{0}}{m_{e} c } f_{12} \int \frac{n_{\mathrm{HI}}}{\sqrt{\pi} b} \exp \left[-\left(\frac{u-u_{0}}{b}\right)^{2}\right] \left|\frac{1}{ H + \nabla u_\mathrm{pec}}  \right| d u$$
  
-**Note that an absolute value around $$du$$ is needed to avoid negative values.**   
 
 Numerically the gradient and the difference are evaluated: 
 
-$$ \nabla  u_\mathrm{pec} = \frac{u_\mathrm{pec}^{i+1} - u_\mathrm{pec}^{i-1}{2 dr} $$
+$$ \nabla  u_\mathrm{pec} = \frac{u_\mathrm{pec}^{i+1} - u_\mathrm{pec}^{i-1} }{2 dr} $$
 
-$$ \Delta  u_\mathrm{pec} = \frac{u_\mathrm{pec}^{i+1} - u_\mathrm{pec}^{i-1}{2 } $$  
+$$ \Delta  u_\mathrm{pec} = \frac{u_\mathrm{pec}^{i+1} - u_\mathrm{pec}^{i-1} }{2 } $$  
 
 The comparison of the Flux from the two calculations is below.
 
